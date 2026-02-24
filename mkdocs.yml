@@ -1,0 +1,29 @@
+site_name: Mesh Sorocaba
+theme:
+  name: material
+  locale: br
+  icon:
+    logo: fontawesome/solid/industry
+  features:
+      - navigation.tabs
+      - navigation.tabs.sticky
+      - toc.integrate
+      - content.action.view
+      - content.action.edit
+  palette:
+      # The custom Meshtastic theme uses `slate` as a base
+      scheme: slate
+
+nav:
+  - Início: index.md
+  - Configuração: configuracao.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+
+extra_css:
+  # Custom styles for Meshtastic theme
+  - static/styles/extra.css
