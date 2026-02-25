@@ -45,6 +45,8 @@ plugins:
       repository: MeshSorocaba/meshsorocaba.github.io
       branch: main
 
+
+
 extra:
   social:
     - icon: fontawesome/brands/telegram
