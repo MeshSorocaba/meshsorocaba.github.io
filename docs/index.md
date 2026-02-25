@@ -25,11 +25,10 @@ A rede Meshtastic opera na frequência de 915MHz (no Brasil) e utiliza protocolo
 
 ## Participe
 
-Se você tem interesse em tecnologia, comunicação alternativa ou simplesmente quer se preparar para situações de emergência, junte-se a nós na [Comunidade Mesh Sorocaba](https://t.me/+XLIcChY42ZVkMmQ5) no Telegram! Não é necessário conhecimento técnico avançado - estamos aqui para ajudar.
+Se você tem interesse em tecnologia, comunicação alternativa ou simplesmente quer se preparar para situações de emergência, junte-se a nós na [Comunidade Meshtastic Brasil](https://t.me/meshtastic_br) e na [Comunidade Mesh Sorocaba](https://t.me/+XLIcChY42ZVkMmQ5) no Telegram! Não é necessário conhecimento técnico avançado --- estamos lá para ajudar.
 
-### O que você precisa:
-- Um dispositivo compatível com Meshtastic (como LilyGO T-Beam, Heltec V3, etc.)
-- Um rádio LoRa na frequência correta para sua região
+### O que você precisa
+- Um dispositivo compatível com Meshtastic (como Heltec V3, RAK WisMesh Pocket, etc.)
 - Vontade de aprender e contribuir
 
 ## Contato

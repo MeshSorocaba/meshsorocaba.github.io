@@ -9,97 +9,139 @@ Para manter uma rede mesh saudável, recomendamos as configurações abaixo com 
 
 Para dispositivos portáteis, unidades veiculares e dispositivos de uso cotidiano.
 
-### Rádio & LoRa
+### LoRa
 
 | **Opção** | **Configuração Recomendada** | **Observações** |
 | :--- | :--- | :--- |
 | **Region** | `Australia / Brazil / New Zealand` | Faixa de 915 a 928 MHz autorizada pela ANATEL para dispositivos de baixa potência |
-| **Device Role** | `CLIENT` ou `CLIENT_MUTE` | Use `CLIENT_MUTE` a menos que você tenha uma necessidade específica de retransmitir |
-| **Modem Preset** | `LONG_FAST` | Padrão adotado pela Mesh Sorocaba |
+| **Use Preset** | `ligado` | |
+| **Modem Preset** | `LONG_FAST` | Valor padrão, usado enquanto a região ainda não possui tantos nós |
+| **Ignore MQTT** | `desligado` | Se `ligado`, ignora qualquer mensagem que tenha sido recebida, em algum momento, via MQTT |
+| **OK to MQTT** | `ligado` | Permite que o nó seja monitorado pelas ferramentas web e auxilia na coordenação da rede |
+| **Transmit Enabled** | `ligado` | Habilite se quiser que o nó seja capaz de transmitir |
+| **Override Duty Cycle** | `ligado` | Ignora o limite de ciclos, cujo limite só existe na Europa |
+| **Number of Hops** | `4` ou `5` | Um número maior que `5` tem alto risco de congestionar a malha de acordo com simulações |
+| **Frequency Slot** | `20` | Número padrão do canal `LongFast`. O valor 0 calculará automaticamente com base no Nome do Canal |
 | **Frequency Slot** | `20` | Padrão LongFast (919.875 MHz) |
-| **NodeInfo Interval** | `10800` (3 horas) | |
-| **Hop Limit** | `5` | Por favor, não defina acima de `6` 🙏 |
-| **Ignore MQTT** | `False` | Opcional |
-| **OK to MQTT** | `True` | Permite monitorar o nó pelas ferramentas web e auxilia na coordenação da rede |
-| **Transmit Enabled** | `Ligado` | |
-| **Override Duty Cycle** | `Ligado` | O limite de ciclos só é necessário na Europa |
+| **RX Boosted Gain** | `ligado` | opção específica para a série de chips SX126x que permite ao chip consumir uma pequena quantidade de energia adicional para aumentar a sensibilidade de recepção |
 
-### Posição & Telemetria
+### Channels
 
 | **Opção** | **Configuração Recomendada** | **Observações** |
 | :--- | :--- | :--- |
-| **Smart Position** | `True` | Atualiza com mais frequência enquanto você está em movimento |
-| **Broadcast Interval** | `10800` (3 horas) | Intervalo base quando estacionário |
-| **Fixed Position** | `False` | Nós móveis devem usar GPS/Localização do celular |
-| **Device Metrics** | `Disabled` | Os outros na rede não precisam saber seu nível de bateria |
-| **Env. Metrics** | `Disabled` | Não é útil para nós móveis |
+| **Name** | `LongFast` | Canal público padrão para o preset `LONG_FAST` |
+| **PSK** | AQ== | Chave padrão do canal |
+| **Uplink Enabled** | ligado | Permite que o nó seja monitorado pelas ferramentas web e auxilia na coordenação da rede |
+| **Downlink enabled** | desligado | Desabilita recebimento de mensagens no canal oriundas do MQTT |
+| **Position enabled** | desligado | Ignora pedidos de anúncio de posição |
+| **Precise location** | desligado | Desnecessário se anúncio de posição está desligado |
+
+
+### Device
+
+| **Opção** | **Configuração Recomendada** | **Observações** |
+| :--- | :--- | :--- |
+| **Device Role** | `CLIENT_MUTE` ou `CLIENT` | Use `CLIENT_MUTE` na maioria dos casos, especialmente com múltiplos dispositivos recebendo de um nó com posição mais privilegiada; `CLIENT` se você necessita retransmitir informações por alguma razão específica |
+| **Rebroadcast Mode** | `ALL` | |
+| **NodeInfo Interval** | `6 hours` | |
+| **Time Zone** | `GMT3` | Ou clique em "Use phone time zone" |
+
+### Position
+
+| **Opção** | **Configuração Recomendada** | **Observações** |
+| :--- | :--- | :--- |
+| **Broadcast Interval** | `3 hours` | Intervalo base quando estacionado |
+| **Smart Position** | `ligado` | Atualiza a posição do nó somente se você se deslocar além de uma certa distância |
+| **Smart Interval** | `15 minutes` | Intervalo quando em movimento |
+| **Smart Distance** | `200` | Deslocamento mínimo em metros para que posição seja atualizada |
+| **Fixed Position** | `desligado` | Nós móveis devem usar GPS/Localização do celular |
+| **GPS polling interval** | `15 minutes` |  |
+
+### MQTT
+
+Para configuração do MQTT, siga as instruções da comunidade [Meshtastic Brasil](https://www.meshbrasil.com/).
+
+### Telemetry
+| **Opção** | **Configuração Recomendada** | **Observações** |
+| :--- | :--- | :--- |
+| **Send Device Telemetry** | `desligado` | Ao contrário de um nó solar ou uma estação base, não é necessário anunciar seu nível de bateria a toda a malha |
+| **Environment metrics module enabled** | `desligado` | Não é útil para nós portáteis |
 
 
 ## 🏠 2. Infraestrutura Pessoal/Local
 
 Para estações base residenciais, nós em sótãos/telhados, mastros em quintais e instalações solares regionais de altura média.
 
-### Rádio & LoRa
+### LoRa
 
 | **Opção** | **Configuração Recomendada** | **Observações** |
 | :--- | :--- | :--- |
 | **Region** | `Australia / Brazil / New Zealand` | Faixa de 915 a 928 MHz autorizada pela ANATEL para dispositivos de baixa potência |
-| **Device Role** | `CLIENT` ou `CLIENT_BASE` | `CLIENT_BASE` ajuda a garantir que as mensagens dos seus nós móveis tenham prioridade |
-| **Is Un-Messagable** | `True` | Defina em nós não monitorados para evitar que usuários enviem mensagens diretas e fiquem frustrados |
-| **Modem Preset** | `LONG_FAST` | Padrão adotado pela Mesh Sorocaba |
+| **Use Preset** | `ligado` | |
+| **Presets** | `LONG_FAST` | Valor padrão, usado enquanto a região ainda não possui tantos nós |
+| **Ignore MQTT** | `desligado` | Opcional; habilite se quiser receber mensagens que passaram por MQTT em algum momento |
+| **OK to MQTT** | `ligado` | Permite monitorar o nó pelas ferramentas web e auxilia na coordenação da rede |
+| **Transmit Enabled** | `ligado` | |
+| **Override Duty Cycle** | `ligado` | O limite de ciclos só é necessário na Europa |
+| **Number of Hops** | `3` | Número de hops alto não é útil para nós de infraestrutura, pois não é um nó que envia ou recebe mensagens |
 | **Frequency Slot** | `20` | Padrão LongFast (919.875 MHz) |
-| **NodeInfo Interval** | `21600` (6 horas) | Nós estacionários não alteram informações com frequência |
-| **Hop Limit** | `3` | Contagem alta de hops não é útil, pois normalmente não é um nó que recebe mensagens |
-| **Ignore MQTT** | `False` | Opcional |
-| **OK to MQTT** | `True` | Permite monitorar o nó pelas ferramentas web e auxilia na coordenação da rede |
-| **Transmit Enabled** | `Ligado` | |
-| **Override Duty Cycle** | `Ligado` | O limite de ciclos só é necessário na Europa |
+| **RX Boosted Gain** | `ligado` | opção específica para a série de chips SX126x que permite ao chip consumir uma pequena quantidade de energia adicional para aumentar a sensibilidade de recepção |
 
-### Posição & Telemetria
+### Channels
 
 | **Opção** | **Configuração Recomendada** | **Observações** |
 | :--- | :--- | :--- |
-| **Smart Position** | `False` | Nó estacionário, não é necessário |
-| **Broadcast Interval** | `21600` (6 horas) | É estacionário; não há necessidade de lembrar as pessoas a cada hora |
-| **Fixed Position** | `True` | Defina as coordenadas manualmente no app se não houver GPS por hardware |
-| **Device Metrics** | `10800` (3 horas) | Apenas para nós solares; caso contrário, desabilite |
-| **Env. Metrics** | `10800` (3 horas) | Apenas se equipado; usado para verificar vazamentos ou superaquecimento; caso contrário, desabilite |
+| **Name** | `LongFast` | Canal público padrão para o preset `LONG_FAST` |
+| **PSK** | `AQ==` | Chave padrão do canal |
+| **Uplink Enabled** | `ligado` | Permite que o nó seja monitorado pelas ferramentas web e auxilia na coordenação da rede |
+| **Downlink Enabled** | `ligado` | Permite recebimento de mensagens no canal oriundas do MQTT |
+| **Position enabled** | `ligado` | Para nós estacionários com posição fixa configurada |
+| **Precise location** | `desligado` | A critério do usuário |
+
+### User
+| **Opção** | **Configuração Recomendada** | **Observações** |
+| :--- | :--- | :--- |
+| **Unmessagable** | `ligado` | Para nós não-monitorados, evita que usuários enviem mensagens na espera de uma resposta |
+
+
+### Device
+
+| **Opção** | **Configuração Recomendada** | **Observações** |
+| :--- | :--- | :--- |
+| **Device Role** | `CLIENT` ou `CLIENT_BASE` | `CLIENT_BASE` ajuda a garantir que as mensagens dos seus nós favoritados tenham prioridade |
+| **Rebroadcast Mode** | `ALL` | |
+| **NodeInfo Interval** | `6 hours` | Quanto maior, melhor (nós estacionários não alteram informações com frequência) |
+| **Time Zone** | `GMT3` | Ou clique em "Use phone time zone" |
+
+### Position
+
+| **Opção** | **Configuração Recomendada** | **Observações** |
+| :--- | :--- | :--- |
+| **Broadcast Interval** | `24 hours` | Por ser um nó estacionário, não há necessidade de anunciar posição com frequência |
+| **Smart Position** | `desligado` | Nó estacionário, não é necessário |
+| **Fixed Position** | `ligado` | Defina as coordenadas manualmente no app se não houver GPS por hardware |
+| **GPS polling interval** | `24 hours` | Para nós com hardware GPS, mesmo sendo estacionários |
+
+### MQTT
+
+Para configuração do MQTT, siga as instruções da comunidade [Meshtastic Brasil](https://www.meshbrasil.com/).
+
+### Telemetry
+
+| **Opção** | **Configuração Recomendada** | **Observações** |
+| :--- | :--- | :--- |
+| **Send Device Telemetry** | `3 hours` | Apenas para nós solares; caso contrário, desabilite |
+| **Environment metrics module enabled** | `3 hours` | Apenas se equipado; usado para verificar vazamentos de bateria ou superaquecimento; caso contrário, desabilite |
 
 ## 🏔️ 3. Infraestrutura Pública Coordenada
 
-Para pontos altos que movimentam mensagens pela região. Geralmente são torres de radioamadores em locais elevados.
+Para pontos altos que conectam regiões. Geralmente são torres de radioamadores em locais elevados ou relevos extremamente propícios para cobrir uma grande extensão de região metropolitana.
 
 !!! warning "Atenção"
-    Apenas nós de infraestrutura coordenados devem usar o papel `ROUTER`. Roteadores mal configurados podem causar degradação em toda a rede. Entre em contato com a comunidade Mesh Sorocaba para discutir seu ponto antes de usar essas configurações.
-
-### Rádio & LoRa
-
-| **Opção** | **Configuração Recomendada** | **Observações** |
-| :--- | :--- | :--- |
-| **Region** | `Australia / Brazil / New Zealand` | Faixa de 915 a 928 MHz autorizada pela ANATEL para dispositivos de baixa potência |
-| **Device Role** | `ROUTER_LATE` | Melhor para a saúde da rede em 95% dos casos do que `ROUTER` |
-| **Modem Preset** | `LONG_FAST` | Padrão adotado pela Mesh Sorocaba |
-| **Frequency Slot** | `20` | Padrão LongFast (919.875 MHz) |
-| **NodeInfo Interval** | `21600` (6 horas) | Pontos altos são constantes; atualizações mínimas necessárias |
-| **Rebroadcast Mode** | `CORE_PORTNUMS_ONLY` | Filtra tráfego não essencial (ex.: ATAK e teste de alcance) |
-| **Hop Limit** | `3` | Impede que a telemetria se propague além do útil |
-| **Ignore MQTT** | `True` | **Crucial:** Protege a rede contra inundação vinda da internet |
-| **OK to MQTT** | `True` | Permite monitorar o nó pelas ferramentas web e auxilia na coordenação da rede |
-| **Transmit Enabled** | `Ligado` | |
-| **Override Duty Cycle** | `Ligado` | O limite de ciclos só é necessário na Europa |
-
-### Posição & Telemetria
-
-| **Opção** | **Configuração Recomendada** | **Observações** |
-| :--- | :--- | :--- |
-| **Smart Position** | `False` | Ponto alto estacionário. |
-| **Broadcast Interval** | `21600` (6 horas) | Estacionário; atualizações a cada 6 horas são suficientes. |
-| **Fixed Position** | `True` | Defina as coordenadas manualmente no app se não houver GPS por hardware. |
-| **Device Metrics** | `10800` (3 horas) | Monitoramento de energia solar e saúde da rede. |
-| **Env. Metrics** | `10800` (3 horas) | Apenas se equipado; usado para verificar vazamentos ou superaquecimento no invólucro; caso contrário, desabilite. |
+    Nós de infraestrutura coordenados devem ser discutidos entre a comunidade. Roteadores com essa configuração mal posicionados podem causar degradação em toda a rede. Entre em contato com a comunidade Mesh Sorocaba para discutir seu ponto antes de usar qualquer configuração que não seja `CLIENT`, `CLIENT_MUTE` ou `CLIENT_BASE`.
 
 ---
 
 ## Por que essas configurações são importantes?
 
-A rede Meshtastic opera em um canal compartilhado com aproximadamente **1kbps** de largura de banda utilizável sob LongFast. Nós "tagarelas" — aqueles que enviam atualizações com mais frequência do que o necessário — podem saturar rapidamente a rede, impedindo que mensagens reais sejam transmitidas. Ao aumentar os intervalos e limitar os hops, garantimos que a rede permaneça utilizável para todos.
+A rede Meshtastic opera em um canal compartilhado com aproximadamente **1kbps** de largura de banda utilizável sob LongFast. Nós "tagarelas" — aqueles que enviam atualizações com mais frequência do que o necessário — podem saturar rapidamente a rede, impedindo que mensagens reais sejam transmitidas. Ao aumentar os intervalos e restringir a publicação de telemetria, garantimos que a rede permaneça utilizável para todos.
