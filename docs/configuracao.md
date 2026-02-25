@@ -1,4 +1,4 @@
-# Configurações Recomendadas
+# Configuração Recomendada para a Região de Sorocaba
 
 As configurações recomendadas nesta seção variam de acordo com a função do seu nó Meshtastic e priorizam a estabilidade da rede através da redução de tráfego desnecessário em nossa banda compartilhada.
 
@@ -26,7 +26,7 @@ Para dispositivos portáteis, unidades veiculares e dispositivos de uso cotidian
 | **OK to MQTT** | `ligado` | Permite que o nó seja monitorado pelas ferramentas web e auxilia na coordenação da rede |
 | **Transmit Enabled** | `ligado` | Habilite se quiser que o nó seja capaz de transmitir |
 | **Override Duty Cycle** | `ligado` | Ignora o limite de ciclos, cujo limite só existe na Europa |
-| **Number of Hops** | `3` ou `4` | Um número alto gera risco de congestionar a malha de acordo com simulações |
+| **Number of Hops** | `4` ou `5` | Um número alto tem risco de congestionar a malha de acordo com simulações |
 | **Frequency Slot** | `20` | Número padrão do canal `LongFast`. O valor 0 calculará automaticamente a frequência com base no Nome do Canal |
 | **RX Boosted Gain** | `ligado` | opção específica para a série de chips SX126x que permite ao chip consumir uma pequena quantidade de energia adicional para aumentar a sensibilidade de recepção |
 
@@ -99,7 +99,7 @@ Para estações base residenciais, nós em sótãos/telhados, mastros em quintai
 | **OK to MQTT** | `ligado` | Permite monitorar o nó pelas ferramentas web e auxilia na coordenação da rede |
 | **Transmit Enabled** | `ligado` | |
 | **Override Duty Cycle** | `ligado` | O limite de ciclos só é necessário na Europa |
-| **Number of Hops** | `2` | Número de hops alto não é útil para nós de infraestrutura, pois normalmente não origina tráfego |
+| **Number of Hops** | `3` | Número de hops alto não é útil para nós de infraestrutura, pois normalmente não origina tráfego |
 | **Frequency Slot** | `20` | Padrão LongFast (919.875 MHz) |
 | **RX Boosted Gain** | `ligado` | opção específica para a série de chips SX126x que permite ao chip consumir uma pequena quantidade de energia adicional para aumentar a sensibilidade de recepção |
 
