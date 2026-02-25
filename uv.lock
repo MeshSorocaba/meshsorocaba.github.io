@@ -506,6 +506,7 @@ dependencies = [
     { name = "mkdocs" },
     { name = "mkdocs-git-committers-plugin" },
     { name = "mkdocs-git-revision-date-localized-plugin" },
+    { name = "mkdocs-i18n" },
     { name = "mkdocs-material" },
     { name = "pillow" },
     { name = "pymarkdownlnt" },
@@ -517,6 +518,7 @@ requires-dist = [
     { name = "mkdocs", specifier = ">=1.6.1" },
     { name = "mkdocs-git-committers-plugin", specifier = ">=0.2.3" },
     { name = "mkdocs-git-revision-date-localized-plugin", specifier = ">=1.5.1" },
+    { name = "mkdocs-i18n", specifier = ">=0.4.6" },
     { name = "mkdocs-material", specifier = ">=9.7.3" },
     { name = "pillow", specifier = ">=12.1.1" },
     { name = "pymarkdownlnt", specifier = ">=0.9.35" },
@@ -586,6 +588,19 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/aa/16/25d7b1b930a802bf8b0c6ee64a9b34ea6e7d0a34c6bc69adbbb59b9d2f4b/mkdocs_git_revision_date_localized_plugin-1.5.1.tar.gz", hash = "sha256:2b0239455cd84784dd87ac8dfc9253fe4b2dd35e102696f21b5d34e2175981c6", size = 449557 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/4b/3f/4f663fb7e889fbb2fabef7a67ddd96f8355edca917aa724c6c6cda352d01/mkdocs_git_revision_date_localized_plugin-1.5.1-py3-none-any.whl", hash = "sha256:b00fd36ed0f9b2326b1488fd8fa31bf2ce64e68c4aa60a9ce857f10719571903", size = 26150 },
+]
+
+[[package]]
+name = "mkdocs-i18n"
+version = "0.4.6"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "mkdocs" },
+    { name = "mkdocs-material" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/6b/31/6aad3256057551b1b8b2c8447a3669bfb3c1f99f833280e167b8fedd1d97/mkdocs-i18n-0.4.6.tar.gz", hash = "sha256:977736ac643e6a9fece2f331c72168dda298b09ed55049a9c3bb6be33e099af0", size = 24232 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/40/d0/9523dcdfaa9f6968a85e967225213e9ea79e046e8da65282af56e8dbd4c1/mkdocs_i18n-0.4.6-py3-none-any.whl", hash = "sha256:44054cd7de6150f8e03aa074fc46d9ea661e660c9df0aab802115dd30636bc08", size = 17730 },
 ]
 
 [[package]]
