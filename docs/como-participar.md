@@ -85,7 +85,7 @@ Se houver outros nós por perto, você eventualmente verá eles aparecerem na li
 
 ---
 
-Uma vez testado seu Meshtastic com a configuração inicial, recomendamos visitar a página [Configuração Recomendada](configuracao/) para saber quais são os valores sugeridos para os nós de Meshtastic na região de Sorocaba.
+Uma vez testado seu Meshtastic com a configuração inicial, recomendamos visitar a página [Configuração Recomendada](configuracao.md) para saber quais são os valores sugeridos para os nós de Meshtastic na região de Sorocaba.
 
 ## Dúvidas frequentes
 
