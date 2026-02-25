@@ -124,7 +124,7 @@ Para estações base residenciais, nós em sótãos/telhados, mastros em quintai
 
 | **Opção** | **Configuração Recomendada** | **Observações** |
 | :--- | :--- | :--- |
-| **Device Role** | `CLIENT` ou `CLIENT_BASE` | `CLIENT_BASE` ajuda a garantir que as mensagens dos seus nós favoritados tenham prioridade |
+| **Device Role** | `CLIENT_BASE` | `CLIENT_BASE` ajuda a garantir que as mensagens dos seus nós favoritados tenham prioridade |
 | **Rebroadcast Mode** | `ALL` | |
 | **NodeInfo Interval** | `6 hours` | Quanto maior, melhor (nós estacionários não alteram informações com frequência) |
 | **Time Zone** | `GMT3` | Ou clique em "Use phone time zone" |
