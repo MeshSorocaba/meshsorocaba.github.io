@@ -13,7 +13,7 @@ Para corrigir isso, comunidades Meshtastic ao redor do mundo se alinharam para q
 
 ## 📱 1. Nós Móveis Pessoais
 
-Para dispositivos portáteis, unidades veiculares e dispositivos de uso cotidiano.
+Para dispositivos que você carrega consigo, unidades veiculares e outros dispositivos de uso cotidiano.
 
 ### LoRa
 
@@ -48,7 +48,7 @@ Para dispositivos portáteis, unidades veiculares e dispositivos de uso cotidian
 | :--- | :--- | :--- |
 | **Device Role** | `CLIENT_MUTE` ou `CLIENT` | Use `CLIENT_MUTE` na maioria dos casos, especialmente com múltiplos dispositivos recebendo de um nó com posição mais privilegiada; `CLIENT` se você necessita retransmitir informações por alguma razão específica |
 | **Rebroadcast Mode** | `ALL` | |
-| **NodeInfo Interval** | `6 hours` | Não significa que o nó será visto somente a cada 6 horas, pois qualquer pacote transmitido contém sua identificação |
+| **Node Info Broadcast Interval** | `12 hours` | Não significa que o nó só será visto 2x ao dia; qualquer pacote transmitido contém info sobre o nó |
 | **Time Zone** | `GMT3` | Ou clique em "Use phone time zone" |
 
 ### Position
@@ -61,10 +61,11 @@ Para dispositivos portáteis, unidades veiculares e dispositivos de uso cotidian
 | **Smart Distance** | `200` | Deslocamento mínimo em metros para que posição seja atualizada |
 | **Fixed Position** | `desligado` | Nós móveis devem usar GPS/Localização do celular |
 | **GPS polling interval** | `15 minutes` |  |
+| **Position Flags** | `ALTITUDE` e `ALTITUDE_MSL` | Qualquer outra informação sobre o sensor apenas ocupa a banda desnecessariamente  |
 
 ### MQTT
 
-Para configuração do MQTT, siga as instruções atualizadas da comunidade [Meshtastic Brasil](https://www.meshbrasil.com/).
+Para o MQTT, seguimos por enquanto as instruções da comunidade [Meshtastic Brasil](https://www.meshbrasil.com/).
 
 | **Opção** | **Configuração Recomendada** | **Observações** |
 | :--- | :--- | :--- |
@@ -83,6 +84,7 @@ Para configuração do MQTT, siga as instruções atualizadas da comunidade [Mes
 | **Send Device Telemetry** | `desligado` | Ao contrário de um nó solar ou uma estação base, não é necessário anunciar seu nível de bateria a toda a malha |
 | **Environment metrics module enabled** | `desligado` | Não é útil para nós portáteis |
 
+---
 
 ## 🏠 2. Infraestrutura Pessoal/Local
 
@@ -126,7 +128,7 @@ Para estações base residenciais, nós em sótãos/telhados, mastros em quintai
 | :--- | :--- | :--- |
 | **Device Role** | `CLIENT_BASE` | `CLIENT_BASE` ajuda a garantir que as mensagens dos seus nós favoritados tenham prioridade |
 | **Rebroadcast Mode** | `ALL` | |
-| **NodeInfo Interval** | `6 hours` | Quanto maior, melhor (nós estacionários não alteram informações com frequência) |
+| **Node Info Broadcast Interval** | `12 hours` | Não significa que o nó só será visto 2x ao dia; qualquer pacote transmitido contém info sobre o nó |
 | **Time Zone** | `GMT3` | Ou clique em "Use phone time zone" |
 
 ### Position
@@ -136,11 +138,12 @@ Para estações base residenciais, nós em sótãos/telhados, mastros em quintai
 | **Broadcast Interval** | `24 hours` | Por ser um nó estacionário, não há necessidade de anunciar posição com frequência |
 | **Smart Position** | `desligado` | Nó estacionário, não é necessário |
 | **Fixed Position** | `ligado` | Defina as coordenadas manualmente no app se não houver GPS por hardware |
-| **GPS polling interval** | `24 hours` | Para nós com hardware GPS, mesmo sendo estacionários |
+| **GPS polling interval** | `24 hours` | Para nós com sensor de GPS mesmo sendo estacionários |
+| **Position Flags** | `ALTITUDE` e `ALTITUDE_MSL` | Qualquer outra informação transmitida sobre o sensor de GPS apenas ocupa tempo de banda desnecessariamente  |
 
 ### MQTT
 
-Para configuração do MQTT, siga as instruções atualizadas da comunidade [Meshtastic Brasil](https://www.meshbrasil.com/).
+Para o MQTT, seguimos por enquanto as instruções da comunidade [Meshtastic Brasil](https://www.meshbrasil.com/).
 
 | **Opção** | **Configuração Recomendada** | **Observações** |
 | :--- | :--- | :--- |
@@ -159,6 +162,8 @@ Para configuração do MQTT, siga as instruções atualizadas da comunidade [Mes
 | :--- | :--- | :--- |
 | **Send Device Telemetry** | `3 hours` | Apenas para nós solares, caso deseje-se acompanhar os níveis de bateria; caso contrário, desabilite |
 | **Environment metrics module enabled** | `3 hours` | Apenas se equipado; usado para verificar vazamentos de bateria ou superaquecimento; caso contrário, desabilite |
+
+---
 
 ## 🏔️ 3. Infraestrutura Pública Coordenada
 
