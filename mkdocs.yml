@@ -1,4 +1,7 @@
 site_name: Mesh Sorocaba
+site_url: https://meshsorocaba.github.io
+edit_uri: edit/main/docs/
+
 theme:
   name: material
   locale: br
