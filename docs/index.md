@@ -34,7 +34,3 @@ A Mesh Sorocaba faz parte da comunidade Meshtastic Brasil. Se você tem interess
 ## Contato
 
 Para mais informações em contato através dos canais mencionados, ou envie um e-mail para **bruno.arine** no domínio `runbox.com`.
-
----
-
-*Última atualização: Fevereiro de 2026*

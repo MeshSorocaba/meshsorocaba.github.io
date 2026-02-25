@@ -30,3 +30,24 @@ markdown_extensions:
 extra_css:
   # Custom styles for Meshtastic theme
   - static/styles/extra.css
+
+plugins:
+  - search
+  - social:
+      cards_layout: default
+      cards_layout_options:
+        background_color: "#2C2D3C"
+        color: "#67EA94"
+  - git-revision-date-localized:
+      enable_creation_date: false
+      type: date
+  - git-committers:
+      repository: MeshSorocaba/meshsorocaba.github.io
+      branch: main
+
+extra:
+  social:
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/meshsorocaba
+    - icon: fontawesome/brands/github
+      link: https://github.com/MeshSorocaba
