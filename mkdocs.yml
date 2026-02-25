@@ -19,7 +19,8 @@ theme:
 
 nav:
   - Início: index.md
-  - Configuração: configuracao.md
+  - Como Participar: como-participar.md
+  - Configuração Recomendada: configuracao.md
 
 markdown_extensions:
   - admonition

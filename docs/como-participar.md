@@ -2,14 +2,14 @@
 
 ## Como funciona a rede
 
-A rede Meshtastic funciona como um sistema de mensagens que **não depende de internet nem de sinal de celular**. Imagine uma conversa por walkie-talkie, mas com a capacidade de enviar mensagens de texto que podem "saltar" de um dispositivo para outro até chegar ao destinatário.
+A rede Meshtastic funciona como um sistema de mensagens que **não depende de wifi nem de sinal de celular**. Imagine uma conversa por WhatsApp, mas com a capacidade de enviar mensagens de texto que podem "saltar" de um dispositivo para outro até chegar ao destinatário sem depender da internet.
 
 Cada dispositivo na rede é chamado de **nó**. Quando você envia uma mensagem, ela viaja de nó em nó até encontrar quem deve recebê-la. Quanto mais pessoas participam da rede com seus dispositivos, maior é o alcance e melhor funciona a comunicação para todos.
 
 **Alguns pontos importantes:**
 
 - **Alcance**: Um único dispositivo pode se comunicar a vários quilômetros de distância em linha de visada. Em área urbana com obstáculos, o alcance é menor, mas a rede se beneficia de múltiplos nós.
-- **Privacidade**: As mensagens são criptografadas. Somente quem tem a chave do canal consegue ler o conteúdo.
+- **Privacidade**: As mensagens são criptografadas. Somente o destinatário, seja uma pessoa ou várias (em um canal), consegue ler o conteúdo.
 - **Bateria**: Os dispositivos consomem pouca energia e podem funcionar por dias ou até meses com uma única carga, dependendo do modelo e uso.
 - **Custo**: Não há mensalidade nem contrato. Você compra o dispositivo uma vez e usa à vontade.
 
@@ -23,25 +23,18 @@ São aparelhos que já vêm montados e prontos para usar — basta carregar a ba
 
 | Modelo | Bateria | Tela | Observações |
 | :--- | :--- | :--- | :--- |
-| **RAK WisMesh Pocket** | Integrada (até 1 semana) | Sim | Compacto, ideal para carregar no bolso. Recomendado para iniciantes. |
-| **Lilygo T-Echo** | Integrada (até 1 semana) | Sim | Tela e-paper (tipo Kindle), fácil leitura mesmo no sol. |
-| **Lilygo T-Beam** | Integrada (até 1 semana) | Sim | Inclui GPS integrado. Um pouco maior que os anteriores. |
-
-### Placas de desenvolvimento
-
-São placas que exigem algum conhecimento técnico para montagem, mas costumam ser mais baratas:
-
-| Modelo | Observações |
-| :--- | :--- |
-| **Heltec V3** | Popular e com bom custo-benefício. Requer fonte de alimentação externa (bateria ou USB). |
-| **RAK WisBlock** | Sistema modular que permite adicionar sensores e baterias. Mais versátil, mas exige mais conhecimento. |
+| **RAK WisMesh Pocket** | Incluída (até 1 semana) | Sim | Compacto, ideal para carregar no bolso. Recomendado para iniciantes. |
+| **Lilygo T-Echo** | Incluída (até 1 semana) | Sim | Tela e-paper (tipo Kindle), fácil leitura mesmo no sol. |
+| **Lilygo T-Beam** | Incluída (até 1 semana) | Sim | Inclui GPS integrado. Um pouco maior que os anteriores. |
+| **Heltec V3** | Não incluída | Sim | Menos recursos que os anteriores, porém mais barato. |
+| **RAK WisBlock** | Não incluída | Depende | Sistema modular que permite adicionar sensores e baterias. Mais versátil, mas exige mais conhecimento. |
 
 !!! tip "Dica para iniciantes"
     Se você não tem experiência com eletrônica, comece com um dispositivo pronto como o **RAK WisMesh Pocket** ou **Lilygo T-Echo**. Eles eliminam a necessidade de solda ou montagem de componentes.
 
 ### Antenas
 
-A antena que acompanha o dispositivo geralmente é suficiente para uso comum. Se quiser aumentar o alcance, é possível trocar por uma antena externa de maior ganho — mas isso requer atenção para não danificar o equipamento. A comunidade pode ajudar com recomendações.
+A antena que acompanha o dispositivo geralmente é suficiente para uso comum, mas longe do ideal. Se quiser aumentar o alcance, é possível trocar por uma antena externa de maior ganho. A comunidade pode ajudar com recomendações.
 
 ## Onde comprar
 
@@ -88,7 +81,7 @@ Certifique-se de que o canal está configurado como **LongFast** (o padrão púb
 
 ### 5. Teste a comunicação
 
-Se houver outros nós por perto, você verá eles aparecerem na lista de nós do aplicativo. Tente enviar uma mensagem no canal público para verificar se está tudo funcionando.
+Se houver outros nós por perto, você eventualmente verá eles aparecerem na lista de nós do aplicativo. Isso pode levar um tempo (algumas horas), já que os dispositivos são configurados com um certo intervalo para não ocuparem constantemente a banda. Tente enviar uma mensagem no canal público para verificar se está tudo funcionando.
 
 ---
 
