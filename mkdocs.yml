@@ -8,6 +8,7 @@ theme:
   locale: pt
   icon:
     logo: fontawesome/solid/industry
+  favicon: static/favicon.png
   features:
       - navigation.tabs
       - navigation.tabs.sticky
