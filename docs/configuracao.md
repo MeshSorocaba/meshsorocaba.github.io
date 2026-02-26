@@ -1,4 +1,4 @@
-# Configuração Recomendada para a Região de Sorocaba
+# Valor Recomendado para a Região de Sorocaba
 
 As configurações recomendadas nesta seção variam de acordo com a função do seu nó Meshtastic e priorizam a estabilidade da rede através da redução de tráfego desnecessário em nossa banda compartilhada.
 
@@ -17,7 +17,7 @@ Para dispositivos que você carrega consigo, unidades veiculares e outros dispos
 
 ### LoRa
 
-| **Opção** | **Configuração Recomendada** | **Observações** |
+| **Opção** | **Valor Recomendado** | **Observações** |
 | :--- | :--- | :--- |
 | **Region** | `Australia / Brazil / New Zealand` | Faixa de 915 a 928 MHz autorizada pela ANATEL para dispositivos de baixa potência |
 | **Use Preset** | `ligado` | |
@@ -32,7 +32,7 @@ Para dispositivos que você carrega consigo, unidades veiculares e outros dispos
 
 ### Channels
 
-| **Opção** | **Configuração Recomendada** | **Observações** |
+| **Opção** | **Valor Recomendado** | **Observações** |
 | :--- | :--- | :--- |
 | **Name** | `LongFast` | Canal público padrão para o preset `LONG_FAST` |
 | **PSK** | `AQ==` | Chave padrão do canal |
@@ -44,7 +44,7 @@ Para dispositivos que você carrega consigo, unidades veiculares e outros dispos
 
 ### Device
 
-| **Opção** | **Configuração Recomendada** | **Observações** |
+| **Opção** | **Valor Recomendado** | **Observações** |
 | :--- | :--- | :--- |
 | **Device Role** | `CLIENT_MUTE` ou `CLIENT` | Use `CLIENT_MUTE` na maioria dos casos, especialmente com múltiplos dispositivos recebendo de um nó com posição mais privilegiada; `CLIENT` se você necessita retransmitir informações por alguma razão específica |
 | **Rebroadcast Mode** | `ALL` | |
@@ -53,7 +53,7 @@ Para dispositivos que você carrega consigo, unidades veiculares e outros dispos
 
 ### Position
 
-| **Opção** | **Configuração Recomendada** | **Observações** |
+| **Opção** | **Valor Recomendado** | **Observações** |
 | :--- | :--- | :--- |
 | **Broadcast Interval** | `3 hours` | Intervalo base quando estacionado |
 | **Smart Position** | `ligado` | Atualiza a posição do nó somente se você se deslocar além de uma certa distância |
@@ -67,7 +67,7 @@ Para dispositivos que você carrega consigo, unidades veiculares e outros dispos
 
 Para o MQTT, seguimos por enquanto as instruções da comunidade [Meshtastic Brasil](https://www.meshbrasil.com/).
 
-| **Opção** | **Configuração Recomendada** | **Observações** |
+| **Opção** | **Valor Recomendado** | **Observações** |
 | :--- | :--- | :--- |
 | **Address** | `platform.meshbrasil.com:1883` | |
 | **Username** | `meshdev` | |
@@ -79,7 +79,7 @@ Para o MQTT, seguimos por enquanto as instruções da comunidade [Meshtastic Bra
 | **Proxy to client enabled** | `ligado` ou `desligado` | `ligado` se o nó só pode se comunicar pela internet através do seu celular, `desligado` se ele possui WiFi configurado e funcionando | 
 
 ### Telemetry
-| **Opção** | **Configuração Recomendada** | **Observações** |
+| **Opção** | **Valor Recomendado** | **Observações** |
 | :--- | :--- | :--- |
 | **Send Device Telemetry** | `desligado` | Ao contrário de um nó solar ou uma estação base, não é necessário anunciar seu nível de bateria a toda a malha |
 | **Environment metrics module enabled** | `desligado` | Não é útil para nós portáteis |
@@ -92,7 +92,7 @@ Para estações base residenciais, nós em sótãos/telhados, mastros em quintai
 
 ### LoRa
 
-| **Opção** | **Configuração Recomendada** | **Observações** |
+| **Opção** | **Valor Recomendado** | **Observações** |
 | :--- | :--- | :--- |
 | **Region** | `Australia / Brazil / New Zealand` | Faixa de 915 a 928 MHz autorizada pela ANATEL para dispositivos de baixa potência |
 | **Use Preset** | `ligado` | |
@@ -107,24 +107,24 @@ Para estações base residenciais, nós em sótãos/telhados, mastros em quintai
 
 ### Channels
 
-| **Opção** | **Configuração Recomendada** | **Observações** |
+| **Opção** | **Valor Recomendado** | **Observações** |
 | :--- | :--- | :--- |
 | **Name** | `LongFast` | Canal público padrão para o preset `LONG_FAST` |
-| **PSK** | `AQ==` | Chave padrão do canal |
+| **PSK** | `AQ==` | Chave padrão do cana/recoml |
 | **Uplink Enabled** | `ligado` | Permite que o nó seja monitorado pelas ferramentas web e auxilia na coordenação da rede |
 | **Downlink enabled** | `desligado` | Reduz tráfego desnecessário do MQTT para o rádio |
 | **Position enabled** | `ligado` | Para nós estacionários com posição fixa configurada |
 | **Precise location** | `desligado` | A critério do usuário |
 
 ### User
-| **Opção** | **Configuração Recomendada** | **Observações** |
+| **Opção** | **Valor Recomendado** | **Observações** |
 | :--- | :--- | :--- |
 | **Unmessagable** | `ligado` | Para nós não-monitorados, evita que usuários enviem mensagens na espera de uma resposta |
 
 
 ### Device
 
-| **Opção** | **Configuração Recomendada** | **Observações** |
+| **Opção** | **Valor Recomendado** | **Observações** |
 | :--- | :--- | :--- |
 | **Device Role** | `CLIENT_BASE` | `CLIENT_BASE` ajuda a garantir que as mensagens dos seus nós favoritados tenham prioridade |
 | **Rebroadcast Mode** | `ALL` | |
@@ -133,7 +133,7 @@ Para estações base residenciais, nós em sótãos/telhados, mastros em quintai
 
 ### Position
 
-| **Opção** | **Configuração Recomendada** | **Observações** |
+| **Opção** | **Valor Recomendado** | **Observações** |
 | :--- | :--- | :--- |
 | **Broadcast Interval** | `24 hours` | Por ser um nó estacionário, não há necessidade de anunciar posição com frequência |
 | **Smart Position** | `desligado` | Nó estacionário, não é necessário |
@@ -145,7 +145,7 @@ Para estações base residenciais, nós em sótãos/telhados, mastros em quintai
 
 Para o MQTT, seguimos por enquanto as instruções da comunidade [Meshtastic Brasil](https://www.meshbrasil.com/).
 
-| **Opção** | **Configuração Recomendada** | **Observações** |
+| **Opção** | **Valor Recomendado** | **Observações** |
 | :--- | :--- | :--- |
 | **Address** | `platform.meshbrasil.com:1883` | |
 | **Username** | `meshdev` | |
@@ -158,7 +158,7 @@ Para o MQTT, seguimos por enquanto as instruções da comunidade [Meshtastic Bra
 
 ### Telemetry
 
-| **Opção** | **Configuração Recomendada** | **Observações** |
+| **Opção** | **Valor Recomendado** | **Observações** |
 | :--- | :--- | :--- |
 | **Send Device Telemetry** | `3 hours` | Apenas para nós solares, caso deseje-se acompanhar os níveis de bateria; caso contrário, desabilite |
 | **Environment metrics module enabled** | `3 hours` | Apenas se equipado; usado para verificar vazamentos de bateria ou superaquecimento; caso contrário, desabilite |

@@ -8,7 +8,7 @@ theme:
   locale: pt
   icon:
     logo: fontawesome/solid/industry
-  favicon: static/favicon.png
+  favicon: img/favicon.png
   features:
       - navigation.tabs
       - navigation.tabs.sticky
@@ -21,8 +21,8 @@ theme:
 
 nav:
   - Início: index.md
-  - Como Participar: como-participar.md
-  - Configuração Recomendada: configuracao.md
+  - Guia Rápido: guia-rapido.md
+  - Configuração Regional: configuracao.md
 
 markdown_extensions:
   - admonition
@@ -31,8 +31,7 @@ markdown_extensions:
 
 
 extra_css:
-  # Custom styles for Meshtastic theme
-  - static/styles/extra.css
+  - styles/extra.css
 
 plugins:
   - search
