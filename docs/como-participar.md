@@ -73,7 +73,7 @@ Baixe o aplicativo Meshtastic no seu celular:
 
 ### 3. Configure seu nome
 
-No aplicativo, acesse as configurações do nó e defina um nome para identificá-lo na rede. Pode ser seu apelido ou nome — é o que outros verão quando você estiver na rede.
+No aplicativo, acesse as configurações do nó e defina um nome para identificá-lo na rede. O nome longo pode ser seu apelido ou nome — é o que outros verão quando você estiver na rede. O nome curto deve possuir 4 caracteres alfanuméricos ou ser um emoji.
 
 ### 4. Verifique o canal
 
