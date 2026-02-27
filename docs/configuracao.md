@@ -9,7 +9,7 @@ Por padrão, os nós Meshtastic transmitem uma grande quantidade de informação
 Para corrigir isso, comunidades Meshtastic ao redor do mundo se alinharam para que os usuários reduzissem a publicação de telemetria, garantindo que a rede permaneça utilizável para todos.
 
 !!! note "Observação"
-    As configurações abaixo são baseadas na experiência coletiva de comunidades Meshtastic pelo mundo como a do [Oregon (EUA)](https://meshoregon.com/), [Montes Apalaches (EUA)](https://mtnme.sh/), [Brno (República Tcheca)](https://meshtastic--czbrno-blogspot-com.translate.goog/2025/01/meshtastic-moznost-soucasne-existence.html?_x_tr_sl=cs&_x_tr_tl=en&_x_tr_hl=cs&_x_tr_pto=wapp). As configurações estão sujeitas a alterações conforme a rede Mesh Sorocaba cresça e demande novos valores.
+    As configurações abaixo são baseadas na experiência coletiva de comunidades Meshtastic pelo mundo como a dos [Montes Apalaches (EUA)](https://mtnme.sh/) e [Brno (República Tcheca)](https://meshtastic--czbrno-blogspot-com.translate.goog/2025/01/meshtastic-moznost-soucasne-existence.html?_x_tr_sl=cs&_x_tr_tl=en&_x_tr_hl=cs&_x_tr_pto=wapp). As configurações estão sujeitas a alterações conforme a rede Mesh Sorocaba cresça e demande novos valores.
 
 ## 📱 1. Nós Móveis Pessoais
 
@@ -19,14 +19,14 @@ Para dispositivos que você carrega consigo, unidades veiculares e outros dispos
 
 | **Opção** | **Valor** | **Observações** |
 | :--- | :--- | :--- |
-| **Região** | `Australia / Brazil / New Zealand` | Faixa de 915 a 928 MHz autorizada pela ANATEL para dispositivos de baixa potência |
+| **Região** | `Australia / Brazil / New Zealand` | Faixa de 915 a 928 MHz autorizada pela ANATEL para dispositivos restritos de baixa potência |
 | **Use Preset** | `ligado` | |
 | **Modem Preset** | `LONG_FAST` | Valor padrão, usado enquanto a região ainda não possui tantos nós |
 | **Ignorar MQTT** | `desligado` | Se desligado, aceita mensagens que tenham transitado via MQTT |
 | **OK to MQTT** | `ligado` | Permite que o nó seja monitorado pelas ferramentas web e auxilia na coordenação da rede |
 | **Transmit Enabled** | `ligado` | Habilite se quiser que o nó seja capaz de transmitir |
 | **Ignorar ciclo de trabalho** | `ligado` | Ignora o limite de ciclos, cujo limite só existe na Europa |
-| **Number of Hops** | `4` ou `5` | Um número alto tem risco de congestionar a malha de acordo com simulações |
+| **Number of Hops** | `5` | Um número alto tem risco de congestionar a malha |
 | **Slot** | `20` | Número padrão do canal `LongFast`. O valor 0 calculará automaticamente a frequência com base no Nome do Canal |
 | **RX Boosted Gain** | `ligado` | opção específica para a série de chips SX126x que permite ao chip consumir uma pequena quantidade de energia adicional para aumentar a sensibilidade de recepção |
 
@@ -52,19 +52,19 @@ Para dispositivos que você carrega consigo, unidades veiculares e outros dispos
 
 | **Opção** | **Valor** | **Observações** |
 | :--- | :--- | :--- |
-| **Papel do dispositivo** | `CLIENT_MUTE` ou `CLIENT` | Use `CLIENT_MUTE` na maioria dos casos, especialmente com múltiplos dispositivos recebendo de um nó com posição mais privilegiada; `CLIENT` se você necessita retransmitir informações por alguma razão específica |
+| **Papel do dispositivo** | `CLIENT` ou `CLIENT_MUTE` | Use `CLIENT` na maioria dos casos; `CLIENT_MUTE` para múltiplos dispositivos recebendo recebendo de um nó com posição mais privilegiada |
 | **Modo de retransmissão** | `ALL` | |
-| **Node Info Broadcast Interval** | `12 hours` | Não significa que o nó só será visto 2x ao dia; qualquer pacote transmitido contém info sobre o nó |
+| **Node Info Broadcast Interval** | `3 horas` | Não significa que o nó só será visto 4x ao dia; qualquer pacote transmitido contém info sobre o nó |
 | **Time Zone** | `GMT3` | Ou clique em "Use phone time zone" |
 
 ### Posição
 
 | **Opção** | **Valor** | **Observações** |
 | :--- | :--- | :--- |
-| **Intervalo de difusão** | `3 hours` | Intervalo base quando estacionado |
+| **Intervalo de difusão** | `1 hora` | Intervalo base quando estacionado |
 | **Posição inteligente ativada** | `ligado` | Atualiza a posição do nó somente se você se deslocar além de uma certa distância |
-| **Intervalo mínimo da transmissão inteligente (segundos)** | `900` (15 minutos) | Intervalo quando em movimento |
-| **Distância mínima da transmissão inteligente (metros)** | `200` | Deslocamento mínimo em metros para que posição seja atualizada |
+| **Intervalo mínimo da transmissão inteligente** | `15 minutos` | Intervalo de difusão quando em movimento |
+| **Distância mínima da transmissão inteligente** | `200` | Deslocamento mínimo em metros para que posição seja atualizada |
 | **Usar posição fixa** | `desligado` | Nós móveis devem usar GPS/Localização do celular |
 | **Intervalo de atualização do GPS (segundos)** | `900` (15 minutos) |  |
 | **Position Flags** | `ALTITUDE` e `ALTITUDE_MSL` | Qualquer outra informação sobre o sensor apenas ocupa a banda desnecessariamente  |
@@ -100,7 +100,7 @@ Para estações base residenciais, nós em sótãos/telhados, mastros em quintai
 
 | **Opção** | **Valor** | **Observações** |
 | :--- | :--- | :--- |
-| **Região** | `Australia / Brazil / New Zealand` | Faixa de 915 a 928 MHz autorizada pela ANATEL para dispositivos de baixa potência |
+| **Região** | `Australia / Brazil / New Zealand` | Faixa de 915 a 928 MHz autorizada pela ANATEL para dispositivos restritos de baixa potência |
 | **Use Preset** | `ligado` | |
 | **Modem Preset** | `LONG_FAST` | Valor padrão, usado enquanto a região ainda não possui tantos nós |
 | **Ignorar MQTT** | `desligado` | Se desligado, aceita mensagens que tenham transitado via MQTT |
@@ -133,19 +133,19 @@ Para estações base residenciais, nós em sótãos/telhados, mastros em quintai
 
 | **Opção** | **Valor** | **Observações** |
 | :--- | :--- | :--- |
-| **Papel do dispositivo** | `CLIENT_BASE` | `CLIENT_BASE` ajuda a garantir que as mensagens dos seus nós favoritados tenham prioridade |
+| **Papel do dispositivo** | `CLIENT` ou `CLIENT_BASE` | `CLIENT_BASE` ajuda a garantir que as mensagens dos seus nós favoritados tenham prioridade |
 | **Modo de retransmissão** | `ALL` | |
-| **Node Info Broadcast Interval** | `12 hours` | Não significa que o nó só será visto 2x ao dia; qualquer pacote transmitido contém info sobre o nó |
+| **Node Info Broadcast Interval** | `3 horas` | Não significa que o nó só será visto 4x ao dia; qualquer pacote transmitido contém info sobre o nó |
 | **Time Zone** | `GMT3` | Ou clique em "Use phone time zone" |
 
 ### Posição
 
 | **Opção** | **Valor** | **Observações** |
 | :--- | :--- | :--- |
-| **Intervalo de transmissão de posição (segundos)** | `86400` (24 horas) | Por ser um nó estacionário, não há necessidade de anunciar posição com frequência |
+| **Intervalo de transmissão de posição (segundos)** | `1 hora` | Por ser um nó estacionário, não há necessidade de anunciar posição com frequência |
 | **Posição inteligente ativada** | `desligado` | Nó estacionário, não é necessário |
 | **Usar posição fixa** | `ligado` | Defina as coordenadas manualmente no app se não houver GPS por hardware |
-| **Intervalo de atualização do GPS (segundos)** | `86400` (24 horas) | Para nós com sensor de GPS mesmo sendo estacionários |
+| **Intervalo de atualização do GPS (segundos)** | `12 horas` | Para nós com sensor de GPS mesmo sendo estacionários |
 | **Position Flags** | `ALTITUDE` e `ALTITUDE_MSL` | Qualquer outra informação transmitida sobre o sensor de GPS apenas ocupa tempo de banda desnecessariamente  |
 
 ### MQTT
@@ -167,8 +167,8 @@ Para o MQTT, seguimos por enquanto as instruções da comunidade [Meshtastic Bra
 
 | **Opção** | **Valor** | **Observações** |
 | :--- | :--- | :--- |
-| **Send Device Telemetry** | `3 hours` | Apenas para nós solares, caso deseje-se acompanhar os níveis de bateria; caso contrário, desabilite |
-| **Módulo de métricas do ambiente ativado** | `3 hours` | Apenas se equipado; usado para verificar vazamentos de bateria ou superaquecimento; caso contrário, desabilite |
+| **Send Device Telemetry** | `1 hora` | Apenas para nós solares, caso deseje-se acompanhar os níveis de bateria; caso contrário, desabilite |
+| **Módulo de métricas do ambiente ativado** | `1 hora` | Apenas se equipado; usado para verificar vazamentos de bateria ou superaquecimento; caso contrário, desabilite |
 
 ---
 
@@ -177,5 +177,5 @@ Para o MQTT, seguimos por enquanto as instruções da comunidade [Meshtastic Bra
 Para pontos altos que conectam regiões. Geralmente são torres de radioamadores em locais elevados ou relevos extremamente propícios para cobrir uma grande extensão de região metropolitana.
 
 !!! warning "Atenção"
-    Nós de infraestrutura coordenados devem ser discutidos entre a comunidade. Roteadores com essa configuração mal posicionados podem causar degradação em toda a rede. Entre em contato com a comunidade Mesh Sorocaba para discutir seu ponto antes de usar qualquer configuração que não seja `CLIENT`, `CLIENT_MUTE` ou `CLIENT_BASE`.
+    Nós de infraestrutura coordenados usualmente são configurados como `ROUTER`, mas devem ser debatidos entre a comunidade. Roteadores mal posicionados podem causar degradação em toda a rede. Por garantia, entre em contato com a comunidade Mesh Sorocaba para discutir seu ponto antes de usar qualquer configuração que não seja `CLIENT`, `CLIENT_MUTE` ou `CLIENT_BASE`.
 
