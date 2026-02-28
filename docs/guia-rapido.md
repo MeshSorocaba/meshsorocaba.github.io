@@ -6,6 +6,8 @@ A rede Meshtastic funciona como um sistema de mensagens que **não depende de wi
 
 Cada dispositivo na rede é chamado de **nó**. Quando você envia uma mensagem, ela viaja de nó em nó até encontrar quem deve recebê-la. Quanto mais pessoas participam da rede com seus dispositivos, maior é o alcance e melhor funciona a comunicação para todos.
 
+![Exemplo de malha Meshtastic](img/lora-mesh-darkbg.png)
+
 **Alguns pontos importantes:**
 
 - **Alcance**: Um único dispositivo pode se comunicar a vários quilômetros de distância em linha de visada. Em área urbana com obstáculos, o alcance é menor, mas a rede se beneficia de múltiplos nós.

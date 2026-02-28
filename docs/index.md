@@ -2,11 +2,15 @@
 
 O Mesh Sorocaba é uma iniciativa comunitária dedicada a promover, integrar e expandir a rede [Meshtastic](https://meshtastic.org/) na região de Sorocaba, incluindo os municípios de Araçoiaba da Serra, Iperó, Boituva, Porto Feliz, Itu, Alumínio, Salto de Pirapora, Votorantim e outros municípios. O objetivo é tornar essa tecnologia mais acessível a todos e contribuir para uma rede de comunicação descentralizada e independente.
 
+
+<p align="center">
+   <img src="img/sorocaba.png">
+</p>
+
 ## O que é Meshtastic?
 
 Meshtastic é uma plataforma de comunicação de código aberto que permite a troca de mensagens entre dispositivos usando módulos de rádio LoRa (Long Range). A principal vantagem é que não depende de infraestrutura de Internet ou redes de celular; os dispositivos comunicam-se diretamente entre si, formando uma malha (mesh) de comunicação. Leia mais em [Guia Rápido](guia-rapido.md).
 
-![Exemplo de malha Meshtastic](img/lora-mesh-darkbg.png)
 
 ## Missão do Mesh Sorocaba
 
