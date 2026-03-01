@@ -125,7 +125,7 @@ Para estações base residenciais, nós em sótãos/telhados, mastros em quintai
 ### Usuário
 | **Opção** | **Valor** | **Observações** |
 | :--- | :--- | :--- |
-| **Nome** | qualquer | Nome do seu nó; considere adicionar o emoji 🔀 como sufixo para destacar que se trata de um nó de infraestrutura |
+| **Nome** | qualquer | Nome do seu nó; considere adicionar um emoji que sugira o tipo de estrutura da instalação (🌳, 🏠, 🏢, 🗼, ⛰️, etc.), e também um emoji 📵 como sufixo para salientar que se trata de um nó não-monitorado |
 | **Short Name** | 4 caracteres ou um emoji | Abreviação do nome do seu nó |
 | **Impossível enviar mensagens** | `desligado` | Para nós não-monitorados, evita que usuários enviem mensagens na espera de uma resposta |
 
