@@ -50,23 +50,23 @@ Os requisitos abaixo foram baseados na documentação oficial do projeto Meshtas
 
 **O que NÃO qualifica:** Antenas que vêm de fábrica com as placas (T-Beam, Heltec, etc.); antenas internas; cabos RG-174 baratos e longos; antenas montadas dentro de janelas ou sótãos.
 
-**Por que:** Cada decibel conta. Se a antena for medíocre, a "pegada" real de cobertura será menor do que o papel de `ROUTER` exige. Nodes próximos vão parar de retransmitir ao ouvir o `ROUTER`, mas o sinal fraco do roteador não chegará longe, criando uma "sombra" onde as mensagens morrem.
+**Por que:** Cada decibel conta. Se a antena for medíocre, a "pegada" real de cobertura será menor do que o papel de `ROUTER` exige. Nodes próximos vão parar de retransmitir ao ouvir o `ROUTER`, mas o sinal fraco do roteador não chegará longe, criando uma "sumidouro" onde as mensagens morrem.
 
 **Como verificar:** O ideal é testar a antena com um analisador **NanoVNA**. O VSWR deve estar abaixo de 2:1 na frequência central da rede.
 
 ---
 
-## 4. Alimentação Confiável e Ininterrupta (24/7)
+## 4. Integridade a Longo Prazo
+
+**Requisito:** Ativar um `ROUTER` é um ato de comprometimento. Um ou vários dispositivos podem ser instalados numa região contando que seu roteador garantirá um link com o restante da rede **permanentemente**. Dessa forma, se seu dispositivo está instalado em um local sem controle de acesso e pode ser vandalizado, furtado ou retirado sem seu consentimento, muito provavelmente a configuração `CLIENT` ou `CLIENT_BASE` é mais apropriada. Além disso, deve-se prevenir que intempéries afetem a integridade do dispositivo, que deve estar em uma caixa hermética com classificação mínima **IP65** (preferencialmente IP67). Deve-se usar prensa-cabos e, idealmente, uma válvula de respiro para evitar condensação interna devido às mudanças de temperatura.
+
+---
+
+## 5. Alimentação Confiável e Ininterrupta
 
 **Requisito:** O node deve operar 24 horas por dia, 365 dias por ano. Isso exige energia da rede elétrica com backup de bateria (Nobreak) ou um sistema solar dimensionado corretamente para aguentar vários dias sem sol.
 
 **Por que:** O papel de `ROUTER` prioriza a continuidade do serviço. Se um roteador fica offline, ele deixa um buraco na malha de roteamento. Mensagens que dependiam dele serão perdidas.
-
----
-
-## 5. Integridade a Longo Prazo
-
-**Requisito:** Ativar um `ROUTER` é um ato de comprometimento. Um ou vários dispositivos podem ser instalados numa região contando que seu roteador garantirá um link com o restante da rede permanentemente. Dessa forma, se seu dispositivo está instalado em um local sem controle de acesso e pode ser vandalizado, furtado ou retirado sem seu consentimento, muito provavelmente a configuração `CLIENT` ou `CLIENT_BASE` é mais apropriada. Além disso, deve-se prevenir que intempéries afetem a integridade do dispositivo, que deve estar em uma caixa hermética com classificação mínima **IP65** (preferencialmente IP67). Deve-se usar prensa-cabos e, idealmente, uma válvula de respiro para evitar condensação interna devido às mudanças de temperatura.
 
 ---
 
@@ -111,12 +111,12 @@ Responda honestamente:
 1. Minha antena está em elevação extrema com visada de 360°?
 2. Tenho contato direto com outros roteadores?
 3. Uso antena externa de qualidade e cabo de baixa perda?
-4. Minha energia é 100% confiável (solar ou backup)?
-5. Meu dispositivo está fisicamente seguro?
+4. Meu dispositivo está fisicamente seguro?
+5. Minha energia é 100% confiável (solar ou backup)?
 6. Posso administrar este nó remotamente?
 7. Meu nó anuncia o mínimo de telemetria possível?
-5. Sou um membro ativo e acessível no grupo da rede?
-6. A comunidade local aprovou esta instalação?
+8. Sou um membro ativo e acessível no grupo da rede?
+9. A comunidade local aprovou esta instalação?
 
 **Se você respondeu "NÃO" para qualquer uma dessas perguntas: USE O PERFIL `CLIENT` ou `CLIENT_BASE`.**
 
