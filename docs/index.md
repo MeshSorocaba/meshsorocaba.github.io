@@ -8,7 +8,9 @@ O Mesh Sorocaba é uma iniciativa comunitária dedicada a promover, integrar e e
 
 ## O que é Meshtastic?
 
-Meshtastic é uma plataforma de comunicação de código aberto que permite a troca de mensagens entre dispositivos usando módulos de rádio LoRa (Long Range). A principal vantagem é que não depende de infraestrutura de Internet ou redes de celular; os dispositivos comunicam-se diretamente entre si, formando uma malha (mesh) de comunicação. Leia mais em [Guia Rápido](guia-rapido.md).
+Meshtastic é uma plataforma de comunicação de código aberto que permite a troca de mensagens entre dispositivos usando módulos de rádio LoRa (Long Range). A principal vantagem é que não depende de infraestrutura de Internet ou redes de celular; os dispositivos comunicam-se diretamente entre si, formando uma malha (mesh) de comunicação. A tecnologia tem sido usada com sucesso pelo mundo em [cenários de catástrofes naturais](https://www.seeedstudio.com/blog/2025/10/30/building-resilient-communication-germany-meshtastic-solar-nodes/) e [comunicação de grupos em locais sem infraestrutura](https://blog.noforeignland.com/off-grid-boat-communications-with-meshtastic/). No Brasil, tivemos em março de 2026 o [primeiro simulado geral da Defesa Civil usando Meshtastic](https://www.facebook.com/groups/276059605530869/posts/758395703963921/).
+
+ Leia mais em [Guia Rápido](guia-rapido.md).
 
 
 ## Missão do Mesh Sorocaba
