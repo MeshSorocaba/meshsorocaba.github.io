@@ -37,9 +37,9 @@ Para dispositivos que você carrega consigo, unidades veiculares e outros dispos
 | **Nome do canal** | `LongFast` | Canal público padrão para o preset `LONG_FAST` |
 | **PSK** | `AQ==` | Chave padrão do canal |
 | **Uplink ativado** | `ligado` | Permite que o nó seja monitorado pelas ferramentas web e auxilia na coordenação da rede |
-| **Downlink ativado** | `desligado` | Reduz tráfego desnecessário do MQTT para o rádio |
-| **Posição ativada** | `desligado` | Ignora pedidos de anúncio de posição |
-| **Localização precisa** | `desligado` | Desnecessário se anúncio de posição está desligado |
+| **Downlink ativado** | `desligado` | **Importante!** Mantenha desligado para evitar retransmissões desnecessárias de NodeInfo, telemetria e mensagens de teste do servidor MQTT inteiro para o rádio, que tendem a congestionar a rede |
+| **Posição ativada** | `ligado` ou `desligado` |  |
+| **Localização precisa** | `ligado` ou `desligado` | Desnecessário se anúncio de posição está desligado |
 
 ### Usuário
 | **Opção** | **Valor** | **Observações** |
@@ -118,9 +118,9 @@ Para estações base residenciais, nós em sótãos/telhados, mastros em quintai
 | **Nome do canal** | `LongFast` | Canal público padrão para o preset `LONG_FAST` |
 | **PSK** | `AQ==` | Chave padrão do canal |
 | **Uplink ativado** | `ligado` | Permite que o nó seja monitorado pelas ferramentas web e auxilia na coordenação da rede |
-| **Downlink ativado** | `desligado` | Reduz tráfego desnecessário do MQTT para o rádio |
-| **Posição ativada** | `ligado` | Para nós estacionários com posição fixa configurada |
-| **Localização precisa** | `desligado` | A critério do usuário |
+| **Downlink ativado** | `desligado` | **Importante!** Mantenha desligado para evitar retransmissões desnecessárias de NodeInfo, telemetria e mensagens de teste do servidor MQTT inteiro para o rádio, que tendem a congestionar a rede |
+| **Posição ativada** | `ligado` ou `desligado` | Para nós estacionários com posição fixa configurada |
+| **Localização precisa** | `ligado` ou `desligado` | A critério do usuário |
 
 ### Usuário
 | **Opção** | **Valor** | **Observações** |
