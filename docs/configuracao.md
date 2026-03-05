@@ -71,17 +71,15 @@ Para dispositivos que você carrega consigo, unidades veiculares e outros dispos
 
 ### MQTT
 
-Para o MQTT, seguimos por enquanto as instruções da comunidade [Meshtastic Brasil](https://www.meshbrasil.com/).
-
 | **Opção** | **Valor** | **Observações** |
 | :--- | :--- | :--- |
-| **Endereço** | `platform.meshbrasil.com:1883` | |
+| **Endereço** | `mqtt.meshtastic.org` | |
 | **Nome de usuário** | `meshdev` | |
 | **Senha** | `large4cats` | |
 | **Criptografia ativada** | `ligado` | |
 | **Saída JSON ativada** | `desligado` | |
 | **TLS ativado** | `desligado` | |
-| **Tópico principal** | `meshdev` | |
+| **Tópico principal** | `msh/BR/MeshSorocaba` | |
 | **Proxy para cliente ativado** | `ligado` ou `desligado` | `ligado` se o nó só pode se comunicar pela internet através do seu celular, `desligado` se ele possui WiFi configurado e funcionando | 
 
 ### Telemetria
@@ -150,8 +148,6 @@ Para estações base residenciais, nós em sótãos/telhados, mastros em quintai
 
 ### MQTT
 
-Para o MQTT, seguimos por enquanto as instruções da comunidade [Meshtastic Brasil](https://www.meshbrasil.com/).
-
 | **Opção** | **Valor** | **Observações** |
 | :--- | :--- | :--- |
 | **Endereço** | `platform.meshbrasil.com:1883` | |
@@ -160,7 +156,7 @@ Para o MQTT, seguimos por enquanto as instruções da comunidade [Meshtastic Bra
 | **Criptografia ativada** | `ligado` | |
 | **Saída JSON ativada** | `desligado` | |
 | **TLS ativado** | `desligado` | |
-| **Tópico principal** | `meshdev` | |
+| **Tópico principal** | `msh/BR/MeshSorocaba` | |
 | **Proxy para cliente ativado** | `ligado` ou `desligado` | `ligado` se o nó só pode se comunicar pela internet através do seu celular, `desligado` se ele possui WiFi configurado e funcionando | 
 
 ### Telemetria
