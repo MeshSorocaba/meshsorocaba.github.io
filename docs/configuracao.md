@@ -22,7 +22,7 @@ Para dispositivos que você carrega consigo, unidades veiculares e outros dispos
 | **Região** | `Australia / Brazil / New Zealand` | Faixa de 915 a 928 MHz autorizada pela ANATEL para dispositivos restritos de baixa potência |
 | **Use Preset** | `ligado` | |
 | **Modem Preset** | `LONG_FAST` | Valor padrão, usado enquanto a região ainda não possui tantos nós |
-| **Ignorar MQTT** | `desligado` | Se desligado, aceita mensagens que tenham transitado via MQTT |
+| **Ignorar MQTT** | `desligado` | Ligue se quiser ignorar qualquer mensagem que tenha transitado via MQTT em algum momento |
 | **OK to MQTT** | `ligado` | Permite que o nó seja monitorado pelas ferramentas web e auxilia na coordenação da rede |
 | **Transmit Enabled** | `ligado` | Habilite se quiser que o nó seja capaz de transmitir |
 | **Ignorar ciclo de trabalho** | `ligado` | Ignora o limite de ciclos, cujo limite só existe na Europa |
@@ -34,10 +34,10 @@ Para dispositivos que você carrega consigo, unidades veiculares e outros dispos
 
 | **Opção** | **Valor** | **Observações** |
 | :--- | :--- | :--- |
-| **Nome do canal** | `LongFast` | Canal público padrão para o preset `LONG_FAST` |
+| **Nome do canal** | `LongFast` | Canal público padrão para o preset `LONG_FAST`; deve ser o primeiro da lista |
 | **PSK** | `AQ==` | Chave padrão do canal |
 | **Uplink ativado** | `ligado` | Permite que o nó seja monitorado pelas ferramentas web e auxilia na coordenação da rede |
-| **Downlink ativado** | `desligado` | **Importante!** Mantenha desligado para evitar retransmissões desnecessárias de NodeInfo, telemetria e mensagens de teste do servidor MQTT inteiro para o rádio, que tendem a congestionar a rede |
+| **Downlink ativado** | `ligado` ou `desligado` | **Importante!** Se estiver usando um servidor MQTT privado, mantenha essa opção desligada para evitar retransmissões desnecessárias de NodeInfo, telemetria e mensagens de teste do servidor MQTT para o rádio, que tendem a congestionar a rede |
 | **Posição ativada** | `ligado` ou `desligado` |  |
 | **Localização precisa** | `ligado` ou `desligado` | Desnecessário se anúncio de posição está desligado |
 
@@ -113,10 +113,10 @@ Para estações base residenciais, nós em sótãos/telhados, mastros em quintai
 
 | **Opção** | **Valor** | **Observações** |
 | :--- | :--- | :--- |
-| **Nome do canal** | `LongFast` | Canal público padrão para o preset `LONG_FAST` |
+| **Nome do canal** | `LongFast` | Canal público padrão para o preset `LONG_FAST`, deve ser o primeiro da lista de canais |
 | **PSK** | `AQ==` | Chave padrão do canal |
 | **Uplink ativado** | `ligado` | Permite que o nó seja monitorado pelas ferramentas web e auxilia na coordenação da rede |
-| **Downlink ativado** | `desligado` | **Importante!** Mantenha desligado para evitar retransmissões desnecessárias de NodeInfo, telemetria e mensagens de teste do servidor MQTT inteiro para o rádio, que tendem a congestionar a rede |
+| **Downlink ativado** | `ligado` ou `desligado` | **Importante!** Se estiver usando um servidor MQTT privado, mantenha essa opção desligada para evitar retransmissões desnecessárias de NodeInfo, telemetria e mensagens de teste do servidor MQTT para o rádio, que tendem a congestionar a rede |
 | **Posição ativada** | `ligado` ou `desligado` | Para nós estacionários com posição fixa configurada |
 | **Localização precisa** | `ligado` ou `desligado` | A critério do usuário |
 
