@@ -173,5 +173,5 @@ Para estações base residenciais, nós em sótãos/telhados, mastros em quintai
 Para pontos altos que conectam regiões. Geralmente são torres de radioamadores em locais elevados ou relevos extremamente propícios para cobrir uma grande extensão de região metropolitana.
 
 !!! warning "Atenção"
-    Nós de infraestrutura coordenados usualmente são configurados como `ROUTER`, mas devem ser debatidos entre a comunidade. Roteadores mal posicionados podem causar degradação em toda a rede. Por garantia, leia a documentação [Pré-Requisitos para Roteadores Meshtastic](/roteadores) e entre em contato com a comunidade Mesh Sorocaba para discutir seu ponto antes de usar qualquer configuração que não seja `CLIENT`, `CLIENT_MUTE` ou `CLIENT_BASE`.
+    Nós de infraestrutura coordenados usualmente são configurados como `ROUTER`, mas devem ser debatidos entre a comunidade. Roteadores mal posicionados podem causar degradação em toda a rede. Por garantia, leia a documentação [Pré-Requisitos para Roteadores Meshtastic](roteadores.md) e entre em contato com a comunidade Mesh Sorocaba para discutir seu ponto antes de usar qualquer configuração que não seja `CLIENT`, `CLIENT_MUTE` ou `CLIENT_BASE`.
 

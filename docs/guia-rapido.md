@@ -73,21 +73,12 @@ Baixe o aplicativo Meshtastic no seu celular:
 3. Abra o aplicativo e toque em "Conectar"
 4. Selecione seu dispositivo na lista
 
-### 3. Configure seu nome
+### 3. Configure seu dispositivo para a Mesh Sorocaba
 
-No aplicativo, acesse as configurações do nó e defina um nome para identificá-lo na rede. O nome longo pode ser seu apelido ou nome — é o que outros verão quando você estiver na rede. O nome curto deve possuir 4 caracteres alfanuméricos ou ser um emoji.
-
-### 4. Verifique o canal
-
-Certifique-se de que o canal está configurado como **LongFast** (o padrão público). Isso permite que você se comunique com outros dispositivos da região.
-
-### 5. Teste a comunicação
+No aplicativo, use as [configurações recomendadas para a Mesh Sorocaba](configuracao.md).
 
 Se houver outros nós por perto, você eventualmente verá eles aparecerem na lista de nós do aplicativo. Isso pode levar um tempo (algumas horas), já que os dispositivos são configurados com um certo intervalo para não ocuparem constantemente a banda. Tente enviar uma mensagem no canal público para verificar se está tudo funcionando.
 
----
-
-Uma vez testado seu Meshtastic com a configuração inicial, recomendamos visitar a página [Configuração Regional](configuracao.md) para saber quais são os valores recomendados para os nós de Meshtastic na região de Sorocaba.
 
 ## Dúvidas frequentes
 
