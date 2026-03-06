@@ -79,7 +79,7 @@ Para dispositivos que você carrega consigo, unidades veiculares e outros dispos
 | **Criptografia ativada** | `ligado` | |
 | **Saída JSON ativada** | `desligado` | |
 | **TLS ativado** | `desligado` | |
-| **Tópico principal** | `msh/BR/MeshSorocaba` | |
+| **Tópico principal** | `msh/BR/meshsorocaba` | |
 | **Proxy para cliente ativado** | `ligado` ou `desligado` | `ligado` se o nó só pode se comunicar pela internet através do seu celular, `desligado` se ele possui WiFi configurado e funcionando | 
 
 ### Telemetria
@@ -156,7 +156,7 @@ Para estações base residenciais, nós em sótãos/telhados, mastros em quintai
 | **Criptografia ativada** | `ligado` | |
 | **Saída JSON ativada** | `desligado` | |
 | **TLS ativado** | `desligado` | |
-| **Tópico principal** | `msh/BR/MeshSorocaba` | |
+| **Tópico principal** | `msh/BR/meshsorocaba` | |
 | **Proxy para cliente ativado** | `ligado` ou `desligado` | `ligado` se o nó só pode se comunicar pela internet através do seu celular, `desligado` se ele possui WiFi configurado e funcionando | 
 
 ### Telemetria
