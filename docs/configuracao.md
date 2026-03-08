@@ -72,7 +72,7 @@ Para dispositivos que você carrega consigo na bolsa ou mochila, que ficam dentr
 
 | **Opção** | **Valor** | **Observações** |
 | :--- | :--- | :--- |
-| **Endereço** | `mqtt.meshtastic.org` | |
+| **Endereço** | `mqtt.meshsorocaba.org` | Downlink desabilitado por padrão; Posição e telemetria encaminhados para servidor oficial Meshtastic. |
 | **Nome de usuário** | `meshdev` | |
 | **Senha** | `large4cats` | |
 | **Criptografia ativada** | `ligado` | |
@@ -115,7 +115,7 @@ Para estações-base residencias como dispositivos instalados no telhado, mastro
 | **Nome do canal** | `LongFast` | |
 | **PSK** | `AQ==` | Chave padrão do canal |
 | **Uplink ativado** | `ligado` | Permite que o dispositivo seja monitorado pelas ferramentas web e auxilia na coordenação da rede |
-| **Downlink ativado** | `desligado` | Evitar retransmissões desnecessárias de todo o servidor MQTT para o rádio |
+| **Downlink ativado** | `desligado` | Para evitar retransmissões desnecessárias de todo o servidor MQTT para o rádio |
 | **Posição ativada** | `ligado` | |
 | **Localização precisa** | `ligado` ou `desligado` | A critério do usuário |
 
@@ -149,7 +149,7 @@ Para estações-base residencias como dispositivos instalados no telhado, mastro
 
 | **Opção** | **Valor** | **Observações** |
 | :--- | :--- | :--- |
-| **Endereço** | `mqtt.meshtastic.org` | |
+| **Endereço** | `mqtt.meshsorocaba.org` | Downlink desabilitado por padrão; posição e telemetria encaminhados para servidor oficial Meshtastic. |
 | **Nome de usuário** | `meshdev` | |
 | **Senha** | `large4cats` | |
 | **Criptografia ativada** | `ligado` | |

@@ -23,6 +23,7 @@ nav:
   - Início: index.md
   - Guia Rápido: guia-rapido.md
   - Configuração Regional: configuracao.md
+  - Meshview: https://meshview.meshsorocaba.org
 
 markdown_extensions:
   - admonition
