@@ -60,7 +60,7 @@ Para dispositivos que você carrega consigo na bolsa ou mochila, que ficam dentr
 
 | **Opção** | **Valor** | **Observações** |
 | :--- | :--- | :--- |
-| **Intervalo de difusão** | `1 hora` | Intervalo base quando estacionado |
+| **Intervalo de difusão** | `6 horas` | Intervalo base quando estacionado |
 | **Posição inteligente ativada** | `ligado` | Atualiza a posição do dispositivo somente se você se deslocar além de uma certa distância |
 | **Intervalo mínimo da transmissão inteligente** | `15 minutos` | Intervalo de difusão quando em movimento |
 | **Distância mínima da transmissão inteligente** | `200` | Deslocamento mínimo em metros para que posição seja atualizada |
