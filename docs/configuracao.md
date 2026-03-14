@@ -23,6 +23,7 @@ Para dispositivos que você carrega consigo na bolsa ou mochila, que ficam dentr
 | **Use Preset** | `ligado` | |
 | **Modem Preset** | `LONG_FAST` |  |
 | **OK to MQTT** | `ligado` | Permite que o dispositivo seja monitorado pelas ferramentas web e auxilia na coordenação da rede |
+| **Ignorar MQTT** | `ligado` | Previne que dispositivos mal configurados enviem spam para você |
 | **Transmit Enabled** | `ligado` | Habilite se quiser que o dispositivo seja capaz de transmitir |
 | **Ignorar ciclo de trabalho** | `ligado` | Ignora o limite de ciclos, cujo limite só existe na Europa |
 | **Number of Hops** | `5` |  |
@@ -100,12 +101,12 @@ Para estações-base residencias como dispositivos instalados no telhado, mastro
 | **Região** | `Australia / Brazil / New Zealand` |  |
 | **Use Preset** | `ligado` | |
 | **Modem Preset** | `LONG_FAST` |  |
-| **Ignorar MQTT** | `ligado` |  |
-| **OK to MQTT** | `ligado` |  |
+| **Ignorar MQTT** | `ligado` | Protege a malha de inundação da internet |
+| **OK to MQTT** | `ligado` | Permite monitorar o dispositivo pelas ferramentas web e auxilia na coordenação da rede |
 | **Transmit Enabled** | `ligado` | |
 | **Ignorar ciclo de trabalho** | `ligado` |  |
 | **Number of Hops** | `3` | Número de hops alto não é útil para dispositivos de infraestrutura, pois normalmente não origina tráfego |
-| **Slot** | `0` ou `20` |  |
+| **Slot** | `0` ou `20` | Padrão LONG_FAST |
 | **RX Boosted Gain** | `ligado` |  |
 
 ### Canais
@@ -124,7 +125,7 @@ Para estações-base residencias como dispositivos instalados no telhado, mastro
 | :--- | :--- | :--- |
 | **Nome** | qualquer | Considere adicionar um emoji que sugira o tipo de estrutura da instalação (🌳, 🏠, 🏢, 🗼, ⛰️, etc.), e opcionalmente 📵 como sufixo para salientar que se trata de um dispositivo não-monitorado |
 | **Short Name** | 4 caracteres |  |
-| **Impossível enviar mensagens** | `desligado` | Para dispositivos não-monitorados, evita que usuários enviem mensagens na espera de uma resposta |
+| **Impossível enviar mensagens** | `ligado` | Para dispositivos não-monitorados, evita que usuários enviem mensagens na espera de uma resposta |
 
 ### Dispositivo
 
@@ -139,7 +140,7 @@ Para estações-base residencias como dispositivos instalados no telhado, mastro
 
 | **Opção** | **Valor** | **Observações** |
 | :--- | :--- | :--- |
-| **Intervalo de transmissão de posição (segundos)** | `1 hora` | Por ser um dispositivo estacionário, não há necessidade de anunciar posição com frequência |
+| **Intervalo de transmissão de posição (segundos)** | `6 horas` | Por ser um dispositivo estacionário, não há necessidade de anunciar posição com frequência |
 | **Posição inteligente ativada** | `desligado` | dispositivo estacionário, não é necessário |
 | **Usar posição fixa** | `ligado` | Defina as coordenadas manualmente no app se não houver GPS por hardware |
 | **Intervalo de atualização do GPS (segundos)** | `12 horas` | Para dispositivos com sensor de GPS mesmo sendo estacionários |
@@ -162,8 +163,8 @@ Para estações-base residencias como dispositivos instalados no telhado, mastro
 
 | **Opção** | **Valor** | **Observações** |
 | :--- | :--- | :--- |
-| **Send Device Telemetry** | `2 horas` | Apenas para dispositivos solares, caso deseje acompanhar os níveis de bateria; caso contrário, desabilite |
-| **Módulo de métricas do ambiente ativado** | `2 horas` | Apenas se equipado; usado para verificar vazamentos de bateria ou superaquecimento; caso contrário, desabilite |
+| **Send Device Telemetry** | `3 horas` | Apenas para dispositivos solares, caso deseje acompanhar os níveis de bateria; caso contrário, desabilite |
+| **Módulo de métricas do ambiente ativado** | `3 horas` | Apenas se equipado; usado para verificar vazamentos de bateria ou superaquecimento; caso contrário, desabilite |
 
 ---
 
