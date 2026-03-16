@@ -64,7 +64,7 @@ Para dispositivos que você carrega consigo na bolsa ou mochila, que ficam dentr
 | **Intervalo de difusão** | `6 horas` | Intervalo base quando estacionado |
 | **Posição inteligente ativada** | `ligado` | Atualiza a posição do dispositivo somente se você se deslocar além de uma certa distância |
 | **Intervalo mínimo da transmissão inteligente** | `15 minutos` | Intervalo de difusão quando em movimento |
-| **Distância mínima da transmissão inteligente** | `200` | Deslocamento mínimo em metros para que posição seja atualizada |
+| **Distância mínima da transmissão inteligente** | `1000` | Deslocamento mínimo em metros para que posição seja atualizada |
 | **Usar posição fixa** | `desligado` | dispositivos móveis devem usar GPS/Localização do celular |
 | **Intervalo de atualização do GPS (segundos)** | `900` (15 minutos) |  |
 | **Position Flags** | `ALTITUDE` e `ALTITUDE_MSL` | Qualquer outra informação sobre o sensor apenas ocupa a banda desnecessariamente  |
@@ -90,7 +90,7 @@ Para dispositivos que você carrega consigo na bolsa ou mochila, que ficam dentr
 
 ---
 
-## 🏠 Infraestrutura Pessoal
+## 🏠 Infraestrutura Local
 
 Para estações-base residencias como dispositivos instalados no telhado, mastros em quintais ou no alto de prédios urbanos.
 
@@ -168,7 +168,7 @@ Para estações-base residencias como dispositivos instalados no telhado, mastro
 
 ---
 
-## 🏔️ Infraestrutura Pública (Roteadores)
+## 🏔️ Roteadores
 
 Para dispositivos confiáveis e instalados permanentemente, gerido por voluntários e capazes de conectar múltiplas regiões que outrotra estariam isoladas. Geralmente estão instalados em torres de antena com 20 metros ou morros elevados e montanhas; propícios para cobrir uma grande extensão de região metropolitana de Sorocaba.
 

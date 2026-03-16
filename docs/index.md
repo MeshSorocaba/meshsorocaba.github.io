@@ -1,6 +1,6 @@
 # Comunidade Meshtastic de Sorocaba e Região
 
-O Mesh Sorocaba é uma iniciativa comunitária dedicada a promover, integrar e expandir a rede [Meshtastic](https://meshtastic.org/) na região de Sorocaba, incluindo os municípios de Votorantim, Salto de Pirapora, Araçoiaba da Serra, Iperó, Porto Feliz, Itu, Mairinque, Alumínio e outros municípios. O objetivo é tornar essa tecnologia mais acessível a todos e contribuir para uma rede de comunicação descentralizada e independente.
+O Mesh Sorocaba é uma iniciativa comunitária dedicada a promover, integrar e expandir a rede [Meshtastic](https://meshtastic.org/), uma rede de comunicação descentralizada que não depende da Internet ou de celular. Nosso foco é a região de Sorocaba e municípios vizinhos, como Votorantim, Salto de Pirapora, Araçoiaba da Serra, Iperó, Porto Feliz, Itu, Mairinque, Alumínio e outros.
 
 <p align="center">
    <img src="/img/sorocaba.png">
@@ -11,7 +11,6 @@ O Mesh Sorocaba é uma iniciativa comunitária dedicada a promover, integrar e e
 Meshtastic é uma plataforma de comunicação de código aberto que permite a troca de mensagens entre dispositivos usando módulos de rádio LoRa (Long Range). A principal vantagem é que não depende de infraestrutura de Internet ou redes de celular; os dispositivos comunicam-se diretamente entre si, formando uma malha (mesh) de comunicação. A tecnologia tem sido usada com sucesso pelo mundo em [cenários de catástrofes naturais](https://www.seeedstudio.com/blog/2025/10/30/building-resilient-communication-germany-meshtastic-solar-nodes/) e [comunicação de grupos em locais sem infraestrutura](https://blog.noforeignland.com/off-grid-boat-communications-with-meshtastic/). No Brasil, tivemos em março de 2026 o [primeiro simulado geral da Defesa Civil usando Meshtastic](https://www.facebook.com/groups/276059605530869/posts/758395703963921/).
 
  Leia mais em [Guia Rápido](guia-rapido.md).
-
 
 ## Missão do Mesh Sorocaba
 
