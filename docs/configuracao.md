@@ -23,18 +23,18 @@ Para dispositivos que você carrega consigo na bolsa ou mochila, que ficam dentr
 | **Use Preset** | `ligado` | |
 | **Modem Preset** | `LONG_FAST` |  |
 | **OK to MQTT** | `ligado` | Permite que o dispositivo seja monitorado pelas ferramentas web e auxilia na coordenação da rede |
-| **Ignorar MQTT** | `ligado` | Previne que dispositivos mal configurados enviem spam para você |
+| **Ignorar MQTT** | `ligado` | Previne que dispositivos mal configurados inundan a rede |
 | **Transmit Enabled** | `ligado` | Habilite se quiser que o dispositivo seja capaz de transmitir |
 | **Ignorar ciclo de trabalho** | `ligado` | Ignora o limite de ciclos, cujo limite só existe na Europa |
 | **Number of Hops** | `5` |  |
-| **Slot** | `0` ou `20` | 0 = calcula automaticamente a frequência com base no nome do canal primário; 20 = Número padrão do canal `LongFast` |
+| **Slot** | `0` ou `20` | 0 = calcula automaticamente a frequência com base no nome do canal primário |
 | **RX Boosted Gain** | `ligado` |  |
 
 ### Canais
 
 | **Opção** | **Valor** | **Observações** |
 | :--- | :--- | :--- |
-| **Nome do canal** | `LongFast` | Canal público padrão para o preset `LONG_FAST`; deve ser o primeiro canal da lista (canal primário) |
+| **Nome do canal** | `LongFast` | Canal público padrão para o preset `LONG_FAST`; deve ser o primeiro canal da lista |
 | **PSK** | `AQ==` | Chave padrão do canal |
 | **Uplink ativado** | `ligado` | Permite que o dispositivo apareça nas ferramentas web e auxilia na coordenação da rede |
 | **Downlink ativado** | `desligado` | Mensagens públicas somente via rádio |
@@ -52,7 +52,7 @@ Para dispositivos que você carrega consigo na bolsa ou mochila, que ficam dentr
 
 | **Opção** | **Valor** | **Observações** |
 | :--- | :--- | :--- |
-| **Papel do dispositivo** | `CLIENT_MUTE` | Use `CLIENT_MUTE` na maioria dos casos; `CLIENT` somente se houver necessidade de retransmitir dados alheios por alguma razão específica |
+| **Papel do dispositivo** | `CLIENT_MUTE` | Use `CLIENT_MUTE` sempre; `CLIENT` somente se houver necessidade de retransmitir dados alheios por alguma razão específica |
 | **Modo de retransmissão** | `ALL` | |
 | **Node Info Broadcast Interval** | `3 horas` | Não significa que o dispositivo só será visto 4x ao dia |
 | **Time Zone** | `GMT3` | Ou clique em "Use phone time zone" |
@@ -101,7 +101,7 @@ Para estações-base residencias como dispositivos instalados no telhado, mastro
 | **Região** | `Australia / Brazil / New Zealand` |  |
 | **Use Preset** | `ligado` | |
 | **Modem Preset** | `LONG_FAST` |  |
-| **Ignorar MQTT** | `ligado` | Protege a malha de inundação da internet |
+| **Ignorar MQTT** | `ligado` | Proteção contra dispositivos com MQTT mal configurados |
 | **OK to MQTT** | `ligado` | Permite monitorar o dispositivo pelas ferramentas web e auxilia na coordenação da rede |
 | **Transmit Enabled** | `ligado` | |
 | **Ignorar ciclo de trabalho** | `ligado` |  |
