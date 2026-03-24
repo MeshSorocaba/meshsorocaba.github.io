@@ -1,0 +1,57 @@
+# Configuração Meshtastic para Dispositivos Pessoais e Móveis
+# Mesh Sorocaba
+# Documentação: docs/configuracao.md
+
+config:
+  device:
+    # Papel do dispositivo: CLIENT_MUTE para a maioria dos casos
+    # Use CLIENT somente se houver necessidade de retransmitir dados alheios
+    role: CLIENT_MUTE
+    rebroadcastMode: ALL
+    nodeInfoBroadcastSecs: 10800  # 3 horas
+    tzdef: GMT3
+
+  lora:
+    region: ANZ  # Australia / Brazil / New Zealand (915-928 MHz)
+    usePreset: true
+    configOkToMqtt: true
+    txEnabled: true
+    overrideDutyCycle: true
+    hopLimit: 5
+    channelNum: 0  # 0 = calcula automaticamente, 20 = padrão LongFast
+    sx126xRxBoostedGain: true
+
+  position:
+    positionBroadcastSecs: 21600  # 6 horas (intervalo base quando estacionado)
+    positionBroadcastSmartEnabled: true
+    broadcastSmartMinimumIntervalSecs: 900  # 15 minutos (quando em movimento)
+    broadcastSmartMinimumDistance: 1000  # metros
+    fixedPosition: false  # Dispositivos móveis devem usar GPS/Localização do celular
+    gpsUpdateInterval: 900  # 15 minutos
+    # Position Flags: ALTITUDE (2) + ALTITUDE_MSL (4) = 6
+    positionFlags: 6
+
+module_config:
+  mqtt:
+    address: mqtt.meshsorocaba.org
+    enabled: true
+    username: meshdev
+    password: large4cats
+    encryptionEnabled: true
+    jsonEnabled: false
+    tlsEnabled: false
+    root: msh/BR/meshsorocaba
+    # proxyEnabled: true  # Ligado se o dispositivo só pode se comunicar pela internet através do celular
+
+  telemetry:
+    deviceTelemetryEnabled: false  # Desligado para dispositivos portáteis
+    # environmentMeasurementEnabled: false  # Não é útil para dispositivos portáteis
+
+# Configuração do canal primário LongFast
+channels:
+  - name: LongFast
+    psk: AQ==  # Chave padrão do canal
+    uplinkEnabled: true
+    downlinkEnabled: false
+    positionEnabled: true
+    preciseLocation: false
