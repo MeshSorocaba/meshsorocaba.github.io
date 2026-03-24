@@ -6,11 +6,11 @@ readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "cairosvg>=2.8.2",
-    "mkdocs>=1.6.1",
     "mkdocs-git-committers-plugin>=0.2.3",
     "mkdocs-git-revision-date-localized-plugin>=1.5.1",
     "mkdocs-i18n>=0.4.6",
     "mkdocs-material>=9.7.3",
     "pillow>=12.1.1",
     "pymarkdownlnt>=0.9.35",
+    "zensical>=0.0.29",
 ]

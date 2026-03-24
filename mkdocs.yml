@@ -18,6 +18,8 @@ theme:
   palette:
       # The custom Meshtastic theme uses `slate` as a base
       scheme: slate
+      primary: green
+      accent: green
 
 nav:
   - Início: index.md
