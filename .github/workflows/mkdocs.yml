@@ -43,7 +43,7 @@ jobs:
       - name: Install dependencies
         run: uv sync --all-extras --dev
       - name: Build MkDocs
-        run: uv run mkdocs build
+        run: uv run zensical build
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
