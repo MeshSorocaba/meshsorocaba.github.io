@@ -23,16 +23,17 @@ Existem vários modelos de dispositivos compatíveis com Meshtastic. Para quem e
 
 São aparelhos que já vêm montados e prontos para usar — basta carregar a bateria e parear com o celular:
 
-| Modelo | Bateria | Tela | Observações |
-| :--- | :--- | :--- | :--- |
-| **RAK WisMesh Pocket** | Incluída (até 1 semana) | Sim | Compacto, ideal para carregar no bolso. Recomendado para iniciantes. |
-| **Lilygo T-Echo** | Incluída (até 1 semana) | Sim | Tela e-paper (tipo Kindle), fácil leitura mesmo no sol. |
-| **Lilygo T-Beam** | Incluída (até 1 semana) | Sim | Inclui GPS integrado. Um pouco maior que os anteriores. |
-| **Heltec V3** | Não incluída | Sim | Menos recursos que os anteriores, porém mais barato. |
-| **RAK WisBlock** | Não incluída | Depende | Sistema modular que permite adicionar sensores e baterias. Mais versátil, mas exige mais conhecimento. |
+| Modelo | Preço Médio | Bateria | Tela | Observações |
+| :--- | :--- | :--- | :--- | :--- |
+| **Heltec V3** | R$ 300,00 | Não incluída | Sim | Menos recursos e consome mais bateria, porém mais barato. |
+| **RAK WisMesh Tag** | R$ 400,00 | Incluída (até 1 semana) | Não | Compacto, ideal para carregar no bolso. |
+| **RAK WisMesh Pocket** | R$ 500,00 | Incluída (até 1 semana) | Sim | Compacto, porém mais estável e robusto que os anteriores. |
+| **Lilygo T-Echo** | R$ 600,00 | Incluída (até 3 dias) | Sim | Tela e-paper (tipo Kindle), fácil leitura mesmo no sol. |
 
-!!! tip "Dica para iniciantes"
-    Se você não tem experiência com eletrônica, comece com um dispositivo pronto como o **RAK WisMesh Pocket** ou **Lilygo T-Echo**. Eles eliminam a necessidade de solda ou montagem de componentes.
+O Heltec V3 normalmente é recomendado para iniciantes por ser mais barato. Porém, ele é baseado no chip ESP32 e consome bateria 15x mais rápido que dispositivos baseados no chip nRF52840 (como os da marca RAK), que são mais eficientes porém um pouco mais caros. Por outro lado, o chip nRF52840 não possui WiFi, então a conexão com celular só é possível via Bluetooth ou cabo USB.
+
+!!! warning
+    Na hora da compra, independente da marca do dispositivo, certifique-se que ele é capaz de transmitir na faixa de **915 MHz**.
 
 ### Antenas
 
