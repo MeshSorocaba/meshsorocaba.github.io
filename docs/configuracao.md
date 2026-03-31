@@ -11,9 +11,15 @@ Dito isso, para garantir que a rede Mesh Sorocaba seja a mais confiável possív
 !!! note "Observação"
      As configurações sugeridas abaixo estão sujeitas a alterações conforme a rede Mesh Sorocaba cresça e demande novos valores.
 
-## 📱 Dispositivos Pessoais e Móveis
+## Tipos de dispositivos
 
-Para dispositivos que você carrega consigo na bolsa ou mochila, que ficam dentro de casa sobre sua mesa, unidades veiculares e outros dispositivos de uso cotidiano.
+As configurações devem variar de acordo com o tipo de dispositivo:
+
+🤳 **Dispositivos Pessoais e Móveis**: aqueles você carrega consigo na bolsa ou mochila, que ficam dentro de casa sobre sua mesa, unidades veiculares e outros dispositivos de uso cotidiano. Normalmente não estão em uma posição privilegiada, não possuem uma grande antena, ou estão constantemente se movendo.
+
+🗼 **Dispositivos de Infraestrutura**: estações-base como dispositivos instalados no telhado, mastros em quintais ou no alto de prédios urbanos.
+
+## Dispositivos Pessoais e Móveis
 
 ### LoRa
 
