@@ -1,6 +1,6 @@
 # Comunidade Meshtastic de Sorocaba e Região
 
-O Mesh Sorocaba é uma iniciativa comunitária dedicada a promover, integrar e expandir a rede [Meshtastic](https://meshtastic.org/), uma rede de comunicação descentralizada que não depende da Internet ou de celular. Nosso foco é a região de Sorocaba e municípios vizinhos, como Votorantim, Salto de Pirapora, Araçoiaba da Serra, Iperó, Porto Feliz, Itu, Mairinque, Alumínio e outros.
+O Mesh Sorocaba é uma iniciativa comunitária dedicada a promover, integrar e expandir a rede [Meshtastic](https://meshtastic.org/) — uma rede de comunicação descentralizada que não depende da Internet ou de celular. O foco dessa iniciativa é cobrir a região de Sorocaba e municípios vizinhos, como Votorantim, Salto de Pirapora, Araçoiaba da Serra, Iperó, Porto Feliz, Itu, Mairinque, Alumínio e outros.
 
 <p align="center">
    <img src="/img/sorocaba.png">
