@@ -3,9 +3,9 @@
 /* Custom Palette for Meshtastic */
 :root * {
 	/* Meshtastic theme colors */
-	--mt-primary-color: #67EA94;
-	--mt-primary-color--transparent: #67EA9488;
-	--mt-secondary-color: #2C2D3C;
+	--mt-primary-color: #0d1b2a;
+	--mt-primary-color--transparent: #273e6188;
+	--mt-secondary-color: #d8d9e9;
 
 	/* Primary colors */
 	--md-primary-fg-color: var(--mt-primary-color);
@@ -35,6 +35,10 @@
 	Content Customization
 */
 
+.md-header {
+	background-color: var(--mt-primary-color);
+}
+
 /* Use Rubik for headings */
 .md-content h1,
 .md-content h2,
@@ -54,15 +58,22 @@ img {
 	border-radius: 0.25rem;
 }
 
+.md-content a {
+	color: #70a2e4;
+}
 /* Show underline on links when hovered */
 .md-content a:hover {
 	text-decoration: underline;
+	color: var(--md-default-fg-color--light);
 }
 
 /*
 	Header Tab Customization
 */
 
+.md-tabs {
+	background-color: var(--mt-primary-color);
+}
 .md-tabs__link {
 	opacity: 1;
 	padding: 0.25rem 0.5rem;
@@ -70,12 +81,20 @@ img {
 }
 
 .md-tabs__link:hover {
-	background-color: #FFFFFF66;
+	background-color: #ffffff25;
 }
 
 .md-tabs__item--active > .md-tabs__link {
 	background-color: var(--mt-secondary-color);
 	color: var(--mt-primary-color);
+}
+
+.md-nav__link[href]:hover {
+	color: #70a2e4;
+}
+
+.md-nav__link--active, .md-nav__item .md-nav__link--active {
+  color: #70a2e4;
 }
 
 /*
@@ -99,4 +118,154 @@ img {
 /* Remove the left margin from the header title */
 .md-header__title {
 	margin-left: 0 !important;
+}
+
+/*
+	Repeater Name Generator Form
+*/
+
+.repeater-form {
+	background-color: var(--md-default-bg-color);
+	border: 1px solid #3a3a3a;
+	border-radius: 0.5rem;
+	padding: 1.5rem;
+	margin: 1rem 0;
+}
+
+.repeater-form .form-group {
+	margin-bottom: 1.25rem;
+}
+
+.repeater-form label {
+	display: block;
+	margin-bottom: 0.5rem;
+	color: var(--md-default-fg-color--light);
+}
+
+.repeater-form input {
+	width: 100%;
+	padding: 0.75rem;
+	background-color: #2a2a2a;
+	border: 1px solid #4a4a4a;
+	border-radius: 0.25rem;
+	color: var(--md-default-fg-color--light);
+	font-size: 1rem;
+	font-family: "Inter", sans-serif;
+	transition: border-color 0.2s ease;
+}
+
+.repeater-form input:focus {
+	outline: none;
+	border-color: #70a2e4;
+	box-shadow: 0 0 0 2px rgba(112, 162, 228, 0.2);
+}
+
+.repeater-form input::placeholder {
+	color: #888;
+}
+
+.form-hint {
+	display: block;
+	margin-top: 0.25rem;
+	font-size: 0.85rem;
+	color: #999;
+}
+
+.form-buttons {
+	display: flex;
+	gap: 0.75rem;
+	margin-top: 1.5rem;
+}
+
+.error-box {
+	background-color: rgba(255, 87, 87, 0.15);
+	border: 1px solid rgba(255, 87, 87, 0.3);
+	border-radius: 0.5rem;
+	padding: 1rem;
+	margin: 1rem 0;
+	color: #ff6b6b;
+}
+
+.error-item {
+	display: block;
+	margin: 0.25rem 0;
+}
+
+.result-box {
+	background-color: rgba(103, 234, 148, 0.1);
+	border: 1px solid rgba(103, 234, 148, 0.3);
+	border-radius: 0.5rem;
+	padding: 1.5rem;
+	margin: 1rem 0;
+}
+
+.result-box h3 {
+	margin-top: 0;
+	margin-bottom: 1rem;
+	color: #67EA94;
+	font-family: "Rubik", sans-serif;
+}
+
+.generated-name-container {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	flex-wrap: wrap;
+}
+
+.generated-name {
+	font-family: "JetBrains Mono", "Fira Code", monospace;
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: var(--md-default-fg-color--light);
+	background-color: #2a2a2a;
+	padding: 0.75rem 1rem;
+	border-radius: 0.25rem;
+	word-break: break-all;
+}
+
+.copy-button {
+	background-color: #3a3a3a;
+	border: 1px solid #4a4a4a;
+	color: var(--md-default-fg-color--light);
+	padding: 0.5rem 1rem;
+	border-radius: 0.25rem;
+	cursor: pointer;
+	font-size: 0.9rem;
+	transition: all 0.2s ease;
+}
+
+.copy-button:hover {
+	background-color: #4a4a4a;
+	border-color: #5a5a5a;
+}
+
+.copy-button.copied {
+	background-color: #67EA94;
+	color: #1B1B1D;
+	border-color: #67EA94;
+}
+
+.abbreviation-display {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	margin-top: 0.75rem;
+	padding: 0.5rem 0.75rem;
+	background-color: rgba(112, 162, 228, 0.1);
+	border-radius: 0.25rem;
+	border-left: 3px solid #70a2e4;
+}
+
+.abbreviation-label {
+	font-size: 0.9rem;
+	color: #999;
+}
+
+.abbreviation-value {
+	font-family: "JetBrains Mono", "Fira Code", monospace;
+	font-size: 1.1rem;
+	font-weight: 600;
+	color: #70a2e4;
+	letter-spacing: 0.1em;
 }

@@ -5,7 +5,7 @@ edit_uri: edit/main/docs/
 
 theme:
   name: material
-  locale: pt
+  locale: pt_br
   icon:
     logo: fontawesome/solid/industry
   favicon: img/favicon.png
@@ -18,14 +18,21 @@ theme:
   palette:
       # The custom Meshtastic theme uses `slate` as a base
       scheme: slate
-      primary: green
-      accent: green
+      primary: indigo
+      accent: cyan
 
 nav:
   - Início: index.md
   - Guia Rápido: guia-rapido.md
-  - Configuração Regional: configuracao.md
-  - Meshview: https://meshview.meshsorocaba.org
+  - MeshCore:
+    - Índice: meshcore/index.md
+    - Configuração Recomendada: meshcore/configuracao.md
+    - Nomenclatura para Repetidoras: meshcore/nomes-repetidoras.md
+  - Meshtastic:
+    - Índice: meshtastic/index.md
+    - Configuração Recomendada: meshtastic/configuracao.md
+  - Blog:
+    - blog/index.md
 
 markdown_extensions:
   - admonition
@@ -36,8 +43,14 @@ markdown_extensions:
 extra_css:
   - styles/extra.css
 
+extra_javascript:
+  - js/repeater-name-generator.js
+
+
 plugins:
   - search
+  - blog:
+      authors_file: "{blog}/.authors.yml"
   - social:
       cards_layout: default
       cards_layout_options:
