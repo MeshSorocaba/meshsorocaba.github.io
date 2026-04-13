@@ -1,31 +1,34 @@
-# Comunidade Meshtastic de Sorocaba e Região
+# Comunidade Mesh Sorocaba
 
-O Mesh Sorocaba é uma iniciativa comunitária dedicada a promover, integrar e expandir a rede [Meshtastic](https://meshtastic.org/) — uma rede de comunicação descentralizada que não depende da Internet ou de celular. O foco dessa iniciativa é cobrir a região de Sorocaba e municípios vizinhos, como Votorantim, Salto de Pirapora, Araçoiaba da Serra, Iperó, Porto Feliz, Itu, Mairinque, Alumínio e outros.
+A Mesh Sorocaba é uma iniciativa comunitária para criar uma rede de comunicação descentralizada, que não dependa da Internet ou de redes de celular. Ela pode servir para comunicação de emergência, mas também para mensagens privadas do dia-a-dia. Utizamos dispositivos **LoRa**, que são transmissores de rádio de baixa potência, conectados a celulares e notebooks para trocar mensagens. O principal objetivo é integrar os municípios de Sorocaba e região: Votorantim, Salto de Pirapora, Araçoiaba da Serra, Iperó, Porto Feliz, Itu, Mairinque, Alumínio e outros.
 
 <p align="center">
    <img src="/img/sorocaba.png">
 </p>
 
-## O que é Meshtastic?
+Essa a tecnologia tem sido usada com sucesso pelo mundo em [cenários de catástrofes naturais](https://nodakmesh.org/blog/meshcore-emergency-preparedness) e [comunicação de grupos em locais sem infraestrutura](https://blog.noforeignland.com/off-grid-boat-communications-with-meshtastic/). No Brasil, tivemos em março de 2026 o [primeiro simulado geral da Defesa Civil](https://www.facebook.com/groups/276059605530869/posts/758395703963921/) usando esses dispositivos.
 
-Meshtastic é uma plataforma de comunicação de código aberto que permite a troca de mensagens entre dispositivos usando módulos de rádio LoRa (Long Range). A principal vantagem é que não depende de infraestrutura de Internet ou redes de celular; os dispositivos comunicam-se diretamente entre si, formando uma malha (mesh) de comunicação. A tecnologia tem sido usada com sucesso pelo mundo em [cenários de catástrofes naturais](https://www.seeedstudio.com/blog/2025/10/30/building-resilient-communication-germany-meshtastic-solar-nodes/) e [comunicação de grupos em locais sem infraestrutura](https://blog.noforeignland.com/off-grid-boat-communications-with-meshtastic/). No Brasil, tivemos em março de 2026 o [primeiro simulado geral da Defesa Civil usando Meshtastic](https://www.facebook.com/groups/276059605530869/posts/758395703963921/).
+## Como funciona?
 
- Leia mais em [Guia Rápido](guia-rapido.md).
+Para usufruir da rede, utilizamos dispositivos que contém chips de rádio LoRa, que são transmissores de baixa potência e não exigem licença de radioamador. Esses dispositivos podem ser adquiridos prontos através de lojas online ou montados por conta própria com peças individuais.
 
-## Missão do Mesh Sorocaba
+Uma vez que você tenha o dispositivo em mãos, você deverá instalar o software para poder utilizá-lo. A Mesh Sorocaba utiliza o MeshCore e o Meshtastic.  Ambos os softwares tem código aberto e são distrubuídos livremente, mas cada um com um propósito diferente. 
 
-1. **Divulgação**: Educar a comunidade sobre os benefícios e possibilidades da tecnologia Meshtastic.
-2. **Coordenação**: Alinhar as configurações dos nós da região de modo a manter a malha funcionando.
-3. **Expansão**: Aumentar a cobertura da rede na região através da instalação de novos nós.
-4. **Suporte**: Oferecer ajuda na configuração de dispositivos e solução de problemas.
-5. **Inovação**: Explorar novas aplicações e usos para a rede mesh.
+O Meshtastic é o mais apropriado como porta de entrada para a tecnologia mesh. Funciona excelente para pequenos grupos e saídas em campo, onde cada usuário é re-encaminha as mensagens de todos os participantes da malha. Também é ótimo para conectar e monitorar sensores IoT.
+
+O MeshCore, por outro lado, funciona melhor para redes de comunicação maiores. Este sistema garante que as mensagens cheguem ao destino com mais eficiência, mesmo que várias regiões metropolitanas estejam conectadas. 
+
+**O MeshCore é o software recomendado pela Mesh Sorocaba como canal de comunicação oficial entre as cidades.** Mas apesar disso, convidamos a exploração de ambas as tecnologias. 
+
+Leia mais em [Guia Rápido](guia-rapido.md).
 
 ## Participe
 
-A Mesh Sorocaba faz parte da comunidade Meshtastic Brasil. Se você tem interesse em tecnologia, comunicação alternativa ou simplesmente quer se preparar para situações de emergência, junte-se a nós na [Comunidade Meshtastic Brasil](https://t.me/meshtastic_br) e na [Meshtastic Sorocaba](https://t.me/meshsorocaba), ambos no Telegram. Não é necessário conhecimento técnico avançado — estamos lá para ajudar.
+Se você tem interesse em tecnologia, comunicação alternativa ou simplesmente quer se preparar para situações de emergência, junte-se a nós nos grupos do **Telegram**. Não é necessário conhecimento técnico avançado — estamos lá para ajudar:
 
-!!! tip "Dica"
-    Lembre-se de visitar a seção [Configuração Regional](configuracao.md) para certificar-se de que você está usando as configurações ideais para a nossa região e caso de uso!
+- [Mesh Sorocaba](https://t.me/meshsorocaba)
+- [MeshCore Brasil](https://t.me/meshcorebrasil)
+- [Meshtastic Brasil](https://t.me/meshtastic_br)
 
 ## Contato
 

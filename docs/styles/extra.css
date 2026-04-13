@@ -3,9 +3,9 @@
 /* Custom Palette for Meshtastic */
 :root * {
 	/* Meshtastic theme colors */
-	--mt-primary-color: #67EA94;
-	--mt-primary-color--transparent: #67EA9488;
-	--mt-secondary-color: #2C2D3C;
+	--mt-primary-color: #0d1b2a;
+	--mt-primary-color--transparent: #273e6188;
+	--mt-secondary-color: #d8d9e9;
 
 	/* Primary colors */
 	--md-primary-fg-color: var(--mt-primary-color);
@@ -35,6 +35,10 @@
 	Content Customization
 */
 
+.md-header {
+	background-color: var(--mt-primary-color);
+}
+
 /* Use Rubik for headings */
 .md-content h1,
 .md-content h2,
@@ -54,15 +58,22 @@ img {
 	border-radius: 0.25rem;
 }
 
+.md-content a {
+	color: #70a2e4;
+}
 /* Show underline on links when hovered */
 .md-content a:hover {
 	text-decoration: underline;
+	color: var(--md-default-fg-color--light);
 }
 
 /*
 	Header Tab Customization
 */
 
+.md-tabs {
+	background-color: var(--mt-primary-color);
+}
 .md-tabs__link {
 	opacity: 1;
 	padding: 0.25rem 0.5rem;
@@ -70,12 +81,20 @@ img {
 }
 
 .md-tabs__link:hover {
-	background-color: #FFFFFF66;
+	background-color: #ffffff25;
 }
 
 .md-tabs__item--active > .md-tabs__link {
 	background-color: var(--mt-secondary-color);
 	color: var(--mt-primary-color);
+}
+
+.md-nav__link[href]:hover {
+	color: #70a2e4;
+}
+
+.md-nav__link--active, .md-nav__item .md-nav__link--active {
+  color: #70a2e4;
 }
 
 /*
