@@ -19,6 +19,9 @@ O Brasil não possui (ainda) um preset oficial, portanto decidimos testar os pre
 Enquanto eu permaneci à meia altura do Morro de Araçoiaba, o Cordeiro se posicionou no alto do Morro da Placa em Cajamar.
 
 ![](/img/aracoiabajapi.jpg)
+/// caption
+Antena magnética no meu carro (à esq.) e a plano-terra feita pelo Cordeiro (à dir.)
+///
 
 ## Teste 1: Preset "Australia (Narrow)" com SF=8
 - Frequência: 916.575
