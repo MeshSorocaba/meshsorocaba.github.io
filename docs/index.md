@@ -32,4 +32,4 @@ Se você tem interesse em tecnologia, comunicação alternativa ou simplesmente 
 
 ## Contato
 
-Para mais informações, entre em contato através dos canais mencionados, ou envie um e-mail para **bruno.arine** no domínio `runbox.com`.
+Para mais informações, entre em contato através dos canais mencionados, ou envie um e-mail para **contato** no domínio `meshsorocaba.org`.

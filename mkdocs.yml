@@ -24,7 +24,13 @@ theme:
 nav:
   - Início: index.md
   - Guia Rápido: guia-rapido.md
-  - Recursos: recursos.md
+  - MeshCore:
+    - Índice: meshcore/index.md
+    - Configuração Recomendada: meshcore/configuracao.md
+    - Nomenclatura para Repetidoras: meshcore/nomes-repetidoras.md
+  - Meshtastic:
+    - Índice: meshtastic/index.md
+    - Configuração Recomendada: meshtastic/configuracao.md
   - Blog:
     - blog/index.md
 
@@ -36,6 +42,9 @@ markdown_extensions:
 
 extra_css:
   - styles/extra.css
+
+extra_javascript:
+  - js/repeater-name-generator.js
 
 
 plugins:

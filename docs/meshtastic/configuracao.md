@@ -1,6 +1,6 @@
-# Configuração recomendada
+# Configuração Meshtastic Recomendada
 
-### LoRa
+## LoRa
 
 - **Região**: `Australia / Brazil / New Zealand`
 - **Use Preset**: `ligado`
@@ -20,7 +20,7 @@ A opção **OK to MQTT** permite que o dispositivo seja monitorado pelas ferrame
 
 No número do slot, deixe em `0` para que o número seja calculado automaticamente com base no nome do preset (`LONG_FAST`), ou digite `20` para fixá-lo. O recomendado é `0` e deixar que o programa calcule o valor automaticamente.
 
-### Canais
+## Canais
 
 - **Nome do canal**: `LongFast`
 - **PSK**: `AQ==`
@@ -36,12 +36,12 @@ No número do slot, deixe em `0` para que o número seja calculado automaticamen
 
 **Downlink ativado** deve ficar `desligado` para que mensagens públicas sejam recebidas somente via rádio; isso evita retransmissões desnecessárias do servidor MQTT para o rádio.
 
-### Usuário
+## Usuário
 
 - **Nome**: qualquer
 - **Short Name**: 4 caracteres ou um emoji
 
-### MQTT
+## MQTT
 
 - **Endereço**: `mqtt.meshsorocaba.org`
 - **Nome de usuário**: `meshdev`

@@ -1,0 +1,2 @@
+- [Configuração Recomendada](configuracao.md): Como configurar seu dispositivo Meshtastic para operar na Mesh Sorocaba.
+- [Meshview](https://meshview.meshsorocaba.org): Mapa e informações estatísticas sobre a malha Meshtastic de Sorocaba.
