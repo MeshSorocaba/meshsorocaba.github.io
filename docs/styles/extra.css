@@ -202,7 +202,7 @@ img {
 .result-box h3 {
 	margin-top: 0;
 	margin-bottom: 1rem;
-	color: #67EA94;
+	color: #70a2e4;
 	font-family: "Rubik", sans-serif;
 }
 
@@ -241,9 +241,9 @@ img {
 }
 
 .copy-button.copied {
-	background-color: #67EA94;
+	background-color: #70a2e4;
 	color: #1B1B1D;
-	border-color: #67EA94;
+	border-color: #70a2e4;
 }
 
 .abbreviation-display {
