@@ -23,6 +23,13 @@ Enquanto eu permaneci à meia altura do Morro de Araçoiaba, o Cordeiro se posic
 Antena magnética no meu carro (à esq.) e a plano-terra feita pelo Cordeiro (à dir.)
 ///
 
+
+![](/img/perfil-aracoiaba-jundiai.jpg)
+/// caption
+Visada entre o Morro de Araçoiaba e o Morro da Placa, separados por 75km.
+///
+
+
 ## Teste 1: Preset "Australia (Narrow)" com SF=8
 - Frequência: 916.575
 - BW: 62.5
