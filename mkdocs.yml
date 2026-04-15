@@ -56,7 +56,7 @@ plugins:
       cards_layout: default
       cards_layout_options:
         background_color: "#2C2D3C"
-        color: "#67EA94"
+        color: "#70a2e4"
   - git-revision-date-localized:
       enable_creation_date: false
       type: date
