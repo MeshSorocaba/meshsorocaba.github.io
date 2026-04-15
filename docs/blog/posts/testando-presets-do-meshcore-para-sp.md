@@ -23,10 +23,14 @@ Enquanto eu permaneci à meia altura do Morro de Araçoiaba, o Cordeiro se posic
 Antena magnética no meu carro (à esq.) e a plano-terra feita pelo Cordeiro (à dir.)
 ///
 
+![](/img/mapa-aracoiaba-jundiai.png)
+/// caption
+Localização dos dispositivos.
+///
 
 ![](/img/perfil-aracoiaba-jundiai.jpg)
 /// caption
-Visada entre o Morro de Araçoiaba e o Morro da Placa, separados por 75km.
+A elipse azul representa a primeira Zona de Fresnel para a banda de 33cm para essa distância.
 ///
 
 
