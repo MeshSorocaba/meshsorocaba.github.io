@@ -233,8 +233,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // Also update on regional and pubkey input changes
     regionalIdInput.addEventListener('input', hideError);
     pubkeyInput.addEventListener('input', function() {
-        // Auto-convert to lowercase
-        this.value = this.value.toLowerCase();
+        // Auto-convert to uppercase
+        this.value = this.value.toUpperCase();
         hideError();
     });
 
@@ -281,11 +281,11 @@ document.addEventListener('DOMContentLoaded', function() {
             .normalize('NFD')
             .replace(/[\u0300-\u036f]/g, '')
             .replace(/[^a-zA-Z0-9\s\-]/g, '')
+            .toUpperCase()
             .split(/[\s\-]+/)
             .filter(word => word.length > 0)
-            .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
             .join('');
-        const cleanPubkey = pubkey.toLowerCase();
+        const cleanPubkey = pubkey.toUpperCase();
 
         const fullName = `${abbrev}-${cleanRegional}-${cleanPubkey}`;
         

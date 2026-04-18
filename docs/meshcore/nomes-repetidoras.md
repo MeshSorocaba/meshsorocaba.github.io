@@ -1,4 +1,4 @@
-# Nomes de Repetidoras
+# Gerador de Nomes de Repetidoras v2.0
 
 Este formulário ajuda a gerar nomes padronizados para repetidoras MeshCore seguindo a convenção estabelecida pela rede.
 
@@ -13,16 +13,16 @@ Os nomes das repetidoras seguem o formato:
 Onde:
 
 - **CIDADE**: Abreviação de **3 letras maiúsculas** da cidade (gerada automaticamente)
-- **REGIONAL**: Identificador regional como bairro, ponto de referência ou localidade (capitalizado)
-- **PUBKEY**: Primeiros **4 dígitos** da chave pública (public key) do dispositivo em hexadecimal
+- **REGIONAL**: Identificador regional como bairro, ponto de referência ou localidade (maiúsculo)
+- **PUBKEY**: Primeiros **4 dígitos** da chave pública (public key) do dispositivo em hexadecimal (maiúsculo)
 
 Exemplos:
 
 | Nome | Descrição |
 |------|-----------|
-| `SOR-SaoBento-a1b2` | Repetidora no mosteiro São Bento de Sorocaba |
-| `SAO-Paulista-9d4e` | Repetidora na Paulista, São Paulo |
-| `SBC-VilaNova-3c7d` | Repetidora na Vila Nova, São Paulo |
+| `SOR-SAOBENTO-A1B2` | Repetidora no mosteiro São Bento de Sorocaba |
+| `SAO-PAULISTA-9D4E` | Repetidora na Paulista, São Paulo |
+| `SBC-VILANOVA-3C7D` | Repetidora na Vila Nova, São Paulo |
 
 ---
 
@@ -58,9 +58,10 @@ Exemplos:
             <strong>Public Key do Dispositivo</strong> (primeiros 4 dígitos)
         </label>
         <input type="text" id="pubkey" 
-               placeholder="Ex: a1b2"
+               placeholder="Ex: A1B2"
                maxlength="4"
-               autocomplete="off">
+               autocomplete="off"
+               value="1234">
         <span class="form-hint">Encontre no app Meshtastic em: Configurações → LoRa Radio → Public Key</span>
     </div>
     
