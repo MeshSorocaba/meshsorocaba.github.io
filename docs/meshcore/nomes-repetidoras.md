@@ -2,32 +2,6 @@
 
 Este formulário ajuda a gerar nomes padronizados para repetidoras MeshCore seguindo a convenção estabelecida pela rede.
 
-## Convenção de Nomenclatura
-
-Os nomes das repetidoras seguem o formato:
-
-```
-<CIDADE>-<REGIONAL>-<PUBKEY>
-```
-
-Onde:
-
-- **CIDADE**: Abreviação de **3 letras maiúsculas** da cidade (gerada automaticamente)
-- **REGIONAL**: Identificador regional como bairro, ponto de referência ou localidade (maiúsculo)
-- **PUBKEY**: Primeiros **4 dígitos** da chave pública (public key) do dispositivo em hexadecimal (maiúsculo)
-
-Exemplos:
-
-| Nome | Descrição |
-|------|-----------|
-| `SOR-SAOBENTO-A1B2` | Repetidora no mosteiro São Bento de Sorocaba |
-| `SAO-PAULISTA-9D4E` | Repetidora na Paulista, São Paulo |
-| `SBC-VILANOVA-3C7D` | Repetidora na Vila Nova, São Paulo |
-
----
-
-## Gerador Automático
-
 <form class="repeater-form">
     <div class="form-group">
         <label for="city-name">
@@ -86,4 +60,26 @@ Exemplos:
         </button>
     </div>
 </div>
+
+## Convenção de Nomenclatura
+
+Os nomes das repetidoras seguem o formato:
+
+```
+<CIDADE>-<REGIONAL>-<PUBKEY>
+```
+
+Onde:
+
+- **CIDADE**: Abreviação de **3 letras maiúsculas** da cidade (gerada automaticamente)
+- **REGIONAL**: Identificador regional como bairro, ponto de referência ou localidade (maiúsculo)
+- **PUBKEY**: Primeiros **4 dígitos** da chave pública (public key) do dispositivo em hexadecimal (maiúsculo)
+
+Exemplos:
+
+| Nome | Descrição |
+|------|-----------|
+| `SOR-SAOBENTO-A1B2` | Repetidora no mosteiro São Bento de Sorocaba |
+| `SAO-PAULISTA-9D4E` | Repetidora na Paulista, São Paulo |
+| `SBC-VILANOVA-3C7D` | Repetidora na Vila Nova, São Paulo |
 
