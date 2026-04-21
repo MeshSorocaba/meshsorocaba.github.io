@@ -26,9 +26,9 @@ nav:
   - Guia Rápido: guia-rapido.md
   - MeshCore:
     - Índice: meshcore/index.md
-    - Configuração Recomendada: meshcore/configuracao.md
-    - Nomenclatura para Repetidoras: meshcore/nomes-repetidoras.md
-    - Configurando um Observer: meshcore/como-configurar-um-observer-no-meshcore.md
+    - Configuração Recomendada do MeshCore: meshcore/configuracao.md
+    - Gerador de Nomes para Repetidoras MeshCore: meshcore/nomes-repetidoras.md
+    - Configurando um Observer no MeshCore: meshcore/como-configurar-um-observer-no-meshcore.md
   - Meshtastic:
     - Índice: meshtastic/index.md
     - Configuração Recomendada: meshtastic/configuracao.md
