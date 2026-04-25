@@ -36,7 +36,7 @@ Este formulário ajuda a gerar nomes padronizados para repetidoras MeshCore segu
                maxlength="4"
                autocomplete="off"
                value="1234">
-        <span class="form-hint">Encontre no app Meshtastic em: Configurações → LoRa Radio → Public Key</span>
+        <span class="form-hint">Encontre no app MeshCore nas Configurações (ícone da engrenagem) → Public Key</span>
     </div>
     
     <div class="form-buttons">
