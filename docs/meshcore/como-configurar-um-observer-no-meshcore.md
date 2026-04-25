@@ -43,6 +43,7 @@ set wifi.pwd sua_senha_wifi
 set mqtt.iata <código IATA do principal aeroporto da sua região>
 set mqtt.owner chave_publica_opcional_do_seu_nó_pessoal
 set mqtt.email seu_email_opcional
+set timezone.offset -3
 set bridge.enabled on
 set bridge.source rx
 reboot
