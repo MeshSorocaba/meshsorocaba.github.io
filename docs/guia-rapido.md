@@ -19,18 +19,39 @@ Cada dispositivo na rede é chamado de **nó**. Quando você envia uma mensagem,
 
 Existem vários modelos de dispositivos compatíveis com o MeshCore e o Meshtastic. Via de regra, se um dispositivo é anunciado como feito para o Meshtastic, quase sempre funciona para o MeshCore também. Na dúvida, consulte-nos nos canais do Telegram.
 
-### Dispositivos prontos para uso
+### Dispositivos Recomendados
 
-São aparelhos que já vêm montados e prontos para usar — basta carregar a bateria e parear com o celular:
+Os aparelhos abaixo são apropriados tanto para iniciantes quanto usuários experientes. São aparelhos que já vêm prontos para usar (exceto pelo Heltec V3, que precisa ser montado e a bateria comprada a parte, mas incluído aqui pelo preço diferencial).
 
-| Modelo | Preço Médio | Bateria | Tela | Observações |
-| :--- | :--- | :--- | :--- | :--- |
-| **Heltec V3** | R$ 300,00 | Não incluída | Sim | Menos recursos e consome mais bateria, porém mais barato. |
-| **RAK WisMesh Tag** | R$ 400,00 | Incluída (até 1 semana) | Não | Compacto, ideal para carregar no bolso. |
-| **RAK WisMesh Pocket** | R$ 500,00 | Incluída (até 1 semana) | Sim | Compacto, porém mais estável e robusto que os anteriores. |
-| **Lilygo T-Echo** | R$ 600,00 | Incluída (até 3 dias) | Sim | Tela e-paper (tipo Kindle), fácil leitura mesmo no sol. |
+<div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin: 1.5rem 0;">
+  <div style="flex: 1 1 150px; max-width: 200px; text-align: center;">
+    <img src="/img/heltec_v3.webp" alt="Heltec V3" style="width: 100%; height: auto; border-radius: 0.5rem;">
+    <p style="margin-top: 0.5rem; font-weight: 500;">Heltec V3</p>
+  </div>
+  <div style="flex: 1 1 150px; max-width: 200px; text-align: center;">
+    <img src="/img/wishmesh_tag.webp" alt="RAK WisMesh Tag" style="width: 100%; height: auto; border-radius: 0.5rem;">
+    <p style="margin-top: 0.5rem; font-weight: 500;">RAK WisMesh Tag</p>
+  </div>
+  <div style="flex: 1 1 150px; max-width: 200px; text-align: center;">
+    <img src="/img/wio_tracker.webp" alt="Seeed Wio Tracker L1 Pro" style="width: 100%; height: auto; border-radius: 0.5rem;">
+    <p style="margin-top: 0.5rem; font-weight: 500;">Wio Tracker L1</p>
+  </div>
+  <div style="flex: 1 1 150px; max-width: 200px; text-align: center;">
+    <img src="/img/lilygo_techo.jpg" alt="Lilygo T-Echo" style="width: 100%; height: auto; border-radius: 0.5rem;">
+    <p style="margin-top: 0.5rem; font-weight: 500;">Lilygo T-Echo</p>
+  </div>
+</div>
 
-O Heltec V3 normalmente é recomendado para iniciantes por ser mais barato. Porém, ele é baseado no chip ESP32 e consome bateria 15x mais rápido que dispositivos baseados no chip nRF52840 (como os da marca RAK), que são mais eficientes porém um pouco mais caros. Por outro lado, o chip nRF52840 não possui WiFi, então a conexão com celular só é possível via Bluetooth ou cabo USB.
+
+| Modelo                       | Preço Médio | Processador | Bateria | WiFi | Bluetooth | Tela | GPS  | Observações                                                                |
+| :--------------------------- | :---------- | :---------- | :------ | :--- | :-------- | :--- | :--- | :------------------------------------------------------------------------- |
+| **Heltec V3**                | R$ 293,00   | ESP32       | Não     | Sim  | Sim       | OLED  | Não  | Case e bateria comprados à parte; consome mais bateria, porém mais barato. |
+| **RAK WisMesh Tag**          | R$ 344,67   | nRF52840    | Sim     | Não  | Sim       | (sem tela)  | Sim  | Compacto, ideal para carregar no bolso; porém, carregador não é USB-C.     |
+| **Seeed Wio Tracker L1 Pro** | R$ 381,54   | nRF52840    | Sim     | Não  | Sim       | OLED  | Sim  | O botão funciona como um joystick para navegar o menu.                     |
+| **Lilygo T-Echo**            | R$ 580,58   | nRF52840    | Sim     | Não  | Sim       | E-ink  | Sim  | Tela e-paper (tipo Kindle) com retro-iluminação por toque.                 |
+
+!!! info
+    Preços consultados em 27 de abril de 2026.
 
 !!! warning "Atenção"
     Na hora da compra, independente da marca do dispositivo, certifique-se que ele é capaz de transmitir na faixa de **915 MHz**.
@@ -78,10 +99,6 @@ Depois de adquirir seu dispositivo, escolha qual sistema instalar:
 ### Posso usar sem celular?
 
 **Sim.** Alguns dispositivos possuem tela e podem funcionar de forma independente. O celular é usado principalmente para configurar o dispositivo e digitar mensagens mais confortavelmente.
-
-### E se não houver ninguém por perto?
-
-A rede cresce com a participação. Você pode ser o primeiro da sua região e, com o tempo, mais pessoas se juntam. Também existe a possibilidade de conectar-se via internet (MQTT) para interagir com a rede mesmo sem nós físicos próximos.
 
 ### Qual o alcance real?
 
