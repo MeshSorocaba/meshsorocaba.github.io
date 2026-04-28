@@ -51,32 +51,10 @@ Os aparelhos abaixo são apropriados tanto para iniciantes quanto usuários expe
 | **Lilygo T-Echo**            | R$ 580,58   | nRF52840    | Sim     | Não  | Sim       | E-ink  | Sim  | Tela e-paper (tipo Kindle) com retro-iluminação por toque.                 |
 
 !!! info
-    Preços consultados em 27 de abril de 2026.
+    Preços consultados em 27 de abril de 2026, já somando frete e impostos.
 
 !!! warning "Atenção"
     Na hora da compra, independente da marca do dispositivo, certifique-se que ele é capaz de transmitir na faixa de **915 MHz**.
-
-### Antenas
-
-A antena que acompanha o dispositivo geralmente é suficiente para uso comum, mas longe do ideal. Se quiser aumentar o alcance, é possível trocar por uma antena externa de maior ganho. A comunidade pode ajudar com recomendações.
-
-## Onde comprar
-
-Você pode encontrar dispositivos compatíveis com Meshtastic (e, consequentemente, MeshCore) em lojas internacionais e em alguns vendedores brasileiros:
-
-### Lojas internacionais
-
-- **AliExpress**: Grande variedade e preços competitivos. O prazo de entrega costuma ser de 2 a 8 semanas.
-- **Amazon (EUA)**: Entrega mais rápida, mas frete mais caro.
-- **Lilygo Store** (AliExpress): Loja oficial do fabricante Lilygo.
-
-!!! warning "Atenção"
-    Verifique se o dispositivo é compatível com a frequência **915 MHz**, que é a autorizada no Brasil. Alguns modelos são vendidos em frequências diferentes (como 868 MHz ou 433 MHz) e **não podem ser usados legalmente no país**.
-
-### Vendedores nacionais
-
-Alguns membros da comunidade Meshtastic Brasil revendem dispositivos já trazidos para o país. A vantagem é a entrega mais rápida e suporte em português. Consulte o grupo [Meshtastic Brasil no Telegram](https://t.me/meshtastic_br) para indicações atualizadas.
-
 
 ## Configuração inicial
 
