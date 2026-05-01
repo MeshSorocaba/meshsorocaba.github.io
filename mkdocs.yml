@@ -23,15 +23,16 @@ theme:
 
 nav:
   - Início: index.md
-  - Guia Rápido: guia-rapido.md
-  - MeshCore:
-    - Índice: meshcore/index.md
-    - Configuração Recomendada do MeshCore: meshcore/configuracao.md
-    - Gerador de Nomes para Repetidoras MeshCore: meshcore/nomes-repetidoras.md
-    - Configurando um Observer no MeshCore: meshcore/como-configurar-um-observer-no-meshcore.md
-  - Meshtastic:
-    - Índice: meshtastic/index.md
-    - Configuração Recomendada: meshtastic/configuracao.md
+  # - Guia Rápido: guia-rapido.md
+  - O que é?: o-que-e.md
+  - Equipamento: equipamento-recomendado.md
+  - Configuração: configuracao.md
+  - Perguntas Frequentes: perguntas-frequentes.md
+  # - MeshCore:
+  #   - Índice: meshcore/index.md
+  #   - Configuração Recomendada do MeshCore: meshcore/configuracao.md
+  #   - Gerador de Nomes para Repetidoras MeshCore: meshcore/nomes-repetidoras.md
+  #   - Configurando um Observer no MeshCore: meshcore/como-configurar-um-observer-no-meshcore.md
   - Blog:
     - blog/index.md
 

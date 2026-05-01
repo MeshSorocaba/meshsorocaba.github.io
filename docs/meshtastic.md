@@ -56,3 +56,6 @@ O endereço `mqtt.meshsorocaba.org` tem downlink desabilitado por padrão; posi�
 
 **Proxy para cliente ativado** deve ficar `ligado` se o dispositivo só pode se comunicar pela internet através do seu celular.
 
+# Links úteis
+
+- [Meshview](https://meshview.meshsorocaba.org): Mapa e informações estatísticas sobre a malha Meshtastic de Sorocaba.
