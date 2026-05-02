@@ -60,6 +60,11 @@ O dispositivo **repeater** é dedicado exclusivamente a estender o alcance da re
 !!! tip "Dica de Ouro"
     A melhor posição para uma repetidora é no ponto mais alto disponível, com visada livre para o maior número de direções possível. Um telhado de prédio alto ou um poste elevado pode multiplicar o alcance da rede por vários quilômetros.
 
+## Veja também
+
+- [Como Configurar um Observer no MeshCore](como-configurar-um-observer-no-meshcore.md): Configure um dispositivo como `Observer` para monitorar a rede e contribuir com a comunidade.
+- [Gerador de Nomes para Repetidoras](nomes-repetidoras.md): Auxilia na escolha de um nome para sua repetidora MeshCore.
+
 ---
 
 ## Precisa de ajuda?
