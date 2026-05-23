@@ -6,10 +6,6 @@ Uma rede mesh é aquela onde cada dispositivo é responsável por retransmitir m
 
 Redes mesh podem servir para mensagens privadas do dia-a-dia, comunicação de emergência ou qualquer outro fim que utilize mensagens de texto.
 
-![](/img/rede-mesh.webp)
-/// caption
-Ao enviar uma mensagem, a cada dispositivo da rede se encarrega de encaminhá-la até que ela encontre o destinatário.
-///
 
 Esse tipo de topologia tem sido usada com sucesso pelo mundo em [cenários de catástrofes naturais](https://nodakmesh.org/blog/meshcore-emergency-preparedness) e [comunicação de grupos em locais sem infraestrutura](https://blog.noforeignland.com/off-grid-boat-communications-with-meshtastic/). No Brasil, tivemos em março de 2026 o [primeiro simulado geral da Defesa Civil](https://www.facebook.com/groups/276059605530869/posts/758395703963921/) usando esse tipo de tecnologia.
 
