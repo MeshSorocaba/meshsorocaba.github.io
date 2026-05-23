@@ -7,17 +7,13 @@ lastmod: 2026-05-22T10:32:38-0300
 title: "MeshCore vs. Meshtastic: por que as grandes comunidades estão mudando de plataforma"
 ---
 
-Conforme as redes mesh LoRa crescem, as limitações arquiteturais do Meshtastic ficam evidentes. O MeshCore nasceu para resolver esses gargalos, priorizando a troca de mensagens e eliminando transmissões desnecessárias. Entenda o que muda — e por que tantas comunidades estão migrando.
+Entre as soluções de rede mesh baseadas em LoRa, duas dominam a conversa hoje: o **Meshtastic** e o **MeshCore**. Para quem está montando uma rede local com algumas dezenas de nós, o Meshtastic continua sendo a escolha natural. O problema aparece quando a rede começa a crescer. A partir de certo ponto, a experiência se deteriora e nenhuma combinação de ajustes resolve o problema por completo.
 
 <!-- more -->
 
----
-
-Entre as soluções de rede mesh baseadas em LoRa, duas dominam a conversa hoje: o **Meshtastic** e o **MeshCore**. Para quem está montando uma rede local com algumas dezenas de nós, o Meshtastic continua sendo a escolha natural. O problema aparece quando a rede começa a crescer. A partir de certo ponto, a experiência se deteriora e nenhuma combinação de ajustes resolve o problema por completo.
-
 Foi exatamente essa frustração que motivou o surgimento do MeshCore. Neste artigo, explico por que ele tem se consolidado como a melhor opção para redes de larga escala e quais decisões de arquitetura, tomadas anos atrás pelo Meshtastic, o tornaram menos ideal para grandes comunidades.
 
-## Das trilhas para as metrópoles: como chegamos até aqui
+## Das trilhas para as metrópoles
 
 O **Meshtastic** foi criado em 2020 por Kevin Hester, engenheiro de software, com uma proposta então inédita: usar transceptores LoRa para construir redes mesh de forma intuitiva e acessível. A intenção original era atender pequenos grupos em locais sem cobertura de internet. Na postagem que apresentou o projeto no Hackster.io, em fevereiro daquele ano, Kevin resumiu a motivação:
 
@@ -59,11 +55,11 @@ Para contornar o problema, comunidades pelo mundo passaram a recomendar configur
 
 Para aliviar ainda mais o espectro, algumas adotaram a predefinição `MEDIUM_FAST` em vez do padrão `LONG_FAST` do Meshtastic, o que reduz em cerca de 67% o tempo de transmissão dos pacotes — embora com algum sacrifício de alcance.
 
-As medidas ajudam, mas dependem de algo que escapa ao controle dos administradores: a colaboração de cada usuário. É comum encontrar dispositivos desassistidos, rodando configurações de fábrica e operando contra as boas práticas estabelecidas pela comunidade.
+As medidas ajudam, mas dependem de algo que escapa ao controle dos administradores: **a colaboração de cada usuário**. É comum encontrar dispositivos desassistidos, rodando configurações de fábrica e operando contra as boas práticas estabelecidas pela comunidade.
 
-O MeshCore enfrenta o problema na raiz: por padrão, **não há opção para transmissão automática de telemetria**. Para obter informações sobre um nó específico, o usuário precisa solicitá-las manualmente. Esse paradigma simples mantém a frequência desobstruída para o que realmente importa — as mensagens de texto.
+O MeshCore evita este problema e **não implementa transmissão automática de telemetria**. Para obter informações sobre um nó específico, o usuário precisa solicitá-las manualmente. Esse paradigma simples mantém a frequência desobstruída para o que realmente importa.
 
-A tabela abaixo foi construída a partir de dados do [CoreScope (MeshCore Brasil)](https://corescope.meshcore.com.br/#/analytics) e [Meshview World (Brasil)](https://my.meshview.world/brazil/stats) e mostram a quantidade de pacotes por usuários ativos por dia.
+A tabela e gráfico abaixo mostram a quantidade de pacotes transmitidos por usuários ativos por dia nas redes MeshCore e Meshtastic. Os dados foram obtidos a partir dos serviços [CoreScope (MeshCore Brasil)](https://corescope.meshcore.com.br/#/analytics) e [Meshview World (Brasil)](https://my.meshview.world/brazil/stats). 
 
 <div class="center-table" markdown>
 
@@ -109,8 +105,8 @@ A tabela abaixo foi construída a partir de dados do [CoreScope (MeshCore Brasil
 <script>
 const labels = ['Anúncio do nó', 'Mensagens', 'Posição', 'Telemetria', 'Roteamento'];
 const colors = ['#7F77DD', '#1D9E75', '#BA7517', '#378ADD', '#D85A30'];
-const meshcoreData = [3177, 3038, 0, 0, 3715];
-const meshtasticData = [27506, 2235, 40966, 14759, 3208];
+const meshcoreData = [3.3, 3.2, 0, 0, 3.9];
+const meshtasticData = [14.3, 1.2, 21.4, 7.7, 1.7];
 
 const sliceLabels = {
   id: 'sliceLabels',
@@ -173,7 +169,7 @@ makePie('chartMeshtastic', meshtasticData);
 
 A diferença de perfil entre as duas redes é gritante. No MeshCore o tráfego se divide quase em três terços entre roteamento (37,4%), anúncio de nó (32,0%) e mensagens (30,6%). Pacotes de telemetria não aparecem no gráfico, pois são apenas obtidos sob demanda e quase nunca solicitados. Em contrapartida, a posição de dispositivos MeshCore é compartilhada nas mensagens de texto.
 
-Já o Meshtastic é dominado por dados automáticos: posição (46,2%) e telemetria (16,6%) somam quase dois terços de todo o tráfego, e anúncios de nó ocupam mais 31,0%. Sobra muito pouco para o que provavelmente importa para o usuário: mensagens são apenas 2,5% do total. Em números absolutos, as duas redes trocam quantidades parecidas de mensagens (3.038 vs 2.235), mas como o Meshtastic gera quase 9× mais pacotes no geral, a comunicação humana fica diluída no meio do "ruído" telemétrico.
+Já o Meshtastic é dominado por dados automáticos: posição (46,2%) e telemetria (16,6%) somam quase ⅔ de todo o tráfego, e anúncios de nó ocupam mais 31,0%. Sobra muito pouco para o que provavelmente importa em uma rede mesh de larga escala: mensagens são apenas 2,5% do total.  Isso significa que **no Meshtastic, dos 46,3 pacotes transmitidos por um usuário por dia em média, apenas 1,2 é uma mensagem de texto**. 
 
 ## O uso abusivo da ponte MQTT
 
@@ -241,7 +237,7 @@ Há quem argumente que uma rede Meshtastic poderia, sim, ser configurada e otimi
 
 A experiência prática talvez seja o melhor argumento. Como desabafou [nullrouten no Reddit](https://old.reddit.com/r/sonomacounty/comments/1rmuuvq/comment/o93ogmh/), administrador da Meshtastic Bay Area, uma das comunidades mais bem-sucedidas dos Estados Unidos:
 
-> Ajudei a construir (de várias formas) a malha Meshtastic aqui. Funciona… mas levou um ano de otimização e de uma batalha incessante contra as “regras, diretrizes e fatos” do projeto principal. \[…\] Implantamos o MeshCore em poucos meses e simplesmente funcionou. Por quê? Porque ele não fica entupido de spam de informações sobre nós, atualizações de posição e telemetria. Os padrões do MC são configurados para maior alcance — o que funciona justamente porque ele não é inundado com tráfego de fundo.
+> Ajudei a construir (de várias formas) a malha Meshtastic aqui. Funciona… mas levou um ano de otimização e de uma batalha incessante contra as “regras, diretrizes e fatos” do projeto principal. \[…\] Implantamos o MeshCore em poucos meses e simplesmente funcionou. Por quê? Porque ele não fica entupido de spam de informações sobre nós, atualizações de posição e telemetria. Os padrões do MeshCore são configurados para maior alcance — o que funciona justamente porque ele não é inundado com tráfego de fundo.
 > 
 > \[…\]
 > 
