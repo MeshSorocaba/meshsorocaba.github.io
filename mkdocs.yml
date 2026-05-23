@@ -24,7 +24,7 @@ theme:
 nav:
   - Início: index.md
   # - Guia Rápido: guia-rapido.md
-  - O que é?: o-que-e.md
+  - O que é uma rede mesh?: o-que-e.md
   - Equipamento: equipamento-recomendado.md
   - Configuração: configuracao.md
   - Perguntas Frequentes: perguntas-frequentes.md

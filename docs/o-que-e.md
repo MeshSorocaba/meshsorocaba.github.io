@@ -1,19 +1,17 @@
-# O que é a Mesh Sorocaba?
+# O que é uma rede mesh?
 
-A **Mesh Sorocaba** é uma iniciativa comunitária que mantém uma rede de comunicação descentralizada e _off-grid_. Isto é, ela não depende da internet nem de sinal de celular e, preferencialmente, nem mesmo da rede elétrica. 
+A Mesh Sorocaba permite o envio e recebimento de mensagens de texto usando pequenos transmissores de rádio conectados ao celular ou notebooks. Conseguimos esse feito graças a uma **topologia mesh (malha)**.
 
-Nossa rede possui uma **topologia mesh** (em malha). Ela permite o envio e recebimento de mensagens de texto usando pequenos transmissores de rádio conectados ao celular ou notebooks, onde cada dispositivo é responsável por retransmitir a mensagem até que elas chegem aos destinatários. Imagine uma conversa por WhatsApp, mas com a capacidade de enviar mensagens de texto que podem "saltar" de um dispositivo para outro **sem depender da internet**.
+Uma rede mesh é aquela onde cada dispositivo é responsável por retransmitir mensagens que ouve até que elas chegem aos destinatários. Dessa forma, a rede não depende de uma autoridade ou servidor central, como é o caso do WhatsApp ou SMS. **Os usuários são os donos da própria infraestrutura**.
 
-A rede também não depende de uma autoridade ou servidor central, como eram o caso dos antigos pagers. **Os usuários são os donos da própria infraestrutura**.
-
-A Mesh Sorocaba pode servir para mensagens privadas do dia-a-dia, comunicação de emergência ou qualquer outro fim que utilize mensagens de texto.
+Redes mesh podem servir para mensagens privadas do dia-a-dia, comunicação de emergência ou qualquer outro fim que utilize mensagens de texto.
 
 ![](/img/rede-mesh.webp)
 /// caption
 Ao enviar uma mensagem, a cada dispositivo da rede se encarrega de encaminhá-la até que ela encontre o destinatário.
 ///
 
-Redes mesh têm sido usada com sucesso pelo mundo em [cenários de catástrofes naturais](https://nodakmesh.org/blog/meshcore-emergency-preparedness) e [comunicação de grupos em locais sem infraestrutura](https://blog.noforeignland.com/off-grid-boat-communications-with-meshtastic/). No Brasil, tivemos em março de 2026 o [primeiro simulado geral da Defesa Civil](https://www.facebook.com/groups/276059605530869/posts/758395703963921/) usando esse tipo de tecnologia.
+Esse tipo de topologia tem sido usada com sucesso pelo mundo em [cenários de catástrofes naturais](https://nodakmesh.org/blog/meshcore-emergency-preparedness) e [comunicação de grupos em locais sem infraestrutura](https://blog.noforeignland.com/off-grid-boat-communications-with-meshtastic/). No Brasil, tivemos em março de 2026 o [primeiro simulado geral da Defesa Civil](https://www.facebook.com/groups/276059605530869/posts/758395703963921/) usando esse tipo de tecnologia.
 
 
 ## Material necessário
