@@ -269,3 +269,11 @@ img {
 	color: #70a2e4;
 	letter-spacing: 0.1em;
 }
+
+.center-table {
+  text-align: center;
+}
+
+.md-typeset .center-table :is(td,th):not([align]) {
+  text-align: initial; /* Reset alignment for table cells */
+}
