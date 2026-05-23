@@ -8,7 +8,7 @@ Esta página é dedicada ao **Mesh Sorocaba**, uma iniciativa comunitária que m
 
 Nossa iniciativa visa integrar o município de Sorocaba e região: Votorantim, Salto de Pirapora, Araçoiaba da Serra, Iperó, Porto Feliz, Itu, Mairinque, Alumínio e além. Atualmente, também temos enlace com as regiões metropolitanas de São Paulo, Campinas e Jundiaí.
 
-Para saber mais, leia [O que é a Mesh Sorocaba?](o-que-e.md)
+Para saber mais, leia o artigo [O que é uma rede mesh?](o-que-e.md)
 
 ## Como funciona?
 
