@@ -1,14 +1,14 @@
-# Comunidade Mesh Sorocaba
+# 
 
-Esta página é dedicada ao **Mesh Sorocaba**, uma iniciativa comunitária que mantém uma **rede mesh** de comunicação; ou seja, que não depende da internet ou de sinal de celular. A troca de mensagens é feita 100% via rádios LoRa conectados a celulares ou notebooks (ou protótipos com teclado e tela independentes).
-
-![](/img/rede-mesh.webp)
+![](/img/logo-meshsorocaba.png)
 /// caption
 ///
 
+Esta página é dedicada ao **Mesh Sorocaba**, uma iniciativa comunitária que mantém uma **rede mesh** de comunicação; ou seja, que não depende da internet ou de sinal de celular. A troca de mensagens é feita 100% via rádios LoRa conectados a celulares ou notebooks (ou protótipos com teclado e tela independentes).
+
 Nossa iniciativa visa integrar o município de Sorocaba e região: Votorantim, Salto de Pirapora, Araçoiaba da Serra, Iperó, Porto Feliz, Itu, Mairinque, Alumínio e além. Atualmente, também temos enlace com as regiões metropolitanas de São Paulo, Campinas e Jundiaí.
 
-Para saber mais, leia o artigo [O que é uma rede mesh?](o-que-e.md)
+Para saber mais, leia o artigo [O que é uma rede mesh?](o-que-e-uma-rede-mesh.md)
 
 ## Como funciona?
 
