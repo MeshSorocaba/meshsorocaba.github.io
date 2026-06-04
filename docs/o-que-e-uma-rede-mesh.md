@@ -1,5 +1,10 @@
 # O que é uma rede mesh?
 
+![](/img/rede-mesh.webp)
+/// caption
+///
+
+
 A Mesh Sorocaba permite o envio e recebimento de mensagens de texto usando pequenos transmissores de rádio conectados ao celular ou notebooks. Conseguimos esse feito graças a uma **topologia mesh (malha)**.
 
 Uma rede mesh é aquela onde cada dispositivo é responsável por retransmitir mensagens que ouve até que elas chegem aos destinatários. Dessa forma, a rede não depende de uma autoridade ou servidor central, como é o caso do WhatsApp ou SMS. **Os usuários são os donos da própria infraestrutura**.

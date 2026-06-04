@@ -5,6 +5,7 @@ edit_uri: edit/main/docs/
 
 theme:
   name: material
+  custom_dir: overrides
   locale: pt_br
   icon:
     logo: fontawesome/solid/industry
@@ -16,23 +17,16 @@ theme:
       - content.action.view
       - content.action.edit
   palette:
-      # The custom Meshtastic theme uses `slate` as a base
       scheme: slate
       primary: indigo
       accent: cyan
 
 nav:
-  - Início: index.md
-  # - Guia Rápido: guia-rapido.md
-  - O que é uma rede mesh?: o-que-e.md
+  - MeshCore Sorocaba: index.md
+  - O que é uma rede mesh?: o-que-e-uma-rede-mesh.md
   - Equipamento: equipamento-recomendado.md
   - Configuração: configuracao.md
   - Perguntas Frequentes: perguntas-frequentes.md
-  # - MeshCore:
-  #   - Índice: meshcore/index.md
-  #   - Configuração Recomendada do MeshCore: meshcore/configuracao.md
-  #   - Gerador de Nomes para Repetidoras MeshCore: meshcore/nomes-repetidoras.md
-  #   - Configurando um Observer no MeshCore: meshcore/como-configurar-um-observer-no-meshcore.md
   - Blog:
     - blog/index.md
 
