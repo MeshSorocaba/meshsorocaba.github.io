@@ -3,9 +3,9 @@
 /* Custom Palette for Meshtastic */
 :root * {
 	/* Meshtastic theme colors */
-	--mt-primary-color: #0d1b2a;
-	--mt-primary-color--transparent: #273e6188;
-	--mt-secondary-color: #d8d9e9;
+	--mt-primary-color: #14213D;
+	--mt-primary-color--transparent: #14213D88;
+	--mt-secondary-color: #E5E5E5;
 
 	/* Primary colors */
 	--md-primary-fg-color: var(--mt-primary-color);
@@ -15,7 +15,7 @@
 	--md-primary-bg-color--light: var(--mt-secondary-color);
 
 	/* Accent colors */
-	--md-accent-fg-color: var(--mt-primary-color);
+	--md-accent-fg-color: #FCA311;
 	--md-accent-fg-color--transparent: var(--mt-primary-color--transparent);
 	--md-accent-bg-color: var(--mt-secondary-color);
 	--md-accent-bg-color--light: var(--mt-secondary-color);
@@ -23,7 +23,8 @@
 	/* General color changes */
 	--md-default-bg-color: #1B1B1D;
 	--md-default-fg-color--light: #FFFFFF;
-	--md-typeset-a-color: var(--mt-primary-color);
+	--md-default-fg-color: #E5E5E5;
+	--md-typeset-a-color: #FCA311;
 
 	/* Default Fonts */
 	font-family: "Inter", sans-serif;
@@ -37,6 +38,10 @@
 
 .md-header {
 	background-color: var(--mt-primary-color);
+}
+
+.site-name-accent {
+	color: #FCA311;
 }
 
 /* Use Rubik for headings */
@@ -59,7 +64,7 @@ img {
 }
 
 .md-content a {
-	color: #70a2e4;
+	color: #FCA311;
 }
 /* Show underline on links when hovered */
 .md-content a:hover {
@@ -81,7 +86,7 @@ img {
 }
 
 .md-tabs__link:hover {
-	background-color: #ffffff25;
+	background-color: rgba(229, 229, 229, 0.15);
 }
 
 .md-tabs__item--active > .md-tabs__link {
@@ -90,11 +95,11 @@ img {
 }
 
 .md-nav__link[href]:hover {
-	color: #70a2e4;
+	color: #FCA311;
 }
 
 .md-nav__link--active, .md-nav__item .md-nav__link--active {
-  color: #70a2e4;
+  color: #FCA311;
 }
 
 /*
@@ -156,8 +161,8 @@ img {
 
 .repeater-form input:focus {
 	outline: none;
-	border-color: #70a2e4;
-	box-shadow: 0 0 0 2px rgba(112, 162, 228, 0.2);
+	border-color: #FCA311;
+	box-shadow: 0 0 0 2px rgba(252, 163, 17, 0.2);
 }
 
 .repeater-form input::placeholder {
@@ -192,8 +197,8 @@ img {
 }
 
 .result-box {
-	background-color: rgba(103, 234, 148, 0.1);
-	border: 1px solid rgba(103, 234, 148, 0.3);
+	background-color: rgba(229, 229, 229, 0.08);
+	border: 1px solid rgba(229, 229, 229, 0.2);
 	border-radius: 0.5rem;
 	padding: 1.5rem;
 	margin: 1rem 0;
@@ -202,7 +207,7 @@ img {
 .result-box h3 {
 	margin-top: 0;
 	margin-bottom: 1rem;
-	color: #70a2e4;
+	color: #FCA311;
 	font-family: "Rubik", sans-serif;
 }
 
@@ -241,9 +246,9 @@ img {
 }
 
 .copy-button.copied {
-	background-color: #70a2e4;
-	color: #1B1B1D;
-	border-color: #70a2e4;
+	background-color: #FCA311;
+	color: #14213D;
+	border-color: #FCA311;
 }
 
 .abbreviation-display {
@@ -252,9 +257,9 @@ img {
 	gap: 0.5rem;
 	margin-top: 0.75rem;
 	padding: 0.5rem 0.75rem;
-	background-color: rgba(112, 162, 228, 0.1);
+	background-color: rgba(252, 163, 17, 0.1);
 	border-radius: 0.25rem;
-	border-left: 3px solid #70a2e4;
+	border-left: 3px solid #FCA311;
 }
 
 .abbreviation-label {
@@ -266,7 +271,7 @@ img {
 	font-family: "JetBrains Mono", "Fira Code", monospace;
 	font-size: 1.1rem;
 	font-weight: 600;
-	color: #70a2e4;
+	color: #FCA311;
 	letter-spacing: 0.1em;
 }
 
