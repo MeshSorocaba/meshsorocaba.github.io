@@ -15,7 +15,7 @@
 	--md-primary-bg-color--light: var(--mt-secondary-color);
 
 	/* Accent colors */
-	--md-accent-fg-color: #FCA311;
+	--md-accent-fg-color: #8ecae6;
 	--md-accent-fg-color--transparent: var(--mt-primary-color--transparent);
 	--md-accent-bg-color: var(--mt-secondary-color);
 	--md-accent-bg-color--light: var(--mt-secondary-color);
@@ -23,8 +23,8 @@
 	/* General color changes */
 	--md-default-bg-color: #1B1B1D;
 	--md-default-fg-color--light: #FFFFFF;
-	--md-default-fg-color: #E5E5E5;
-	--md-typeset-a-color: #FCA311;
+	/* --md-default-fg-color: #DDDDDD; */
+	--md-typeset-a-color: #70b2f3;
 
 	/* Default Fonts */
 	font-family: "Inter", sans-serif;
@@ -41,7 +41,7 @@
 }
 
 .site-name-accent {
-	color: #FCA311;
+	color: #219ebc;
 }
 
 /* Use Rubik for headings */
@@ -56,6 +56,11 @@
 	font-optical-sizing: auto;
 	font-weight: 500;
 	font-style: normal;
+	color: #FFFFFF;
+}
+
+.md-content strong {
+	color: #FFFFFF;
 }
 
 /* Add slight border radius to images */
@@ -63,9 +68,7 @@ img {
 	border-radius: 0.25rem;
 }
 
-.md-content a {
-	color: #FCA311;
-}
+color: #8ecae6;
 /* Show underline on links when hovered */
 .md-content a:hover {
 	text-decoration: underline;
@@ -94,13 +97,9 @@ img {
 	color: var(--mt-primary-color);
 }
 
-.md-nav__link[href]:hover {
-	color: #FCA311;
-}
+color: #8ecae6;
 
-.md-nav__link--active, .md-nav__item .md-nav__link--active {
-  color: #FCA311;
-}
+color: #8ecae6;
 
 /*
 	Header Customization
@@ -161,8 +160,8 @@ img {
 
 .repeater-form input:focus {
 	outline: none;
-	border-color: #FCA311;
-	box-shadow: 0 0 0 2px rgba(252, 163, 17, 0.2);
+	border-color: #8ecae6;
+	box-shadow: 0 0 0 2px rgba(142, 202, 230, 0.2);
 }
 
 .repeater-form input::placeholder {
@@ -204,12 +203,7 @@ img {
 	margin: 1rem 0;
 }
 
-.result-box h3 {
-	margin-top: 0;
-	margin-bottom: 1rem;
-	color: #FCA311;
-	font-family: "Rubik", sans-serif;
-}
+color: #8ecae6;
 
 .generated-name-container {
 	display: flex;
@@ -246,9 +240,9 @@ img {
 }
 
 .copy-button.copied {
-	background-color: #FCA311;
+	background-color: #8ecae6;
 	color: #14213D;
-	border-color: #FCA311;
+	border-color: #8ecae6;
 }
 
 .abbreviation-display {
@@ -259,7 +253,7 @@ img {
 	padding: 0.5rem 0.75rem;
 	background-color: rgba(252, 163, 17, 0.1);
 	border-radius: 0.25rem;
-	border-left: 3px solid #FCA311;
+	border-left: 3px solid #8ecae6;
 }
 
 .abbreviation-label {
@@ -267,13 +261,7 @@ img {
 	color: #999;
 }
 
-.abbreviation-value {
-	font-family: "JetBrains Mono", "Fira Code", monospace;
-	font-size: 1.1rem;
-	font-weight: 600;
-	color: #FCA311;
-	letter-spacing: 0.1em;
-}
+color: #8ecae6;
 
 .center-table {
   text-align: center;
