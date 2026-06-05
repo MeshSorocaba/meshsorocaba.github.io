@@ -68,7 +68,6 @@ img {
 	border-radius: 0.25rem;
 }
 
-color: #8ecae6;
 /* Show underline on links when hovered */
 .md-content a:hover {
 	text-decoration: underline;
@@ -97,9 +96,6 @@ color: #8ecae6;
 	color: var(--mt-primary-color);
 }
 
-color: #8ecae6;
-
-color: #8ecae6;
 
 /*
 	Header Customization
@@ -203,7 +199,6 @@ color: #8ecae6;
 	margin: 1rem 0;
 }
 
-color: #8ecae6;
 
 .generated-name-container {
 	display: flex;
@@ -261,7 +256,6 @@ color: #8ecae6;
 	color: #999;
 }
 
-color: #8ecae6;
 
 .center-table {
   text-align: center;
