@@ -18,17 +18,17 @@ O Brasil não possui (ainda) um preset oficial, portanto decidimos testar os pre
 
 Enquanto eu permaneci à meia altura do Morro de Araçoiaba, o Cordeiro se posicionou no alto do Morro da Placa em Cajamar.
 
-![](/img/aracoiabajapi.jpg)
+![](../../img/aracoiabajapi.jpg)
 /// caption
 Antena magnética no meu carro (à esq.) e a plano-terra feita pelo Cordeiro (à dir.)
 ///
 
-![](/img/mapa-aracoiaba-jundiai.png)
+![](../../img/mapa-aracoiaba-jundiai.png)
 /// caption
 Localização dos dispositivos.
 ///
 
-![](/img/perfil-aracoiaba-jundiai.jpg)
+![](../../img/perfil-aracoiaba-jundiai.jpg)
 /// caption
 A elipse azul representa a primeira Zona de Fresnel para a banda de 33cm para essa distância.
 ///

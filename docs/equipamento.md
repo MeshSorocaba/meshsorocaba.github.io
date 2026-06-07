@@ -1,4 +1,4 @@
-# Equipamento Recomendado da Mesh Sorocaba
+# Equipamento Recomendado
 
 Existem vários modelos de dispositivos compatíveis com o MeshCore, o firmware oficial da Mesh Sorocaba. Alguns podem vir anunciados como "feito para o MeshCore" ou "feito para o Meshtastic". Via de regra, se um dispositivo funciona com o Meshtastic, que é um firmware mais antigo, provavelmente funciona também com o MeshCore. Na dúvida, consulte a [lista de dispositivos suportados pelo MeshCore](https://flasher.meshcore.io/).
 
@@ -40,7 +40,7 @@ Uma exceção a essas condições é o Heltec V3 que, apesar de já vir com a te
 !!! warning "Atenção"
     Na hora da compra, independente da marca do dispositivo, certifique-se que ele é capaz de transmitir na faixa de **915 MHz**.
 
-### Repetidoras
+## Repetidoras
 
 Os dispositivos pessoais não tem um grande alcance, seja pela antena que costuma ser mais compacta pela praticidade, ou pelo fato desses dispositivos estarem dentro de casa ou de veículos. Portanto, é sempre recomendado colocar uma repetidora no exterior para garantir que você usufrue a Mesh Sorocaba sem dores de cabeça.
 

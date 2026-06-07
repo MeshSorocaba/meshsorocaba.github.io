@@ -1,6 +1,6 @@
 # O que é uma rede mesh?
 
-![](/img/rede-mesh.webp)
+![](img/rede-mesh.webp)
 /// caption
 ///
 
@@ -24,14 +24,14 @@ Para poder participar da Mesh Sorocaba, o mínimo que você precisa é de:
 - 1 fonte de energia (USB, solar, bateria, etc).
 - 1 celular ou notebook com o app [MeshCore](https://play.google.com/store/apps/details?id=com.liamcottle.meshcore.android&hl=en_US) ou [meshcore-open](https://github.com/zjs81/meshcore-open) instalado.
 
-![](/img/standalone-meshcore-node.jpg)
+![](img/standalone-meshcore-node.jpg)
 /// caption
 Um dispositivo 100% funcional e capaz de se conectar à Mesh Sorocaba, conectado a um carregador de celular e pareado com o celular via bluetooth.
 ///
 
 ## Como funciona
 
-![](/img/meshcore-exemplo.png)
+![](img/meshcore-exemplo.png)
 /// caption
 Exemplo de uma rede baseada no protocolo MeshCore.
 ///

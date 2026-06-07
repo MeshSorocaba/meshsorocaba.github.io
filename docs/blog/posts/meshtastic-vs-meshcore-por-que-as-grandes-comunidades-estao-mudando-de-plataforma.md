@@ -183,7 +183,7 @@ O servidor MQTT oficial do Meshtastic (`mqtt.meshtastic.org`) tenta conter o est
 
 Durante os horários de pico, um único dispositivo Meshtastic com configuração padrão conectado a esse servidor chega a ocupar a frequência por quase **50% do tempo**.
 
-![](/img/utilizacao-canal-mt-mc.png)
+![](../../img/utilizacao-canal-mt-mc.png)
 /// caption
 ///
 
@@ -197,7 +197,7 @@ A resposta do MeshCore foi radical: **não oferecer ponte MQTT nativa**. A funci
 
 A sobrecarga de canais não é o único gargalo. Mesmo com uma frequência limpa, a topografia pode inviabilizar a comunicação. A figura abaixo mostra a disposição aproximada de alguns dispositivos Meshtastic na região onde moro, complementada por outros que acrescentei para ilustrar o cenário.
 
-![](/img/nohops.jpg)
+![](../../img/nohops.jpg)
 /// caption
 ///
 

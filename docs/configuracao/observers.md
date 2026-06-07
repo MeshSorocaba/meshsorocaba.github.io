@@ -1,16 +1,16 @@
-# Como Configurar um Observer no MeshCore
-
-## O que é um Observer?
+---
+title: "Como Configurar um Observer no MeshCore"
+---
 
 O dispositivo do tipo `Observer` tem um papel especial na rede MeshCore. Ele serve para escutar o tráfego da rede mesh e encaminhar os pacotes recebidos para um servidor central. Ou seja, ele tem como foco o monitoramento passivo que captura e registra a atividade da rede em sua região. 
 
 Uma vez configurado, esse dispositivo pode exercer normalmente sua função de `Repeater` ou `Companion`. Mas além disso, ele se conecta diretamente à rede WiFi local ou através de computador ou Raspberry Pi e envia os dados coletados via protocolo MQTT para o servidor do [Let's Mesh](https://analyzer.letsmesh.net/packets?region=SOD), permitindo que a comunidade tenha visibilidade sobre a cobertura e atividade da rede em diferentes localidades. Com isso, outros usuários podem verificar quais regiões possuem observadores ativos e qual é o nível de atividade da rede em cada área.
 
-![](img/letsmesh.jpg)
+![](../img/letsmesh.jpg)
 
 Como um bônus, cada `Observer` ganha uma página própria no site onde é possível monitorar dados de telemetria. Isso faz com que a plataforma se torne bastante útil para administradores de repetidoras.
 
-![](img/letsmesh-dashboard.jpg)
+![](../img/letsmesh-dashboard.jpg)
 
 Configurar um `Observer` é uma excelente forma de contribuir com a rede mesh coletiva. Ao instalar um observador em sua localidade, você ajuda a mapear a extensão da rede, fornecendo dados valiosos sobre a cobertura do sinal e a frequência de comunicação entre dispositivos, permitindo que administradores da rede possam identificar possíveis problemas.
 

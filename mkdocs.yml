@@ -12,6 +12,7 @@ theme:
   favicon: img/favicon.png
   features:
       - navigation.tabs
+      - navigation.path
       - navigation.tabs.sticky
       - toc.integrate
       - content.action.view
@@ -22,10 +23,16 @@ theme:
       accent: cyan
 
 nav:
-  - MeshCore Sorocaba: index.md
-  - O que é uma rede mesh?: o-que-e-uma-rede-mesh.md
-  - Equipamento: equipamento-recomendado.md
-  - Configuração: configuracao.md
+  - Início: index.md
+  - O que é uma rede mesh?: redes-mesh.md
+  - Equipamento: equipamento.md
+  - Configuração: 
+    - Escolhendo o Modo do Dispositivo: configuracao/escolhendo-o-modo-do-dispositivo.md
+    - Modo Companion: configuracao/companions.md
+    - Modo Repetidor: configuracao/repeaters.md
+    - Modo Observador: configuracao/observers.md
+  - Ferramentas:
+    - Nomes de Repetidoras: ferramentas/nomes-repetidoras.md
   - Perguntas Frequentes: perguntas-frequentes.md
   - Blog:
     - blog/index.md
