@@ -1,212 +1,126 @@
 /**
- * Generate 3-letter abbreviation for Brazilian city names
- * Based on the algorithm from: https://pt.stackoverflow.com/questions/309628/
+ * Repeater Name Generator v2.0
  * 
- * Algorithm priorities:
- * 1. First letter: initial of first word
- * 2. Second letter: initial of second word (or next available from first word)
- * 3. Third letter: initial of last word (or next available from first/second words)
+ * Uses the official Brazilian city abbreviation list (brazil_cities.json)
+ * instead of an algorithm to generate city abbreviations.
+ * 
+ * Data format: { "UF": [ { "abbr": "SOR", "name": "Sorocaba" }, ... ], ... }
  */
 
-function normalizeCityName(name) {
-    if (!name || typeof name !== 'string') {
-        return '';
-    }
-    
-    // Remove accents, convert to uppercase, split by space/hyphen/apostrophe
-    return name
-        .normalize('NFD')
-        .replace(/[\u0300-\u036f]/g, '')
-        .toUpperCase()
-        .replace(/'/g, ' ')  // Treat apostrophes as separators
-        .split(/[\s\-]+/)    // Split by spaces or hyphens
-        .filter(part => part.length > 0);
-}
+let cityData = null;
 
-function getConsonants(word) {
-    // Extract only consonants (useful for fallbacks)
-    return word.replace(/[^A-Z]/g, '');
-}
+/**
+ * State names mapping (UF -> full name)
+ */
+const stateNames = {
+    'AC': 'Acre',
+    'AL': 'Alagoas',
+    'AM': 'Amazonas',
+    'AP': 'Amapá',
+    'BA': 'Bahia',
+    'CE': 'Ceará',
+    'DF': 'Distrito Federal',
+    'ES': 'Espírito Santo',
+    'GO': 'Goiás',
+    'MA': 'Maranhão',
+    'MG': 'Minas Gerais',
+    'MS': 'Mato Grosso do Sul',
+    'MT': 'Mato Grosso',
+    'PA': 'Pará',
+    'PB': 'Paraíba',
+    'PE': 'Pernambuco',
+    'PI': 'Piauí',
+    'PR': 'Paraná',
+    'RJ': 'Rio de Janeiro',
+    'RN': 'Rio Grande do Norte',
+    'RO': 'Rondônia',
+    'RR': 'Roraima',
+    'RS': 'Rio Grande do Sul',
+    'SC': 'Santa Catarina',
+    'SE': 'Sergipe',
+    'SP': 'São Paulo',
+    'TO': 'Tocantins'
+};
 
-function generateCityAbbreviation(cityName, usedAbbreviations = new Set()) {
-    if (!cityName || typeof cityName !== 'string') {
-        return '';
-    }
-    
-    const normalized = normalizeCityName(cityName);
-    if (normalized.length === 0) {
-        return '';
-    }
-    
-    // Handle empty result from normalization
-    const parts = normalized;
-    if (parts.length === 0) {
-        return '';
-    }
-    
-    /**
-     * Try to generate abbreviation using the SO algorithm logic
-     * Returns candidate abbreviation or null if failed
-     */
-    function tryGenerate(c1Pos, c1WordIdx, c2Pos, c2WordIdx, c3Pos, c3WordIdx) {
-        const c1 = parts[c1WordIdx]?.[c1Pos];
-        const c2 = parts[c2WordIdx]?.[c2Pos];
-        const c3 = parts[c3WordIdx]?.[c3Pos];
-        
-        if (!c1 || !c2 || !c3) return null;
-        
-        const abbrev = c1 + c2 + c3;
-        
-        // Check for collision if we have a usedAbbreviations set
-        if (usedAbbreviations.size > 0 && usedAbbreviations.has(abbrev)) {
-            return null;
+/**
+ * Load city data from JSON file
+ */
+async function loadCityData() {
+    try {
+        const response = await fetch('/js/brazil_cities.json');
+        if (!response.ok) {
+            throw new Error(`HTTP ${response.status}`);
         }
-        
-        return abbrev;
+        cityData = await response.json();
+        populateStates();
+    } catch (err) {
+        console.error('Erro ao carregar dados de cidades:', err);
+        showError('Não foi possível carregar a lista de cidades. Recarregue a página.');
     }
-    
-    /**
-     * Get a letter at position pos from word at wordIdx, with fallback positions
-     */
-    function getLetterWithFallback(wordIdx, startPos) {
-        if (wordIdx >= parts.length) return null;
-        const word = parts[wordIdx];
-        if (startPos >= word.length) return null;
-        return word[startPos];
-    }
-    
-    // Try multiple abbreviation strategies
-    const strategies = [];
-    
-    // Strategy 1: First letter from first word, second from second word, third from last word
-    if (parts.length >= 1 && parts[0].length > 0) {
-        // First letter from first word, position 0
-        strategies.push({ c1WordIdx: 0, c1Pos: 0 });
-    }
-    if (parts.length >= 2 && parts[1].length > 0) {
-        // Second letter from second word, position 0
-        strategies.push({ c2WordIdx: 1, c2Pos: 0 });
-    }
-    // Third letter from last word, position 0
-    if (parts.length >= 1) {
-        strategies.push({ c3WordIdx: parts.length - 1, c3Pos: 0 });
-    }
-    
-    // Generate abbreviation using the algorithm
-    let abbreviation = null;
-    
-    // Try different combinations based on the SO algorithm
-    // 1. Try initials: first letter from word i, second from word k, third from word m (last)
-    for (let i = 0; i < parts.length && !abbreviation; i++) {
-        for (let j = 0; j < parts[i].length && !abbreviation; j++) {
-            const letter1 = parts[i][j];
-            
-            // Second letter from next words
-            for (let k = i + 1; k < parts.length && !abbreviation; k++) {
-                for (let l = 0; l < parts[k].length && !abbreviation; l++) {
-                    const letter2 = parts[k][l];
-                    
-                    // Third letter from last word
-                    for (let m = parts.length - 1; m >= k && !abbreviation; m--) {
-                        for (let n = 0; n < parts[m].length && !abbreviation; n++) {
-                            const letter3 = parts[m][n];
-                            const candidate = letter1 + letter2 + letter3;
-                            
-                            if (!usedAbbreviations.has(candidate)) {
-                                abbreviation = candidate;
-                                break;
-                            }
-                        }
-                        
-                        // If not found, try other positions in word k after position l
-                        if (!abbreviation) {
-                            for (let n = l + 1; n < parts[k].length && !abbreviation; n++) {
-                                const candidate = letter1 + letter2 + parts[k][n];
-                                if (!usedAbbreviations.has(candidate)) {
-                                    abbreviation = candidate;
-                                    break;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            
-            // If not found, try second letter from same first word
-            if (!abbreviation) {
-                for (let l = j + 1; l < parts[i].length && !abbreviation; l++) {
-                    // Prefer consecutive letters
-                    if (l + 1 < parts[i].length) {
-                        const candidate = letter1 + parts[i][l] + parts[i][l + 1];
-                        if (!usedAbbreviations.has(candidate)) {
-                            abbreviation = candidate;
-                            break;
-                        }
-                    }
-                    
-                    // Try with reverse traversal for third letter
-                    for (let n = parts[i].length - 1; n >= 0 && !abbreviation; n--) {
-                        if (n !== j && n !== l) {
-                            const candidate = letter1 + parts[i][l] + parts[i][n];
-                            if (!usedAbbreviations.has(candidate)) {
-                                abbreviation = candidate;
-                                break;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-    
-    // Fallback: just use first 3 letters (or consonants)
-    if (!abbreviation) {
-        const firstWord = parts[0];
-        const consonants = getConsonants(firstWord);
-        
-        if (consonants.length >= 3) {
-            abbreviation = consonants.substring(0, 3);
-        } else {
-            // Use first 3 letters of cleaned name
-            const letters = firstWord.replace(/[^A-Z]/g, '');
-            abbreviation = letters.substring(0, 3);
-        }
-        
-        // If still in collision, add a distinguishing suffix
-        if (usedAbbreviations.has(abbreviation)) {
-            const secondWord = parts.length > 1 ? parts[1] : '';
-            if (secondWord.length > 0) {
-                const candidate = abbreviation[0] + secondWord[0] + (consonants[1] || firstWord[1]);
-                if (!usedAbbreviations.has(candidate)) {
-                    abbreviation = candidate;
-                }
-            }
-        }
-    }
-    
-    return abbreviation || '???';
 }
 
 /**
- * Get city abbreviation with automatic collision handling
- * Main entry point for the repeater name generator
+ * Populate the state dropdown
  */
-function getCityAbbreviation(cityName, usedAbbreviations = new Set()) {
-    const normalized = cityName?.trim();
-    if (!normalized) {
-        return '';
+function populateStates() {
+    const stateSelect = document.getElementById('state-select');
+    if (!stateSelect || !cityData) return;
+
+    const states = Object.keys(cityData).sort();
+    for (const uf of states) {
+        const option = document.createElement('option');
+        option.value = uf;
+        option.textContent = `${uf} — ${stateNames[uf] || uf}`;
+        stateSelect.appendChild(option);
     }
-    
-    const abbreviation = generateCityAbbreviation(normalized, usedAbbreviations);
-    
-    return abbreviation;
+}
+
+/**
+ * Populate the city dropdown based on selected state
+ */
+function populateCities(selectedState) {
+    const citySelect = document.getElementById('city-select');
+    const cityAbbreviation = document.getElementById('city-abbreviation');
+    if (!citySelect) return;
+
+    // Reset
+    citySelect.innerHTML = '';
+    cityAbbreviation.textContent = '---';
+
+    if (!selectedState || !cityData || !cityData[selectedState]) {
+        citySelect.disabled = true;
+        const defaultOpt = document.createElement('option');
+        defaultOpt.value = '';
+        defaultOpt.textContent = 'Selecione a cidade...';
+        citySelect.appendChild(defaultOpt);
+        return;
+    }
+
+    citySelect.disabled = false;
+
+    // Default option
+    const defaultOpt = document.createElement('option');
+    defaultOpt.value = '';
+    defaultOpt.textContent = 'Selecione a cidade...';
+    citySelect.appendChild(defaultOpt);
+
+    // Add cities for the selected state
+    const cities = cityData[selectedState];
+    for (const city of cities) {
+        const option = document.createElement('option');
+        option.value = city.abbr;
+        option.textContent = city.name;
+        option.dataset.abbr = city.abbr;
+        citySelect.appendChild(option);
+    }
 }
 
 /**
  * Form handling code
  */
 document.addEventListener('DOMContentLoaded', function() {
-    const cityNameInput = document.getElementById('city-name');
+    const stateSelect = document.getElementById('state-select');
+    const citySelect = document.getElementById('city-select');
     const cityAbbreviation = document.getElementById('city-abbreviation');
     const regionalIdInput = document.getElementById('regional-id');
     const pubkeyInput = document.getElementById('pubkey');
@@ -216,38 +130,67 @@ document.addEventListener('DOMContentLoaded', function() {
     const errorMessage = document.getElementById('error-message');
     const resultBox = document.getElementById('result');
     const generatedName = document.getElementById('generated-name');
+    const charCountEl = document.getElementById('name-char-count');
+    const charLimitWarning = document.getElementById('char-limit-warning');
 
-    // Update abbreviation as user types city name
-    cityNameInput.addEventListener('input', function() {
-        const city = this.value.trim();
-        if (city) {
-            const abbrev = getCityAbbreviation(city);
-            cityAbbreviation.textContent = abbrev;
+    const MAX_NAME_LENGTH = 23;
+
+    // Load city data
+    loadCityData();
+
+    // State selection change
+    stateSelect.addEventListener('change', function() {
+        const selectedState = this.value;
+        populateCities(selectedState);
+        hideError();
+        hideResult();
+        updateCharCounter();
+    });
+
+    // City selection change — show abbreviation
+    citySelect.addEventListener('change', function() {
+        const selectedOption = this.options[this.selectedIndex];
+        if (this.value && selectedOption) {
+            cityAbbreviation.textContent = this.value;
         } else {
             cityAbbreviation.textContent = '---';
         }
         hideError();
         hideResult();
+        updateCharCounter();
     });
 
     // Also update on regional and pubkey input changes
-    regionalIdInput.addEventListener('input', hideError);
+    regionalIdInput.addEventListener('input', function() {
+        hideError();
+        hideResult();
+        updateCharCounter();
+    });
     pubkeyInput.addEventListener('input', function() {
         // Auto-convert to uppercase
         this.value = this.value.toUpperCase();
         hideError();
+        hideResult();
+        updateCharCounter();
     });
 
     // Generate button click handler
     generateBtn.addEventListener('click', function() {
-        const city = cityNameInput.value.trim();
+        const state = stateSelect.value;
+        const cityAbbr = citySelect.value;
         const regional = regionalIdInput.value.trim();
         const pubkey = pubkeyInput.value.trim();
 
         // Validate inputs
-        if (!city) {
-            showError('Por favor, informe o nome da cidade.');
-            cityNameInput.focus();
+        if (!state) {
+            showError('Por favor, selecione o estado.');
+            stateSelect.focus();
+            return;
+        }
+
+        if (!cityAbbr) {
+            showError('Por favor, selecione a cidade.');
+            citySelect.focus();
             return;
         }
 
@@ -276,10 +219,9 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         // Generate the name
-        const abbrev = getCityAbbreviation(city);
         const cleanRegional = regional
             .normalize('NFD')
-            .replace(/[\u0300-\u036f]/g, '')
+            .replace(/[̀-\u036f]/g, '')
             .replace(/[^a-zA-Z0-9\s\-]/g, '')
             .toUpperCase()
             .split(/[\s\-]+/)
@@ -287,8 +229,16 @@ document.addEventListener('DOMContentLoaded', function() {
             .join('');
         const cleanPubkey = pubkey.toUpperCase();
 
-        const fullName = `${abbrev}-${cleanRegional}-${cleanPubkey}`;
-        
+        const fullName = `${cityAbbr}-${cleanRegional}-${cleanPubkey}`;
+
+        // Enforce 23-character limit
+        if (fullName.length > MAX_NAME_LENGTH) {
+            const maxRegional = MAX_NAME_LENGTH - cityAbbr.length - cleanPubkey.length - 2; // 2 hyphens
+            showError(`O nome "${fullName}" tem ${fullName.length} caracteres e ultrapassa o limite de ${MAX_NAME_LENGTH}. Reduza o identificador regional para no máximo ${maxRegional} caracteres (atualmente tem ${cleanRegional.length}).`);
+            regionalIdInput.focus();
+            return;
+        }
+
         generatedName.textContent = fullName;
         showResult();
         hideError();
@@ -296,13 +246,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Reset button click handler
     resetBtn.addEventListener('click', function() {
-        cityNameInput.value = '';
+        stateSelect.value = '';
+        citySelect.innerHTML = '<option value="">Selecione a cidade...</option>';
+        citySelect.disabled = true;
+        cityAbbreviation.textContent = '---';
         regionalIdInput.value = '';
         pubkeyInput.value = '';
-        cityAbbreviation.textContent = '---';
         hideError();
         hideResult();
-        cityNameInput.focus();
+        charLimitWarning.style.display = 'none';
+        updateCharCounter();
+        stateSelect.focus();
     });
 
     // Copy button click handler
@@ -346,5 +300,42 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function hideResult() {
         resultBox.style.display = 'none';
+    }
+
+    /**
+     * Update the live character counter based on current form state.
+     * Shows the projected length of the final name (CIDADE-REGIONAL-PUBKEY).
+     */
+    function updateCharCounter() {
+        const cityAbbr = citySelect.value || ''; // 3 chars if selected
+        const regional = regionalIdInput.value.trim();
+        const pubkey = pubkeyInput.value.trim();
+
+        // Calculate the cleaned regional (same logic as generate)
+        const cleanRegional = regional
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]/g, '')
+            .replace(/[^a-zA-Z0-9\s\-]/g, '')
+            .toUpperCase()
+            .split(/[\s\-]+/)
+            .filter(word => word.length > 0)
+            .join('');
+        const cleanPubkey = pubkey.toUpperCase();
+
+        const projectedLength = cityAbbr.length + (cityAbbr && cleanRegional ? 1 : 0) + cleanRegional.length + (cleanRegional && cleanPubkey ? 1 : 0) + cleanPubkey.length;
+        // More accurate: always 2 hyphens if all parts are present
+        const parts = [cityAbbr, cleanRegional, cleanPubkey].filter(p => p.length > 0);
+        const hyphens = parts.length > 1 ? parts.length - 1 : 0;
+        const total = parts.reduce((sum, p) => sum + p.length, 0) + hyphens;
+
+        charCountEl.textContent = total;
+
+        if (total > MAX_NAME_LENGTH) {
+            charCountEl.classList.add('char-counter-over');
+            charLimitWarning.style.display = 'block';
+        } else {
+            charCountEl.classList.remove('char-counter-over');
+            charLimitWarning.style.display = 'none';
+        }
     }
 });
