@@ -29,7 +29,9 @@ nav:
   - Configuração: 
     - Escolhendo o Modo do Dispositivo: configuracao/escolhendo-o-modo-do-dispositivo.md
     - Modo Companion: configuracao/companions.md
-    - Modo Repetidor: configuracao/repeaters.md
+    - Modo Repetidor: 
+      - Configurando uma repetidora: configuracao/repeaters.md
+      - Temporização e Deduplicação: configuracao/temporizacao-e-deduplicacao.md
     - Modo Observador: configuracao/observers.md
   - Ferramentas:
     - Nomes de Repetidoras: ferramentas/nomes-repetidoras.md
@@ -40,7 +42,11 @@ nav:
 markdown_extensions:
   - admonition
   - pymdownx.details
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - attr_list
   - pymdownx.blocks.caption
   - md_in_html
