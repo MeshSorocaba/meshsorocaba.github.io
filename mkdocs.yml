@@ -42,6 +42,8 @@ nav:
 markdown_extensions:
   - admonition
   - pymdownx.details
+  - pymdownx.arithmatex:
+      generic: true
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
@@ -56,7 +58,8 @@ extra_css:
 
 extra_javascript:
   - js/repeater-name-generator.js
-
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
 plugins:
   - search

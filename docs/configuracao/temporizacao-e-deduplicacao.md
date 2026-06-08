@@ -27,17 +27,39 @@ Imagine que um repetidor recebe um pacote de inundação que levaria aproximadam
 
 ## Atraso de recepção (ou `rxdelay`)
 
-Antes do atraso de transmissão, existe o **atraso de repetição**. Ou seja, quando um repetidor recebe um pacote por inundação, ele não o processa imediatamente. Ele aplica um pequeno atraso baseado na **qualidade do sinal** (SNR) da cópia recebida. 
+Antes do atraso de transmissão, existe a opção por um **atraso de repetição**. Ou seja, quando um repetidor recebe um pacote por inundação, ele não o processa imediatamente. Ele aplica um pequeno atraso baseado na **qualidade do sinal** (SNR) da cópia recebida. Se o parâmetro `rxdelay` da repetidora não for definido (ou tiver valor 0), o atraso de recepção não é aplicado. Caso contrário, a fórmula do atraso é dada em milisegundos por:
 
+$$\left(r^{\,0.85 - S} - 1\right) \times t$$
+
+Onde:
+
+- **$r$** = `rxdelay`, configurável entre 0 e 20.
+- **$S$** = pontuação de qualidade do sinal (baseada no SNR), no intervalo $[0,\, 1]$
+- **$t$** = tempo estimado de transmissão pelo ar (ms)
+
+## Como o SNR afeta o atraso
+
+| Pontuação | Expoente | Multiplicador | Efeito |
+|:---:|:---:|:---:|:---|
+| 1.0 (excelente) | −0.15 | ×0.41 | Atraso curto |
+| 0.5 (boa) | 0.35 | ×1.24 | Atraso moderado |
+| 0.0 (ruim) | 0.85 | ×6.08 | Atraso longo |
+
+Em outras palavras:
 
 - Um pacote recebido com um **sinal forte e limpo** recebe um **atraso curto** (ou nenhum atraso).
 - Um pacote recebido com um **sinal fraco e ruidoso** recebe um **atraso mais longo**.
+
+!!! info "Nota"
+    O atraso é limitado a um **máximo de 32 segundos**, e qualquer atraso abaixo de **50 ms** é considerado desprezível e o pacote é processado imediatamente.
+
 
 O raciocínio é que um sinal forte provavelmente é a "melhor" cópia do pacote; ou seja, veio de uma fonte próxima ou teve um caminho limpo. Essa cópia deve ser encaminhada primeiro. Uma cópia fraca pode ser um eco redundante de um repetidor distante e atrasá-la dá tempo para que a cópia mais forte seja transmitida primeiro.
 
 Se o sinal for muito ruim, o atraso pode ser bastante longo (até alguns segundos). A ideia é que se você mal conseguiu ouvir o pacote, alguém provavelmente o ouviu melhor e o encaminhará antes de você.
 
-Por padrão, o atraso de recepção está **desativado** (`rx_delay_base = 0`). Todos os pacotes de inundação são processados imediatamente, independentemente da qualidade do sinal.
+
+Por padrão, o atraso de recepção está **desativado** (`rxdelay = 0`). Todos os pacotes de inundação são processados imediatamente, independentemente da qualidade do sinal.
 
 !!! info "Nota"
     Pacotes diretos/roteados são **sempre** processados imediatamente. O atraso de recepção só se aplica apenas ao tráfego de inundação.
@@ -94,21 +116,11 @@ Quando um pacote de inundação é transmitido, todos os repetidores que o ouvem
 2. O nó **MÉDIO** (atraso intermediário) transmite em seguida, cobrindo a área que o nó baixo não alcançou.
 3. O nó **ALTO** (atraso longo) transmite por último, garantindo que o pacote alcance nós distantes que apenas a espinha dorsal consegue atingir.
 
-O `rx_delay_base 3` complementa essa hierarquia: cópias recebidas com sinal forte (de um vizinho próximo) são processadas rapidamente; cópias com sinal fraco (ecos distantes) são atrasadas e frequentemente descartadas como duplicatas antes de gerar retransmissões. O resultado líquido é que o tráfego local é resolvido localmente, e a espinha dorsal só entra em ação quando necessário.
+O `rxdelay` complementa essa hierarquia: cópias recebidas com sinal forte (de um vizinho próximo) são processadas rapidamente; cópias com sinal fraco (ecos distantes) são atrasadas e frequentemente descartadas como duplicatas antes de gerar retransmissões. O resultado líquido é que o tráfego local é resolvido localmente, e a espinha dorsal só entra em ação quando necessário.
 
 Essa abordagem foi desenvolvida e validada por comunidades mesh na Austrália, que enfrentaram os mesmos problemas de colisão e desperdício de tempo no ar ao implementar dezenas de repetidores em terrenos variados. A física não muda entre hemisférios — a estratégia de fazer nós mais altos aguardar mais funciona em qualquer lugar.
 
-## Como configurar o atraso de recepção
-
-| Configuração CLI | O que faz | Padrão |
-|---|---|---|
-| `rx_delay_base` | Controla se o atraso de RX está ativo | 0 (desativado) |
-
-Por padrão, o atraso de recepção está **desativado**. Para ativá-lo, defina `rx_delay_base` para um número positivo (recomenda-se `3` para a maioria dos cenários).
-
-**Quando ativar:** Se você tem muitos repetidores em proximidade e nota pacotes duplicados ou colisões, ativar o atraso de RX pode ajudar a reduzir o tempo no ar redundante. Em redes esparsas com poucos repetidores, geralmente é bom deixá-lo desativado.
-
-## Como configurar seu repetidor por perfil de elevação
+## Como configurar o atraso de transmissão por perfil de elevação
 
 Escolha o perfil que melhor descreve a instalação do seu repetidor e aplique a configuração correspondente.
 
@@ -117,3 +129,9 @@ Escolha o perfil que melhor descreve a instalação do seu repetidor e aplique a
 | **BAIXO** | 0,5 | Telhados, postes, instalações ao nível do solo. Poucos vizinhos, alcance local. |
 | **MÉDIO** | 1,0 | Prédios, torres baixas, morros baixos. Conecta bairros e áreas suburbanas. |
 | **ALTO** | 2,0 | Montanhas, picos, torres muito altas com boa visada de 360°. A espinha dorsal da rede. |
+
+## Como configurar o atraso de recepção
+
+Por padrão, o atraso de recepção está **desativado**. Para ativá-lo, defina `rxdelay` para um número positivo (recomenda-se `3` para a maioria dos cenários).
+
+**Quando ativar:** Se você tem muitos repetidores em proximidade e nota pacotes duplicados ou colisões, ativar o atraso de RX pode ajudar a reduzir o tempo no ar redundante. Em redes esparsas com poucos repetidores, geralmente é bom deixá-lo desativado.
