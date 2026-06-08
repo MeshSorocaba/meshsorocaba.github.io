@@ -98,17 +98,6 @@ O `rx_delay_base 3` complementa essa hierarquia: cópias recebidas com sinal for
 
 Essa abordagem foi desenvolvida e validada por comunidades mesh na Austrália, que enfrentaram os mesmos problemas de colisão e desperdício de tempo no ar ao implementar dezenas de repetidores em terrenos variados. A física não muda entre hemisférios — a estratégia de fazer nós mais altos aguardar mais funciona em qualquer lugar.
 
-### Compromissos do atraso
-
-| Mais atraso (nós altos) | Menos atraso (nós baixos) |
-|---|---|
-| Menos colisões entre muitos repetidores | Propagação mais rápida de pacotes |
-| Menos congestionamento do tempo no ar | Mais transmissões redundantes |
-| Cobertura de longa distância garantida | Cada pacote é encaminhado rapidamente |
-| Melhor para redes densas com sobreposição | Melhor para redes esparsas com poucos vizinhos |
-
-Não existe uma configuração que sirva para todos. A melhor configuração depende da topologia da rede, do volume de tráfego e de quanto você valoriza velocidade versus eficiência.
-
 ## Como configurar o atraso de recepção
 
 | Configuração CLI | O que faz | Padrão |
