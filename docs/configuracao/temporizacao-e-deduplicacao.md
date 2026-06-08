@@ -9,20 +9,20 @@ Quando um repetidor decide encaminhar um pacote de inundação, ele **aguarda um
 O cálculo funciona assim:
 
 1. O repetidor estima quanto tempo o pacote levaria para ser transmitido (seu **tempo no ar** ou **airtime**).
-2. Multiplica-se isso por um **fator de atraso** configurável via `tx_delay` (para pacotes via inundação) ou `direct_tx_delay` (para pacotes diretos).
+2. Multiplica-se isso por um **fator de atraso** configurável via `txdelay` (para pacotes via inundação) ou `direct.txdelay` (para pacotes diretos).
 3. O atraso final é um **valor aleatório entre 0 e 5× esse resultado**.
 
 Como o atraso é inteiramente aleatório dentro do intervalo, não há espera mínima garantida. Um pacote *pode* ser retransmitido quase imediatamente, ou pode aguardar até o máximo. A ideia é que múltiplos repetidores que ouvem o mesmo pacote escolham atrasos aleatórios diferentes, tornando colisões improváveis.
 
 ### Exemplo prático
 
-Imagine que um repetidor recebe um pacote de inundação que levaria aproximadamente **1,5 segundos** para ser transmitido pelo ar. Com o fator de atraso padrão para inundação (`tx_delay = 0.5`):
+Imagine que um repetidor recebe um pacote de inundação que levaria aproximadamente **1,5 segundos** para ser transmitido pelo ar. Com o fator de atraso padrão para inundação (`txdelay = 0.5`):
 
 1. **Tempo no ar × fator de atraso** = 1,5 s × 0,5 = **0,75 segundo** (base de cálculo).
 2. **Atraso final** = valor aleatório entre **0 e 5× a base** = entre 0 e 3,75 s.
 
 !!! info "Nota"
-    Os pacotes enviados por inundação usam um fator de atraso mais longo porque muitos repetidores podem estar envolvidos e as chances de colisão são maiores. Se o mesmo pacote fosse direto/roteado (`direct_tx_delay = 0,3`), a base seria 2 s × 0,3 = 0,6 s, e o atraso final ficaria entre 0 e 3 s — intervalo mais curto, refletindo a maior prioridade do tráfego direto.
+    Os pacotes enviados por inundação usam um fator de atraso mais longo porque muitos repetidores podem estar envolvidos e as chances de colisão são maiores. Se o mesmo pacote fosse direto/roteado (`direct.txdelay = 0,3`), a base seria 2 s × 0,3 = 0,6 s, e o atraso final ficaria entre 0 e 3 s — intervalo mais curto, refletindo a maior prioridade do tráfego direto.
 
 
 ## Atraso de recepção (ou `rxdelay`)
@@ -110,7 +110,7 @@ A abordagem do MeshCore troca alguma eficiência de tempo no ar por **confiabili
 
 O princípio fundamental é simples: **nós mais altos devem aguardar mais antes de retransmitir**. Isso permite que nós mais baixos, que cobrem áreas locais, transmitam primeiro e atendam ao tráfego local. Nós mais altos, com alcance muito maior, entram depois para cobrir os saltos de longa distância. O resultado é uma malha que naturalmente prefere os caminhos mais fortes e limpos, sem roteamento manual.
 
-Quando um pacote de inundação é transmitido, todos os repetidores que o ouvem o enfileiram para retransmissão — mas cada um aguarda um tempo aleatório proporcional ao seu `tx_delay`. Com a hierarquia de elevação:
+Quando um pacote de inundação é transmitido, todos os repetidores que o ouvem o enfileiram para retransmissão — mas cada um aguarda um tempo aleatório proporcional ao seu `txdelay`. Com a hierarquia de elevação:
 
 1. O nó **BAIXO** (atraso curto) tem maior probabilidade de transmitir primeiro, atendendo vizinhos próximos.
 2. O nó **MÉDIO** (atraso intermediário) transmite em seguida, cobrindo a área que o nó baixo não alcançou.
@@ -124,7 +124,7 @@ Essa abordagem foi desenvolvida e validada por comunidades mesh na Austrália, q
 
 Escolha o perfil que melhor descreve a instalação do seu repetidor e aplique a configuração correspondente.
 
-| Perfil | `tx_delay` | Onde se aplica |
+| Perfil | `txdelay` | Onde se aplica |
 |---|---|---|
 | **BAIXO** | 0,5 | Telhados, postes, instalações ao nível do solo. Poucos vizinhos, alcance local. |
 | **MÉDIO** | 1,0 | Prédios, torres baixas, morros baixos. Conecta bairros e áreas suburbanas. |
