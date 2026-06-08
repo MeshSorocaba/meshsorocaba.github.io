@@ -126,9 +126,9 @@ Escolha o perfil que melhor descreve a instalação do seu repetidor e aplique a
 
 | Perfil | `txdelay` | Onde se aplica |
 |---|---|---|
-| **BAIXO** | 0,5 | Telhados, postes, instalações ao nível do solo. Poucos vizinhos, alcance local. |
-| **MÉDIO** | 1,0 | Prédios, torres baixas, morros baixos. Conecta bairros e áreas suburbanas. |
-| **ALTO** | 2,0 | Montanhas, picos, torres muito altas com boa visada de 360°. A espinha dorsal da rede. |
+| **BAIXO** | 0.5 | Telhados, postes, instalações ao nível do solo. Poucos vizinhos, alcance local. |
+| **MÉDIO** | 1.0 | Prédios, torres baixas, morros baixos. Conecta bairros e áreas suburbanas. |
+| **ALTO** | 2.0 | Montanhas, picos, torres muito altas com boa visada de 360°. A espinha dorsal da rede. |
 
 ## Como configurar o atraso de recepção
 
