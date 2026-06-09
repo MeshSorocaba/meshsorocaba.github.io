@@ -1,8 +1,42 @@
-# Temporização e Deduplicação de Repetidores do MeshCore
+---
+title: Temporização e Deduplicação em Repetidores do MeshCore
+---
 
-Quando um repetidor ouve um pacote, ele não deve simplesmente retransmiti-lo imediatamente. Se vários repetidores ouvissem o mesmo pacote e todos retransmitissem simultaneamente, haveria colisão. O MeshCore utiliza dois mecanismos de atraso para espaçar as transmissões e, ao mesmo tempo, dar vantagem às cópias de melhor qualidade de um pacote.
+## Resumo
 
-## Atraso de transmissão (ou `txdelay`)
+Quando um repetidor MeshCore ouve um pacote, ele não o retransmite imediatamente. O firmware do MeshCore utiliza mecanismo de atraso para espaçar as transmissões e evitar que múltiplos repetidores falem ao mesmo tempo, diminuindo o número de colisões. Esse mecanismo consiste em disparar o pacote em um momento aleatório dentro de uma janela de oportunidade pré-definida. Contudo, quando há muitos repetidores em uma mesma região, as chances de colisão podem ser significativas, mesmo que os repetidores transmitam aleatoriamente dentro de uma mesma janela.
+
+Uma maneira inteligente de contornar esse problema é configurando um `txdelay` diferente para cada perfil de repetidor:
+
+| Perfil | `txdelay` | Onde se aplica |
+|---|---|---|
+| :fontawesome-solid-house: **BAIXO** | 0.5 | Telhados, postes, instalações ao nível do solo. Poucos vizinhos, alcance local. |
+| :fontawesome-solid-building: **MÉDIO** | 1.0 | Prédios, torres baixas, morros baixos. Conecta bairros e áreas suburbanas. |
+| :fontawesome-solid-mountain: **ALTO** | 2.0 | Montanhas, picos, torres muito altas com boa visada de 360°. A espinha dorsal da rede. |
+
+Dessa forma:
+
+- Repetidores pessoais têm prioridade e fazem o trabalho local.
+- Repetidores um pouco mais altos se integram suavemente, meio segundo depois, para completar o trabalho dos primeiros.
+- Por último, os repetidores regionais, no alto dos picos, são acionados por último e retransmitem pacotes que necessitam sair para outras regiões (se houver).
+- A rede em malha sofre menos colisões.
+- As chances de entrega bem-sucedida de pacotes aumentam.
+
+Para configurar os repetidores dessa forma, basta entrar no modo **Linha de Comando** do gerenciamento remoto e digitar:
+
+```
+set txdelay VALOR
+```
+
+Além disso, é possível adicionar um mecanismo extra de atraso baseado no **SNR** ou intensidade do sinal, configurado através do parâmetro `rxdelay`. Através dele, caminhos cujo sinal-ruído é mais forte tem maior prioridade. Por padrão, o atraso de recepção está desativado. Para ativá-lo, defina `rxdelay` para um número positivo (recomenda-se `3` para a maioria dos cenários).
+
+```
+set rxdelay 3
+```
+
+Caso você queira saber mais como esses mecanismos funcionam, continue lendo.
+
+## Atraso de transmissão (`txdelay`)
 
 Quando um repetidor decide encaminhar um pacote de inundação, ele **aguarda um tempo aleatório** antes de retransmitir. Esse atraso não é fixo, mas escolhido aleatoriamente dentro de um intervalo que escala com o tamanho do pacote.
 
@@ -25,25 +59,31 @@ Imagine que um repetidor recebe um pacote de inundação que levaria aproximadam
     Os pacotes enviados por inundação usam um fator de atraso mais longo porque muitos repetidores podem estar envolvidos e as chances de colisão são maiores. Se o mesmo pacote fosse direto/roteado (`direct.txdelay = 0,3`), a base seria 2 s × 0,3 = 0,6 s, e o atraso final ficaria entre 0 e 3 s — intervalo mais curto, refletindo a maior prioridade do tráfego direto.
 
 
-## Atraso de recepção (ou `rxdelay`)
+## Atraso de recepção (`rxdelay`)
 
-Antes do atraso de transmissão, existe a opção por um **atraso de repetição**. Ou seja, quando um repetidor recebe um pacote por inundação, ele não o processa imediatamente. Ele aplica um pequeno atraso baseado na **qualidade do sinal** (SNR) da cópia recebida. Se o parâmetro `rxdelay` da repetidora não for definido (ou tiver valor 0), o atraso de recepção não é aplicado. Caso contrário, a fórmula do atraso é dada em milisegundos por:
+Além do atraso de transmissão, existe a opção por um **atraso de recepção**. Ou seja, quando um repetidor recebe um pacote por inundação, ele não o processa imediatamente. Ele aplica um pequeno atraso baseado na **qualidade do sinal** (SNR) da cópia recebida antes de realizar qualquer ação. 
+
+Se o parâmetro `rxdelay` da repetidora não for definido (ou tiver valor 0), o atraso de recepção não é aplicado. Caso contrário, a fórmula do atraso é dada em milisegundos por:
 
 $$\left(r^{\,0.85 - S} - 1\right) \times t$$
 
 Onde:
 
-- **$r$** = `rxdelay`, configurável entre 0 e 20.
+- **$r$** = `rxdelay`, configurável entre 0.0 e 20.0
 - **$S$** = pontuação de qualidade do sinal (baseada no SNR), no intervalo $[0,\, 1]$
 - **$t$** = tempo estimado de transmissão pelo ar (ms)
 
+A comunidade [WNY MeshCore](https://wnymeshcore.org/blog/repeater-setup-naming-guides) da Austrália recomenda um `rxdelay` de `3.0` para todos os casos, independente do perfil do repetidor.
+
 ## Como o SNR afeta o atraso
+
+Com `rxdelay = 3.0`, o atraso de recepção teria o seguinte efeito:
 
 | Pontuação | Expoente | Multiplicador | Efeito |
 |:---:|:---:|:---:|:---|
-| 1.0 (excelente) | −0.15 | ×0.41 | Atraso curto |
-| 0.5 (boa) | 0.35 | ×1.24 | Atraso moderado |
-| 0.0 (ruim) | 0.85 | ×6.08 | Atraso longo |
+| 1.0 (excelente) | −0.15 | ×0.84 | Atraso curto |
+| 0.5 (boa) | 0.35 | ×1.47 | Atraso moderado |
+| 0.0 (ruim) | 0.85 | ×2.54 | Atraso longo |
 
 Em outras palavras:
 
@@ -102,7 +142,7 @@ No entanto, em **redes densas** com muitos repetidores em alcance próximo, isso
 
 ### Como isso difere de outras redes mesh
 
-Outras implementações de mesh LoRa, como o Meshtastic, quando um repetidor ouve um vizinho encaminhar um pacote que estava planejando encaminhar, **cancela** sua retransmissão pendente. O raciocínio: "Alguém já fez o trabalho, então eu não preciso."
+Em outras implementações de mesh LoRa, como o Meshtastic, quando um repetidor ouve um vizinho encaminhar um pacote que estava planejando encaminhar, **cancela** sua retransmissão pendente. O raciocínio: "Alguém já fez o trabalho, então eu não preciso."
 
 A abordagem do MeshCore troca alguma eficiência de tempo no ar por **confiabilidade e simplicidade**. O pacote tem garantia de ser encaminhado por cada repetidor que ouviu o original, independentemente do tempo. Isso o torna mais robusto em redes esparsas onde nem todos os repetidores podem se ouvir, mas menos eficiente em redes densas.
 
@@ -118,7 +158,7 @@ Quando um pacote de inundação é transmitido, todos os repetidores que o ouvem
 
 O `rxdelay` complementa essa hierarquia: cópias recebidas com sinal forte (de um vizinho próximo) são processadas rapidamente; cópias com sinal fraco (ecos distantes) são atrasadas e frequentemente descartadas como duplicatas antes de gerar retransmissões. O resultado líquido é que o tráfego local é resolvido localmente, e a espinha dorsal só entra em ação quando necessário.
 
-Essa abordagem foi desenvolvida e validada por comunidades mesh na Austrália, que enfrentaram os mesmos problemas de colisão e desperdício de tempo no ar ao implementar dezenas de repetidores em terrenos variados. A física não muda entre hemisférios — a estratégia de fazer nós mais altos aguardar mais funciona em qualquer lugar.
+Essa abordagem foi desenvolvida e validada por comunidades mesh na Austrália, que enfrentaram os mesmos problemas de colisão e desperdício de tempo no ar ao implementar dezenas de repetidores em terrenos variados.
 
 ## Como configurar o atraso de transmissão por perfil de elevação
 
@@ -129,6 +169,7 @@ Escolha o perfil que melhor descreve a instalação do seu repetidor e aplique a
 | **BAIXO** | 0.5 | Telhados, postes, instalações ao nível do solo. Poucos vizinhos, alcance local. |
 | **MÉDIO** | 1.0 | Prédios, torres baixas, morros baixos. Conecta bairros e áreas suburbanas. |
 | **ALTO** | 2.0 | Montanhas, picos, torres muito altas com boa visada de 360°. A espinha dorsal da rede. |
+
 
 ## Como configurar o atraso de recepção
 

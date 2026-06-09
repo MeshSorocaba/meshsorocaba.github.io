@@ -21,7 +21,7 @@ de economia de energia para preservar a bateria.
     Para qualquer pessoa que quiser participar da rede mesh
     enviando e recebendo mensagens pelo celular.
 
-👉 Veja o guia completo:
+:octicons-arrow-right-24: Veja o guia completo:
 [Configurando um Companion](companions.md)
 
 ## Repeater (Repetidora)
@@ -42,7 +42,7 @@ contínua.
     Para quem quer contribuir com a infraestrutura da rede,
     instalando um dispositivo fixo em um local privilegiado.
 
-👉 Veja o guia completo:
+:octicons-arrow-right-24: Veja o guia completo:
 [Configurando uma Repetidora](repeaters.md)
 
 ## Bônus: Observer (Observador)
@@ -64,5 +64,5 @@ ativos e o nível de atividade da rede.
     Para quem quer monitorar a saúde da rede e contribuir dados
     de cobertura para a comunidade.
 
-👉 Veja o guia completo:
+:octicons-arrow-right-24: Veja o guia completo:
 [Configurando um Observer](observers.md)
