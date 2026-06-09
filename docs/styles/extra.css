@@ -44,6 +44,16 @@
 	color: #219ebc;
 }
 
+/* Make header title link look like plain text */
+.md-header__title-link {
+	color: inherit;
+	text-decoration: none;
+}
+.md-header__title-link:hover {
+	color: inherit;
+	text-decoration: none;
+}
+
 /* Use Rubik for headings */
 .md-content h1,
 .md-content h2,
