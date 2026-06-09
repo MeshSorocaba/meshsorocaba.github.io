@@ -1,6 +1,8 @@
 # Perguntas Frequentes sobre o MeshCore
 
-## 1. Como adicionar um contato?
+## Gerenciamento de Contatos
+
+### Como adicionar um contato?
 
 Existem várias formas de adicionar um contato no MeshCore:
 
@@ -12,7 +14,7 @@ Existem várias formas de adicionar um contato no MeshCore:
 
 - **Anúncios**: Quando você e outra pessoa enviam um anúncio e vocês estão ao alcance um do outro, isso sinaliza sua presença na rede e vocês aparecem mutuamente na lista de dispositivos descobertos.
 
-## 2. Qual a diferença entre a lista de Contatos e "Descobrir Contatos"?
+### Qual a diferença entre a lista de Contatos e "Descobrir Contatos"?
 
 - **Descobrir Contatos (Discovery List)**: Mostra os dispositivos que, desde que seu rádio foi ligado, foram ouvidos conversando, mandando telemetria, anunciando-se, ou qualquer outra atividade na radiofrequência. É uma lista dinâmica de nós que foram detectados, mas que você ainda não adicionou oficialmente.
 
@@ -20,7 +22,7 @@ Existem várias formas de adicionar um contato no MeshCore:
 
 A diferença prática é que você pode ver dispositivos na lista de descobertas, mas só consegue enviar mensagens diretas para quem está na sua lista de contatos.
 
-## 3. Consigo conversar com uma pessoa no canal público, mas não com mensagens diretas. Por quê?
+### Consigo conversar com uma pessoa no canal público, mas não com mensagens diretas. Por quê?
 
 Isso acontece porque as mensagens diretas (privadas) requerem que o destinatário esteja na sua lista de contatos. Canais públicos funcionam de forma diferente:
 
@@ -30,17 +32,7 @@ Isso acontece porque as mensagens diretas (privadas) requerem que o destinatári
 
 **Solução**: Adicione a pessoa à sua lista de contatos antes de tentar enviar mensagens diretas.
 
-## 4. Como ver o caminho que minha mensagem tomou?
-
-No MeshCore, quando você envia uma mensagem pela primeira vez para um contato, ela é roteada via flood (inundação). Quando o destinatário recebe a mensagem, ele envia de volta um relatório de entrega contendo todas as repetidoras pelas quais a mensagem passou. Esse relatório é a base para o caminho direto que será usado nas mensagens futuras.
-
-Para analisar caminhos e fazer troubleshooting, você pode usar ferramentas como o [LetsMesh.net Analyzer](https://analyzer.letsmesh.net/packets?region=SOD).
-
-## 5. O que é um "trace route"?
-
-O "trace route" é uma ferramenta para identificar o caminho que um pacote percorre através da rede mesh até chegar ao seu destino. No MeshCore, isso mostra quais repetidoras retransmitiram sua mensagem.
-
-## 6. O que significa um nó "descoberto"?
+### O que significa um nó "descoberto"?
 
 Quando dois rádios são ligados numa região, não há como saberem que o outro existe sem que antes eles escutem alguma coisa.
 
@@ -50,12 +42,15 @@ Aí você pode optar por adicionar esses nós descobertos na sua lista de contat
 
 Somente quando se tem alguém na lista de contatos é que você consegue, por exemplo, mandar uma mensagem privada.
 
-## 8. Por que usar o normalizador de nomes para repetidoras?
+## Roteamento
 
-A ideia é facilitar a vida do usuário quando analizar o caminho pelo qual sua mensagem transitou. Ao ver nomes como "SSP-CENTRO-A01A" ou "SOR-JULIODEMESQUITA-123c", sabemos imediatamente a região da repetidora e o quão distante está. Os últimos dígitos tambem ajudam na hora de identificar os dispositivos nas ferramentas de análise de trafego, pois sãoo os primeiros dígitos da chave pública, que é unica para cada dispositivo.
+### Como ver o caminho que minha mensagem tomou?
 
-Curiosidade: o mecanismo de abreviaçao do Normalizador é o mesmo utilizado por sistemas de logistica. A prioridade é que a primeira letra seja a inicial da primeira palavra. A segunda letra, a inicial da segunda palavra. A terceira letra, a inicial da última palavra. Não sendo possível, tenta pegar as letras seguintes, das palavras seguintes ou anteriores (no caso da última letra). Não sendo possível, tenta pegar a 2 letras seguintes da primeira palavra, e se também não for possível, percorre a primeira palavra de forma reversa tentando montar a sigla.
+No MeshCore, quando você envia uma mensagem pela primeira vez para um contato, ela é roteada via flood (inundação). Quando o destinatário recebe a mensagem, ele envia de volta um relatório de entrega contendo todas as repetidoras pelas quais a mensagem passou. Esse relatório é a base para o caminho direto que será usado nas mensagens futuras.
 
-Essa regra de abreviação garante que nunca haja duas abreviações iguais para nomes de cidades diferentes.
+Para analisar caminhos e fazer troubleshooting, você pode usar ferramentas como o [LetsMesh.net Analyzer](https://analyzer.letsmesh.net/packets?region=SOD).
 
+### O que é um "trace route"?
+
+O "trace route" é uma ferramenta para identificar o caminho que um pacote percorre através da rede mesh até chegar ao seu destino. No MeshCore, isso mostra quais repetidoras retransmitiram sua mensagem.
 
