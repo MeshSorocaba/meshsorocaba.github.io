@@ -4,7 +4,7 @@ title: Temporização e Deduplicação em Repetidores do MeshCore
 
 ## Resumo
 
-Quando um repetidor MeshCore ouve um pacote, ele não o retransmite imediatamente. O firmware do MeshCore utiliza mecanismo de atraso para espaçar as transmissões e evitar que múltiplos repetidores falem ao mesmo tempo, diminuindo o número de colisões. Esse mecanismo consiste em disparar o pacote em um momento aleatório dentro de uma janela de oportunidade pré-definida. Contudo, quando há muitos repetidores em uma mesma região, as chances de colisão podem ser significativas, mesmo que os repetidores transmitam aleatoriamente dentro de uma mesma janela.
+Quando um repetidor MeshCore ouve um pacote, ele não o retransmite imediatamente. O firmware do MeshCore utiliza um mecanismo de atraso para espaçar as transmissões e evitar que múltiplos repetidores falem ao mesmo tempo, diminuindo o número de colisões. Esse mecanismo consiste em disparar o pacote em um momento aleatório dentro de uma janela de oportunidade pré-definida. Contudo, quando há muitos repetidores em uma mesma região, as chances de colisão podem ser significativas, mesmo que os repetidores transmitam aleatoriamente dentro de uma mesma janela.
 
 Uma maneira inteligente de contornar esse problema é configurando um `txdelay` diferente para cada perfil de repetidor:
 
