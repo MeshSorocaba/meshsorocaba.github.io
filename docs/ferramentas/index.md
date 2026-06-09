@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+---
+
 # Ferramentas
 
 <div class="grid cards" markdown>
