@@ -63,7 +63,7 @@ Este formulário ajuda a gerar nomes padronizados para repetidoras MeshCore no B
         <button type="button" id="generate-btn" class="md-button md-button--primary">
             Gerar Nome
         </button>
-        <button type="button" id="reset-btn" class="md-button">
+        <button type="button" id="reset-btn" class="md-button md-button--primary">
             Limpar
         </button>
     </div>
@@ -81,7 +81,14 @@ Este formulário ajuda a gerar nomes padronizados para repetidoras MeshCore no B
     </div>
 </div>
 
-**Explicação**
+!!! warning "Atenção"
+    Após ajustar o nome da repetidora, lembre-se de:
+
+    **1) Anunciar a repetidora**: na aba "Definições" do gerenciamento remoto, clique em "Anúncio".
+
+    **2) Reenviar a repetidora para o mapa da Internet**: Na tela anterior, na sua lista de contatos, clique nos três pontos ao lado do nome da repetidora > "Partilhar" > "Carregar para Mapa da Internet".
+
+## Explicação
 
 Os nomes das repetidoras seguem o formato:
 
@@ -97,11 +104,29 @@ Onde:
 - **REGIONAL**: Identificador regional como bairro, ponto de referência ou localidade (maiúsculo)
 - **PUBKEY**: Primeiros **4 dígitos** da chave pública (public key) do dispositivo em hexadecimal (maiúsculo)
 
+É sugerido que apenas os dispositivos repetidores tenham o nome padronizado. Os dispositivos pessoais (companions) são livres para serem nomeados de qualquer maneira.
+
 Exemplos:
 
-| Nome | Descrição |
-|------|-----------|
-| `SOR-SAOBENTO-A1B2` | Repetidora no mosteiro São Bento de Sorocaba |
-| `SAO-PAULISTA-9D4E` | Repetidora na Paulista, São Paulo |
-| `SBC-VILANOVA-3C7D` | Repetidora na Vila Nova, São Paulo |
+- `SOR-SAOBENTO-A1B2`: Repetidora no mosteiro São Bento de Sorocaba 
+- `SAO-PAULISTA-9D4E`:  Repetidora na Paulista, São Paulo 
+- `SBC-VILANOVA-3C7D`: Repetidora na Vila Nova, São Bernardo do Campo 
 
+## Por que não simplesmente usar qualquer nome?
+
+Sem um padrão, você acaba com nomes como "Nó do João", "teste123" e "Repeater2". Quando se está resolvendo um problema de roteamento ou tentando entender por que uma mensagem deu 6 saltos em vez de 3, esses nomes não dizem nada. Uma convenção de nomenclatura consistente permite que operadores e membros da comunidade:
+
+- Identifiquem a localização do nó sem consultar um mapa;
+- Rastreiem rotas usando o prefixo da chave pública;
+- Evitem conflitos, já que o sufixo da chave pública garante a exclusividade.
+
+## Consulta reversa
+
+Para saber a qual cidade uma abreviação se refere, consulte o [Código das Nações Unidas para o Comércio e Transportes Locais (UN/LOCODE)](https://unlocode.unece.org/directory/locodes/?country=BR). 
+
+
+## Últimas Alterações
+
+**07/06/2026** - Dado o crescimento da rede MeshCore, houve a necessidade de criar abreviações únicas para cada cidade no Brasil a fim de evitar conflitos. Dessa forma, o usuário não digita mais manualmente o nome da cidade, mas seleciona de uma lista. A abreviação de cada cidade é dada agora pela denominação das Nações Unidas.
+
+**20/04/2026** - Primeira versão da ferramenta. Utiliza o algoritmo que toma a primeira letra de cada palavra do nome da cidade. Caso a letra consecutiva se repita, a próxima é utilizada, e assim por diante.
