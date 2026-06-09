@@ -15,7 +15,7 @@
 	--md-primary-bg-color--light: var(--mt-secondary-color);
 
 	/* Accent colors */
-	--md-accent-fg-color: #8ecae6;
+	--md-accent-fg-color: rgb(120, 180, 248);
 	--md-accent-fg-color--transparent: var(--mt-primary-color--transparent);
 	--md-accent-bg-color: var(--mt-secondary-color);
 	--md-accent-bg-color--light: var(--mt-secondary-color);
@@ -24,7 +24,7 @@
 	--md-default-bg-color: #1B1B1D;
 	--md-default-fg-color--light: #FFFFFF;
 	/* --md-default-fg-color: #DDDDDD; */
-	--md-typeset-a-color: #70b2f3;
+	--md-typeset-a-color: #54cfff;
 
 	/* Default Fonts */
 	font-family: "Inter", sans-serif;
