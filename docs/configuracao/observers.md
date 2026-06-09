@@ -8,7 +8,7 @@ Uma vez configurado, esse dispositivo pode exercer normalmente sua função de `
 
 ![](../img/letsmesh.jpg)
 
-Como um bônus, cada `Observer` ganha uma página própria no site onde é possível monitorar dados de telemetria. Isso faz com que a plataforma se torne bastante útil para administradores de repetidoras.
+Como um bônus, cada `Observer` ganha uma página própria no site onde é possível monitorar dados de telemetria. Isso faz com que a plataforma se torne bastante útil para administradores de repetidores.
 
 ![](../img/letsmesh-dashboard.jpg)
 

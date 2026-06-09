@@ -46,11 +46,11 @@ Somente quando se tem alguém na lista de contatos é que você consegue, por ex
 
 ### Como ver o caminho que minha mensagem tomou?
 
-No MeshCore, quando você envia uma mensagem pela primeira vez para um contato, ela é roteada via flood (inundação). Quando o destinatário recebe a mensagem, ele envia de volta um relatório de entrega contendo todas as repetidoras pelas quais a mensagem passou. Esse relatório é a base para o caminho direto que será usado nas mensagens futuras.
+No MeshCore, quando você envia uma mensagem pela primeira vez para um contato, ela é roteada via flood (inundação). Quando o destinatário recebe a mensagem, ele envia de volta um relatório de entrega contendo todos os repetidores pelos quais a mensagem passou. Esse relatório é a base para o caminho direto que será usado nas mensagens futuras.
 
 Para analisar caminhos e fazer troubleshooting, você pode usar ferramentas como o [LetsMesh.net Analyzer](https://analyzer.letsmesh.net/packets?region=SOD).
 
 ### O que é um "trace route"?
 
-O "trace route" é uma ferramenta para identificar o caminho que um pacote percorre através da rede mesh até chegar ao seu destino. No MeshCore, isso mostra quais repetidoras retransmitiram sua mensagem.
+O "trace route" é uma ferramenta para identificar o caminho que um pacote percorre através da rede mesh até chegar ao seu destino. No MeshCore, isso mostra quais repetidores retransmitiram sua mensagem.
 

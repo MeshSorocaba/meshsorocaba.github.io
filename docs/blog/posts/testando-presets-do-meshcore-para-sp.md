@@ -12,7 +12,7 @@ Foi realizada uma bateria de testes entre dois dispositivos com 75 km de distân
 
 ## Contexto
 
-Enquanto o Júnior (PY2PE) estava a caminho da torre no alto da Serra do Japi para instalar uma nova repetidora MeshCore, eu e o Marcelo Cordeiro resolvemos aproveitar a ocasião para testarmos combinações diferentes de frequência, largura de banda, spreading factor e coding factor. A ideia era fechar com a melhor configuração possível naquele momento para evitar uma nova subida até a torre da repetidora posteriormente.
+Enquanto o Júnior (PY2PE) estava a caminho da torre no alto da Serra do Japi para instalar um novo repetidor MeshCore, eu e o Marcelo Cordeiro resolvemos aproveitar a ocasião para testarmos combinações diferentes de frequência, largura de banda, spreading factor e coding factor. A ideia era fechar com a melhor configuração possível naquele momento para evitar uma nova subida até a torre do repetidor posteriormente.
 
 O Brasil não possui (ainda) um preset oficial, portanto decidimos testar os presets australianos, como já é feito no Meshtastic.
 

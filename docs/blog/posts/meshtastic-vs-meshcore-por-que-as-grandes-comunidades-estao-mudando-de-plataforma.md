@@ -187,7 +187,7 @@ Durante os horários de pico, um único dispositivo Meshtastic com configuraçã
 /// caption
 ///
 
-À esquerda no gráfico, temos um único dispositivo Meshtastic com servidor brasileiro de MQTT ligado, isolado na região. A ocupação do canal (channel utilization) chega a quase 49,1% em determinada hora. À direita, um dispositivo MeshCore em contato com a repetidora na Serra do Japi, que serve a 20 dispositivos e um canal público frequentemente utilizado, ocupa apenas 3% da frequência.
+À esquerda no gráfico, temos um único dispositivo Meshtastic com servidor brasileiro de MQTT ligado, isolado na região. A ocupação do canal (channel utilization) chega a quase 49,1% em determinada hora. À direita, um dispositivo MeshCore em contato com o repetidor na Serra do Japi, que serve a 20 dispositivos e um canal público frequentemente utilizado, ocupa apenas 3% da frequência.
 
 O Meshtastic oferece algumas mitigações locais. É possível desabilitar o `downlink` de canais públicos ou ativar a opção `Ignorar MQTT`. Mas essas configurações resolvem apenas para um dispositivo individual, não para os outros nós ao redor. Mesmo recusando os pacotes que chegam de terceiros, o usuário continua esperando que a frequência se desobstrua das transmissões alheias.
 

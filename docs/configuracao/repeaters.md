@@ -1,13 +1,15 @@
-# Configurando uma Repetidora
+---
+title: Como Configurar um Repetidor no MeshCore
+---
 
-As repetidoras são a **espinha dorsal da rede**. Isso acontece porque os dispositivos pessoais (_companions_) **não retransmitem** mensagens; somente as repetidoras fazem isso. Sem elas, o alcance da sua comunicação se limita ao raio direto entre dois companions.
+Os repetidores são a **espinha dorsal da rede**. Isso acontece porque os dispositivos pessoais (_companions_) **não retransmitem** mensagens; somente os repetidores fazem isso. Sem eles, o alcance da sua comunicação se limita ao raio direto entre dois companions.
 
-A boa notícia é que repetidoras MeshCore não exigem hardware diferente dos companions. O mesmo aparelho que você usa no bolso pode ser configurado como repetidora — basta mudar o firmware e instalar em um local fixo.
+A boa notícia é que repetidores MeshCore não exigem hardware diferente dos companions. O mesmo aparelho que você usa no bolso pode ser configurado como repetidor — basta mudar o firmware e instalar em um local fixo.
 
 ## O que você vai precisar
 
 - **Um rádio LoRa compatível**: Praticamente qualquer dispositivo que funciona com Meshtastic funciona com MeshCore. Consulte a [lista de dispositivos suportados](https://flasher.meshcore.io/){:target="_blank"}. Além disso, veja a lista de [Equipamentos Recomendados](../equipamento.md).
-- **Um local semi-permanente**: repetidoras precisam ser fixas. Quanto mais alto, melhor.
+- **Um local semi-permanente**: repetidores precisam ser fixos. Quanto mais alto, melhor.
 - **Uma fonte de energia confiável**: USB, bateria, painel solar ou energia elétrica.
 
 ## Gravação do firmware (Flashing)
@@ -21,10 +23,10 @@ A forma mais simples de gravar o firmware MeshCore é usando o **web flasher** o
 5. Quando solicitado, selecione **"Configure via USB"**.
 
     !!! warning "Importante"
-        Repetidoras MeshCore **não** são configuradas via Bluetooth. Use sempre a configuração por USB.
+        Repetidores MeshCore **não** são configurados via Bluetooth. Use sempre a configuração por USB.
 
 6. Preencha as configurações iniciais (veja a seção abaixo).
-7. Clique em **Send Advert** — isso ajuda seu companion a encontrar a nova repetidora.
+7. Clique em **Send Advert** — isso ajuda seu companion a encontrar o novo repetidor.
 
 ## Configuração inicial
 
@@ -50,27 +52,27 @@ Ajuste os parâmetros de rádio para a predefinição correta do Brasil:
 
 ### Nome
 
-Dê à sua repetidora um nome que indique a localização — um marco, bairro ou ruas principais. Isso ajuda outros usuários a entender a cobertura da rede. Use o [Gerador de Nomes para Repetidoras](../ferramentas/nomes-repetidoras.md) para obter um nome que segue os padrões da comunidade.
+Dê ao seu repetidor um nome que indique a localização — um marco, bairro ou ruas principais. Isso ajuda outros usuários a entender a cobertura da rede. Use o [Gerador de Nomes para Repetidores](../ferramentas/nomes-repetidores.md) para obter um nome que segue os padrões da comunidade.
 
 ### Localização
 
-Defina a latitude e longitude em formato decimal (ex.: -23.50, -47.46). Isso permite que sua repetidora apareça nos mapas da rede.
+Defina a latitude e longitude em formato decimal (ex.: -23.50, -47.46). Isso permite que seu repetidor apareça nos mapas da rede.
 
 !!! tip "Dica"
     Em vez de usar um módulo GPS (que consome bateria constantemente), defina a posição manualmente pelo mapa na interface de configuração. Basta zoom na sua área, clicar no ponto e salvar.
 
 ### Senhas
 
-- **Admin**: defina uma senha forte. É por ela que você acessará o gerenciamento remoto da repetidora.
+- **Admin**: defina uma senha forte. É por ela que você acessará o gerenciamento remoto do repetidor.
 - **Guest**: se deixada em branco, qualquer usuário MeshCore poderá ver as informações do proprietário (_Owner Info_). Se preenchida, será exigida para visualizar esses dados.
 
 ### Informações do proprietário (_Owner Info_)
 
-Campo de texto livre para incluir seu indicativo de radioamador, e-mail, nome no Discord ou qualquer outro contato. Útil caso alguém precise notificar você sobre um problema na repetidora. Isso é opcional e fica a seu critério.
+Campo de texto livre para incluir seu indicativo de radioamador, e-mail, nome no Discord ou qualquer outro contato. Útil caso alguém precise notificar você sobre um problema no repetidor. Isso é opcional e fica a seu critério.
 
 ### Intervalos de anúncio (_Advert Intervals_)
 
-Os anúncios informam à rede que a repetidora está ativa e onde está. O MeshCore é econômico com esses anúncios, mas ainda assim vale a pena ajustar:
+Os anúncios informam à rede que o repetidor está ativo e onde está. O MeshCore é econômico com esses anúncios, mas ainda assim vale a pena ajustar:
 
 | Parâmetro | Valor recomendado | Descrição |
 | :--- | :--- | :--- |
@@ -78,19 +80,19 @@ Os anúncios informam à rede que a repetidora está ativa e onde está. O MeshC
 | Flood Advert Interval (h) | **48** | Intervalo entre anúncios que inundam toda a rede. |
 
 !!! tip "Rede em crescimento"
-    Com poucas repetidoras na região, intervalos mais curtos ajudam a rede a descobrir novos nós. Conforme a rede cresce, você pode aumentar esses valores para reduzir o tráfego de anúncios.
+    Com poucos repetidores na região, intervalos mais curtos ajudam a rede a descobrir novos nós. Conforme a rede cresce, você pode aumentar esses valores para reduzir o tráfego de anúncios.
 
 ### Modo de repetição
 
-Certifique-se de que o **Repeat Mode** está ativado. Sem ele, a repetidora não retransmite pacotes e não contribui para a rede.
+Certifique-se de que o **Repeat Mode** está ativado. Sem ele, o repetidor não retransmite pacotes e não contribui para a rede.
 
 ## Configurações avançadas
 
-As configurações abaixo são opcionais, mas podem melhorar significativamente a performance da sua repetidora e da rede como um todo.
+As configurações abaixo são opcionais, mas podem melhorar significativamente a performance do seu repetidor e da rede como um todo.
 
 ### Temporização (txdelay e rxdelay)
 
-Ajustar os atrasos de transmissão e recepção ajuda a reduzir colisões quando há várias repetidoras na mesma área. A recomendação é configurar o `txdelay` de acordo com o perfil de elevação da instalação:
+Ajustar os atrasos de transmissão e recepção ajuda a reduzir colisões quando há vários repetidores na mesma área. A recomendação é configurar o `txdelay` de acordo com o perfil de elevação da instalação:
 
 | Perfil | `txdelay` | Onde se aplica |
 | :--- | :--- | :--- |
@@ -112,43 +114,43 @@ Defina como **Moderate** para evitar que pacotes fiquem circulando indefinidamen
 
 ### Multi ACKs
 
-**Ative** essa opção. Ela faz a repetidora enviar 2 confirmações em vez de 1, melhorando a experiência de gerenciamento remoto.
+**Ative** essa opção. Ela faz o repetidor enviar 2 confirmações em vez de 1, melhorando a experiência de gerenciamento remoto.
 
 ### AGC Reset
 
-Se perceber que a repetidora fica "surda" após algum tempo de funcionamento, configure o intervalo de reset do AGC para um valor maior que 0 (o mínimo é 4). Quanto menor o valor, mais frequente será o reset.
+Se perceber que o repetidor fica "surdo" após algum tempo de funcionamento, configure o intervalo de reset do AGC para um valor maior que 0 (o mínimo é 4). Quanto menor o valor, mais frequente será o reset.
 
 ## Gerenciamento remoto
 
-Antes de instalar a repetidora em um local de difícil acesso, pratique o gerenciamento remoto usando um companion:
+Antes de instalar o repetidor em um local de difícil acesso, pratique o gerenciamento remoto usando um companion:
 
 1. No app MeshCore, vá em **Contato** → **Adicionar Contato**.
 2. Preencha:
     - **Tipo**: Repeater
-    - **Nome**: o nome da sua repetidora
+    - **Nome**: o nome do seu repetidor
     - **Chave Pública**: a chave gerada durante a configuração
 3. Salve o contato.
-4. Clique no nome da repetidora ou clique nos três pontos e selecione **Gerir**.
+4. Clique no nome do repetidor ou clique nos três pontos e selecione **Gerir**.
 5. Insira a senha de admin e faça login.
 
-Agora você pode ver estatísticas, emitir comandos de console e reconfigurar a repetidora sem precisar de acesso físico.
+Agora você pode ver estatísticas, emitir comandos de console e reconfigurar o repetidor sem precisar de acesso físico.
 
 ## Posicionamento
 
-Uma repetidora com antena omnidirecional precisa de **linha de visada** para outras repetidoras. Isso significa instalá-la o mais alto possível:
+Um repetidor com antena omnidirecional precisa de **linha de visada** para outros repetidores. Isso significa instalá-lo o mais alto possível:
 
 - No **telhado** ou em um **mastro** acima da laje
 - Em local **aberto**, sem obstáculos próximos
-- Para antenas direcionais, aponte para a repetidora que deseja conectar
+- Para antenas direcionais, aponte para o repetidor que deseja conectar
 
-Quanto melhor o posicionamento, maior o alcance efetivo e menos repetidoras a rede precisa para cobrir a mesma área.
+Quanto melhor o posicionamento, maior o alcance efetivo e menos repetidores a rede precisa para cobrir a mesma área.
 
-## Testando sua repetidora
+## Testando seu repetidor
 
 Depois de configurada e instalada:
 
-1. Acesse o [CoreScope](https://corescope.meshsorocaba.org){:target="_blank"} e busque pelo nome ou chave pública da sua repetidora.
-2. Pelo app ou gerenciamento remoto, emita o comando de anúncio para forçar a repetidora a se anunciar.
+1. Acesse o [CoreScope](https://corescope.meshsorocaba.org){:target="_blank"} e busque pelo nome ou chave pública do seu repetidor.
+2. Pelo app ou gerenciamento remoto, emita o comando de anúncio para forçar o repetidor a se anunciar.
 3. No CoreScope, expanda um anúncio recente e verifique as visualizações **Paths** e **Graph** — elas mostram quem está recebendo seus anúncios diretamente e via mesh.
 
-Se sua repetidora aparece no mapa e no MeshExplorer, parabéns! 🎉 Ela está operando e contribuindo para a Mesh Sorocaba.
+Se seu repetidor aparece no mapa e no MeshExplorer, parabéns! 🎉 Ele está operando e contribuindo para a Mesh Sorocaba.

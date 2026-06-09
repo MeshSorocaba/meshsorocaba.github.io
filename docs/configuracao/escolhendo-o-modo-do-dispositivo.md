@@ -24,17 +24,17 @@ de economia de energia para preservar a bateria.
 :octicons-arrow-right-24: Veja o guia completo:
 [Configurando um Companion](companions.md)
 
-## Repeater (Repetidora)
+## Repeater (Repetidor)
 
 O **repeater** é um dispositivo dedicado a estender o alcance da
 rede. Ele não precisa estar pareado com um celular — funciona de
 forma autônoma, retransmitindo todas as mensagens que recebe para
 que cheguem a dispositivos mais distantes.
 
-Uma repetidora bem posicionada pode multiplicar o alcance da rede
+Um repetidor bem posicionado pode multiplicar o alcance da rede
 por vários quilômetros. Por isso, instale-a no ponto mais alto
 disponível (telhado, sacada de prédio, poste), com visada livre
-para outras repetidoras e companions. Em locais sem energia
+para outros repetidores e companions. Em locais sem energia
 elétrica, é possível usar painel solar e bateria para operação
 contínua.
 
@@ -43,7 +43,7 @@ contínua.
     instalando um dispositivo fixo em um local privilegiado.
 
 :octicons-arrow-right-24: Veja o guia completo:
-[Configurando uma Repetidora](repeaters.md)
+[Configurando um Repetidor](repeaters.md)
 
 ## Bônus: Observer (Observador)
 

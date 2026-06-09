@@ -40,24 +40,24 @@ Uma exceção a essas condições é o Heltec V3 que, apesar de já vir com a te
 !!! warning "Atenção"
     Na hora da compra, independente da marca do dispositivo, certifique-se que ele é capaz de transmitir na faixa de **915 MHz**.
 
-## Repetidoras
+## Repetidores
 
-Os dispositivos pessoais não tem um grande alcance, seja pela antena que costuma ser mais compacta pela praticidade, ou pelo fato desses dispositivos estarem dentro de casa ou de veículos. Portanto, é sempre recomendado colocar uma repetidora no exterior para garantir que você usufrue a Mesh Sorocaba sem dores de cabeça.
+Os dispositivos pessoais não tem um grande alcance, seja pela antena que costuma ser mais compacta pela praticidade, ou pelo fato desses dispositivos estarem dentro de casa ou de veículos. Portanto, é sempre recomendado colocar um repetidor no exterior para garantir que você usufrue a Mesh Sorocaba sem dores de cabeça.
 
-Repetidoras usam o mesmo hardware que os dispositivos pessoais, mas com firmwares diferentes. Elas podem ser alimentadas pela rede elétrica ou por pequenas placas solares e geralmente são alojadas, juntamente com as baterias, em uma caixa hermética.
+Repetidores usam o mesmo hardware que os dispositivos pessoais, mas com firmwares diferentes. Eles podem ser alimentados pela rede elétrica ou por pequenas placas solares e geralmente são alojados, juntamente com as baterias, em uma caixa hermética.
 
-Você pode comprar repetidoras de marcas conhecidas ou adquirir diretamente de outros usuários, que confeccionam repetidoras sob encomenda. 
+Você pode comprar repetidores de marcas conhecidas ou adquirir diretamente de outros usuários, que confeccionam repetidores sob encomenda. 
 
-### Repetidoras já montadas
+### Repetidores já montados
 
 <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin: 1.5rem 0;">
   <div style="flex: 1 1 150px; max-width: 200px; text-align: center;">
-    <img src="/img/cordeiro.jpg" alt="Repetidora feita por Marcelo Cordeiro" style="width: 100%; height: auto; border-radius: 0.5rem;">
-    <p style="margin-top: 0.5rem; font-weight: 500;">Repetidora por Marcelo Cordeiro</p>
+    <img src="/img/cordeiro.jpg" alt="Repetidor feito por Marcelo Cordeiro" style="width: 100%; height: auto; border-radius: 0.5rem;">
+    <p style="margin-top: 0.5rem; font-weight: 500;">Repetidor por Marcelo Cordeiro</p>
   </div>
   <div style="flex: 1 1 150px; max-width: 200px; text-align: center;">
-    <img src="/img/renatotattoo.jpg" alt="Repetidora feita por Renato Tattoo" style="width: 100%; height: auto; border-radius: 0.5rem;">
-    <p style="margin-top: 0.5rem; font-weight: 500;">Repetidora por Renato Tattoo</p>
+    <img src="/img/renatotattoo.jpg" alt="Repetidor feito por Renato Tattoo" style="width: 100%; height: auto; border-radius: 0.5rem;">
+    <p style="margin-top: 0.5rem; font-weight: 500;">Repetidor por Renato Tattoo</p>
   </div>
   <div style="flex: 1 1 150px; max-width: 200px; text-align: center;">
     <img src="/img/gitfos_gat562.jpg" alt="Lilygo T-Echo" style="width: 100%; height: auto; border-radius: 0.5rem;">

@@ -31,12 +31,12 @@ nav:
     - Escolhendo o Modo do Dispositivo: configuracao/escolhendo-o-modo-do-dispositivo.md
     - Modo Companion: configuracao/companions.md
     - Modo Repetidor: 
-      - Configurando uma repetidora: configuracao/repeaters.md
+      - Configurando um Repetidor: configuracao/repeaters.md
       - Temporização e Deduplicação: configuracao/temporizacao-e-deduplicacao.md
     - Modo Observador: configuracao/observers.md
   - Ferramentas:
     - ferramentas/index.md
-    - Gerador de Nomes para Repetidoras: ferramentas/nomes-repetidoras.md
+    - Gerador de Nomes para Repetidores: ferramentas/nomes-repetidores.md
   - Perguntas Frequentes: perguntas-frequentes.md
   - Blog:
     - blog/index.md

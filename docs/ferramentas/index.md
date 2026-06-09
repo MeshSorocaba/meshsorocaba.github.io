@@ -7,13 +7,13 @@ hide:
 
 <div class="grid cards" markdown>
 
--   :fontawesome-solid-tower-broadcast:{ .lg .middle } __Gerador de Nomes para Repetidoras__
+-   :fontawesome-solid-tower-broadcast:{ .lg .middle } __Gerador de Nomes para Repetidores__
 
     ---
 
-    Gere nomes padronizados para repetidoras MeshCore seguindo a convenção brasileira. Informe o estado, a cidade e um identificador regional para obter automaticamente o nome no formato `CIDADE-REGIONAL-PUBKEY`.
+    Gere nomes padronizados para repetidores MeshCore seguindo a convenção brasileira. Informe o estado, a cidade e um identificador regional para obter automaticamente o nome no formato `CIDADE-REGIONAL-PUBKEY`.
 
-    [:octicons-arrow-right-24: Acessar](nomes-repetidoras.md)
+    [:octicons-arrow-right-24: Acessar](nomes-repetidores.md)
 
 -   :fontawesome-solid-satellite-dish:{ .lg .middle } __CoreScope__
 

@@ -63,7 +63,7 @@ Imagine que um repetidor recebe um pacote de inundação que levaria aproximadam
 
 Além do atraso de transmissão, existe a opção por um **atraso de recepção**. Ou seja, quando um repetidor recebe um pacote por inundação, ele não o processa imediatamente. Ele aplica um pequeno atraso baseado na **qualidade do sinal** (SNR) da cópia recebida antes de realizar qualquer ação. 
 
-Se o parâmetro `rxdelay` da repetidora não for definido (ou tiver valor 0), o atraso de recepção não é aplicado. Caso contrário, a fórmula do atraso é dada em milisegundos por:
+Se o parâmetro `rxdelay` do repetidor não for definido (ou tiver valor 0), o atraso de recepção não é aplicado. Caso contrário, a fórmula do atraso é dada em milisegundos por:
 
 $$\left(r^{\,0.85 - S} - 1\right) \times t$$
 
@@ -146,7 +146,7 @@ Em outras implementações de mesh LoRa, como o Meshtastic, quando um repetidor 
 
 A abordagem do MeshCore troca alguma eficiência de tempo no ar por **confiabilidade e simplicidade**. O pacote tem garantia de ser encaminhado por cada repetidor que ouviu o original, independentemente do tempo. Isso o torna mais robusto em redes esparsas onde nem todos os repetidores podem se ouvir, mas menos eficiente em redes densas.
 
-## Temporização baseada na elevação da repetidora
+## Temporização baseada na elevação do repetidor
 
 O princípio fundamental é simples: **nós mais altos devem aguardar mais antes de retransmitir**. Isso permite que nós mais baixos, que cobrem áreas locais, transmitam primeiro e atendam ao tráfego local. Nós mais altos, com alcance muito maior, entram depois para cobrir os saltos de longa distância. O resultado é uma malha que naturalmente prefere os caminhos mais fortes e limpos, sem roteamento manual.
 
