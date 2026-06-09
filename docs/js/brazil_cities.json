@@ -37,16 +37,16 @@
       "name": "Jordão"
     },
     {
+      "abbr": "MLM",
+      "name": "Mâncio Lima"
+    },
+    {
       "abbr": "MEU",
       "name": "Manoel Urbano"
     },
     {
       "abbr": "MTG",
       "name": "Marechal Thaumaturgo"
-    },
-    {
-      "abbr": "MLM",
-      "name": "Mâncio Lima"
     },
     {
       "abbr": "PCC",
@@ -73,12 +73,12 @@
       "name": "Santa Rosa do Purus"
     },
     {
-      "abbr": "SMA",
-      "name": "Sena Madureira"
-    },
-    {
       "abbr": "SGD",
       "name": "Senador Guiomard"
+    },
+    {
+      "abbr": "SMA",
+      "name": "Sena Madureira"
     },
     {
       "abbr": "TAA",
@@ -90,6 +90,10 @@
     }
   ],
   "AL": [
+    {
+      "abbr": "ABC",
+      "name": "Água Branca"
+    },
     {
       "abbr": "AAD",
       "name": "Anadia"
@@ -115,12 +119,12 @@
       "name": "Batalha"
     },
     {
-      "abbr": "BWM",
-      "name": "Belo Monte"
-    },
-    {
       "abbr": "BMX",
       "name": "Belém"
+    },
+    {
+      "abbr": "BWM",
+      "name": "Belo Monte"
     },
     {
       "abbr": "BMT",
@@ -279,10 +283,6 @@
       "name": "Major Isidoro"
     },
     {
-      "abbr": "MVL",
-      "name": "Mar Vermelho"
-    },
-    {
       "abbr": "MGO",
       "name": "Maragogi"
     },
@@ -297,6 +297,10 @@
     {
       "abbr": "MBD",
       "name": "Maribondo"
+    },
+    {
+      "abbr": "MVL",
+      "name": "Mar Vermelho"
     },
     {
       "abbr": "MGN",
@@ -327,16 +331,16 @@
       "name": "Novo Lino"
     },
     {
-      "abbr": "OGE",
-      "name": "Olho d'Água Grande"
-    },
-    {
       "abbr": "OHS",
       "name": "Olho d'Água das Flores"
     },
     {
       "abbr": "OLO",
       "name": "Olho d'Água do Casado"
+    },
+    {
+      "abbr": "OGE",
+      "name": "Olho d'Água Grande"
     },
     {
       "abbr": "OEA",
@@ -353,6 +357,10 @@
     {
       "abbr": "PIS",
       "name": "Palmeira dos Índios"
+    },
+    {
+      "abbr": "PUR",
+      "name": "Pão de Açúcar"
     },
     {
       "abbr": "PCH",
@@ -391,24 +399,20 @@
       "name": "Piranhas"
     },
     {
-      "abbr": "PCV",
-      "name": "Porto Calvo"
+      "abbr": "PHR",
+      "name": "Poço das Trincheiras"
     },
     {
-      "abbr": "PCG",
-      "name": "Porto Real do Colégio"
+      "abbr": "PCV",
+      "name": "Porto Calvo"
     },
     {
       "abbr": "POP",
       "name": "Porto de Pedras"
     },
     {
-      "abbr": "PHR",
-      "name": "Poço das Trincheiras"
-    },
-    {
-      "abbr": "PUR",
-      "name": "Pão de Açúcar"
+      "abbr": "PCG",
+      "name": "Porto Real do Colégio"
     },
     {
       "abbr": "QEO",
@@ -433,14 +437,6 @@
     {
       "abbr": "DAU",
       "name": "Santana do Mundaú"
-    },
-    {
-      "abbr": "STB",
-      "name": "Satuba"
-    },
-    {
-      "abbr": "RUI",
-      "name": "Senador Rui Palmeira"
     },
     {
       "abbr": "SWB",
@@ -471,6 +467,14 @@
       "name": "São Sebastião"
     },
     {
+      "abbr": "STB",
+      "name": "Satuba"
+    },
+    {
+      "abbr": "RUI",
+      "name": "Senador Rui Palmeira"
+    },
+    {
       "abbr": "TNC",
       "name": "Tanque d'Arca"
     },
@@ -493,10 +497,6 @@
     {
       "abbr": "VOA",
       "name": "Viçosa"
-    },
-    {
-      "abbr": "ABC",
-      "name": "Água Branca"
     }
   ],
   "AM": [
@@ -705,10 +705,6 @@
       "name": "Santo Antônio do Içá"
     },
     {
-      "abbr": "SIV",
-      "name": "Silves"
-    },
-    {
       "abbr": "SCA",
       "name": "São Gabriel da Cachoeira"
     },
@@ -719,6 +715,10 @@
     {
       "abbr": "SSB",
       "name": "São Sebastião do Uatumã"
+    },
+    {
+      "abbr": "SIV",
+      "name": "Silves"
     },
     {
       "abbr": "TBT",
@@ -821,12 +821,12 @@
   ],
   "BA": [
     {
-      "abbr": "ABR",
-      "name": "Abaré"
-    },
-    {
       "abbr": "AYR",
       "name": "Abaíra"
+    },
+    {
+      "abbr": "ABR",
+      "name": "Abaré"
     },
     {
       "abbr": "AJB",
@@ -835,6 +835,10 @@
     {
       "abbr": "ASN",
       "name": "Adustina"
+    },
+    {
+      "abbr": "AFA",
+      "name": "Água Fria"
     },
     {
       "abbr": "AQU",
@@ -905,6 +909,10 @@
       "name": "Apuarema"
     },
     {
+      "abbr": "ARK",
+      "name": "Araçás"
+    },
+    {
       "abbr": "ATU",
       "name": "Aracatu"
     },
@@ -921,16 +929,12 @@
       "name": "Arataca"
     },
     {
-      "abbr": "ARB",
-      "name": "Aratu Pt / Candeias"
-    },
-    {
       "abbr": "AUP",
       "name": "Aratuípe"
     },
     {
-      "abbr": "ARK",
-      "name": "Araçás"
+      "abbr": "ARB",
+      "name": "Aratu Pt / Candeias"
     },
     {
       "abbr": "ALL",
@@ -977,12 +981,12 @@
       "name": "Barro Alto"
     },
     {
-      "abbr": "BPT",
-      "name": "Barro Preto"
-    },
-    {
       "abbr": "BCS",
       "name": "Barrocas"
+    },
+    {
+      "abbr": "BPT",
+      "name": "Barro Preto"
     },
     {
       "abbr": "BLE",
@@ -1029,12 +1033,12 @@
       "name": "Botuporã"
     },
     {
-      "abbr": "BJD",
-      "name": "Brejolândia"
-    },
-    {
       "abbr": "BOE",
       "name": "Brejões"
+    },
+    {
+      "abbr": "BJD",
+      "name": "Brejolândia"
     },
     {
       "abbr": "BMB",
@@ -1069,6 +1073,10 @@
       "name": "Caculé"
     },
     {
+      "abbr": "KEM",
+      "name": "Caém"
+    },
+    {
       "abbr": "CNZ",
       "name": "Caetanos"
     },
@@ -1093,12 +1101,12 @@
       "name": "Camacan"
     },
     {
-      "abbr": "CMW",
-      "name": "Camamu"
-    },
-    {
       "abbr": "CCI",
       "name": "Camaçari"
+    },
+    {
+      "abbr": "CMW",
+      "name": "Camamu"
     },
     {
       "abbr": "CLR",
@@ -1107,6 +1115,10 @@
     {
       "abbr": "CFM",
       "name": "Campo Formoso"
+    },
+    {
+      "abbr": "KIS",
+      "name": "Canápolis"
     },
     {
       "abbr": "CRN",
@@ -1129,16 +1141,16 @@
       "name": "Candiba"
     },
     {
+      "abbr": "CIL",
+      "name": "Cândido Sales"
+    },
+    {
       "abbr": "CSC",
       "name": "Cansanção"
     },
     {
       "abbr": "CUD",
       "name": "Canudos"
-    },
-    {
-      "abbr": "KIS",
-      "name": "Canápolis"
     },
     {
       "abbr": "KLT",
@@ -1149,12 +1161,12 @@
       "name": "Capim Grosso"
     },
     {
-      "abbr": "CRL",
-      "name": "Caravelas"
-    },
-    {
       "abbr": "CBZ",
       "name": "Caraíbas"
+    },
+    {
+      "abbr": "CRL",
+      "name": "Caravelas"
     },
     {
       "abbr": "CSV",
@@ -1185,16 +1197,16 @@
       "name": "Caturama"
     },
     {
-      "abbr": "KEM",
-      "name": "Caém"
-    },
-    {
       "abbr": "CEW",
       "name": "Central"
     },
     {
       "abbr": "XXO",
       "name": "Chorrochó"
+    },
+    {
+      "abbr": "CDN",
+      "name": "Cícero Dantas"
     },
     {
       "abbr": "CIO",
@@ -1265,12 +1277,12 @@
       "name": "Cravolândia"
     },
     {
-      "abbr": "KTP",
-      "name": "Cristópolis"
-    },
-    {
       "abbr": "CIZ",
       "name": "Crisópolis"
+    },
+    {
+      "abbr": "KTP",
+      "name": "Cristópolis"
     },
     {
       "abbr": "CZA",
@@ -1281,12 +1293,8 @@
       "name": "Curaçá"
     },
     {
-      "abbr": "CIL",
-      "name": "Cândido Sales"
-    },
-    {
-      "abbr": "CDN",
-      "name": "Cícero Dantas"
+      "abbr": "DMR",
+      "name": "Dário Meira"
     },
     {
       "abbr": "DIA",
@@ -1301,10 +1309,6 @@
       "name": "Dom Macedo Costa"
     },
     {
-      "abbr": "DMR",
-      "name": "Dário Meira"
-    },
-    {
       "abbr": "EMO",
       "name": "Elísio Medrado"
     },
@@ -1317,6 +1321,10 @@
       "name": "Entre Rios"
     },
     {
+      "abbr": "ECR",
+      "name": "Érico Cardoso"
+    },
+    {
       "abbr": "ESA",
       "name": "Esplanada"
     },
@@ -1327,6 +1335,10 @@
     {
       "abbr": "EPO",
       "name": "Eunápolis"
+    },
+    {
+      "abbr": "FTA",
+      "name": "Fátima"
     },
     {
       "abbr": "FDM",
@@ -1351,10 +1363,6 @@
     {
       "abbr": "FRP",
       "name": "Formosa do Rio Preto"
-    },
-    {
-      "abbr": "FTA",
-      "name": "Fátima"
     },
     {
       "abbr": "GDU",
@@ -1581,6 +1589,10 @@
       "name": "Itaparica"
     },
     {
+      "abbr": "YTE",
+      "name": "Itapé"
+    },
+    {
       "abbr": "IEB",
       "name": "Itapebi"
     },
@@ -1595,10 +1607,6 @@
     {
       "abbr": "YPT",
       "name": "Itapitanga"
-    },
-    {
-      "abbr": "YTE",
-      "name": "Itapé"
     },
     {
       "abbr": "IAQ",
@@ -1717,16 +1725,16 @@
       "name": "Laje"
     },
     {
+      "abbr": "LJD",
+      "name": "Lajedão"
+    },
+    {
       "abbr": "LAH",
       "name": "Lajedinho"
     },
     {
       "abbr": "LTL",
       "name": "Lajedo do Tabocal"
-    },
-    {
-      "abbr": "LJD",
-      "name": "Lajedão"
     },
     {
       "abbr": "LRO",
@@ -1993,12 +2001,16 @@
       "name": "Paulo Afonso"
     },
     {
-      "abbr": "PAX",
-      "name": "Pedro Alexandre"
+      "abbr": "PDE",
+      "name": "Pé de Serra"
     },
     {
       "abbr": "PEW",
       "name": "Pedrão"
+    },
+    {
+      "abbr": "PAX",
+      "name": "Pedro Alexandre"
     },
     {
       "abbr": "PYT",
@@ -2041,6 +2053,10 @@
       "name": "Planalto"
     },
     {
+      "abbr": "POC",
+      "name": "Poções"
+    },
+    {
       "abbr": "PJC",
       "name": "Pojuca"
     },
@@ -2057,10 +2073,6 @@
       "name": "Potiraguá"
     },
     {
-      "abbr": "POC",
-      "name": "Poções"
-    },
-    {
       "abbr": "PDW",
       "name": "Prado"
     },
@@ -2075,10 +2087,6 @@
     {
       "abbr": "PEN",
       "name": "Presidente Tancredo Neves"
-    },
-    {
-      "abbr": "PDE",
-      "name": "Pé de Serra"
     },
     {
       "abbr": "QES",
@@ -2105,16 +2113,16 @@
       "name": "Retirolândia"
     },
     {
-      "abbr": "RSN",
-      "name": "Riacho de Santana"
-    },
-    {
       "abbr": "RDN",
       "name": "Riachão das Neves"
     },
     {
       "abbr": "RIJ",
       "name": "Riachão do Jacuípe"
+    },
+    {
+      "abbr": "RSN",
+      "name": "Riacho de Santana"
     },
     {
       "abbr": "RBP",
@@ -2129,10 +2137,6 @@
       "name": "Ribeirão do Largo"
     },
     {
-      "abbr": "ROR",
-      "name": "Rio Real"
-    },
-    {
       "abbr": "RCN",
       "name": "Rio de Contas"
     },
@@ -2143,6 +2147,10 @@
     {
       "abbr": "ROP",
       "name": "Rio do Pires"
+    },
+    {
+      "abbr": "ROR",
+      "name": "Rio Real"
     },
     {
       "abbr": "RDL",
@@ -2161,12 +2169,12 @@
       "name": "Salvador"
     },
     {
-      "abbr": "SBG",
-      "name": "Santa Brígida"
-    },
-    {
       "abbr": "SBB",
       "name": "Santa Bárbara"
+    },
+    {
+      "abbr": "SBG",
+      "name": "Santa Brígida"
     },
     {
       "abbr": "SCR",
@@ -2181,6 +2189,10 @@
       "name": "Santa Inês"
     },
     {
+      "abbr": "SAZ",
+      "name": "Santaluz"
+    },
+    {
       "abbr": "SUZ",
       "name": "Santa Luzia"
     },
@@ -2189,24 +2201,20 @@
       "name": "Santa Maria da Vitória"
     },
     {
-      "abbr": "STC",
-      "name": "Santa Rita de Cássia"
-    },
-    {
-      "abbr": "SSH",
-      "name": "Santa Teresinha"
-    },
-    {
-      "abbr": "SAZ",
-      "name": "Santaluz"
-    },
-    {
       "abbr": "SNN",
       "name": "Santana"
     },
     {
       "abbr": "SYZ",
       "name": "Santanópolis"
+    },
+    {
+      "abbr": "STC",
+      "name": "Santa Rita de Cássia"
+    },
+    {
+      "abbr": "SSH",
+      "name": "Santa Teresinha"
     },
     {
       "abbr": "SAM",
@@ -2221,70 +2229,6 @@
       "name": "Santo Estêvão"
     },
     {
-      "abbr": "SAU",
-      "name": "Sapeaçu"
-    },
-    {
-      "abbr": "SUB",
-      "name": "Saubara"
-    },
-    {
-      "abbr": "UDE",
-      "name": "Saúde"
-    },
-    {
-      "abbr": "SEB",
-      "name": "Seabra"
-    },
-    {
-      "abbr": "SLJ",
-      "name": "Sebastião Laranjeiras"
-    },
-    {
-      "abbr": "SEI",
-      "name": "Senhor do Bonfim"
-    },
-    {
-      "abbr": "STS",
-      "name": "Sento Sé"
-    },
-    {
-      "abbr": "SED",
-      "name": "Serra Dourada"
-    },
-    {
-      "abbr": "RRA",
-      "name": "Serra Preta"
-    },
-    {
-      "abbr": "SRH",
-      "name": "Serra do Ramalho"
-    },
-    {
-      "abbr": "SHA",
-      "name": "Serrinha"
-    },
-    {
-      "abbr": "RRL",
-      "name": "Serrolândia"
-    },
-    {
-      "abbr": "SSF",
-      "name": "Simões Filho"
-    },
-    {
-      "abbr": "SOH",
-      "name": "Sobradinho"
-    },
-    {
-      "abbr": "SUR",
-      "name": "Souto Soares"
-    },
-    {
-      "abbr": "SRD",
-      "name": "Sátiro Dias"
-    },
-    {
       "abbr": "SDD",
       "name": "São Desidério"
     },
@@ -2297,16 +2241,16 @@
       "name": "São Felipe"
     },
     {
-      "abbr": "SFN",
-      "name": "São Francisco do Conde"
-    },
-    {
       "abbr": "SFX",
       "name": "São Félix"
     },
     {
       "abbr": "SXC",
       "name": "São Félix do Coribe"
+    },
+    {
+      "abbr": "SFN",
+      "name": "São Francisco do Conde"
     },
     {
       "abbr": "SGB",
@@ -2333,12 +2277,76 @@
       "name": "São Sebastião do Passé"
     },
     {
+      "abbr": "SAU",
+      "name": "Sapeaçu"
+    },
+    {
+      "abbr": "SRD",
+      "name": "Sátiro Dias"
+    },
+    {
+      "abbr": "SUB",
+      "name": "Saubara"
+    },
+    {
+      "abbr": "UDE",
+      "name": "Saúde"
+    },
+    {
+      "abbr": "SEB",
+      "name": "Seabra"
+    },
+    {
+      "abbr": "SLJ",
+      "name": "Sebastião Laranjeiras"
+    },
+    {
+      "abbr": "SEI",
+      "name": "Senhor do Bonfim"
+    },
+    {
+      "abbr": "STS",
+      "name": "Sento Sé"
+    },
+    {
+      "abbr": "SRH",
+      "name": "Serra do Ramalho"
+    },
+    {
+      "abbr": "SED",
+      "name": "Serra Dourada"
+    },
+    {
+      "abbr": "RRA",
+      "name": "Serra Preta"
+    },
+    {
+      "abbr": "SHA",
+      "name": "Serrinha"
+    },
+    {
+      "abbr": "RRL",
+      "name": "Serrolândia"
+    },
+    {
+      "abbr": "SSF",
+      "name": "Simões Filho"
+    },
+    {
       "abbr": "SYT",
       "name": "Sítio do Mato"
     },
     {
       "abbr": "SDQ",
       "name": "Sítio do Quinto"
+    },
+    {
+      "abbr": "SOH",
+      "name": "Sobradinho"
+    },
+    {
+      "abbr": "SUR",
+      "name": "Souto Soares"
     },
     {
       "abbr": "TBV",
@@ -2397,16 +2405,16 @@
       "name": "Uauá"
     },
     {
+      "abbr": "UIA",
+      "name": "Ubaíra"
+    },
+    {
       "abbr": "UTA",
       "name": "Ubaitaba"
     },
     {
       "abbr": "UAA",
       "name": "Ubatã"
-    },
-    {
-      "abbr": "UIA",
-      "name": "Ubaíra"
     },
     {
       "abbr": "UII",
@@ -2433,12 +2441,24 @@
       "name": "Utinga"
     },
     {
+      "abbr": "VAL",
+      "name": "Valença"
+    },
+    {
       "abbr": "VLT",
       "name": "Valente"
     },
     {
-      "abbr": "VAL",
-      "name": "Valença"
+      "abbr": "VDR",
+      "name": "Várzea da Roça"
+    },
+    {
+      "abbr": "VPC",
+      "name": "Várzea do Poço"
+    },
+    {
+      "abbr": "VNV",
+      "name": "Várzea Nova"
     },
     {
       "abbr": "VAO",
@@ -2457,18 +2477,6 @@
       "name": "Vitória da Conquista"
     },
     {
-      "abbr": "VNV",
-      "name": "Várzea Nova"
-    },
-    {
-      "abbr": "VDR",
-      "name": "Várzea da Roça"
-    },
-    {
-      "abbr": "VPC",
-      "name": "Várzea do Poço"
-    },
-    {
       "abbr": "WAR",
       "name": "Wagner"
     },
@@ -2483,14 +2491,6 @@
     {
       "abbr": "XQI",
       "name": "Xique-Xique"
-    },
-    {
-      "abbr": "AFA",
-      "name": "Água Fria"
-    },
-    {
-      "abbr": "ECR",
-      "name": "Érico Cardoso"
     }
   ],
   "CE": [
@@ -2639,12 +2639,12 @@
       "name": "Caridade"
     },
     {
-      "abbr": "CRW",
-      "name": "Caririaçu"
-    },
-    {
       "abbr": "CYR",
       "name": "Cariré"
+    },
+    {
+      "abbr": "CRW",
+      "name": "Caririaçu"
     },
     {
       "abbr": "CWS",
@@ -2679,12 +2679,12 @@
       "name": "Chaval"
     },
     {
-      "abbr": "CZH",
-      "name": "Chorozinho"
-    },
-    {
       "abbr": "CHW",
       "name": "Choró"
+    },
+    {
+      "abbr": "CZH",
+      "name": "Chorozinho"
     },
     {
       "abbr": "COU",
@@ -2743,16 +2743,16 @@
       "name": "General Sampaio"
     },
     {
+      "abbr": "GRC",
+      "name": "Graça"
+    },
+    {
       "abbr": "GRJ",
       "name": "Granja"
     },
     {
       "abbr": "GJO",
       "name": "Granjeiro"
-    },
-    {
-      "abbr": "GRC",
-      "name": "Graça"
     },
     {
       "abbr": "GRS",
@@ -2831,12 +2831,12 @@
       "name": "Irauçuba"
     },
     {
-      "abbr": "IIT",
-      "name": "Itaitinga"
-    },
-    {
       "abbr": "YTA",
       "name": "Itaiçaba"
+    },
+    {
+      "abbr": "IIT",
+      "name": "Itaitinga"
     },
     {
       "abbr": "IJE",
@@ -3127,10 +3127,6 @@
       "name": "Salitre"
     },
     {
-      "abbr": "SQI",
-      "name": "Santa Quitéria"
-    },
-    {
       "abbr": "SAC",
       "name": "Santana do Acaraú"
     },
@@ -3139,20 +3135,8 @@
       "name": "Santana do Cariri"
     },
     {
-      "abbr": "SPP",
-      "name": "Senador Pompeu"
-    },
-    {
-      "abbr": "DOR",
-      "name": "Senador Sá"
-    },
-    {
-      "abbr": "SOB",
-      "name": "Sobral"
-    },
-    {
-      "abbr": "SLL",
-      "name": "Solonópole"
+      "abbr": "SQI",
+      "name": "Santa Quitéria"
     },
     {
       "abbr": "SBE",
@@ -3169,6 +3153,22 @@
     {
       "abbr": "SLW",
       "name": "São Luís do Curu"
+    },
+    {
+      "abbr": "SPP",
+      "name": "Senador Pompeu"
+    },
+    {
+      "abbr": "DOR",
+      "name": "Senador Sá"
+    },
+    {
+      "abbr": "SOB",
+      "name": "Sobral"
+    },
+    {
+      "abbr": "SLL",
+      "name": "Solonópole"
     },
     {
       "abbr": "TNO",
@@ -3227,12 +3227,12 @@
       "name": "Varjota"
     },
     {
-      "abbr": "VCR",
-      "name": "Viçosa do Ceará"
-    },
-    {
       "abbr": "VAE",
       "name": "Várzea Alegre"
+    },
+    {
+      "abbr": "VCR",
+      "name": "Viçosa do Ceará"
     }
   ],
   "DF": [
@@ -3245,6 +3245,14 @@
     {
       "abbr": "AFC",
       "name": "Afonso Cláudio"
+    },
+    {
+      "abbr": "AON",
+      "name": "Água Doce do Norte"
+    },
+    {
+      "abbr": "AWB",
+      "name": "Águia Branca"
     },
     {
       "abbr": "ALG",
@@ -3347,12 +3355,12 @@
       "name": "Governador Lindenberg"
     },
     {
-      "abbr": "GUI",
-      "name": "Guarapari"
-    },
-    {
       "abbr": "GCU",
       "name": "Guaçuí"
+    },
+    {
+      "abbr": "GUI",
+      "name": "Guarapari"
     },
     {
       "abbr": "YBB",
@@ -3503,14 +3511,6 @@
       "name": "Santa Teresa"
     },
     {
-      "abbr": "SER",
-      "name": "Serra"
-    },
-    {
-      "abbr": "SEM",
-      "name": "Sooretama"
-    },
-    {
       "abbr": "SDN",
       "name": "São Domingos do Norte"
     },
@@ -3529,6 +3529,14 @@
     {
       "abbr": "SQA",
       "name": "São Roque do Canaã"
+    },
+    {
+      "abbr": "SER",
+      "name": "Serra"
+    },
+    {
+      "abbr": "SEM",
+      "name": "Sooretama"
     },
     {
       "abbr": "TUB",
@@ -3561,14 +3569,6 @@
     {
       "abbr": "VIX",
       "name": "Vitória"
-    },
-    {
-      "abbr": "AON",
-      "name": "Água Doce do Norte"
-    },
-    {
-      "abbr": "AWB",
-      "name": "Águia Branca"
     }
   ],
   "GO": [
@@ -3587,6 +3587,18 @@
     {
       "abbr": "DLN",
       "name": "Adelândia"
+    },
+    {
+      "abbr": "AFG",
+      "name": "Água Fria de Goiás"
+    },
+    {
+      "abbr": "GWL",
+      "name": "Água Limpa"
+    },
+    {
+      "abbr": "AGA",
+      "name": "Águas Lindas de Goiás"
     },
     {
       "abbr": "AXN",
@@ -3621,16 +3633,16 @@
       "name": "Amorinópolis"
     },
     {
+      "abbr": "APS",
+      "name": "Anápolis"
+    },
+    {
       "abbr": "AHR",
       "name": "Anhanguera"
     },
     {
       "abbr": "ANC",
       "name": "Anicuns"
-    },
-    {
-      "abbr": "APS",
-      "name": "Anápolis"
     },
     {
       "abbr": "AGI",
@@ -3645,6 +3657,10 @@
       "name": "Aporé"
     },
     {
+      "abbr": "AUX",
+      "name": "Araçu"
+    },
+    {
       "abbr": "ARS",
       "name": "Aragarças"
     },
@@ -3655,10 +3671,6 @@
     {
       "abbr": "AGZ",
       "name": "Araguapaz"
-    },
-    {
-      "abbr": "AUX",
-      "name": "Araçu"
     },
     {
       "abbr": "RNP",
@@ -3733,12 +3745,16 @@
       "name": "Cachoeira Alta"
     },
     {
+      "abbr": "HGO",
+      "name": "Cachoeira de Goiás"
+    },
+    {
       "abbr": "CHR",
       "name": "Cachoeira Dourada"
     },
     {
-      "abbr": "HGO",
-      "name": "Cachoeira de Goiás"
+      "abbr": "CCU",
+      "name": "Caçu"
     },
     {
       "abbr": "CYP",
@@ -3801,10 +3817,6 @@
       "name": "Cavalcante"
     },
     {
-      "abbr": "CCU",
-      "name": "Caçu"
-    },
-    {
       "abbr": "CES",
       "name": "Ceres"
     },
@@ -3829,12 +3841,16 @@
       "name": "Colinas do Sul"
     },
     {
-      "abbr": "KUB",
-      "name": "Corumbaíba"
+      "abbr": "OGO",
+      "name": "Córrego do Ouro"
     },
     {
       "abbr": "CGI",
       "name": "Corumbá de Goiás"
+    },
+    {
+      "abbr": "KUB",
+      "name": "Corumbaíba"
     },
     {
       "abbr": "CST",
@@ -3855,10 +3871,6 @@
     {
       "abbr": "KUI",
       "name": "Cumari"
-    },
-    {
-      "abbr": "OGO",
-      "name": "Córrego do Ouro"
     },
     {
       "abbr": "DAI",
@@ -3925,32 +3937,32 @@
       "name": "Gameleira de Goiás"
     },
     {
-      "abbr": "GDI",
-      "name": "Goiandira"
-    },
-    {
-      "abbr": "GOA",
-      "name": "Goianira"
-    },
-    {
       "abbr": "GPO",
       "name": "Goianápolis"
+    },
+    {
+      "abbr": "GDI",
+      "name": "Goiandira"
     },
     {
       "abbr": "GNI",
       "name": "Goianésia"
     },
     {
-      "abbr": "GOB",
-      "name": "Goiatuba"
+      "abbr": "GYN",
+      "name": "Goiânia"
+    },
+    {
+      "abbr": "GOA",
+      "name": "Goianira"
     },
     {
       "abbr": "GIS",
       "name": "Goiás"
     },
     {
-      "abbr": "GYN",
-      "name": "Goiânia"
+      "abbr": "GOB",
+      "name": "Goiatuba"
     },
     {
       "abbr": "GVI",
@@ -3961,12 +3973,12 @@
       "name": "Guapó"
     },
     {
-      "abbr": "GGS",
-      "name": "Guarani de Goiás"
-    },
-    {
       "abbr": "GIT",
       "name": "Guaraíta"
+    },
+    {
+      "abbr": "GGS",
+      "name": "Guarani de Goiás"
     },
     {
       "abbr": "GAN",
@@ -3977,12 +3989,12 @@
       "name": "Heitoraí"
     },
     {
-      "abbr": "HDA",
-      "name": "Hidrolina"
-    },
-    {
       "abbr": "HLI",
       "name": "Hidrolândia"
+    },
+    {
+      "abbr": "HDA",
+      "name": "Hidrolina"
     },
     {
       "abbr": "ICA",
@@ -4413,22 +4425,6 @@
       "name": "Santo Antônio do Descoberto"
     },
     {
-      "abbr": "SEC",
-      "name": "Senador Canedo"
-    },
-    {
-      "abbr": "SNO",
-      "name": "Serranópolis"
-    },
-    {
-      "abbr": "SVN",
-      "name": "Silvânia"
-    },
-    {
-      "abbr": "NDI",
-      "name": "Simolândia"
-    },
-    {
       "abbr": "DOM",
       "name": "São Domingos"
     },
@@ -4445,12 +4441,12 @@
       "name": "São João da Paraúna"
     },
     {
-      "abbr": "SWE",
-      "name": "São Luiz do Norte"
-    },
-    {
       "abbr": "SMB",
       "name": "São Luís de Montes Belos"
+    },
+    {
+      "abbr": "SWE",
+      "name": "São Luiz do Norte"
     },
     {
       "abbr": "SIU",
@@ -4469,6 +4465,22 @@
       "name": "São Simão"
     },
     {
+      "abbr": "SEC",
+      "name": "Senador Canedo"
+    },
+    {
+      "abbr": "SNO",
+      "name": "Serranópolis"
+    },
+    {
+      "abbr": "SVN",
+      "name": "Silvânia"
+    },
+    {
+      "abbr": "NDI",
+      "name": "Simolândia"
+    },
+    {
       "abbr": "SYD",
       "name": "Sítio d'Abadia"
     },
@@ -4485,6 +4497,10 @@
       "name": "Terezópolis de Goiás"
     },
     {
+      "abbr": "TRR",
+      "name": "Três Ranchos"
+    },
+    {
       "abbr": "TIN",
       "name": "Trindade"
     },
@@ -4493,28 +4509,24 @@
       "name": "Trombas"
     },
     {
-      "abbr": "TRR",
-      "name": "Três Ranchos"
+      "abbr": "TVA",
+      "name": "Turvânia"
     },
     {
       "abbr": "TVI",
       "name": "Turvelândia"
     },
     {
-      "abbr": "TVA",
-      "name": "Turvânia"
-    },
-    {
       "abbr": "UPU",
       "name": "Uirapuru"
     },
     {
-      "abbr": "URN",
-      "name": "Uruana"
-    },
-    {
       "abbr": "URU",
       "name": "Uruaçu"
+    },
+    {
+      "abbr": "URN",
+      "name": "Uruana"
     },
     {
       "abbr": "UUT",
@@ -4543,24 +4555,20 @@
     {
       "abbr": "VPP",
       "name": "Vila Propício"
-    },
-    {
-      "abbr": "AFG",
-      "name": "Água Fria de Goiás"
-    },
-    {
-      "abbr": "GWL",
-      "name": "Água Limpa"
-    },
-    {
-      "abbr": "AGA",
-      "name": "Águas Lindas de Goiás"
     }
   ],
   "MA": [
     {
+      "abbr": "ACL",
+      "name": "Açailândia"
+    },
+    {
       "abbr": "AFH",
       "name": "Afonso Cunha"
+    },
+    {
+      "abbr": "AGM",
+      "name": "Água Doce do Maranhão"
     },
     {
       "abbr": "ACT",
@@ -4627,10 +4635,6 @@
       "name": "Axixá"
     },
     {
-      "abbr": "ACL",
-      "name": "Açailândia"
-    },
-    {
       "abbr": "BBA",
       "name": "Bacabal"
     },
@@ -4651,6 +4655,10 @@
       "name": "Balsas"
     },
     {
+      "abbr": "BDG",
+      "name": "Barão de Grajaú"
+    },
+    {
       "abbr": "BDC",
       "name": "Barra do Corda"
     },
@@ -4659,16 +4667,12 @@
       "name": "Barreirinhas"
     },
     {
-      "abbr": "BDG",
-      "name": "Barão de Grajaú"
+      "abbr": "BEU",
+      "name": "Belágua"
     },
     {
       "abbr": "BMH",
       "name": "Bela Vista do Maranhão"
-    },
-    {
-      "abbr": "BEU",
-      "name": "Belágua"
     },
     {
       "abbr": "BTL",
@@ -4739,6 +4743,10 @@
       "name": "Campestre do Maranhão"
     },
     {
+      "abbr": "CMN",
+      "name": "Cândido Mendes"
+    },
+    {
       "abbr": "CHD",
       "name": "Cantanhede"
     },
@@ -4767,12 +4775,12 @@
       "name": "Central do Maranhão"
     },
     {
-      "abbr": "CMH",
-      "name": "Centro Novo do Maranhão"
-    },
-    {
       "abbr": "CEG",
       "name": "Centro do Guilherme"
+    },
+    {
+      "abbr": "CMH",
+      "name": "Centro Novo do Maranhão"
     },
     {
       "abbr": "CHH",
@@ -4805,10 +4813,6 @@
     {
       "abbr": "CPU",
       "name": "Cururupu"
-    },
-    {
-      "abbr": "CMN",
-      "name": "Cândido Mendes"
     },
     {
       "abbr": "DAS",
@@ -4883,12 +4887,12 @@
       "name": "Governador Nunes Freire"
     },
     {
-      "abbr": "GJA",
-      "name": "Grajaú"
-    },
-    {
       "abbr": "GAH",
       "name": "Graça Aranha"
+    },
+    {
+      "abbr": "GJA",
+      "name": "Grajaú"
     },
     {
       "abbr": "GMS",
@@ -4903,12 +4907,12 @@
       "name": "Icatu"
     },
     {
-      "abbr": "IGG",
-      "name": "Igarapé Grande"
-    },
-    {
       "abbr": "IMO",
       "name": "Igarapé do Meio"
+    },
+    {
+      "abbr": "IGG",
+      "name": "Igarapé Grande"
     },
     {
       "abbr": "IMP",
@@ -4939,20 +4943,24 @@
       "name": "Jenipapo dos Vieiras"
     },
     {
-      "abbr": "JOA",
-      "name": "Joselândia"
-    },
-    {
       "abbr": "JLA",
       "name": "João Lisboa"
+    },
+    {
+      "abbr": "JOA",
+      "name": "Joselândia"
     },
     {
       "abbr": "JMH",
       "name": "Junco do Maranhão"
     },
     {
-      "abbr": "LVD",
-      "name": "Lago Verde"
+      "abbr": "LMO",
+      "name": "Lagoa do Mato"
+    },
+    {
+      "abbr": "LGM",
+      "name": "Lagoa Grande do Maranhão"
     },
     {
       "abbr": "LPR",
@@ -4967,12 +4975,8 @@
       "name": "Lago dos Rodrigues"
     },
     {
-      "abbr": "LGM",
-      "name": "Lagoa Grande do Maranhão"
-    },
-    {
-      "abbr": "LMO",
-      "name": "Lagoa do Mato"
+      "abbr": "LVD",
+      "name": "Lago Verde"
     },
     {
       "abbr": "LNO",
@@ -5039,12 +5043,12 @@
       "name": "Mirinzal"
     },
     {
-      "abbr": "MET",
-      "name": "Montes Altos"
-    },
-    {
       "abbr": "MNC",
       "name": "Monção"
+    },
+    {
+      "abbr": "MET",
+      "name": "Montes Altos"
     },
     {
       "abbr": "MOR",
@@ -5075,6 +5079,10 @@
       "name": "Olinda Nova do Maranhão"
     },
     {
+      "abbr": "PDL",
+      "name": "Paço do Lumiar"
+    },
+    {
       "abbr": "PLD",
       "name": "Palmeirândia"
     },
@@ -5101,10 +5109,6 @@
     {
       "abbr": "PUS",
       "name": "Paulo Ramos"
-    },
-    {
-      "abbr": "PDL",
-      "name": "Paço do Lumiar"
     },
     {
       "abbr": "PDA",
@@ -5143,6 +5147,10 @@
       "name": "Pirapemas"
     },
     {
+      "abbr": "PPD",
+      "name": "Poção de Pedras"
+    },
+    {
       "abbr": "PMA",
       "name": "Ponta da Madeira Pt / São Luís"
     },
@@ -5153,10 +5161,6 @@
     {
       "abbr": "RMW",
       "name": "Porto Rico do Maranhão"
-    },
-    {
-      "abbr": "PPD",
-      "name": "Poção de Pedras"
     },
     {
       "abbr": "PDR",
@@ -5223,6 +5227,10 @@
       "name": "Santa Luzia do Paruá"
     },
     {
+      "abbr": "SMW",
+      "name": "Santana do Maranhão"
+    },
+    {
       "abbr": "SQM",
       "name": "Santa Quitéria do Maranhão"
     },
@@ -5231,40 +5239,12 @@
       "name": "Santa Rita"
     },
     {
-      "abbr": "SMW",
-      "name": "Santana do Maranhão"
-    },
-    {
       "abbr": "STH",
       "name": "Santo Amaro do Maranhão"
     },
     {
       "abbr": "ALX",
       "name": "Santo Antônio dos Lopes"
-    },
-    {
-      "abbr": "SUH",
-      "name": "Satubinha"
-    },
-    {
-      "abbr": "SXA",
-      "name": "Senador Alexandre Costa"
-    },
-    {
-      "abbr": "SQU",
-      "name": "Senador La Rocque"
-    },
-    {
-      "abbr": "HAO",
-      "name": "Serrano do Maranhão"
-    },
-    {
-      "abbr": "UCU",
-      "name": "Sucupira do Norte"
-    },
-    {
-      "abbr": "SCH",
-      "name": "Sucupira do Riachão"
     },
     {
       "abbr": "SBP",
@@ -5287,24 +5267,16 @@
       "name": "São Domingos do Maranhão"
     },
     {
+      "abbr": "SXB",
+      "name": "São Félix de Balsas"
+    },
+    {
       "abbr": "SFB",
       "name": "São Francisco do Brejão"
     },
     {
       "abbr": "SFH",
       "name": "São Francisco do Maranhão"
-    },
-    {
-      "abbr": "SXB",
-      "name": "São Félix de Balsas"
-    },
-    {
-      "abbr": "SRR",
-      "name": "São José de Ribamar"
-    },
-    {
-      "abbr": "JDB",
-      "name": "São José dos Basílios"
     },
     {
       "abbr": "JOB",
@@ -5325,6 +5297,14 @@
     {
       "abbr": "SPT",
       "name": "São João dos Patos"
+    },
+    {
+      "abbr": "SRR",
+      "name": "São José de Ribamar"
+    },
+    {
+      "abbr": "JDB",
+      "name": "São José dos Basílios"
     },
     {
       "abbr": "SLZ",
@@ -5363,8 +5343,32 @@
       "name": "São Vicente Ferrer"
     },
     {
+      "abbr": "SUH",
+      "name": "Satubinha"
+    },
+    {
+      "abbr": "SXA",
+      "name": "Senador Alexandre Costa"
+    },
+    {
+      "abbr": "SQU",
+      "name": "Senador La Rocque"
+    },
+    {
+      "abbr": "HAO",
+      "name": "Serrano do Maranhão"
+    },
+    {
       "abbr": "SNV",
       "name": "Sítio Novo"
+    },
+    {
+      "abbr": "UCU",
+      "name": "Sucupira do Norte"
+    },
+    {
+      "abbr": "SCH",
+      "name": "Sucupira do Riachão"
     },
     {
       "abbr": "TFG",
@@ -5419,20 +5423,16 @@
       "name": "Vila Nova dos Martírios"
     },
     {
-      "abbr": "VFE",
-      "name": "Vitorino Freire"
-    },
-    {
       "abbr": "VDM",
       "name": "Vitória do Mearim"
     },
     {
-      "abbr": "ZDA",
-      "name": "Zé Doca"
+      "abbr": "VFE",
+      "name": "Vitorino Freire"
     },
     {
-      "abbr": "AGM",
-      "name": "Água Doce do Maranhão"
+      "abbr": "ZDA",
+      "name": "Zé Doca"
     }
   ],
   "MG": [
@@ -5453,8 +5453,28 @@
       "name": "Acaiaca"
     },
     {
+      "abbr": "AUC",
+      "name": "Açucena"
+    },
+    {
+      "abbr": "ABO",
+      "name": "Água Boa"
+    },
+    {
+      "abbr": "GWC",
+      "name": "Água Comprida"
+    },
+    {
       "abbr": "NIL",
       "name": "Aguanil"
+    },
+    {
+      "abbr": "AFS",
+      "name": "Águas Formosas"
+    },
+    {
+      "abbr": "AVH",
+      "name": "Águas Vermelhas"
     },
     {
       "abbr": "AMS",
@@ -5471,6 +5491,10 @@
     {
       "abbr": "ALB",
       "name": "Albertina"
+    },
+    {
+      "abbr": "APB",
+      "name": "Além Paraíba"
     },
     {
       "abbr": "ALF",
@@ -5521,10 +5545,6 @@
       "name": "Alvorada de Minas"
     },
     {
-      "abbr": "APB",
-      "name": "Além Paraíba"
-    },
-    {
       "abbr": "AMD",
       "name": "Amparo do Serra"
     },
@@ -5553,8 +5573,16 @@
       "name": "Antônio Prado de Minas"
     },
     {
+      "abbr": "ARX",
+      "name": "Araçaí"
+    },
+    {
       "abbr": "AYT",
       "name": "Aracitaba"
+    },
+    {
+      "abbr": "AAA",
+      "name": "Araçuaí"
     },
     {
       "abbr": "ARG",
@@ -5577,20 +5605,12 @@
       "name": "Arapuá"
     },
     {
-      "abbr": "AAX",
-      "name": "Araxá"
-    },
-    {
-      "abbr": "ARX",
-      "name": "Araçaí"
-    },
-    {
-      "abbr": "AAA",
-      "name": "Araçuaí"
-    },
-    {
       "abbr": "AUO",
       "name": "Araújos"
+    },
+    {
+      "abbr": "AAX",
+      "name": "Araxá"
     },
     {
       "abbr": "AEO",
@@ -5629,10 +5649,6 @@
       "name": "Augusto de Lima"
     },
     {
-      "abbr": "AUC",
-      "name": "Açucena"
-    },
-    {
       "abbr": "BNI",
       "name": "Baependi"
     },
@@ -5653,6 +5669,14 @@
       "name": "Bandeira do Sul"
     },
     {
+      "abbr": "BCI",
+      "name": "Barão de Cocais"
+    },
+    {
+      "abbr": "BTT",
+      "name": "Barão de Monte Alto"
+    },
+    {
       "abbr": "BCN",
       "name": "Barbacena"
     },
@@ -5663,14 +5687,6 @@
     {
       "abbr": "BSO",
       "name": "Barroso"
-    },
-    {
-      "abbr": "BCI",
-      "name": "Barão de Cocais"
-    },
-    {
-      "abbr": "BTT",
-      "name": "Barão de Monte Alto"
     },
     {
       "abbr": "BLM",
@@ -5793,20 +5809,20 @@
       "name": "Brasília de Minas"
     },
     {
-      "abbr": "BZS",
-      "name": "Brazópolis"
+      "abbr": "BPE",
+      "name": "Brás Pires"
     },
     {
       "abbr": "BNZ",
       "name": "Braúnas"
     },
     {
-      "abbr": "BHO",
-      "name": "Brumadinho"
+      "abbr": "BZS",
+      "name": "Brazópolis"
     },
     {
-      "abbr": "BPE",
-      "name": "Brás Pires"
+      "abbr": "BHO",
+      "name": "Brumadinho"
     },
     {
       "abbr": "BBD",
@@ -5837,10 +5853,6 @@
       "name": "Cabo Verde"
     },
     {
-      "abbr": "HDO",
-      "name": "Cachoeira Dourada"
-    },
-    {
       "abbr": "HPR",
       "name": "Cachoeira da Prata"
     },
@@ -5851,6 +5863,10 @@
     {
       "abbr": "CPJ",
       "name": "Cachoeira de Pajeú"
+    },
+    {
+      "abbr": "HDO",
+      "name": "Cachoeira Dourada"
     },
     {
       "abbr": "CTO",
@@ -5881,20 +5897,20 @@
       "name": "Camanducaia"
     },
     {
-      "abbr": "CBQ",
-      "name": "Cambuquira"
-    },
-    {
       "abbr": "CMI",
       "name": "Cambuí"
     },
     {
-      "abbr": "CPH",
-      "name": "Campanha"
+      "abbr": "CBQ",
+      "name": "Cambuquira"
     },
     {
       "abbr": "KAM",
       "name": "Campanário"
+    },
+    {
+      "abbr": "CPH",
+      "name": "Campanha"
     },
     {
       "abbr": "CZT",
@@ -5913,12 +5929,12 @@
       "name": "Campo Belo"
     },
     {
-      "abbr": "CFD",
-      "name": "Campo Florido"
-    },
-    {
       "abbr": "KME",
       "name": "Campo do Meio"
+    },
+    {
+      "abbr": "CFD",
+      "name": "Campo Florido"
     },
     {
       "abbr": "CWZ",
@@ -5929,12 +5945,16 @@
       "name": "Campos Gerais"
     },
     {
-      "abbr": "KVE",
-      "name": "Cana Verde"
-    },
-    {
       "abbr": "KAA",
       "name": "Canaã"
+    },
+    {
+      "abbr": "CYS",
+      "name": "Canápolis"
+    },
+    {
+      "abbr": "KVE",
+      "name": "Cana Verde"
     },
     {
       "abbr": "KDZ",
@@ -5943,10 +5963,6 @@
     {
       "abbr": "KLO",
       "name": "Cantagalo"
-    },
-    {
-      "abbr": "CYS",
-      "name": "Canápolis"
     },
     {
       "abbr": "CPK",
@@ -5989,6 +6005,10 @@
       "name": "Caputira"
     },
     {
+      "abbr": "CAY",
+      "name": "Caraí"
+    },
+    {
       "abbr": "KBA",
       "name": "Caranaíba"
     },
@@ -6005,10 +6025,6 @@
       "name": "Caratinga"
     },
     {
-      "abbr": "CAY",
-      "name": "Caraí"
-    },
-    {
       "abbr": "KIT",
       "name": "Carbonita"
     },
@@ -6019,6 +6035,10 @@
     {
       "abbr": "CCG",
       "name": "Carlos Chagas"
+    },
+    {
+      "abbr": "KAR",
+      "name": "Carmésia"
     },
     {
       "abbr": "KCH",
@@ -6045,10 +6065,6 @@
       "name": "Carmo do Rio Claro"
     },
     {
-      "abbr": "KAR",
-      "name": "Carmésia"
-    },
-    {
       "abbr": "CIM",
       "name": "Carmópolis de Minas"
     },
@@ -6061,12 +6077,12 @@
       "name": "Carrancas"
     },
     {
-      "abbr": "CHZ",
-      "name": "Carvalhos"
-    },
-    {
       "abbr": "KVH",
       "name": "Carvalhópolis"
+    },
+    {
+      "abbr": "CHZ",
+      "name": "Carvalhos"
     },
     {
       "abbr": "CSG",
@@ -6075,6 +6091,10 @@
     {
       "abbr": "KSR",
       "name": "Cascalho Rico"
+    },
+    {
+      "abbr": "CAI",
+      "name": "Cássia"
     },
     {
       "abbr": "CUE",
@@ -6113,24 +6133,24 @@
       "name": "Centralina"
     },
     {
-      "abbr": "XAL",
-      "name": "Chalé"
+      "abbr": "XCA",
+      "name": "Chácara"
     },
     {
-      "abbr": "CHC",
-      "name": "Chapada Gaúcha"
+      "abbr": "XAL",
+      "name": "Chalé"
     },
     {
       "abbr": "CHT",
       "name": "Chapada do Norte"
     },
     {
-      "abbr": "XOR",
-      "name": "Chiador"
+      "abbr": "CHC",
+      "name": "Chapada Gaúcha"
     },
     {
-      "abbr": "XCA",
-      "name": "Chácara"
+      "abbr": "XOR",
+      "name": "Chiador"
     },
     {
       "abbr": "NEA",
@@ -6199,6 +6219,10 @@
     {
       "abbr": "CCR",
       "name": "Conceição dos Ouros"
+    },
+    {
+      "abbr": "KGM",
+      "name": "Cônego Marinho"
     },
     {
       "abbr": "KFI",
@@ -6285,12 +6309,36 @@
       "name": "Coronel Xavier Chaves"
     },
     {
+      "abbr": "RRG",
+      "name": "Córrego Danta"
+    },
+    {
+      "abbr": "CBJ",
+      "name": "Córrego do Bom Jesus"
+    },
+    {
+      "abbr": "CEF",
+      "name": "Córrego Fundo"
+    },
+    {
+      "abbr": "CGV",
+      "name": "Córrego Novo"
+    },
+    {
       "abbr": "UTO",
       "name": "Couto de Magalhães de Minas"
     },
     {
+      "abbr": "LIT",
+      "name": "Crisólita"
+    },
+    {
       "abbr": "KST",
       "name": "Cristais"
+    },
+    {
+      "abbr": "KIA",
+      "name": "Cristália"
     },
     {
       "abbr": "OTO",
@@ -6299,14 +6347,6 @@
     {
       "abbr": "KTN",
       "name": "Cristina"
-    },
-    {
-      "abbr": "KIA",
-      "name": "Cristália"
-    },
-    {
-      "abbr": "LIT",
-      "name": "Crisólita"
     },
     {
       "abbr": "KRU",
@@ -6331,30 +6371,6 @@
     {
       "abbr": "CVL",
       "name": "Curvelo"
-    },
-    {
-      "abbr": "CAI",
-      "name": "Cássia"
-    },
-    {
-      "abbr": "RRG",
-      "name": "Córrego Danta"
-    },
-    {
-      "abbr": "CEF",
-      "name": "Córrego Fundo"
-    },
-    {
-      "abbr": "CGV",
-      "name": "Córrego Novo"
-    },
-    {
-      "abbr": "CBJ",
-      "name": "Córrego do Bom Jesus"
-    },
-    {
-      "abbr": "KGM",
-      "name": "Cônego Marinho"
     },
     {
       "abbr": "DTS",
@@ -6397,6 +6413,10 @@
       "name": "Dionísio"
     },
     {
+      "abbr": "DSA",
+      "name": "Divinésia"
+    },
+    {
       "abbr": "DIN",
       "name": "Divino"
     },
@@ -6407,10 +6427,6 @@
     {
       "abbr": "DDM",
       "name": "Divinolândia de Minas"
-    },
-    {
-      "abbr": "DSA",
-      "name": "Divinésia"
     },
     {
       "abbr": "DIV",
@@ -6557,16 +6573,16 @@
       "name": "Faria Lemos"
     },
     {
+      "abbr": "FST",
+      "name": "Felício dos Santos"
+    },
+    {
       "abbr": "FSO",
       "name": "Felisburgo"
     },
     {
       "abbr": "FND",
       "name": "Felixlândia"
-    },
-    {
-      "abbr": "FST",
-      "name": "Felício dos Santos"
     },
     {
       "abbr": "FTH",
@@ -6609,12 +6625,12 @@
       "name": "Francisco Dumont"
     },
     {
-      "abbr": "FRS",
-      "name": "Francisco Sá"
-    },
-    {
       "abbr": "FCS",
       "name": "Franciscópolis"
+    },
+    {
+      "abbr": "FRS",
+      "name": "Francisco Sá"
     },
     {
       "abbr": "FGR",
@@ -6669,12 +6685,12 @@
       "name": "Goianá"
     },
     {
-      "abbr": "GZG",
-      "name": "Gonzaga"
-    },
-    {
       "abbr": "GCS",
       "name": "Gonçalves"
+    },
+    {
+      "abbr": "GZG",
+      "name": "Gonzaga"
     },
     {
       "abbr": "GEA",
@@ -6685,12 +6701,12 @@
       "name": "Governador Valadares"
     },
     {
-      "abbr": "GRW",
-      "name": "Grupiara"
-    },
-    {
       "abbr": "GML",
       "name": "Grão Mogol"
+    },
+    {
+      "abbr": "GRW",
+      "name": "Grupiara"
     },
     {
       "abbr": "GHE",
@@ -6709,12 +6725,12 @@
       "name": "Guaraciama"
     },
     {
-      "abbr": "GUN",
-      "name": "Guarani"
-    },
-    {
       "abbr": "GAA",
       "name": "Guaranésia"
+    },
+    {
+      "abbr": "GUN",
+      "name": "Guarani"
     },
     {
       "abbr": "WAA",
@@ -6757,6 +6773,10 @@
       "name": "Ibertioga"
     },
     {
+      "abbr": "BIA",
+      "name": "Ibiá"
+    },
+    {
       "abbr": "IBY",
       "name": "Ibiaí"
     },
@@ -6779,10 +6799,6 @@
     {
       "abbr": "YUN",
       "name": "Ibituruna"
-    },
-    {
-      "abbr": "BIA",
-      "name": "Ibiá"
     },
     {
       "abbr": "IMS",
@@ -6949,16 +6965,16 @@
       "name": "Itatiaiuçu"
     },
     {
-      "abbr": "IVV",
-      "name": "Itaverava"
-    },
-    {
       "abbr": "IUM",
       "name": "Itaú de Minas"
     },
     {
       "abbr": "IAN",
       "name": "Itaúna"
+    },
+    {
+      "abbr": "IVV",
+      "name": "Itaverava"
     },
     {
       "abbr": "YIG",
@@ -6993,16 +7009,20 @@
       "name": "Jacinto"
     },
     {
-      "abbr": "JTA",
-      "name": "Jacutinga"
-    },
-    {
       "abbr": "JCY",
       "name": "Jacuí"
     },
     {
+      "abbr": "JTA",
+      "name": "Jacutinga"
+    },
+    {
       "abbr": "JGU",
       "name": "Jaguaraçu"
+    },
+    {
+      "abbr": "JBA",
+      "name": "Jaíba"
     },
     {
       "abbr": "JMC",
@@ -7023,10 +7043,6 @@
     {
       "abbr": "JVR",
       "name": "Japonvar"
-    },
-    {
-      "abbr": "JBA",
-      "name": "Jaíba"
     },
     {
       "abbr": "JEC",
@@ -7057,32 +7073,12 @@
       "name": "Jesuânia"
     },
     {
-      "abbr": "JOE",
-      "name": "Joanésia"
-    },
-    {
-      "abbr": "JFO",
-      "name": "Joaquim Felício"
-    },
-    {
       "abbr": "JMA",
       "name": "Joaíma"
     },
     {
-      "abbr": "JON",
-      "name": "Jordânia"
-    },
-    {
-      "abbr": "JOL",
-      "name": "Josenópolis"
-    },
-    {
-      "abbr": "JOM",
-      "name": "José Gonçalves de Minas"
-    },
-    {
-      "abbr": "JRD",
-      "name": "José Raydan"
+      "abbr": "JOE",
+      "name": "Joanésia"
     },
     {
       "abbr": "JMV",
@@ -7091,6 +7087,26 @@
     {
       "abbr": "JPH",
       "name": "João Pinheiro"
+    },
+    {
+      "abbr": "JFO",
+      "name": "Joaquim Felício"
+    },
+    {
+      "abbr": "JON",
+      "name": "Jordânia"
+    },
+    {
+      "abbr": "JOM",
+      "name": "José Gonçalves de Minas"
+    },
+    {
+      "abbr": "JOL",
+      "name": "Josenópolis"
+    },
+    {
+      "abbr": "JRD",
+      "name": "José Raydan"
     },
     {
       "abbr": "JUT",
@@ -7121,6 +7137,14 @@
       "name": "Lagamar"
     },
     {
+      "abbr": "LDP",
+      "name": "Lagoa da Prata"
+    },
+    {
+      "abbr": "LGP",
+      "name": "Lagoa dos Patos"
+    },
+    {
       "abbr": "LDD",
       "name": "Lagoa Dourada"
     },
@@ -7135,14 +7159,6 @@
     {
       "abbr": "LST",
       "name": "Lagoa Santa"
-    },
-    {
-      "abbr": "LDP",
-      "name": "Lagoa da Prata"
-    },
-    {
-      "abbr": "LGP",
-      "name": "Lagoa dos Patos"
     },
     {
       "abbr": "LJA",
@@ -7249,12 +7265,12 @@
       "name": "Mantena"
     },
     {
-      "abbr": "MEH",
-      "name": "Mar de Espanha"
-    },
-    {
       "abbr": "MHS",
       "name": "Maravilhas"
+    },
+    {
+      "abbr": "MEH",
+      "name": "Mar de Espanha"
     },
     {
       "abbr": "MDF",
@@ -7267,6 +7283,10 @@
     {
       "abbr": "LAC",
       "name": "Marilac"
+    },
+    {
+      "abbr": "MMS",
+      "name": "Mário Campos"
     },
     {
       "abbr": "MYP",
@@ -7365,12 +7385,12 @@
       "name": "Miradouro"
     },
     {
-      "abbr": "MIV",
-      "name": "Miravânia"
-    },
-    {
       "abbr": "MIA",
       "name": "Miraí"
+    },
+    {
+      "abbr": "MIV",
+      "name": "Miravânia"
     },
     {
       "abbr": "OED",
@@ -7417,12 +7437,12 @@
       "name": "Monte Santo de Minas"
     },
     {
-      "abbr": "MSI",
-      "name": "Monte Sião"
-    },
-    {
       "abbr": "MOC",
       "name": "Montes Claros"
+    },
+    {
+      "abbr": "MSI",
+      "name": "Monte Sião"
     },
     {
       "abbr": "MOM",
@@ -7455,10 +7475,6 @@
     {
       "abbr": "MZI",
       "name": "Muzambinho"
-    },
-    {
-      "abbr": "MMS",
-      "name": "Mário Campos"
     },
     {
       "abbr": "NRN",
@@ -7549,16 +7565,16 @@
       "name": "Olhos-d'Água"
     },
     {
+      "abbr": "ONH",
+      "name": "Olímpio Noronha"
+    },
+    {
       "abbr": "OVA",
       "name": "Oliveira"
     },
     {
       "abbr": "OFS",
       "name": "Oliveira Fortes"
-    },
-    {
-      "abbr": "ONH",
-      "name": "Olímpio Noronha"
     },
     {
       "abbr": "OPI",
@@ -7597,16 +7613,16 @@
       "name": "Padre Paraíso"
     },
     {
-      "abbr": "PPX",
-      "name": "Pai Pedro"
-    },
-    {
       "abbr": "PYY",
       "name": "Paineiras"
     },
     {
       "abbr": "PYS",
       "name": "Pains"
+    },
+    {
+      "abbr": "PPX",
+      "name": "Pai Pedro"
     },
     {
       "abbr": "PYV",
@@ -7633,6 +7649,10 @@
       "name": "Paracatu"
     },
     {
+      "abbr": "PMN",
+      "name": "Pará de Minas"
+    },
+    {
       "abbr": "PUC",
       "name": "Paraguaçu"
     },
@@ -7645,8 +7665,8 @@
       "name": "Paraopeba"
     },
     {
-      "abbr": "PMN",
-      "name": "Pará de Minas"
+      "abbr": "PBM",
+      "name": "Passabém"
     },
     {
       "abbr": "PQO",
@@ -7659,10 +7679,6 @@
     {
       "abbr": "PVN",
       "name": "Passa Vinte"
-    },
-    {
-      "abbr": "PBM",
-      "name": "Passabém"
     },
     {
       "abbr": "PAS",
@@ -7697,6 +7713,10 @@
       "name": "Pavão"
     },
     {
+      "abbr": "PEH",
+      "name": "Peçanha"
+    },
+    {
       "abbr": "PAZ",
       "name": "Pedra Azul"
     },
@@ -7705,16 +7725,16 @@
       "name": "Pedra Bonita"
     },
     {
-      "abbr": "EDW",
-      "name": "Pedra Dourada"
-    },
-    {
       "abbr": "EAN",
       "name": "Pedra do Anta"
     },
     {
       "abbr": "PIQ",
       "name": "Pedra do Indaiá"
+    },
+    {
+      "abbr": "EDW",
+      "name": "Pedra Dourada"
     },
     {
       "abbr": "PEV",
@@ -7765,10 +7785,6 @@
       "name": "Pescador"
     },
     {
-      "abbr": "PEH",
-      "name": "Peçanha"
-    },
-    {
       "abbr": "PYW",
       "name": "Piau"
     },
@@ -7813,12 +7829,12 @@
       "name": "Piranga"
     },
     {
-      "abbr": "PGH",
-      "name": "Piranguinho"
-    },
-    {
       "abbr": "PGC",
       "name": "Piranguçu"
+    },
+    {
+      "abbr": "PGH",
+      "name": "Piranguinho"
     },
     {
       "abbr": "PTA",
@@ -7843,6 +7859,14 @@
     {
       "abbr": "PLN",
       "name": "Planura"
+    },
+    {
+      "abbr": "PCF",
+      "name": "Poço Fundo"
+    },
+    {
+      "abbr": "POO",
+      "name": "Poços de Caldas"
     },
     {
       "abbr": "PEX",
@@ -7885,14 +7909,6 @@
       "name": "Pouso Alto"
     },
     {
-      "abbr": "PCF",
-      "name": "Poço Fundo"
-    },
-    {
-      "abbr": "POO",
-      "name": "Poços de Caldas"
-    },
-    {
       "abbr": "PSX",
       "name": "Prados"
     },
@@ -7901,12 +7917,12 @@
       "name": "Prata"
     },
     {
-      "abbr": "PHX",
-      "name": "Pratinha"
-    },
-    {
       "abbr": "PTP",
       "name": "Pratápolis"
+    },
+    {
+      "abbr": "PHX",
+      "name": "Pratinha"
     },
     {
       "abbr": "NAR",
@@ -7973,12 +7989,12 @@
       "name": "Riacho dos Machados"
     },
     {
-      "abbr": "RVO",
-      "name": "Ribeirão Vermelho"
-    },
-    {
       "abbr": "RNV",
       "name": "Ribeirão das Neves"
+    },
+    {
+      "abbr": "RVO",
+      "name": "Ribeirão Vermelho"
     },
     {
       "abbr": "RAC",
@@ -7991,6 +8007,10 @@
     {
       "abbr": "DCE",
       "name": "Rio Doce"
+    },
+    {
+      "abbr": "RPD",
+      "name": "Rio do Prado"
     },
     {
       "abbr": "REE",
@@ -8027,10 +8047,6 @@
     {
       "abbr": "RVH",
       "name": "Rio Vermelho"
-    },
-    {
-      "abbr": "RPD",
-      "name": "Rio do Prado"
     },
     {
       "abbr": "RTI",
@@ -8145,38 +8161,6 @@
       "name": "Santa Maria do Suaçuí"
     },
     {
-      "abbr": "RIT",
-      "name": "Santa Rita de Caldas"
-    },
-    {
-      "abbr": "SRK",
-      "name": "Santa Rita de Ibitipoca"
-    },
-    {
-      "abbr": "SRJ",
-      "name": "Santa Rita de Jacutinga"
-    },
-    {
-      "abbr": "RMX",
-      "name": "Santa Rita de Minas"
-    },
-    {
-      "abbr": "TUE",
-      "name": "Santa Rita do Itueto"
-    },
-    {
-      "abbr": "SAI",
-      "name": "Santa Rita do Sapucaí"
-    },
-    {
-      "abbr": "RZS",
-      "name": "Santa Rosa da Serra"
-    },
-    {
-      "abbr": "SVI",
-      "name": "Santa Vitória"
-    },
-    {
       "abbr": "SDV",
       "name": "Santana da Vargem"
     },
@@ -8217,6 +8201,38 @@
       "name": "Santana dos Montes"
     },
     {
+      "abbr": "RIT",
+      "name": "Santa Rita de Caldas"
+    },
+    {
+      "abbr": "SRK",
+      "name": "Santa Rita de Ibitipoca"
+    },
+    {
+      "abbr": "SRJ",
+      "name": "Santa Rita de Jacutinga"
+    },
+    {
+      "abbr": "RMX",
+      "name": "Santa Rita de Minas"
+    },
+    {
+      "abbr": "TUE",
+      "name": "Santa Rita do Itueto"
+    },
+    {
+      "abbr": "SAI",
+      "name": "Santa Rita do Sapucaí"
+    },
+    {
+      "abbr": "RZS",
+      "name": "Santa Rosa da Serra"
+    },
+    {
+      "abbr": "SVI",
+      "name": "Santa Vitória"
+    },
+    {
       "abbr": "STP",
       "name": "Santo Antônio do Amparo"
     },
@@ -8255,6 +8271,246 @@
     {
       "abbr": "SDO",
       "name": "Santos Dumont"
+    },
+    {
+      "abbr": "SBX",
+      "name": "São Bento Abade"
+    },
+    {
+      "abbr": "UAC",
+      "name": "São Brás do Suaçuí"
+    },
+    {
+      "abbr": "DDD",
+      "name": "São Domingos das Dores"
+    },
+    {
+      "abbr": "DDP",
+      "name": "São Domingos do Prata"
+    },
+    {
+      "abbr": "SXM",
+      "name": "São Félix de Minas"
+    },
+    {
+      "abbr": "SFO",
+      "name": "São Francisco"
+    },
+    {
+      "abbr": "SFP",
+      "name": "São Francisco de Paula"
+    },
+    {
+      "abbr": "SFZ",
+      "name": "São Francisco de Sales"
+    },
+    {
+      "abbr": "SWF",
+      "name": "São Francisco do Glória"
+    },
+    {
+      "abbr": "SGL",
+      "name": "São Geraldo"
+    },
+    {
+      "abbr": "GEP",
+      "name": "São Geraldo da Piedade"
+    },
+    {
+      "abbr": "SXI",
+      "name": "São Geraldo do Baixio"
+    },
+    {
+      "abbr": "SLB",
+      "name": "São Gonçalo do Abaeté"
+    },
+    {
+      "abbr": "GON",
+      "name": "São Gonçalo do Pará"
+    },
+    {
+      "abbr": "SDR",
+      "name": "São Gonçalo do Rio Abaixo"
+    },
+    {
+      "abbr": "GLP",
+      "name": "São Gonçalo do Rio Preto"
+    },
+    {
+      "abbr": "SGI",
+      "name": "São Gonçalo do Sapucaí"
+    },
+    {
+      "abbr": "SGT",
+      "name": "São Gotardo"
+    },
+    {
+      "abbr": "JBG",
+      "name": "São João Batista do Glória"
+    },
+    {
+      "abbr": "JLG",
+      "name": "São João da Lagoa"
+    },
+    {
+      "abbr": "JWM",
+      "name": "São João da Mata"
+    },
+    {
+      "abbr": "SOJ",
+      "name": "São João da Ponte"
+    },
+    {
+      "abbr": "JMS",
+      "name": "São João das Missões"
+    },
+    {
+      "abbr": "SJI",
+      "name": "São João del Rei"
+    },
+    {
+      "abbr": "SHU",
+      "name": "São João do Manhuaçu"
+    },
+    {
+      "abbr": "SJH",
+      "name": "São João do Manteninha"
+    },
+    {
+      "abbr": "JTE",
+      "name": "São João do Oriente"
+    },
+    {
+      "abbr": "JWP",
+      "name": "São João do Pacuí"
+    },
+    {
+      "abbr": "JDP",
+      "name": "São João do Paraíso"
+    },
+    {
+      "abbr": "SEV",
+      "name": "São João Evangelista"
+    },
+    {
+      "abbr": "SJN",
+      "name": "São João Nepomuceno"
+    },
+    {
+      "abbr": "SQB",
+      "name": "São Joaquim de Bicas"
+    },
+    {
+      "abbr": "SZB",
+      "name": "São José da Barra"
+    },
+    {
+      "abbr": "SSL",
+      "name": "São José da Lapa"
+    },
+    {
+      "abbr": "FIR",
+      "name": "São José da Safira"
+    },
+    {
+      "abbr": "SVH",
+      "name": "São José da Varginha"
+    },
+    {
+      "abbr": "JAL",
+      "name": "São José do Alegre"
+    },
+    {
+      "abbr": "JOD",
+      "name": "São José do Divino"
+    },
+    {
+      "abbr": "JGO",
+      "name": "São José do Goiabal"
+    },
+    {
+      "abbr": "SDJ",
+      "name": "São José do Jacuri"
+    },
+    {
+      "abbr": "JMW",
+      "name": "São José do Mantimento"
+    },
+    {
+      "abbr": "SLC",
+      "name": "São Lourenço"
+    },
+    {
+      "abbr": "SWM",
+      "name": "São Miguel do Anta"
+    },
+    {
+      "abbr": "SUW",
+      "name": "São Pedro da União"
+    },
+    {
+      "abbr": "SDF",
+      "name": "São Pedro dos Ferros"
+    },
+    {
+      "abbr": "SCU",
+      "name": "São Pedro do Suaçuí"
+    },
+    {
+      "abbr": "SRW",
+      "name": "São Romão"
+    },
+    {
+      "abbr": "SQN",
+      "name": "São Roque de Minas"
+    },
+    {
+      "abbr": "SVX",
+      "name": "São Sebastião da Bela Vista"
+    },
+    {
+      "abbr": "SVG",
+      "name": "São Sebastião da Vargem Alegre"
+    },
+    {
+      "abbr": "SSN",
+      "name": "São Sebastião do Anta"
+    },
+    {
+      "abbr": "SIH",
+      "name": "São Sebastião do Maranhão"
+    },
+    {
+      "abbr": "OES",
+      "name": "São Sebastião do Oeste"
+    },
+    {
+      "abbr": "SSP",
+      "name": "São Sebastião do Paraíso"
+    },
+    {
+      "abbr": "BSP",
+      "name": "São Sebastião do Rio Preto"
+    },
+    {
+      "abbr": "RVE",
+      "name": "São Sebastião do Rio Verde"
+    },
+    {
+      "abbr": "STI",
+      "name": "São Tiago"
+    },
+    {
+      "abbr": "STQ",
+      "name": "São Tomás de Aquino"
+    },
+    {
+      "abbr": "TDL",
+      "name": "São Tomé das Letras"
+    },
+    {
+      "abbr": "SVM",
+      "name": "São Vicente de Minas"
     },
     {
       "abbr": "SPM",
@@ -8321,24 +8577,24 @@
       "name": "Serra da Saudade"
     },
     {
-      "abbr": "SST",
-      "name": "Serra do Salitre"
-    },
-    {
       "abbr": "AIM",
       "name": "Serra dos Aimorés"
+    },
+    {
+      "abbr": "SST",
+      "name": "Serra do Salitre"
     },
     {
       "abbr": "SIA",
       "name": "Serrania"
     },
     {
-      "abbr": "NWS",
-      "name": "Serranos"
-    },
-    {
       "abbr": "EPM",
       "name": "Serranópolis de Minas"
+    },
+    {
+      "abbr": "NWS",
+      "name": "Serranos"
     },
     {
       "abbr": "SEO",
@@ -8361,12 +8617,12 @@
       "name": "Silvianópolis"
     },
     {
-      "abbr": "SYM",
-      "name": "Simonésia"
-    },
-    {
       "abbr": "SOP",
       "name": "Simão Pereira"
+    },
+    {
+      "abbr": "SYM",
+      "name": "Simonésia"
     },
     {
       "abbr": "SBL",
@@ -8375,246 +8631,6 @@
     {
       "abbr": "SWD",
       "name": "Soledade de Minas"
-    },
-    {
-      "abbr": "SBX",
-      "name": "São Bento Abade"
-    },
-    {
-      "abbr": "UAC",
-      "name": "São Brás do Suaçuí"
-    },
-    {
-      "abbr": "DDD",
-      "name": "São Domingos das Dores"
-    },
-    {
-      "abbr": "DDP",
-      "name": "São Domingos do Prata"
-    },
-    {
-      "abbr": "SFO",
-      "name": "São Francisco"
-    },
-    {
-      "abbr": "SFP",
-      "name": "São Francisco de Paula"
-    },
-    {
-      "abbr": "SFZ",
-      "name": "São Francisco de Sales"
-    },
-    {
-      "abbr": "SWF",
-      "name": "São Francisco do Glória"
-    },
-    {
-      "abbr": "SXM",
-      "name": "São Félix de Minas"
-    },
-    {
-      "abbr": "SGL",
-      "name": "São Geraldo"
-    },
-    {
-      "abbr": "GEP",
-      "name": "São Geraldo da Piedade"
-    },
-    {
-      "abbr": "SXI",
-      "name": "São Geraldo do Baixio"
-    },
-    {
-      "abbr": "SLB",
-      "name": "São Gonçalo do Abaeté"
-    },
-    {
-      "abbr": "GON",
-      "name": "São Gonçalo do Pará"
-    },
-    {
-      "abbr": "SDR",
-      "name": "São Gonçalo do Rio Abaixo"
-    },
-    {
-      "abbr": "GLP",
-      "name": "São Gonçalo do Rio Preto"
-    },
-    {
-      "abbr": "SGI",
-      "name": "São Gonçalo do Sapucaí"
-    },
-    {
-      "abbr": "SGT",
-      "name": "São Gotardo"
-    },
-    {
-      "abbr": "SQB",
-      "name": "São Joaquim de Bicas"
-    },
-    {
-      "abbr": "SZB",
-      "name": "São José da Barra"
-    },
-    {
-      "abbr": "SSL",
-      "name": "São José da Lapa"
-    },
-    {
-      "abbr": "FIR",
-      "name": "São José da Safira"
-    },
-    {
-      "abbr": "SVH",
-      "name": "São José da Varginha"
-    },
-    {
-      "abbr": "JAL",
-      "name": "São José do Alegre"
-    },
-    {
-      "abbr": "JOD",
-      "name": "São José do Divino"
-    },
-    {
-      "abbr": "JGO",
-      "name": "São José do Goiabal"
-    },
-    {
-      "abbr": "SDJ",
-      "name": "São José do Jacuri"
-    },
-    {
-      "abbr": "JMW",
-      "name": "São José do Mantimento"
-    },
-    {
-      "abbr": "JBG",
-      "name": "São João Batista do Glória"
-    },
-    {
-      "abbr": "SEV",
-      "name": "São João Evangelista"
-    },
-    {
-      "abbr": "SJN",
-      "name": "São João Nepomuceno"
-    },
-    {
-      "abbr": "JLG",
-      "name": "São João da Lagoa"
-    },
-    {
-      "abbr": "JWM",
-      "name": "São João da Mata"
-    },
-    {
-      "abbr": "SOJ",
-      "name": "São João da Ponte"
-    },
-    {
-      "abbr": "JMS",
-      "name": "São João das Missões"
-    },
-    {
-      "abbr": "SJI",
-      "name": "São João del Rei"
-    },
-    {
-      "abbr": "SHU",
-      "name": "São João do Manhuaçu"
-    },
-    {
-      "abbr": "SJH",
-      "name": "São João do Manteninha"
-    },
-    {
-      "abbr": "JTE",
-      "name": "São João do Oriente"
-    },
-    {
-      "abbr": "JWP",
-      "name": "São João do Pacuí"
-    },
-    {
-      "abbr": "JDP",
-      "name": "São João do Paraíso"
-    },
-    {
-      "abbr": "SLC",
-      "name": "São Lourenço"
-    },
-    {
-      "abbr": "SWM",
-      "name": "São Miguel do Anta"
-    },
-    {
-      "abbr": "SUW",
-      "name": "São Pedro da União"
-    },
-    {
-      "abbr": "SCU",
-      "name": "São Pedro do Suaçuí"
-    },
-    {
-      "abbr": "SDF",
-      "name": "São Pedro dos Ferros"
-    },
-    {
-      "abbr": "SRW",
-      "name": "São Romão"
-    },
-    {
-      "abbr": "SQN",
-      "name": "São Roque de Minas"
-    },
-    {
-      "abbr": "SVX",
-      "name": "São Sebastião da Bela Vista"
-    },
-    {
-      "abbr": "SVG",
-      "name": "São Sebastião da Vargem Alegre"
-    },
-    {
-      "abbr": "SSN",
-      "name": "São Sebastião do Anta"
-    },
-    {
-      "abbr": "SIH",
-      "name": "São Sebastião do Maranhão"
-    },
-    {
-      "abbr": "OES",
-      "name": "São Sebastião do Oeste"
-    },
-    {
-      "abbr": "SSP",
-      "name": "São Sebastião do Paraíso"
-    },
-    {
-      "abbr": "BSP",
-      "name": "São Sebastião do Rio Preto"
-    },
-    {
-      "abbr": "RVE",
-      "name": "São Sebastião do Rio Verde"
-    },
-    {
-      "abbr": "STI",
-      "name": "São Tiago"
-    },
-    {
-      "abbr": "STQ",
-      "name": "São Tomás de Aquino"
-    },
-    {
-      "abbr": "TDL",
-      "name": "São Tomé das Letras"
-    },
-    {
-      "abbr": "SVM",
-      "name": "São Vicente de Minas"
     },
     {
       "abbr": "TLO",
@@ -8709,12 +8725,16 @@
       "name": "Turvolândia"
     },
     {
-      "abbr": "UBG",
-      "name": "Ubaporanga"
+      "abbr": "UBA",
+      "name": "Ubá"
     },
     {
       "abbr": "UAY",
       "name": "Ubaí"
+    },
+    {
+      "abbr": "UBG",
+      "name": "Ubaporanga"
     },
     {
       "abbr": "UBB",
@@ -8723,10 +8743,6 @@
     {
       "abbr": "UDI",
       "name": "Uberlândia"
-    },
-    {
-      "abbr": "UBA",
-      "name": "Ubá"
     },
     {
       "abbr": "UUB",
@@ -8745,12 +8761,12 @@
       "name": "Uruana de Minas"
     },
     {
-      "abbr": "URI",
-      "name": "Urucuia"
-    },
-    {
       "abbr": "UUI",
       "name": "Urucânia"
+    },
+    {
+      "abbr": "URI",
+      "name": "Urucuia"
     },
     {
       "abbr": "VAR",
@@ -8773,6 +8789,10 @@
       "name": "Varjão de Minas"
     },
     {
+      "abbr": "VPM",
+      "name": "Várzea da Palma"
+    },
+    {
       "abbr": "VDA",
       "name": "Varzelândia"
     },
@@ -8789,16 +8809,20 @@
       "name": "Veredinha"
     },
     {
-      "abbr": "VNO",
-      "name": "Vermelho Novo"
-    },
-    {
       "abbr": "VEO",
       "name": "Veríssimo"
     },
     {
+      "abbr": "VNO",
+      "name": "Vermelho Novo"
+    },
+    {
       "abbr": "VSA",
       "name": "Vespasiano"
+    },
+    {
+      "abbr": "VIS",
+      "name": "Viçosa"
     },
     {
       "abbr": "VIR",
@@ -8809,6 +8833,10 @@
       "name": "Virgem da Lapa"
     },
     {
+      "abbr": "VII",
+      "name": "Virgínia"
+    },
+    {
       "abbr": "VIG",
       "name": "Virginópolis"
     },
@@ -8817,47 +8845,23 @@
       "name": "Virgolândia"
     },
     {
-      "abbr": "VII",
-      "name": "Virgínia"
-    },
-    {
       "abbr": "VRB",
       "name": "Visconde do Rio Branco"
-    },
-    {
-      "abbr": "VIS",
-      "name": "Viçosa"
     },
     {
       "abbr": "VGD",
       "name": "Volta Grande"
     },
     {
-      "abbr": "VPM",
-      "name": "Várzea da Palma"
-    },
-    {
       "abbr": "WBA",
       "name": "Wenceslau Braz"
-    },
-    {
-      "abbr": "ABO",
-      "name": "Água Boa"
-    },
-    {
-      "abbr": "GWC",
-      "name": "Água Comprida"
-    },
-    {
-      "abbr": "AFS",
-      "name": "Águas Formosas"
-    },
-    {
-      "abbr": "AVH",
-      "name": "Águas Vermelhas"
     }
   ],
   "MS": [
+    {
+      "abbr": "AGC",
+      "name": "Água Clara"
+    },
     {
       "abbr": "AYS",
       "name": "Alcinópolis"
@@ -8987,12 +8991,12 @@
       "name": "Eldorado"
     },
     {
-      "abbr": "FUR",
-      "name": "Figueirão"
-    },
-    {
       "abbr": "FSU",
       "name": "Fátima do Sul"
+    },
+    {
+      "abbr": "FUR",
+      "name": "Figueirão"
     },
     {
       "abbr": "GDO",
@@ -9083,16 +9087,16 @@
       "name": "Novo Horizonte do Sul"
     },
     {
+      "abbr": "PSG",
+      "name": "Paraíso das Águas"
+    },
+    {
       "abbr": "PRA",
       "name": "Paranaíba"
     },
     {
       "abbr": "PWS",
       "name": "Paranhos"
-    },
-    {
-      "abbr": "PSG",
-      "name": "Paraíso das Águas"
     },
     {
       "abbr": "PGS",
@@ -9131,6 +9135,10 @@
       "name": "Santa Rita do Pardo"
     },
     {
+      "abbr": "SGS",
+      "name": "São Gabriel do Oeste"
+    },
+    {
       "abbr": "SVR",
       "name": "Selvíria"
     },
@@ -9145,10 +9153,6 @@
     {
       "abbr": "SOA",
       "name": "Sonora"
-    },
-    {
-      "abbr": "SGS",
-      "name": "São Gabriel do Oeste"
     },
     {
       "abbr": "TCR",
@@ -9169,16 +9173,16 @@
     {
       "abbr": "VCN",
       "name": "Vicentina"
-    },
-    {
-      "abbr": "AGC",
-      "name": "Água Clara"
     }
   ],
   "MT": [
     {
       "abbr": "AZL",
       "name": "Acorizal"
+    },
+    {
+      "abbr": "AGB",
+      "name": "Água Boa"
     },
     {
       "abbr": "AFL",
@@ -9229,16 +9233,16 @@
       "name": "Aripuanã"
     },
     {
+      "abbr": "BMC",
+      "name": "Barão de Melgaço"
+    },
+    {
       "abbr": "BBG",
       "name": "Barra do Bugres"
     },
     {
       "abbr": "BGR",
       "name": "Barra do Garças"
-    },
-    {
-      "abbr": "BMC",
-      "name": "Barão de Melgaço"
     },
     {
       "abbr": "BMU",
@@ -9249,6 +9253,10 @@
       "name": "Brasnorte"
     },
     {
+      "abbr": "CCX",
+      "name": "Cáceres"
+    },
+    {
       "abbr": "CMZ",
       "name": "Campinápolis"
     },
@@ -9257,12 +9265,12 @@
       "name": "Campo Novo do Parecis"
     },
     {
-      "abbr": "CVE",
-      "name": "Campo Verde"
-    },
-    {
       "abbr": "CJL",
       "name": "Campos de Júlio"
+    },
+    {
+      "abbr": "CVE",
+      "name": "Campo Verde"
     },
     {
       "abbr": "KBN",
@@ -9293,12 +9301,12 @@
       "name": "Cocalinho"
     },
     {
-      "abbr": "CLZ",
-      "name": "Colniza"
-    },
-    {
       "abbr": "CLD",
       "name": "Colíder"
+    },
+    {
+      "abbr": "CLZ",
+      "name": "Colniza"
     },
     {
       "abbr": "KMO",
@@ -9323,10 +9331,6 @@
     {
       "abbr": "CWE",
       "name": "Curvelândia"
-    },
-    {
-      "abbr": "CCX",
-      "name": "Cáceres"
     },
     {
       "abbr": "DEE",
@@ -9405,16 +9409,16 @@
       "name": "Juara"
     },
     {
+      "abbr": "JIA",
+      "name": "Juína"
+    },
+    {
       "abbr": "JRN",
       "name": "Juruena"
     },
     {
       "abbr": "JIR",
       "name": "Juscimeira"
-    },
-    {
-      "abbr": "JIA",
-      "name": "Juína"
     },
     {
       "abbr": "LBO",
@@ -9525,12 +9529,12 @@
       "name": "Novo São Joaquim"
     },
     {
-      "abbr": "PTX",
-      "name": "Paranatinga"
-    },
-    {
       "abbr": "PRT",
       "name": "Paranaíta"
+    },
+    {
+      "abbr": "PTX",
+      "name": "Paranatinga"
     },
     {
       "abbr": "PEP",
@@ -9565,16 +9569,16 @@
       "name": "Porto Alegre do Norte"
     },
     {
+      "abbr": "PSH",
+      "name": "Porto dos Gaúchos"
+    },
+    {
       "abbr": "PSD",
       "name": "Porto Esperidião"
     },
     {
       "abbr": "PWL",
       "name": "Porto Estrela"
-    },
-    {
-      "abbr": "PSH",
-      "name": "Porto dos Gaúchos"
     },
     {
       "abbr": "PXU",
@@ -9649,6 +9653,30 @@
       "name": "Santo Antônio do Leverger"
     },
     {
+      "abbr": "SXO",
+      "name": "São Félix do Araguaia"
+    },
+    {
+      "abbr": "JPV",
+      "name": "São José do Povo"
+    },
+    {
+      "abbr": "SJR",
+      "name": "São José do Rio Claro"
+    },
+    {
+      "abbr": "SQC",
+      "name": "São José dos Quatro Marcos"
+    },
+    {
+      "abbr": "SXU",
+      "name": "São José do Xingu"
+    },
+    {
+      "abbr": "SCX",
+      "name": "São Pedro da Cipa"
+    },
+    {
       "abbr": "SPZ",
       "name": "Sapezal"
     },
@@ -9663,30 +9691,6 @@
     {
       "abbr": "SOO",
       "name": "Sorriso"
-    },
-    {
-      "abbr": "SXO",
-      "name": "São Félix do Araguaia"
-    },
-    {
-      "abbr": "JPV",
-      "name": "São José do Povo"
-    },
-    {
-      "abbr": "SJR",
-      "name": "São José do Rio Claro"
-    },
-    {
-      "abbr": "SXU",
-      "name": "São José do Xingu"
-    },
-    {
-      "abbr": "SQC",
-      "name": "São José dos Quatro Marcos"
-    },
-    {
-      "abbr": "SCX",
-      "name": "São Pedro da Cipa"
     },
     {
       "abbr": "BPW",
@@ -9721,6 +9725,14 @@
       "name": "Vale de São Domingos"
     },
     {
+      "abbr": "VGR",
+      "name": "Várzea Grande"
+    },
+    {
+      "abbr": "CGB",
+      "name": "Várzea Grande Apt / Cuiabá"
+    },
+    {
       "abbr": "VER",
       "name": "Vera"
     },
@@ -9731,18 +9743,6 @@
     {
       "abbr": "VRI",
       "name": "Vila Rica"
-    },
-    {
-      "abbr": "VGR",
-      "name": "Várzea Grande"
-    },
-    {
-      "abbr": "CGB",
-      "name": "Várzea Grande Apt / Cuiabá"
-    },
-    {
-      "abbr": "AGB",
-      "name": "Água Boa"
     }
   ],
   "PA": [
@@ -9761,6 +9761,10 @@
     {
       "abbr": "AFU",
       "name": "Afuá"
+    },
+    {
+      "abbr": "ANE",
+      "name": "Água Azul do Norte"
     },
     {
       "abbr": "ALT",
@@ -9815,12 +9819,12 @@
       "name": "Barcarena"
     },
     {
-      "abbr": "BER",
-      "name": "Belterra"
-    },
-    {
       "abbr": "BEL",
       "name": "Belém"
+    },
+    {
+      "abbr": "BER",
+      "name": "Belterra"
     },
     {
       "abbr": "BVI",
@@ -9995,6 +9999,10 @@
       "name": "Limoeiro do Ajuru"
     },
     {
+      "abbr": "MRO",
+      "name": "Mãe do Rio"
+    },
+    {
       "abbr": "MBR",
       "name": "Magalhães Barata"
     },
@@ -10043,10 +10051,6 @@
       "name": "Muaná"
     },
     {
-      "abbr": "MRO",
-      "name": "Mãe do Rio"
-    },
-    {
       "abbr": "NEP",
       "name": "Nova Esperança do Piriá"
     },
@@ -10067,6 +10071,10 @@
       "name": "Novo Repartimento"
     },
     {
+      "abbr": "OBI",
+      "name": "Óbidos"
+    },
+    {
       "abbr": "ODP",
       "name": "Oeiras do Pará"
     },
@@ -10075,12 +10083,12 @@
       "name": "Oriximiná"
     },
     {
-      "abbr": "ONO",
-      "name": "Ourilândia do Norte"
-    },
-    {
       "abbr": "OUM",
       "name": "Ourém"
+    },
+    {
+      "abbr": "ONO",
+      "name": "Ourilândia do Norte"
     },
     {
       "abbr": "PAJ",
@@ -10123,12 +10131,12 @@
       "name": "Portel"
     },
     {
-      "abbr": "TMT",
-      "name": "Porto Trombetas / Oriximiná"
-    },
-    {
       "abbr": "PDM",
       "name": "Porto de Moz"
+    },
+    {
+      "abbr": "TMT",
+      "name": "Porto Trombetas / Oriximiná"
     },
     {
       "abbr": "PRH",
@@ -10207,18 +10215,6 @@
       "name": "Santo Antônio do Tauá"
     },
     {
-      "abbr": "SWC",
-      "name": "Sapucaia"
-    },
-    {
-      "abbr": "SEF",
-      "name": "Senador José Porfírio"
-    },
-    {
-      "abbr": "SUE",
-      "name": "Soure"
-    },
-    {
       "abbr": "SEL",
       "name": "São Caetano de Odivelas"
     },
@@ -10231,12 +10227,12 @@
       "name": "São Domingos do Capim"
     },
     {
-      "abbr": "SCP",
-      "name": "São Francisco do Pará"
-    },
-    {
       "abbr": "SFG",
       "name": "São Félix do Xingu"
+    },
+    {
+      "abbr": "SCP",
+      "name": "São Francisco do Pará"
     },
     {
       "abbr": "SEU",
@@ -10261,6 +10257,18 @@
     {
       "abbr": "SVS",
       "name": "São Sebastião da Boa Vista"
+    },
+    {
+      "abbr": "SWC",
+      "name": "Sapucaia"
+    },
+    {
+      "abbr": "SEF",
+      "name": "Senador José Porfírio"
+    },
+    {
+      "abbr": "SUE",
+      "name": "Soure"
     },
     {
       "abbr": "TLD",
@@ -10321,17 +10329,13 @@
     {
       "abbr": "XIG",
       "name": "Xinguara"
-    },
-    {
-      "abbr": "ANE",
-      "name": "Água Azul do Norte"
-    },
-    {
-      "abbr": "OBI",
-      "name": "Óbidos"
     }
   ],
   "PB": [
+    {
+      "abbr": "GBR",
+      "name": "Água Branca"
+    },
     {
       "abbr": "AWI",
       "name": "Aguiar"
@@ -10369,16 +10373,16 @@
       "name": "Aparecida"
     },
     {
+      "abbr": "ACG",
+      "name": "Araçagi"
+    },
+    {
       "abbr": "RAR",
       "name": "Arara"
     },
     {
       "abbr": "ARW",
       "name": "Araruna"
-    },
-    {
-      "abbr": "ACG",
-      "name": "Araçagi"
     },
     {
       "abbr": "AEI",
@@ -10401,6 +10405,10 @@
       "name": "Assunção"
     },
     {
+      "abbr": "BTC",
+      "name": "Baía da Traição"
+    },
+    {
       "abbr": "BNS",
       "name": "Bananeiras"
     },
@@ -10409,12 +10417,12 @@
       "name": "Baraúna"
     },
     {
-      "abbr": "BSR",
-      "name": "Barra de Santa Rosa"
-    },
-    {
       "abbr": "BSN",
       "name": "Barra de Santana"
+    },
+    {
+      "abbr": "BSR",
+      "name": "Barra de Santa Rosa"
     },
     {
       "abbr": "BML",
@@ -10423,10 +10431,6 @@
     {
       "abbr": "BAY",
       "name": "Bayeux"
-    },
-    {
-      "abbr": "BTC",
-      "name": "Baía da Traição"
     },
     {
       "abbr": "BEM",
@@ -10593,10 +10597,6 @@
       "name": "Cubati"
     },
     {
-      "abbr": "CUY",
-      "name": "Cuitegi"
-    },
-    {
       "abbr": "CIT",
       "name": "Cuité"
     },
@@ -10605,12 +10605,16 @@
       "name": "Cuité de Mamanguape"
     },
     {
-      "abbr": "UVH",
-      "name": "Curral Velho"
+      "abbr": "CUY",
+      "name": "Cuitegi"
     },
     {
       "abbr": "KUC",
       "name": "Curral de Cima"
+    },
+    {
+      "abbr": "UVH",
+      "name": "Curral Velho"
     },
     {
       "abbr": "DMO",
@@ -10705,12 +10709,12 @@
       "name": "Jericó"
     },
     {
-      "abbr": "JCL",
-      "name": "Joca Claudino"
-    },
-    {
       "abbr": "JPA",
       "name": "João Pessoa"
+    },
+    {
+      "abbr": "JCL",
+      "name": "Joca Claudino"
     },
     {
       "abbr": "JTV",
@@ -10737,12 +10741,12 @@
       "name": "Lagoa"
     },
     {
-      "abbr": "LSC",
-      "name": "Lagoa Seca"
-    },
-    {
       "abbr": "LED",
       "name": "Lagoa de Dentro"
+    },
+    {
+      "abbr": "LSC",
+      "name": "Lagoa Seca"
     },
     {
       "abbr": "LSR",
@@ -10759,6 +10763,10 @@
     {
       "abbr": "LUA",
       "name": "Lucena"
+    },
+    {
+      "abbr": "MEG",
+      "name": "Mãe d'Água"
     },
     {
       "abbr": "MWT",
@@ -10823,10 +10831,6 @@
     {
       "abbr": "MGU",
       "name": "Mulungu"
-    },
-    {
-      "abbr": "MEG",
-      "name": "Mãe d'Água"
     },
     {
       "abbr": "NUA",
@@ -10925,16 +10929,16 @@
       "name": "Pocinhos"
     },
     {
-      "abbr": "PBL",
-      "name": "Pombal"
-    },
-    {
       "abbr": "PWD",
       "name": "Poço Dantas"
     },
     {
       "abbr": "PJR",
       "name": "Poço de José de Moura"
+    },
+    {
+      "abbr": "PBL",
+      "name": "Pombal"
     },
     {
       "abbr": "PXX",
@@ -10961,14 +10965,6 @@
       "name": "Remígio"
     },
     {
-      "abbr": "RHI",
-      "name": "Riacho de Santo Antônio"
-    },
-    {
-      "abbr": "RCV",
-      "name": "Riacho dos Cavalos"
-    },
-    {
       "abbr": "RHW",
       "name": "Riachão"
     },
@@ -10979,6 +10975,14 @@
     {
       "abbr": "RCP",
       "name": "Riachão do Poço"
+    },
+    {
+      "abbr": "RHI",
+      "name": "Riacho de Santo Antônio"
+    },
+    {
+      "abbr": "RCV",
+      "name": "Riacho dos Cavalos"
     },
     {
       "abbr": "RTT",
@@ -11013,14 +11017,6 @@
       "name": "Santa Luzia"
     },
     {
-      "abbr": "SRT",
-      "name": "Santa Rita"
-    },
-    {
-      "abbr": "TTR",
-      "name": "Santa Teresinha"
-    },
-    {
       "abbr": "MGW",
       "name": "Santana de Mangueira"
     },
@@ -11029,60 +11025,16 @@
       "name": "Santana dos Garrotes"
     },
     {
+      "abbr": "SRT",
+      "name": "Santa Rita"
+    },
+    {
+      "abbr": "TTR",
+      "name": "Santa Teresinha"
+    },
+    {
       "abbr": "DRX",
       "name": "Santo André"
-    },
-    {
-      "abbr": "SPX",
-      "name": "Sapé"
-    },
-    {
-      "abbr": "ERR",
-      "name": "Serra Branca"
-    },
-    {
-      "abbr": "ERG",
-      "name": "Serra Grande"
-    },
-    {
-      "abbr": "OND",
-      "name": "Serra Redonda"
-    },
-    {
-      "abbr": "RYZ",
-      "name": "Serra da Raiz"
-    },
-    {
-      "abbr": "EAI",
-      "name": "Serraria"
-    },
-    {
-      "abbr": "ZIN",
-      "name": "Sertãozinho"
-    },
-    {
-      "abbr": "SDW",
-      "name": "Sobrado"
-    },
-    {
-      "abbr": "SDX",
-      "name": "Soledade"
-    },
-    {
-      "abbr": "SOL",
-      "name": "Solânea"
-    },
-    {
-      "abbr": "EGO",
-      "name": "Sossêgo"
-    },
-    {
-      "abbr": "SOU",
-      "name": "Sousa"
-    },
-    {
-      "abbr": "UME",
-      "name": "Sumé"
     },
     {
       "abbr": "SWH",
@@ -11103,6 +11055,18 @@
     {
       "abbr": "SFK",
       "name": "São Francisco"
+    },
+    {
+      "abbr": "JKR",
+      "name": "São João do Cariri"
+    },
+    {
+      "abbr": "SXE",
+      "name": "São João do Rio do Peixe"
+    },
+    {
+      "abbr": "JDT",
+      "name": "São João do Tigre"
     },
     {
       "abbr": "JLT",
@@ -11145,18 +11109,6 @@
       "name": "São José dos Ramos"
     },
     {
-      "abbr": "JKR",
-      "name": "São João do Cariri"
-    },
-    {
-      "abbr": "SXE",
-      "name": "São João do Rio do Peixe"
-    },
-    {
-      "abbr": "JDT",
-      "name": "São João do Tigre"
-    },
-    {
       "abbr": "EDE",
       "name": "São Mamede"
     },
@@ -11175,6 +11127,58 @@
     {
       "abbr": "SVD",
       "name": "São Vicente do Seridó"
+    },
+    {
+      "abbr": "SPX",
+      "name": "Sapé"
+    },
+    {
+      "abbr": "ERR",
+      "name": "Serra Branca"
+    },
+    {
+      "abbr": "RYZ",
+      "name": "Serra da Raiz"
+    },
+    {
+      "abbr": "ERG",
+      "name": "Serra Grande"
+    },
+    {
+      "abbr": "OND",
+      "name": "Serra Redonda"
+    },
+    {
+      "abbr": "EAI",
+      "name": "Serraria"
+    },
+    {
+      "abbr": "ZIN",
+      "name": "Sertãozinho"
+    },
+    {
+      "abbr": "SDW",
+      "name": "Sobrado"
+    },
+    {
+      "abbr": "SOL",
+      "name": "Solânea"
+    },
+    {
+      "abbr": "SDX",
+      "name": "Soledade"
+    },
+    {
+      "abbr": "EGO",
+      "name": "Sossêgo"
+    },
+    {
+      "abbr": "SOU",
+      "name": "Sousa"
+    },
+    {
+      "abbr": "UME",
+      "name": "Sumé"
     },
     {
       "abbr": "TCM",
@@ -11209,6 +11213,10 @@
       "name": "Umbuzeiro"
     },
     {
+      "abbr": "VAZ",
+      "name": "Várzea"
+    },
+    {
       "abbr": "VOS",
       "name": "Vieirópolis"
     },
@@ -11217,16 +11225,8 @@
       "name": "Vista Serrana"
     },
     {
-      "abbr": "VAZ",
-      "name": "Várzea"
-    },
-    {
       "abbr": "ZAE",
       "name": "Zabelê"
-    },
-    {
-      "abbr": "GBR",
-      "name": "Água Branca"
     }
   ],
   "PE": [
@@ -11245,6 +11245,14 @@
     {
       "abbr": "AEA",
       "name": "Agrestina"
+    },
+    {
+      "abbr": "APT",
+      "name": "Água Preta"
+    },
+    {
+      "abbr": "ABS",
+      "name": "Águas Belas"
     },
     {
       "abbr": "AHA",
@@ -11267,12 +11275,12 @@
       "name": "Angelim"
     },
     {
-      "abbr": "AIP",
-      "name": "Araripina"
-    },
-    {
       "abbr": "AOB",
       "name": "Araçoiaba"
+    },
+    {
+      "abbr": "AIP",
+      "name": "Araripina"
     },
     {
       "abbr": "ARV",
@@ -11287,16 +11295,16 @@
       "name": "Barreiros"
     },
     {
-      "abbr": "BJM",
-      "name": "Belo Jardim"
-    },
-    {
       "abbr": "BMR",
       "name": "Belém de Maria"
     },
     {
       "abbr": "BFC",
       "name": "Belém do São Francisco"
+    },
+    {
+      "abbr": "BJM",
+      "name": "Belo Jardim"
     },
     {
       "abbr": "BEN",
@@ -11323,16 +11331,16 @@
       "name": "Bonito"
     },
     {
+      "abbr": "BEJ",
+      "name": "Brejão"
+    },
+    {
       "abbr": "BJH",
       "name": "Brejinho"
     },
     {
       "abbr": "BES",
       "name": "Brejo da Madre de Deus"
-    },
-    {
-      "abbr": "BEJ",
-      "name": "Brejão"
     },
     {
       "abbr": "BIE",
@@ -11359,12 +11367,12 @@
       "name": "Caetés"
     },
     {
-      "abbr": "KLI",
-      "name": "Calumbi"
-    },
-    {
       "abbr": "CDX",
       "name": "Calçado"
+    },
+    {
+      "abbr": "KLI",
+      "name": "Calumbi"
     },
     {
       "abbr": "CME",
@@ -11387,12 +11395,12 @@
       "name": "Capoeiras"
     },
     {
-      "abbr": "CBH",
-      "name": "Carnaubeira da Penha"
-    },
-    {
       "abbr": "CYB",
       "name": "Carnaíba"
+    },
+    {
+      "abbr": "CBH",
+      "name": "Carnaubeira da Penha"
     },
     {
       "abbr": "CIN",
@@ -11415,12 +11423,12 @@
       "name": "Cedro"
     },
     {
-      "abbr": "CGN",
-      "name": "Chã Grande"
-    },
-    {
       "abbr": "CHG",
       "name": "Chã de Alegria"
+    },
+    {
+      "abbr": "CGN",
+      "name": "Chã Grande"
     },
     {
       "abbr": "COD",
@@ -11551,6 +11559,10 @@
       "name": "Itacuruba"
     },
     {
+      "abbr": "YTB",
+      "name": "Itaíba"
+    },
+    {
       "abbr": "IME",
       "name": "Itambé"
     },
@@ -11565,10 +11577,6 @@
     {
       "abbr": "IQA",
       "name": "Itaquitinga"
-    },
-    {
-      "abbr": "YTB",
-      "name": "Itaíba"
     },
     {
       "abbr": "JGS",
@@ -11587,12 +11595,12 @@
       "name": "Jatobá"
     },
     {
-      "abbr": "JNO",
-      "name": "Joaquim Nabuco"
-    },
-    {
       "abbr": "JAD",
       "name": "João Alfredo"
+    },
+    {
+      "abbr": "JNO",
+      "name": "Joaquim Nabuco"
     },
     {
       "abbr": "JCT",
@@ -11605,10 +11613,6 @@
     {
       "abbr": "JUM",
       "name": "Jurema"
-    },
-    {
-      "abbr": "LGE",
-      "name": "Lagoa Grande"
     },
     {
       "abbr": "LDI",
@@ -11625,6 +11629,10 @@
     {
       "abbr": "LDG",
       "name": "Lagoa dos Gatos"
+    },
+    {
+      "abbr": "LGE",
+      "name": "Lagoa Grande"
     },
     {
       "abbr": "LAO",
@@ -11723,20 +11731,20 @@
       "name": "Pesqueira"
     },
     {
-      "abbr": "PNZ",
-      "name": "Petrolina"
-    },
-    {
       "abbr": "PTD",
       "name": "Petrolândia"
     },
     {
-      "abbr": "PMB",
-      "name": "Pombos"
+      "abbr": "PNZ",
+      "name": "Petrolina"
     },
     {
       "abbr": "POW",
       "name": "Poção"
+    },
+    {
+      "abbr": "PMB",
+      "name": "Pombos"
     },
     {
       "abbr": "PMV",
@@ -11815,6 +11823,46 @@
       "name": "Santa Terezinha"
     },
     {
+      "abbr": "SUL",
+      "name": "São Benedito do Sul"
+    },
+    {
+      "abbr": "SUN",
+      "name": "São Bento do Una"
+    },
+    {
+      "abbr": "SCN",
+      "name": "São Caitano"
+    },
+    {
+      "abbr": "SJX",
+      "name": "São João"
+    },
+    {
+      "abbr": "SQE",
+      "name": "São Joaquim do Monte"
+    },
+    {
+      "abbr": "SSD",
+      "name": "São José da Coroa Grande"
+    },
+    {
+      "abbr": "SBM",
+      "name": "São José do Belmonte"
+    },
+    {
+      "abbr": "SEG",
+      "name": "São José do Egito"
+    },
+    {
+      "abbr": "SLM",
+      "name": "São Lourenço da Mata"
+    },
+    {
+      "abbr": "SFR",
+      "name": "São Vicente Férrer"
+    },
+    {
       "abbr": "STD",
       "name": "Serra Talhada"
     },
@@ -11841,46 +11889,6 @@
     {
       "abbr": "SRB",
       "name": "Surubim"
-    },
-    {
-      "abbr": "SUL",
-      "name": "São Benedito do Sul"
-    },
-    {
-      "abbr": "SUN",
-      "name": "São Bento do Una"
-    },
-    {
-      "abbr": "SCN",
-      "name": "São Caitano"
-    },
-    {
-      "abbr": "SQE",
-      "name": "São Joaquim do Monte"
-    },
-    {
-      "abbr": "SSD",
-      "name": "São José da Coroa Grande"
-    },
-    {
-      "abbr": "SBM",
-      "name": "São José do Belmonte"
-    },
-    {
-      "abbr": "SEG",
-      "name": "São José do Egito"
-    },
-    {
-      "abbr": "SJX",
-      "name": "São João"
-    },
-    {
-      "abbr": "SLM",
-      "name": "São Lourenço da Mata"
-    },
-    {
-      "abbr": "SFR",
-      "name": "São Vicente Férrer"
     },
     {
       "abbr": "TIA",
@@ -11965,14 +11973,6 @@
     {
       "abbr": "XEU",
       "name": "Xexéu"
-    },
-    {
-      "abbr": "APT",
-      "name": "Água Preta"
-    },
-    {
-      "abbr": "ABS",
-      "name": "Águas Belas"
     }
   ],
   "PI": [
@@ -11983,6 +11983,10 @@
     {
       "abbr": "AGX",
       "name": "Agricolândia"
+    },
+    {
+      "abbr": "ABK",
+      "name": "Água Branca"
     },
     {
       "abbr": "AGP",
@@ -12013,12 +12017,12 @@
       "name": "Amarante"
     },
     {
-      "abbr": "EID",
-      "name": "Antônio Almeida"
-    },
-    {
       "abbr": "ASU",
       "name": "Anísio de Abreu"
+    },
+    {
+      "abbr": "EID",
+      "name": "Antônio Almeida"
     },
     {
       "abbr": "AZS",
@@ -12169,12 +12173,12 @@
       "name": "Canto do Buriti"
     },
     {
-      "abbr": "CIV",
-      "name": "Capitão Gervásio Oliveira"
-    },
-    {
       "abbr": "CTC",
       "name": "Capitão de Campos"
+    },
+    {
+      "abbr": "CIV",
+      "name": "Capitão Gervásio Oliveira"
     },
     {
       "abbr": "KAO",
@@ -12249,12 +12253,12 @@
       "name": "Currais"
     },
     {
-      "abbr": "CVP",
-      "name": "Curral Novo do Piauí"
-    },
-    {
       "abbr": "CWX",
       "name": "Curralinhos"
+    },
+    {
+      "abbr": "CVP",
+      "name": "Curral Novo do Piauí"
     },
     {
       "abbr": "DLO",
@@ -12269,12 +12273,12 @@
       "name": "Dom Expedito Lopes"
     },
     {
-      "abbr": "DIO",
-      "name": "Dom Inocêncio"
-    },
-    {
       "abbr": "DMU",
       "name": "Domingos Mourão"
+    },
+    {
+      "abbr": "DIO",
+      "name": "Dom Inocêncio"
     },
     {
       "abbr": "EVO",
@@ -12389,6 +12393,10 @@
       "name": "Jerumenha"
     },
     {
+      "abbr": "JOT",
+      "name": "João Costa"
+    },
+    {
       "abbr": "JPE",
       "name": "Joaquim Pires"
     },
@@ -12401,20 +12409,16 @@
       "name": "José de Freitas"
     },
     {
-      "abbr": "JOT",
-      "name": "João Costa"
-    },
-    {
       "abbr": "JZP",
       "name": "Juazeiro do Piauí"
     },
     {
-      "abbr": "JRM",
-      "name": "Jurema"
-    },
-    {
       "abbr": "JBS",
       "name": "Júlio Borges"
+    },
+    {
+      "abbr": "JRM",
+      "name": "Jurema"
     },
     {
       "abbr": "LOE",
@@ -12445,12 +12449,12 @@
       "name": "Landri Sales"
     },
     {
-      "abbr": "LIA",
-      "name": "Luzilândia"
-    },
-    {
       "abbr": "LCI",
       "name": "Luís Correia"
+    },
+    {
+      "abbr": "LIA",
+      "name": "Luzilândia"
     },
     {
       "abbr": "MDY",
@@ -12685,12 +12689,12 @@
       "name": "Santa Luz"
     },
     {
-      "abbr": "SPQ",
-      "name": "Santa Rosa do Piauí"
-    },
-    {
       "abbr": "SUY",
       "name": "Santana do Piauí"
+    },
+    {
+      "abbr": "SPQ",
+      "name": "Santa Rosa do Piauí"
     },
     {
       "abbr": "LSB",
@@ -12705,36 +12709,12 @@
       "name": "Santo Inácio do Piauí"
     },
     {
-      "abbr": "BTB",
-      "name": "Sebastião Barros"
-    },
-    {
-      "abbr": "LEW",
-      "name": "Sebastião Leal"
-    },
-    {
-      "abbr": "SHC",
-      "name": "Sigefredo Pacheco"
-    },
-    {
-      "abbr": "SIM",
-      "name": "Simplício Mendes"
-    },
-    {
-      "abbr": "SIZ",
-      "name": "Simões"
-    },
-    {
-      "abbr": "SKP",
-      "name": "Socorro do Piauí"
-    },
-    {
-      "abbr": "SWS",
-      "name": "Sussuapara"
-    },
-    {
       "abbr": "BZP",
       "name": "São Braz do Piauí"
+    },
+    {
+      "abbr": "SXP",
+      "name": "São Félix do Piauí"
     },
     {
       "abbr": "FAP",
@@ -12745,28 +12725,12 @@
       "name": "São Francisco do Piauí"
     },
     {
-      "abbr": "SXP",
-      "name": "São Félix do Piauí"
-    },
-    {
       "abbr": "GGU",
       "name": "São Gonçalo do Gurguéia"
     },
     {
       "abbr": "SGQ",
       "name": "São Gonçalo do Piauí"
-    },
-    {
-      "abbr": "JDD",
-      "name": "São José do Divino"
-    },
-    {
-      "abbr": "JXE",
-      "name": "São José do Peixe"
-    },
-    {
-      "abbr": "SWP",
-      "name": "São José do Piauí"
     },
     {
       "abbr": "JDK",
@@ -12791,6 +12755,18 @@
     {
       "abbr": "SJU",
       "name": "São João do Piauí"
+    },
+    {
+      "abbr": "JDD",
+      "name": "São José do Divino"
+    },
+    {
+      "abbr": "JXE",
+      "name": "São José do Peixe"
+    },
+    {
+      "abbr": "SWP",
+      "name": "São José do Piauí"
     },
     {
       "abbr": "JWL",
@@ -12825,6 +12801,34 @@
       "name": "São Raimundo Nonato"
     },
     {
+      "abbr": "BTB",
+      "name": "Sebastião Barros"
+    },
+    {
+      "abbr": "LEW",
+      "name": "Sebastião Leal"
+    },
+    {
+      "abbr": "SHC",
+      "name": "Sigefredo Pacheco"
+    },
+    {
+      "abbr": "SIZ",
+      "name": "Simões"
+    },
+    {
+      "abbr": "SIM",
+      "name": "Simplício Mendes"
+    },
+    {
+      "abbr": "SKP",
+      "name": "Socorro do Piauí"
+    },
+    {
+      "abbr": "SWS",
+      "name": "Sussuapara"
+    },
+    {
       "abbr": "TDP",
       "name": "Tamboril do Piauí"
     },
@@ -12849,14 +12853,6 @@
       "name": "Valença do Piauí"
     },
     {
-      "abbr": "VMD",
-      "name": "Vera Mendes"
-    },
-    {
-      "abbr": "VNP",
-      "name": "Vila Nova do Piauí"
-    },
-    {
       "abbr": "VBC",
       "name": "Várzea Branca"
     },
@@ -12865,12 +12861,16 @@
       "name": "Várzea Grande"
     },
     {
-      "abbr": "WFZ",
-      "name": "Wall Ferraz"
+      "abbr": "VMD",
+      "name": "Vera Mendes"
     },
     {
-      "abbr": "ABK",
-      "name": "Água Branca"
+      "abbr": "VNP",
+      "name": "Vila Nova do Piauí"
+    },
+    {
+      "abbr": "WFZ",
+      "name": "Wall Ferraz"
     }
   ],
   "PR": [
@@ -12895,20 +12895,20 @@
       "name": "Altamira do Paraná"
     },
     {
-      "abbr": "APN",
-      "name": "Alto Paraná"
+      "abbr": "ATO",
+      "name": "Altônia"
     },
     {
       "abbr": "AWO",
       "name": "Alto Paraíso"
     },
     {
-      "abbr": "AQI",
-      "name": "Alto Piquiri"
+      "abbr": "APN",
+      "name": "Alto Paraná"
     },
     {
-      "abbr": "ATO",
-      "name": "Altônia"
+      "abbr": "AQI",
+      "name": "Alto Piquiri"
     },
     {
       "abbr": "ASL",
@@ -12929,6 +12929,10 @@
     {
       "abbr": "AIA",
       "name": "Andirá"
+    },
+    {
+      "abbr": "ULO",
+      "name": "Ângulo"
     },
     {
       "abbr": "ANT",
@@ -12995,12 +12999,12 @@
       "name": "Barbosa Ferraz"
     },
     {
-      "abbr": "BDJ",
-      "name": "Barra do Jacaré"
-    },
-    {
       "abbr": "BRC",
       "name": "Barracão"
+    },
+    {
+      "abbr": "BDJ",
+      "name": "Barra do Jacaré"
     },
     {
       "abbr": "BVC",
@@ -13079,16 +13083,12 @@
       "name": "Cambará"
     },
     {
-      "abbr": "KBI",
-      "name": "Cambira"
-    },
-    {
       "abbr": "CBE",
       "name": "Cambé"
     },
     {
-      "abbr": "CGL",
-      "name": "Campina Grande do Sul"
+      "abbr": "KBI",
+      "name": "Cambira"
     },
     {
       "abbr": "CGW",
@@ -13099,8 +13099,16 @@
       "name": "Campina do Simão"
     },
     {
+      "abbr": "CGL",
+      "name": "Campina Grande do Sul"
+    },
+    {
       "abbr": "KBT",
       "name": "Campo Bonito"
+    },
+    {
+      "abbr": "KTE",
+      "name": "Campo do Tenente"
     },
     {
       "abbr": "CLO",
@@ -13115,8 +13123,8 @@
       "name": "Campo Mourão"
     },
     {
-      "abbr": "KTE",
-      "name": "Campo do Tenente"
+      "abbr": "CNU",
+      "name": "Cândido de Abreu"
     },
     {
       "abbr": "CDY",
@@ -13161,6 +13169,10 @@
     {
       "abbr": "CAZ",
       "name": "Cerro Azul"
+    },
+    {
+      "abbr": "CZU",
+      "name": "Céu Azul"
     },
     {
       "abbr": "CPN",
@@ -13219,10 +13231,6 @@
       "name": "Corumbataí do Sul"
     },
     {
-      "abbr": "CZM",
-      "name": "Cruz Machado"
-    },
-    {
       "abbr": "CZC",
       "name": "Cruzeiro do Iguaçu"
     },
@@ -13235,6 +13243,10 @@
       "name": "Cruzeiro do Sul"
     },
     {
+      "abbr": "CZM",
+      "name": "Cruz Machado"
+    },
+    {
       "abbr": "RUZ",
       "name": "Cruzmaltina"
     },
@@ -13245,14 +13257,6 @@
     {
       "abbr": "CUV",
       "name": "Curiúva"
-    },
-    {
-      "abbr": "CNU",
-      "name": "Cândido de Abreu"
-    },
-    {
-      "abbr": "CZU",
-      "name": "Céu Azul"
     },
     {
       "abbr": "DDO",
@@ -13283,16 +13287,16 @@
       "name": "Doutor Ulysses"
     },
     {
+      "abbr": "EME",
+      "name": "Enéas Marques"
+    },
+    {
       "abbr": "EBR",
       "name": "Engenheiro Beltrão"
     },
     {
       "abbr": "ERO",
       "name": "Entre Rios do Oeste"
-    },
-    {
-      "abbr": "EME",
-      "name": "Enéas Marques"
     },
     {
       "abbr": "ENV",
@@ -13315,6 +13319,10 @@
       "name": "Fazenda Rio Grande"
     },
     {
+      "abbr": "FEX",
+      "name": "Fênix"
+    },
+    {
       "abbr": "FPR",
       "name": "Fernandes Pinheiro"
     },
@@ -13323,12 +13331,12 @@
       "name": "Figueira"
     },
     {
-      "abbr": "FOL",
-      "name": "Flor da Serra do Sul"
-    },
-    {
       "abbr": "FOI",
       "name": "Floraí"
+    },
+    {
+      "abbr": "FOL",
+      "name": "Flor da Serra do Sul"
     },
     {
       "abbr": "FLT",
@@ -13363,10 +13371,6 @@
       "name": "Francisco Beltrão"
     },
     {
-      "abbr": "FEX",
-      "name": "Fênix"
-    },
-    {
       "abbr": "GEC",
       "name": "General Carneiro"
     },
@@ -13385,6 +13389,10 @@
     {
       "abbr": "GDR",
       "name": "Grandes Rios"
+    },
+    {
+      "abbr": "GIA",
+      "name": "Guaíra"
     },
     {
       "abbr": "GAC",
@@ -13423,10 +13431,6 @@
       "name": "Guaratuba"
     },
     {
-      "abbr": "GIA",
-      "name": "Guaíra"
-    },
-    {
       "abbr": "HNS",
       "name": "Honório Serpa"
     },
@@ -13463,16 +13467,16 @@
       "name": "Imbituva"
     },
     {
+      "abbr": "INS",
+      "name": "Inácio Martins"
+    },
+    {
       "abbr": "YNJ",
       "name": "Inajá"
     },
     {
       "abbr": "IND",
       "name": "Indianópolis"
-    },
-    {
-      "abbr": "INS",
-      "name": "Inácio Martins"
     },
     {
       "abbr": "YPG",
@@ -13523,20 +13527,20 @@
       "name": "Itaúna do Sul"
     },
     {
-      "abbr": "IOR",
-      "name": "Ivaiporã"
+      "abbr": "IVI",
+      "name": "Ivaí"
     },
     {
-      "abbr": "IVB",
-      "name": "Ivatuba"
+      "abbr": "IOR",
+      "name": "Ivaiporã"
     },
     {
       "abbr": "IVT",
       "name": "Ivaté"
     },
     {
-      "abbr": "IVI",
-      "name": "Ivaí"
+      "abbr": "IVB",
+      "name": "Ivatuba"
     },
     {
       "abbr": "JBT",
@@ -13663,12 +13667,12 @@
       "name": "Mamborê"
     },
     {
-      "abbr": "MDI",
-      "name": "Mandaguari"
-    },
-    {
       "abbr": "MGC",
       "name": "Mandaguaçu"
+    },
+    {
+      "abbr": "MDI",
+      "name": "Mandaguari"
     },
     {
       "abbr": "MAA",
@@ -13699,6 +13703,10 @@
       "name": "Marialva"
     },
     {
+      "abbr": "MSU",
+      "name": "Marilândia do Sul"
+    },
+    {
       "abbr": "MYL",
       "name": "Marilena"
     },
@@ -13707,20 +13715,16 @@
       "name": "Mariluz"
     },
     {
-      "abbr": "MSU",
-      "name": "Marilândia do Sul"
-    },
-    {
       "abbr": "MGF",
       "name": "Maringá"
     },
     {
-      "abbr": "MAX",
-      "name": "Maripá"
-    },
-    {
       "abbr": "MIP",
       "name": "Mariópolis"
+    },
+    {
+      "abbr": "MAX",
+      "name": "Maripá"
     },
     {
       "abbr": "MMR",
@@ -13879,6 +13883,10 @@
       "name": "Palotina"
     },
     {
+      "abbr": "PSE",
+      "name": "Paraíso do Norte"
+    },
+    {
       "abbr": "PRY",
       "name": "Paranacity"
     },
@@ -13893,10 +13901,6 @@
     {
       "abbr": "PVI",
       "name": "Paranavaí"
-    },
-    {
-      "abbr": "PSE",
-      "name": "Paraíso do Norte"
     },
     {
       "abbr": "PBD",
@@ -13923,28 +13927,40 @@
       "name": "Perobal"
     },
     {
-      "abbr": "PIH",
-      "name": "Pinhais"
+      "abbr": "PRL",
+      "name": "Pérola"
     },
     {
-      "abbr": "PHB",
-      "name": "Pinhal de São Bento"
+      "abbr": "PWE",
+      "name": "Pérola d'Oeste"
+    },
+    {
+      "abbr": "PYN",
+      "name": "Piên"
+    },
+    {
+      "abbr": "PIH",
+      "name": "Pinhais"
     },
     {
       "abbr": "PYO",
       "name": "Pinhalão"
     },
     {
+      "abbr": "PHB",
+      "name": "Pinhal de São Bento"
+    },
+    {
       "abbr": "PHW",
       "name": "Pinhão"
     },
     {
-      "abbr": "PQA",
-      "name": "Piraquara"
-    },
-    {
       "abbr": "PRZ",
       "name": "Piraí do Sul"
+    },
+    {
+      "abbr": "PQA",
+      "name": "Piraquara"
     },
     {
       "abbr": "PTN",
@@ -13953,10 +13969,6 @@
     {
       "abbr": "PWY",
       "name": "Pitangueiras"
-    },
-    {
-      "abbr": "PYN",
-      "name": "Piên"
     },
     {
       "abbr": "PPQ",
@@ -14013,14 +14025,6 @@
     {
       "abbr": "PUO",
       "name": "Prudentópolis"
-    },
-    {
-      "abbr": "PRL",
-      "name": "Pérola"
-    },
-    {
-      "abbr": "PWE",
-      "name": "Pérola d'Oeste"
     },
     {
       "abbr": "QCO",
@@ -14199,16 +14203,16 @@
       "name": "Santa Mônica"
     },
     {
+      "abbr": "SYE",
+      "name": "Santana do Itararé"
+    },
+    {
       "abbr": "STW",
       "name": "Santa Tereza do Oeste"
     },
     {
       "abbr": "STU",
       "name": "Santa Terezinha de Itaipu"
-    },
-    {
-      "abbr": "SYE",
-      "name": "Santana do Itararé"
     },
     {
       "abbr": "SPN",
@@ -14229,6 +14233,86 @@
     {
       "abbr": "INW",
       "name": "Santo Inácio"
+    },
+    {
+      "abbr": "SCI",
+      "name": "São Carlos do Ivaí"
+    },
+    {
+      "abbr": "JSE",
+      "name": "São Jerônimo da Serra"
+    },
+    {
+      "abbr": "OAO",
+      "name": "São João"
+    },
+    {
+      "abbr": "SJC",
+      "name": "São João do Caiuá"
+    },
+    {
+      "abbr": "SJV",
+      "name": "São João do Ivaí"
+    },
+    {
+      "abbr": "STF",
+      "name": "São João do Triunfo"
+    },
+    {
+      "abbr": "JDW",
+      "name": "São Jorge d'Oeste"
+    },
+    {
+      "abbr": "SGV",
+      "name": "São Jorge do Ivaí"
+    },
+    {
+      "abbr": "SWJ",
+      "name": "São Jorge do Patrocínio"
+    },
+    {
+      "abbr": "JBV",
+      "name": "São José da Boa Vista"
+    },
+    {
+      "abbr": "JPW",
+      "name": "São José das Palmeiras"
+    },
+    {
+      "abbr": "SJS",
+      "name": "São José dos Pinhais"
+    },
+    {
+      "abbr": "SPR",
+      "name": "São Manoel do Paraná"
+    },
+    {
+      "abbr": "SSU",
+      "name": "São Mateus do Sul"
+    },
+    {
+      "abbr": "SIG",
+      "name": "São Miguel do Iguaçu"
+    },
+    {
+      "abbr": "SWI",
+      "name": "São Pedro do Iguaçu"
+    },
+    {
+      "abbr": "SDI",
+      "name": "São Pedro do Ivaí"
+    },
+    {
+      "abbr": "EDP",
+      "name": "São Pedro do Paraná"
+    },
+    {
+      "abbr": "EIR",
+      "name": "São Sebastião da Amoreira"
+    },
+    {
+      "abbr": "SOM",
+      "name": "São Tomé"
     },
     {
       "abbr": "SOX",
@@ -14265,86 +14349,6 @@
     {
       "abbr": "WLI",
       "name": "Sulina"
-    },
-    {
-      "abbr": "SCI",
-      "name": "São Carlos do Ivaí"
-    },
-    {
-      "abbr": "JSE",
-      "name": "São Jerônimo da Serra"
-    },
-    {
-      "abbr": "JDW",
-      "name": "São Jorge d'Oeste"
-    },
-    {
-      "abbr": "SGV",
-      "name": "São Jorge do Ivaí"
-    },
-    {
-      "abbr": "SWJ",
-      "name": "São Jorge do Patrocínio"
-    },
-    {
-      "abbr": "JBV",
-      "name": "São José da Boa Vista"
-    },
-    {
-      "abbr": "JPW",
-      "name": "São José das Palmeiras"
-    },
-    {
-      "abbr": "SJS",
-      "name": "São José dos Pinhais"
-    },
-    {
-      "abbr": "OAO",
-      "name": "São João"
-    },
-    {
-      "abbr": "SJC",
-      "name": "São João do Caiuá"
-    },
-    {
-      "abbr": "SJV",
-      "name": "São João do Ivaí"
-    },
-    {
-      "abbr": "STF",
-      "name": "São João do Triunfo"
-    },
-    {
-      "abbr": "SPR",
-      "name": "São Manoel do Paraná"
-    },
-    {
-      "abbr": "SSU",
-      "name": "São Mateus do Sul"
-    },
-    {
-      "abbr": "SIG",
-      "name": "São Miguel do Iguaçu"
-    },
-    {
-      "abbr": "SWI",
-      "name": "São Pedro do Iguaçu"
-    },
-    {
-      "abbr": "SDI",
-      "name": "São Pedro do Ivaí"
-    },
-    {
-      "abbr": "EDP",
-      "name": "São Pedro do Paraná"
-    },
-    {
-      "abbr": "EIR",
-      "name": "São Sebastião da Amoreira"
-    },
-    {
-      "abbr": "SOM",
-      "name": "São Tomé"
     },
     {
       "abbr": "TMN",
@@ -14427,12 +14431,12 @@
       "name": "Umuarama"
     },
     {
-      "abbr": "UNR",
-      "name": "Uniflor"
-    },
-    {
       "abbr": "UVA",
       "name": "União da Vitória"
+    },
+    {
+      "abbr": "UNR",
+      "name": "Uniflor"
     },
     {
       "abbr": "URA",
@@ -14465,10 +14469,6 @@
     {
       "abbr": "XAE",
       "name": "Xambrê"
-    },
-    {
-      "abbr": "ULO",
-      "name": "Ângulo"
     }
   ],
   "RJ": [
@@ -14497,12 +14497,12 @@
       "name": "Arraial do Cabo"
     },
     {
-      "abbr": "BMA",
-      "name": "Barra Mansa"
-    },
-    {
       "abbr": "BPI",
       "name": "Barra do Piraí"
+    },
+    {
+      "abbr": "BMA",
+      "name": "Barra Mansa"
     },
     {
       "abbr": "BRX",
@@ -14721,12 +14721,12 @@
       "name": "Paracambi"
     },
     {
-      "abbr": "PAT",
-      "name": "Paraty"
-    },
-    {
       "abbr": "PSU",
       "name": "Paraíba do Sul"
+    },
+    {
+      "abbr": "PAT",
+      "name": "Paraty"
     },
     {
       "abbr": "PAF",
@@ -14837,6 +14837,42 @@
       "name": "Santos Dumont Apt / Rio de Janeiro"
     },
     {
+      "abbr": "SFI",
+      "name": "São Fidélis"
+    },
+    {
+      "abbr": "SIO",
+      "name": "São Francisco de Itabapoana"
+    },
+    {
+      "abbr": "SGO",
+      "name": "São Gonçalo"
+    },
+    {
+      "abbr": "SDB",
+      "name": "São João da Barra"
+    },
+    {
+      "abbr": "SJM",
+      "name": "São João de Meriti"
+    },
+    {
+      "abbr": "JDU",
+      "name": "São José de Ubá"
+    },
+    {
+      "abbr": "SVO",
+      "name": "São José do Vale do Rio Preto"
+    },
+    {
+      "abbr": "SRL",
+      "name": "São Pedro da Aldeia"
+    },
+    {
+      "abbr": "LTO",
+      "name": "São Sebastião do Alto"
+    },
+    {
       "abbr": "SPC",
       "name": "Sapucaia"
     },
@@ -14855,42 +14891,6 @@
     {
       "abbr": "SMD",
       "name": "Sumidouro"
-    },
-    {
-      "abbr": "SFI",
-      "name": "São Fidélis"
-    },
-    {
-      "abbr": "SIO",
-      "name": "São Francisco de Itabapoana"
-    },
-    {
-      "abbr": "SGO",
-      "name": "São Gonçalo"
-    },
-    {
-      "abbr": "JDU",
-      "name": "São José de Ubá"
-    },
-    {
-      "abbr": "SVO",
-      "name": "São José do Vale do Rio Preto"
-    },
-    {
-      "abbr": "SDB",
-      "name": "São João da Barra"
-    },
-    {
-      "abbr": "SJM",
-      "name": "São João de Meriti"
-    },
-    {
-      "abbr": "SRL",
-      "name": "São Pedro da Aldeia"
-    },
-    {
-      "abbr": "LTO",
-      "name": "São Sebastião do Alto"
     },
     {
       "abbr": "TAG",
@@ -14931,8 +14931,16 @@
       "name": "Acari"
     },
     {
+      "abbr": "ACU",
+      "name": "Açu"
+    },
+    {
       "abbr": "ABE",
       "name": "Afonso Bezerra"
+    },
+    {
+      "abbr": "AUV",
+      "name": "Água Nova"
     },
     {
       "abbr": "AXA",
@@ -14967,8 +14975,8 @@
       "name": "Arês"
     },
     {
-      "abbr": "ACU",
-      "name": "Açu"
+      "abbr": "BFO",
+      "name": "Baía Formosa"
     },
     {
       "abbr": "BUN",
@@ -14977,10 +14985,6 @@
     {
       "abbr": "BAQ",
       "name": "Barcelona"
-    },
-    {
-      "abbr": "BFO",
-      "name": "Baía Formosa"
     },
     {
       "abbr": "BFD",
@@ -14999,16 +15003,16 @@
       "name": "Brejinho"
     },
     {
-      "abbr": "CIC",
-      "name": "Caicó"
-    },
-    {
       "abbr": "CYN",
       "name": "Caiçara do Norte"
     },
     {
       "abbr": "KDV",
       "name": "Caiçara do Rio do Vento"
+    },
+    {
+      "abbr": "CIC",
+      "name": "Caicó"
     },
     {
       "abbr": "KGR",
@@ -15027,12 +15031,12 @@
       "name": "Caraúbas"
     },
     {
-      "abbr": "KNB",
-      "name": "Carnaubais"
-    },
-    {
       "abbr": "KBD",
       "name": "Carnaúba dos Dantas"
+    },
+    {
+      "abbr": "KNB",
+      "name": "Carnaubais"
     },
     {
       "abbr": "CEA",
@@ -15139,6 +15143,10 @@
       "name": "Itaú"
     },
     {
+      "abbr": "JCN",
+      "name": "Jaçanã"
+    },
+    {
       "abbr": "JDR",
       "name": "Jandaíra"
     },
@@ -15167,14 +15175,6 @@
       "name": "Jardim do Seridó"
     },
     {
-      "abbr": "JCN",
-      "name": "Jaçanã"
-    },
-    {
-      "abbr": "JSP",
-      "name": "José da Penha"
-    },
-    {
       "abbr": "JCM",
       "name": "João Câmara"
     },
@@ -15183,20 +15183,16 @@
       "name": "João Dias"
     },
     {
+      "abbr": "JSP",
+      "name": "José da Penha"
+    },
+    {
       "abbr": "JUU",
       "name": "Jucurutu"
     },
     {
       "abbr": "JWN",
       "name": "Jundiá"
-    },
-    {
-      "abbr": "LNV",
-      "name": "Lagoa Nova"
-    },
-    {
-      "abbr": "LSD",
-      "name": "Lagoa Salgada"
     },
     {
       "abbr": "LAT",
@@ -15209,6 +15205,14 @@
     {
       "abbr": "LDV",
       "name": "Lagoa de Velhos"
+    },
+    {
+      "abbr": "LNV",
+      "name": "Lagoa Nova"
+    },
+    {
+      "abbr": "LSD",
+      "name": "Lagoa Salgada"
     },
     {
       "abbr": "LJE",
@@ -15227,12 +15231,12 @@
       "name": "Luís Gomes"
     },
     {
-      "abbr": "MCU",
-      "name": "Macau"
-    },
-    {
       "abbr": "MAI",
       "name": "Macaíba"
+    },
+    {
+      "abbr": "MCU",
+      "name": "Macau"
     },
     {
       "abbr": "MJS",
@@ -15275,12 +15279,12 @@
       "name": "Natal"
     },
     {
-      "abbr": "NCZ",
-      "name": "Nova Cruz"
-    },
-    {
       "abbr": "NFO",
       "name": "Nísia Floresta"
+    },
+    {
+      "abbr": "NCZ",
+      "name": "Nova Cruz"
     },
     {
       "abbr": "OAB",
@@ -15295,12 +15299,12 @@
       "name": "Paraná"
     },
     {
-      "abbr": "PZH",
-      "name": "Parazinho"
-    },
-    {
       "abbr": "RAW",
       "name": "Paraú"
+    },
+    {
+      "abbr": "PZH",
+      "name": "Parazinho"
     },
     {
       "abbr": "PAH",
@@ -15351,16 +15355,16 @@
       "name": "Pilões"
     },
     {
+      "abbr": "PCB",
+      "name": "Poço Branco"
+    },
+    {
       "abbr": "PLG",
       "name": "Portalegre"
     },
     {
       "abbr": "PTM",
       "name": "Porto do Mangue"
-    },
-    {
-      "abbr": "PCB",
-      "name": "Poço Branco"
     },
     {
       "abbr": "PZA",
@@ -15419,42 +15423,6 @@
       "name": "Santo Antônio"
     },
     {
-      "abbr": "ELS",
-      "name": "Senador Elói de Souza"
-    },
-    {
-      "abbr": "SGG",
-      "name": "Senador Georgino Avelino"
-    },
-    {
-      "abbr": "SAY",
-      "name": "Serra Caiada"
-    },
-    {
-      "abbr": "NDN",
-      "name": "Serra Negra do Norte"
-    },
-    {
-      "abbr": "SWT",
-      "name": "Serra de São Bento"
-    },
-    {
-      "abbr": "MEL",
-      "name": "Serra do Mel"
-    },
-    {
-      "abbr": "RRH",
-      "name": "Serrinha"
-    },
-    {
-      "abbr": "SHP",
-      "name": "Serrinha dos Pintos"
-    },
-    {
-      "abbr": "EVM",
-      "name": "Severiano Melo"
-    },
-    {
       "abbr": "SBN",
       "name": "São Bento do Norte"
     },
@@ -15475,6 +15443,10 @@
       "name": "São Gonçalo do Amarante"
     },
     {
+      "abbr": "JSI",
+      "name": "São João do Sabugi"
+    },
+    {
       "abbr": "SSM",
       "name": "São José de Mipibu"
     },
@@ -15485,10 +15457,6 @@
     {
       "abbr": "SSY",
       "name": "São José do Seridó"
-    },
-    {
-      "abbr": "JSI",
-      "name": "São João do Sabugi"
     },
     {
       "abbr": "SIL",
@@ -15517,6 +15485,42 @@
     {
       "abbr": "VIC",
       "name": "São Vicente"
+    },
+    {
+      "abbr": "ELS",
+      "name": "Senador Elói de Souza"
+    },
+    {
+      "abbr": "SGG",
+      "name": "Senador Georgino Avelino"
+    },
+    {
+      "abbr": "SAY",
+      "name": "Serra Caiada"
+    },
+    {
+      "abbr": "SWT",
+      "name": "Serra de São Bento"
+    },
+    {
+      "abbr": "MEL",
+      "name": "Serra do Mel"
+    },
+    {
+      "abbr": "NDN",
+      "name": "Serra Negra do Norte"
+    },
+    {
+      "abbr": "RRH",
+      "name": "Serrinha"
+    },
+    {
+      "abbr": "SHP",
+      "name": "Serrinha dos Pintos"
+    },
+    {
+      "abbr": "EVM",
+      "name": "Severiano Melo"
     },
     {
       "abbr": "SNX",
@@ -15571,6 +15575,10 @@
       "name": "Upanema"
     },
     {
+      "abbr": "VZE",
+      "name": "Várzea"
+    },
+    {
       "abbr": "VNR",
       "name": "Venha-Ver"
     },
@@ -15579,20 +15587,12 @@
       "name": "Vera Cruz"
     },
     {
-      "abbr": "VFR",
-      "name": "Vila Flor"
-    },
-    {
       "abbr": "VYC",
       "name": "Viçosa"
     },
     {
-      "abbr": "VZE",
-      "name": "Várzea"
-    },
-    {
-      "abbr": "AUV",
-      "name": "Água Nova"
+      "abbr": "VFR",
+      "name": "Vila Flor"
     }
   ],
   "RO": [
@@ -15765,10 +15765,6 @@
       "name": "Santa Luzia D'Oeste"
     },
     {
-      "abbr": "GUE",
-      "name": "Seringueiras"
-    },
-    {
       "abbr": "SFT",
       "name": "São Felipe D'Oeste"
     },
@@ -15779,6 +15775,10 @@
     {
       "abbr": "SOG",
       "name": "São Miguel do Guaporé"
+    },
+    {
+      "abbr": "GUE",
+      "name": "Seringueiras"
     },
     {
       "abbr": "TXI",
@@ -15873,6 +15873,10 @@
       "name": "Aceguá"
     },
     {
+      "abbr": "GWS",
+      "name": "Água Santa"
+    },
+    {
       "abbr": "AGO",
       "name": "Agudo"
     },
@@ -15945,10 +15949,6 @@
       "name": "Aratiba"
     },
     {
-      "abbr": "AGN",
-      "name": "Arroio Grande"
-    },
-    {
       "abbr": "AMI",
       "name": "Arroio do Meio"
     },
@@ -15961,12 +15961,16 @@
       "name": "Arroio do Sal"
     },
     {
+      "abbr": "AIR",
+      "name": "Arroio dos Ratos"
+    },
+    {
       "abbr": "ATR",
       "name": "Arroio do Tigre"
     },
     {
-      "abbr": "AIR",
-      "name": "Arroio dos Ratos"
+      "abbr": "AGN",
+      "name": "Arroio Grande"
     },
     {
       "abbr": "AZA",
@@ -15977,6 +15981,10 @@
       "name": "Augusto Pestana"
     },
     {
+      "abbr": "WRE",
+      "name": "Áurea"
+    },
+    {
       "abbr": "BAG",
       "name": "Bagé"
     },
@@ -15985,8 +15993,20 @@
       "name": "Balneário Pinhal"
     },
     {
-      "abbr": "BFA",
-      "name": "Barra Funda"
+      "abbr": "BAW",
+      "name": "Barão"
+    },
+    {
+      "abbr": "BCG",
+      "name": "Barão de Cotegipe"
+    },
+    {
+      "abbr": "BTF",
+      "name": "Barão do Triunfo"
+    },
+    {
+      "abbr": "BCW",
+      "name": "Barracão"
     },
     {
       "abbr": "BOG",
@@ -16005,24 +16025,12 @@
       "name": "Barra do Rio Azul"
     },
     {
-      "abbr": "BCW",
-      "name": "Barracão"
+      "abbr": "BFA",
+      "name": "Barra Funda"
     },
     {
       "abbr": "BCL",
       "name": "Barros Cassal"
-    },
-    {
-      "abbr": "BAW",
-      "name": "Barão"
-    },
-    {
-      "abbr": "BCG",
-      "name": "Barão de Cotegipe"
-    },
-    {
-      "abbr": "BTF",
-      "name": "Barão do Triunfo"
     },
     {
       "abbr": "BNJ",
@@ -16093,6 +16101,10 @@
       "name": "Butiá"
     },
     {
+      "abbr": "CPL",
+      "name": "Caçapava do Sul"
+    },
+    {
       "abbr": "CQI",
       "name": "Cacequi"
     },
@@ -16157,6 +16169,10 @@
       "name": "Candelária"
     },
     {
+      "abbr": "GOD",
+      "name": "Cândido Godói"
+    },
+    {
       "abbr": "CDT",
       "name": "Candiota"
     },
@@ -16177,18 +16193,6 @@
       "name": "Canudos do Vale"
     },
     {
-      "abbr": "CLS",
-      "name": "Capela de Santana"
-    },
-    {
-      "abbr": "CYW",
-      "name": "Capitão"
-    },
-    {
-      "abbr": "CPV",
-      "name": "Capivari do Sul"
-    },
-    {
       "abbr": "KBW",
       "name": "Capão Bonito do Sul"
     },
@@ -16205,12 +16209,24 @@
       "name": "Capão do Leão"
     },
     {
-      "abbr": "CRO",
-      "name": "Carazinho"
+      "abbr": "CLS",
+      "name": "Capela de Santana"
+    },
+    {
+      "abbr": "CYW",
+      "name": "Capitão"
+    },
+    {
+      "abbr": "CPV",
+      "name": "Capivari do Sul"
     },
     {
       "abbr": "RAA",
       "name": "Caraá"
+    },
+    {
+      "abbr": "CRO",
+      "name": "Carazinho"
     },
     {
       "abbr": "CBB",
@@ -16235,10 +16251,6 @@
     {
       "abbr": "CXL",
       "name": "Caxias do Sul"
-    },
-    {
-      "abbr": "CPL",
-      "name": "Caçapava do Sul"
     },
     {
       "abbr": "NNR",
@@ -16281,12 +16293,12 @@
       "name": "Chiapetta"
     },
     {
-      "abbr": "CVC",
-      "name": "Chuvisca"
-    },
-    {
       "abbr": "CUI",
       "name": "Chuí"
+    },
+    {
+      "abbr": "CVC",
+      "name": "Chuvisca"
     },
     {
       "abbr": "CRI",
@@ -16365,10 +16377,6 @@
       "name": "Cruzeiro do Sul"
     },
     {
-      "abbr": "GOD",
-      "name": "Cândido Godói"
-    },
-    {
       "abbr": "DCR",
       "name": "David Canabarro"
     },
@@ -16437,12 +16445,12 @@
       "name": "Engenho Velho"
     },
     {
-      "abbr": "ETS",
-      "name": "Entre Rios do Sul"
-    },
-    {
       "abbr": "ENS",
       "name": "Entre-Ijuís"
+    },
+    {
+      "abbr": "ETS",
+      "name": "Entre Rios do Sul"
     },
     {
       "abbr": "EEO",
@@ -16481,6 +16489,10 @@
       "name": "Estação"
     },
     {
+      "abbr": "EVH",
+      "name": "Estância Velha"
+    },
+    {
       "abbr": "ETO",
       "name": "Esteio"
     },
@@ -16491,10 +16503,6 @@
     {
       "abbr": "ERV",
       "name": "Estrela Velha"
-    },
-    {
-      "abbr": "EVH",
-      "name": "Estância Velha"
     },
     {
       "abbr": "EUC",
@@ -16589,12 +16597,12 @@
       "name": "Gramado"
     },
     {
-      "abbr": "GXR",
-      "name": "Gramado Xavier"
-    },
-    {
       "abbr": "GDL",
       "name": "Gramado dos Loureiros"
+    },
+    {
+      "abbr": "GXR",
+      "name": "Gramado Xavier"
     },
     {
       "abbr": "GRA",
@@ -16605,16 +16613,16 @@
       "name": "Guabiju"
     },
     {
+      "abbr": "GIB",
+      "name": "Guaíba"
+    },
+    {
       "abbr": "GUP",
       "name": "Guaporé"
     },
     {
       "abbr": "GDM",
       "name": "Guarani das Missões"
-    },
-    {
-      "abbr": "GIB",
-      "name": "Guaíba"
     },
     {
       "abbr": "HAA",
@@ -16689,12 +16697,12 @@
       "name": "Inhacorá"
     },
     {
-      "abbr": "IIL",
-      "name": "Ipiranga do Sul"
-    },
-    {
       "abbr": "IPX",
       "name": "Ipê"
+    },
+    {
+      "abbr": "IIL",
+      "name": "Ipiranga do Sul"
     },
     {
       "abbr": "RAI",
@@ -16745,12 +16753,12 @@
       "name": "Jacutinga"
     },
     {
-      "abbr": "JGI",
-      "name": "Jaguari"
-    },
-    {
       "abbr": "JAG",
       "name": "Jaguarão"
+    },
+    {
+      "abbr": "JGI",
+      "name": "Jaguari"
     },
     {
       "abbr": "JQN",
@@ -16773,16 +16781,16 @@
       "name": "Lagoa Bonita do Sul"
     },
     {
-      "abbr": "LVE",
-      "name": "Lagoa Vermelha"
-    },
-    {
       "abbr": "LTT",
       "name": "Lagoa dos Três Cantos"
     },
     {
       "abbr": "LGW",
       "name": "Lagoão"
+    },
+    {
+      "abbr": "LVE",
+      "name": "Lagoa Vermelha"
     },
     {
       "abbr": "LAJ",
@@ -16807,6 +16815,10 @@
     {
       "abbr": "LNN",
       "name": "Linha Nova"
+    },
+    {
+      "abbr": "MKA",
+      "name": "Maçambará"
     },
     {
       "abbr": "MHH",
@@ -16869,10 +16881,6 @@
       "name": "Maximiliano de Almeida"
     },
     {
-      "abbr": "MKA",
-      "name": "Maçambará"
-    },
-    {
       "abbr": "MDL",
       "name": "Minas do Leão"
     },
@@ -16917,6 +16925,10 @@
       "name": "Mostardas"
     },
     {
+      "abbr": "MUM",
+      "name": "Muçum"
+    },
+    {
       "abbr": "MTC",
       "name": "Muitos Capões"
     },
@@ -16925,8 +16937,8 @@
       "name": "Muliterno"
     },
     {
-      "abbr": "MUM",
-      "name": "Muçum"
+      "abbr": "NTQ",
+      "name": "Não-Me-Toque"
     },
     {
       "abbr": "NVG",
@@ -16969,6 +16981,10 @@
       "name": "Nova Hartz"
     },
     {
+      "abbr": "NPD",
+      "name": "Nova Pádua"
+    },
+    {
       "abbr": "NOP",
       "name": "Nova Palma"
     },
@@ -16979,10 +16995,6 @@
     {
       "abbr": "NPA",
       "name": "Nova Prata"
-    },
-    {
-      "abbr": "NPD",
-      "name": "Nova Pádua"
     },
     {
       "abbr": "NVM",
@@ -17019,10 +17031,6 @@
     {
       "abbr": "NXU",
       "name": "Novo Xingu"
-    },
-    {
-      "abbr": "NTQ",
-      "name": "Não-Me-Toque"
     },
     {
       "abbr": "OSO",
@@ -17073,12 +17081,12 @@
       "name": "Passa Sete"
     },
     {
-      "abbr": "PFO",
-      "name": "Passo Fundo"
-    },
-    {
       "abbr": "PSB",
       "name": "Passo do Sobrado"
+    },
+    {
+      "abbr": "PFO",
+      "name": "Passo Fundo"
     },
     {
       "abbr": "ULB",
@@ -17113,12 +17121,12 @@
       "name": "Pinhal"
     },
     {
-      "abbr": "PHG",
-      "name": "Pinhal Grande"
-    },
-    {
       "abbr": "PHE",
       "name": "Pinhal da Serra"
+    },
+    {
+      "abbr": "PHG",
+      "name": "Pinhal Grande"
     },
     {
       "abbr": "PIV",
@@ -17145,12 +17153,20 @@
       "name": "Planalto"
     },
     {
-      "abbr": "TEE",
-      "name": "Ponte Preta"
+      "abbr": "OCO",
+      "name": "Poço das Antas"
     },
     {
       "abbr": "POQ",
       "name": "Pontão"
+    },
+    {
+      "abbr": "TEE",
+      "name": "Ponte Preta"
+    },
+    {
+      "abbr": "PAW",
+      "name": "Portão"
     },
     {
       "abbr": "POA",
@@ -17173,16 +17189,8 @@
       "name": "Porto Xavier"
     },
     {
-      "abbr": "PAW",
-      "name": "Portão"
-    },
-    {
       "abbr": "PUV",
       "name": "Pouso Novo"
-    },
-    {
-      "abbr": "OCO",
-      "name": "Poço das Antas"
     },
     {
       "abbr": "LWN",
@@ -17229,16 +17237,16 @@
       "name": "Restinga Sêca"
     },
     {
+      "abbr": "RSD",
+      "name": "Rio dos Índios"
+    },
+    {
       "abbr": "RIG",
       "name": "Rio Grande"
     },
     {
       "abbr": "RPO",
       "name": "Rio Pardo"
-    },
-    {
-      "abbr": "RSD",
-      "name": "Rio dos Índios"
     },
     {
       "abbr": "RIZ",
@@ -17301,10 +17309,6 @@
       "name": "Sananduva"
     },
     {
-      "abbr": "SLI",
-      "name": "Sant'Ana do Livramento"
-    },
-    {
       "abbr": "SSW",
       "name": "Santa Bárbara do Sul"
     },
@@ -17333,6 +17337,14 @@
       "name": "Santa Maria do Herval"
     },
     {
+      "abbr": "STV",
+      "name": "Santana da Boa Vista"
+    },
+    {
+      "abbr": "SLI",
+      "name": "Sant'Ana do Livramento"
+    },
+    {
       "abbr": "SRA",
       "name": "Santa Rosa"
     },
@@ -17345,12 +17357,12 @@
       "name": "Santa Vitória do Palmar"
     },
     {
-      "abbr": "STV",
-      "name": "Santana da Boa Vista"
-    },
-    {
       "abbr": "STG",
       "name": "Santiago"
+    },
+    {
+      "abbr": "STO",
+      "name": "Santo Ângelo"
     },
     {
       "abbr": "SPU",
@@ -17381,82 +17393,6 @@
       "name": "Santo Expedito do Sul"
     },
     {
-      "abbr": "STO",
-      "name": "Santo Ângelo"
-    },
-    {
-      "abbr": "SAP",
-      "name": "Sapiranga"
-    },
-    {
-      "abbr": "SUS",
-      "name": "Sapucaia do Sul"
-    },
-    {
-      "abbr": "SND",
-      "name": "Sarandi"
-    },
-    {
-      "abbr": "EBE",
-      "name": "Seberi"
-    },
-    {
-      "abbr": "EDV",
-      "name": "Sede Nova"
-    },
-    {
-      "abbr": "EDO",
-      "name": "Segredo"
-    },
-    {
-      "abbr": "SBH",
-      "name": "Selbach"
-    },
-    {
-      "abbr": "SGF",
-      "name": "Senador Salgado Filho"
-    },
-    {
-      "abbr": "SSQ",
-      "name": "Sentinela do Sul"
-    },
-    {
-      "abbr": "SCE",
-      "name": "Serafina Corrêa"
-    },
-    {
-      "abbr": "SEW",
-      "name": "Sertão"
-    },
-    {
-      "abbr": "SWN",
-      "name": "Sertão Santana"
-    },
-    {
-      "abbr": "STX",
-      "name": "Sete de Setembro"
-    },
-    {
-      "abbr": "EVE",
-      "name": "Severiano de Almeida"
-    },
-    {
-      "abbr": "SYV",
-      "name": "Silveira Martins"
-    },
-    {
-      "abbr": "SBU",
-      "name": "Sinimbu"
-    },
-    {
-      "abbr": "SDH",
-      "name": "Sobradinho"
-    },
-    {
-      "abbr": "SDA",
-      "name": "Soledade"
-    },
-    {
       "abbr": "SBA",
       "name": "São Borja"
     },
@@ -17479,6 +17415,14 @@
     {
       "abbr": "SJO",
       "name": "São Jerônimo"
+    },
+    {
+      "abbr": "TIG",
+      "name": "São João da Urtiga"
+    },
+    {
+      "abbr": "JYN",
+      "name": "São João do Polêsine"
     },
     {
       "abbr": "JOG",
@@ -17509,20 +17453,12 @@
       "name": "São José do Ouro"
     },
     {
-      "abbr": "JSW",
-      "name": "São José do Sul"
-    },
-    {
       "abbr": "SJT",
       "name": "São José dos Ausentes"
     },
     {
-      "abbr": "TIG",
-      "name": "São João da Urtiga"
-    },
-    {
-      "abbr": "JYN",
-      "name": "São João do Polêsine"
+      "abbr": "JSW",
+      "name": "São José do Sul"
     },
     {
       "abbr": "SLO",
@@ -17605,8 +17541,80 @@
       "name": "São Vicente do Sul"
     },
     {
+      "abbr": "SAP",
+      "name": "Sapiranga"
+    },
+    {
+      "abbr": "SUS",
+      "name": "Sapucaia do Sul"
+    },
+    {
+      "abbr": "SND",
+      "name": "Sarandi"
+    },
+    {
+      "abbr": "EBE",
+      "name": "Seberi"
+    },
+    {
+      "abbr": "EDV",
+      "name": "Sede Nova"
+    },
+    {
+      "abbr": "EDO",
+      "name": "Segredo"
+    },
+    {
+      "abbr": "SBH",
+      "name": "Selbach"
+    },
+    {
+      "abbr": "SGF",
+      "name": "Senador Salgado Filho"
+    },
+    {
+      "abbr": "SSQ",
+      "name": "Sentinela do Sul"
+    },
+    {
+      "abbr": "SCE",
+      "name": "Serafina Corrêa"
+    },
+    {
       "abbr": "SEY",
       "name": "Sério"
+    },
+    {
+      "abbr": "SEW",
+      "name": "Sertão"
+    },
+    {
+      "abbr": "SWN",
+      "name": "Sertão Santana"
+    },
+    {
+      "abbr": "STX",
+      "name": "Sete de Setembro"
+    },
+    {
+      "abbr": "EVE",
+      "name": "Severiano de Almeida"
+    },
+    {
+      "abbr": "SYV",
+      "name": "Silveira Martins"
+    },
+    {
+      "abbr": "SBU",
+      "name": "Sinimbu"
+    },
+    {
+      "abbr": "SDH",
+      "name": "Sobradinho"
+    },
+    {
+      "abbr": "SDA",
+      "name": "Soledade"
     },
     {
       "abbr": "TBY",
@@ -17677,14 +17685,6 @@
       "name": "Travesseiro"
     },
     {
-      "abbr": "TDS",
-      "name": "Trindade do Sul"
-    },
-    {
-      "abbr": "TFO",
-      "name": "Triunfo"
-    },
-    {
       "abbr": "TEI",
       "name": "Três Arroios"
     },
@@ -17695,6 +17695,10 @@
     {
       "abbr": "TCA",
       "name": "Três Coroas"
+    },
+    {
+      "abbr": "TMI",
+      "name": "Três de Maio"
     },
     {
       "abbr": "TFH",
@@ -17709,8 +17713,12 @@
       "name": "Três Passos"
     },
     {
-      "abbr": "TMI",
-      "name": "Três de Maio"
+      "abbr": "TDS",
+      "name": "Trindade do Sul"
+    },
+    {
+      "abbr": "TFO",
+      "name": "Triunfo"
     },
     {
       "abbr": "TCV",
@@ -17745,12 +17753,12 @@
       "name": "Ubiretama"
     },
     {
-      "abbr": "USA",
-      "name": "Unistalda"
-    },
-    {
       "abbr": "USR",
       "name": "União da Serra"
+    },
+    {
+      "abbr": "USA",
+      "name": "Unistalda"
     },
     {
       "abbr": "URG",
@@ -17761,16 +17769,16 @@
       "name": "Vacaria"
     },
     {
+      "abbr": "VSO",
+      "name": "Vale do Sol"
+    },
+    {
       "abbr": "VRL",
       "name": "Vale Real"
     },
     {
       "abbr": "VVD",
       "name": "Vale Verde"
-    },
-    {
-      "abbr": "VSO",
-      "name": "Vale do Sol"
     },
     {
       "abbr": "VNN",
@@ -17847,14 +17855,6 @@
     {
       "abbr": "XGA",
       "name": "Xangri-lá"
-    },
-    {
-      "abbr": "GWS",
-      "name": "Água Santa"
-    },
-    {
-      "abbr": "WRE",
-      "name": "Áurea"
     }
   ],
   "SC": [
@@ -17873,6 +17873,22 @@
     {
       "abbr": "AMC",
       "name": "Agronômica"
+    },
+    {
+      "abbr": "DOC",
+      "name": "Água Doce"
+    },
+    {
+      "abbr": "ACC",
+      "name": "Águas de Chapecó"
+    },
+    {
+      "abbr": "AFI",
+      "name": "Águas Frias"
+    },
+    {
+      "abbr": "AMR",
+      "name": "Águas Mornas"
     },
     {
       "abbr": "AWR",
@@ -18003,6 +18019,10 @@
       "name": "Bocaina do Sul"
     },
     {
+      "abbr": "BBS",
+      "name": "Bombinhas"
+    },
+    {
       "abbr": "BMD",
       "name": "Bom Jardim da Serra"
     },
@@ -18017,10 +18037,6 @@
     {
       "abbr": "BRR",
       "name": "Bom Retiro"
-    },
-    {
-      "abbr": "BBS",
-      "name": "Bombinhas"
     },
     {
       "abbr": "BUV",
@@ -18041,6 +18057,10 @@
     {
       "abbr": "BRU",
       "name": "Brusque"
+    },
+    {
+      "abbr": "CDR",
+      "name": "Caçador"
     },
     {
       "abbr": "CBI",
@@ -18079,6 +18099,10 @@
       "name": "Canoinhas"
     },
     {
+      "abbr": "CAO",
+      "name": "Capão Alto"
+    },
+    {
       "abbr": "CPZ",
       "name": "Capinzal"
     },
@@ -18087,20 +18111,12 @@
       "name": "Capivari de Baixo"
     },
     {
-      "abbr": "CAO",
-      "name": "Capão Alto"
-    },
-    {
       "abbr": "CTV",
       "name": "Catanduvas"
     },
     {
       "abbr": "CXD",
       "name": "Caxambu do Sul"
-    },
-    {
-      "abbr": "CDR",
-      "name": "Caçador"
     },
     {
       "abbr": "KLM",
@@ -18239,12 +18255,12 @@
       "name": "Governador Celso Ramos"
     },
     {
-      "abbr": "GVL",
-      "name": "Gravatal"
-    },
-    {
       "abbr": "GPR",
       "name": "Grão Pará"
+    },
+    {
+      "abbr": "GVL",
+      "name": "Gravatal"
     },
     {
       "abbr": "GUB",
@@ -18281,6 +18297,10 @@
     {
       "abbr": "IMA",
       "name": "Ibirama"
+    },
+    {
+      "abbr": "ICR",
+      "name": "Içara"
     },
     {
       "abbr": "ILH",
@@ -18339,6 +18359,10 @@
       "name": "Irineópolis"
     },
     {
+      "abbr": "XTA",
+      "name": "Itá"
+    },
+    {
       "abbr": "IPL",
       "name": "Itaiópolis"
     },
@@ -18361,14 +18385,6 @@
     {
       "abbr": "ION",
       "name": "Ituporanga"
-    },
-    {
-      "abbr": "XTA",
-      "name": "Itá"
-    },
-    {
-      "abbr": "ICR",
-      "name": "Içara"
     },
     {
       "abbr": "JBO",
@@ -18515,12 +18531,12 @@
       "name": "Monte Castelo"
     },
     {
-      "abbr": "MGD",
-      "name": "Morro Grande"
-    },
-    {
       "abbr": "MFA",
       "name": "Morro da Fumaça"
+    },
+    {
+      "abbr": "MGD",
+      "name": "Morro Grande"
     },
     {
       "abbr": "NVT",
@@ -18699,18 +18715,6 @@
       "name": "Rancho Queimado"
     },
     {
-      "abbr": "RFN",
-      "name": "Rio Fortuna"
-    },
-    {
-      "abbr": "RNE",
-      "name": "Rio Negrinho"
-    },
-    {
-      "abbr": "RRN",
-      "name": "Rio Rufino"
-    },
-    {
       "abbr": "RTS",
       "name": "Rio das Antas"
     },
@@ -18723,12 +18727,24 @@
       "name": "Rio do Oeste"
     },
     {
+      "abbr": "RCD",
+      "name": "Rio dos Cedros"
+    },
+    {
       "abbr": "RDS",
       "name": "Rio do Sul"
     },
     {
-      "abbr": "RCD",
-      "name": "Rio dos Cedros"
+      "abbr": "RFN",
+      "name": "Rio Fortuna"
+    },
+    {
+      "abbr": "RNE",
+      "name": "Rio Negrinho"
+    },
+    {
+      "abbr": "RRN",
+      "name": "Rio Rufino"
     },
     {
       "abbr": "RQZ",
@@ -18791,34 +18807,6 @@
       "name": "Santo Amaro da Imperatriz"
     },
     {
-      "abbr": "SUD",
-      "name": "Saudades"
-    },
-    {
-      "abbr": "SDE",
-      "name": "Schroeder"
-    },
-    {
-      "abbr": "SRX",
-      "name": "Seara"
-    },
-    {
-      "abbr": "AWT",
-      "name": "Serra Alta"
-    },
-    {
-      "abbr": "SDZ",
-      "name": "Siderópolis"
-    },
-    {
-      "abbr": "SBI",
-      "name": "Sombrio"
-    },
-    {
-      "abbr": "ULL",
-      "name": "Sul Brasil"
-    },
-    {
       "abbr": "SBS",
       "name": "São Bento do Sul"
     },
@@ -18847,22 +18835,6 @@
       "name": "São Francisco do Sul"
     },
     {
-      "abbr": "SJQ",
-      "name": "São Joaquim"
-    },
-    {
-      "abbr": "SJE",
-      "name": "São José"
-    },
-    {
-      "abbr": "SJD",
-      "name": "São José do Cedro"
-    },
-    {
-      "abbr": "RRI",
-      "name": "São José do Cerrito"
-    },
-    {
       "abbr": "SJW",
       "name": "São João Batista"
     },
@@ -18877,6 +18849,22 @@
     {
       "abbr": "JDL",
       "name": "São João do Sul"
+    },
+    {
+      "abbr": "SJQ",
+      "name": "São Joaquim"
+    },
+    {
+      "abbr": "SJE",
+      "name": "São José"
+    },
+    {
+      "abbr": "SJD",
+      "name": "São José do Cedro"
+    },
+    {
+      "abbr": "RRI",
+      "name": "São José do Cerrito"
     },
     {
       "abbr": "SLT",
@@ -18901,6 +18889,34 @@
     {
       "abbr": "SPE",
       "name": "São Pedro de Alcântara"
+    },
+    {
+      "abbr": "SUD",
+      "name": "Saudades"
+    },
+    {
+      "abbr": "SDE",
+      "name": "Schroeder"
+    },
+    {
+      "abbr": "SRX",
+      "name": "Seara"
+    },
+    {
+      "abbr": "AWT",
+      "name": "Serra Alta"
+    },
+    {
+      "abbr": "SDZ",
+      "name": "Siderópolis"
+    },
+    {
+      "abbr": "SBI",
+      "name": "Sombrio"
+    },
+    {
+      "abbr": "ULL",
+      "name": "Sul Brasil"
     },
     {
       "abbr": "TAI",
@@ -18931,24 +18947,24 @@
       "name": "Timbó Grande"
     },
     {
-      "abbr": "TEV",
-      "name": "Treviso"
+      "abbr": "TEB",
+      "name": "Três Barras"
     },
     {
-      "abbr": "TZT",
-      "name": "Treze Tílias"
+      "abbr": "TEV",
+      "name": "Treviso"
     },
     {
       "abbr": "TRZ",
       "name": "Treze de Maio"
     },
     {
-      "abbr": "TCL",
-      "name": "Trombudo Central"
+      "abbr": "TZT",
+      "name": "Treze Tílias"
     },
     {
-      "abbr": "TEB",
-      "name": "Três Barras"
+      "abbr": "TCL",
+      "name": "Trombudo Central"
     },
     {
       "abbr": "TUO",
@@ -18979,16 +18995,16 @@
       "name": "Urussanga"
     },
     {
+      "abbr": "VRG",
+      "name": "Vargeão"
+    },
+    {
       "abbr": "VRM",
       "name": "Vargem"
     },
     {
       "abbr": "VBO",
       "name": "Vargem Bonita"
-    },
-    {
-      "abbr": "VRG",
-      "name": "Vargeão"
     },
     {
       "abbr": "VRS",
@@ -19021,22 +19037,6 @@
     {
       "abbr": "ZOA",
       "name": "Zortéa"
-    },
-    {
-      "abbr": "DOC",
-      "name": "Água Doce"
-    },
-    {
-      "abbr": "AFI",
-      "name": "Águas Frias"
-    },
-    {
-      "abbr": "AMR",
-      "name": "Águas Mornas"
-    },
-    {
-      "abbr": "ACC",
-      "name": "Águas de Chapecó"
     }
   ],
   "SE": [
@@ -19249,10 +19249,6 @@
       "name": "Pirambu"
     },
     {
-      "abbr": "PDF",
-      "name": "Porto da Folha"
-    },
-    {
       "abbr": "PCR",
       "name": "Poço Redondo"
     },
@@ -19261,16 +19257,20 @@
       "name": "Poço Verde"
     },
     {
+      "abbr": "PDF",
+      "name": "Porto da Folha"
+    },
+    {
       "abbr": "PRP",
       "name": "Propriá"
     },
     {
-      "abbr": "RUO",
-      "name": "Riachuelo"
-    },
-    {
       "abbr": "RDD",
       "name": "Riachão do Dantas"
+    },
+    {
+      "abbr": "RUO",
+      "name": "Riachuelo"
     },
     {
       "abbr": "RBL",
@@ -19289,24 +19289,16 @@
       "name": "Santa Luzia do Itanhy"
     },
     {
-      "abbr": "RLX",
-      "name": "Santa Rosa de Lima"
-    },
-    {
       "abbr": "SOF",
       "name": "Santana do São Francisco"
     },
     {
+      "abbr": "RLX",
+      "name": "Santa Rosa de Lima"
+    },
+    {
       "abbr": "DBR",
       "name": "Santo Amaro das Brotas"
-    },
-    {
-      "abbr": "SID",
-      "name": "Simão Dias"
-    },
-    {
-      "abbr": "SYI",
-      "name": "Siriri"
     },
     {
       "abbr": "SCV",
@@ -19323,6 +19315,14 @@
     {
       "abbr": "SIX",
       "name": "São Miguel do Aleixo"
+    },
+    {
+      "abbr": "SID",
+      "name": "Simão Dias"
+    },
+    {
+      "abbr": "SYI",
+      "name": "Siriri"
     },
     {
       "abbr": "TLH",
@@ -19355,6 +19355,22 @@
       "name": "Aguaí"
     },
     {
+      "abbr": "ASP",
+      "name": "Águas da Prata"
+    },
+    {
+      "abbr": "AGL",
+      "name": "Águas de Lindóia"
+    },
+    {
+      "abbr": "ASB",
+      "name": "Águas de Santa Bárbara"
+    },
+    {
+      "abbr": "ASO",
+      "name": "Águas de São Pedro"
+    },
+    {
       "abbr": "AGD",
       "name": "Agudos"
     },
@@ -19383,6 +19399,18 @@
       "name": "Alumínio"
     },
     {
+      "abbr": "AVF",
+      "name": "Álvares Florence"
+    },
+    {
+      "abbr": "AMH",
+      "name": "Álvares Machado"
+    },
+    {
+      "abbr": "ACV",
+      "name": "Álvaro de Carvalho"
+    },
+    {
       "abbr": "AVD",
       "name": "Alvinlândia"
     },
@@ -19391,16 +19419,16 @@
       "name": "Americana"
     },
     {
-      "abbr": "AMP",
-      "name": "Amparo"
-    },
-    {
       "abbr": "ABI",
       "name": "Américo Brasiliense"
     },
     {
       "abbr": "ACP",
       "name": "Américo de Campos"
+    },
+    {
+      "abbr": "AMP",
+      "name": "Amparo"
     },
     {
       "abbr": "ANI",
@@ -19435,6 +19463,18 @@
       "name": "Apiaí"
     },
     {
+      "abbr": "ARM",
+      "name": "Araçariguama"
+    },
+    {
+      "abbr": "ARU",
+      "name": "Araçatuba"
+    },
+    {
+      "abbr": "ASR",
+      "name": "Araçoiaba da Serra"
+    },
+    {
       "abbr": "AMY",
       "name": "Aramina"
     },
@@ -19453,18 +19493,6 @@
     {
       "abbr": "ARR",
       "name": "Araras"
-    },
-    {
-      "abbr": "ARM",
-      "name": "Araçariguama"
-    },
-    {
-      "abbr": "ARU",
-      "name": "Araçatuba"
-    },
-    {
-      "abbr": "ASR",
-      "name": "Araçoiaba da Serra"
     },
     {
       "abbr": "AIX",
@@ -19511,16 +19539,16 @@
       "name": "Auriflama"
     },
     {
+      "abbr": "AVY",
+      "name": "Avaí"
+    },
+    {
       "abbr": "AVV",
       "name": "Avanhandava"
     },
     {
       "abbr": "AVA",
       "name": "Avaré"
-    },
-    {
-      "abbr": "AVY",
-      "name": "Avaí"
     },
     {
       "abbr": "BBT",
@@ -19531,8 +19559,16 @@
       "name": "Balbinos"
     },
     {
+      "abbr": "BLS",
+      "name": "Bálsamo"
+    },
+    {
       "abbr": "BNA",
       "name": "Bananal"
+    },
+    {
+      "abbr": "BWA",
+      "name": "Barão de Antonina"
     },
     {
       "abbr": "BSA",
@@ -19565,10 +19601,6 @@
     {
       "abbr": "BRI",
       "name": "Barueri"
-    },
-    {
-      "abbr": "BWA",
-      "name": "Barão de Antonina"
     },
     {
       "abbr": "BTS",
@@ -19635,6 +19667,10 @@
       "name": "Bom Sucesso de Itararé"
     },
     {
+      "abbr": "BOX",
+      "name": "Borá"
+    },
+    {
       "abbr": "BRE",
       "name": "Boracéia"
     },
@@ -19645,10 +19681,6 @@
     {
       "abbr": "BBY",
       "name": "Borebi"
-    },
-    {
-      "abbr": "BOX",
-      "name": "Borá"
     },
     {
       "abbr": "BOT",
@@ -19687,16 +19719,16 @@
       "name": "Buritizal"
     },
     {
-      "abbr": "BLS",
-      "name": "Bálsamo"
+      "abbr": "KBP",
+      "name": "Cabrália Paulista"
     },
     {
       "abbr": "CRU",
       "name": "Cabreúva"
     },
     {
-      "abbr": "KBP",
-      "name": "Cabrália Paulista"
+      "abbr": "CAP",
+      "name": "Caçapava"
     },
     {
       "abbr": "CCP",
@@ -19751,12 +19783,12 @@
       "name": "Campo Limpo Paulista"
     },
     {
-      "abbr": "CVU",
-      "name": "Campos Novos Paulista"
-    },
-    {
       "abbr": "CJD",
       "name": "Campos do Jordão"
+    },
+    {
+      "abbr": "CVU",
+      "name": "Campos Novos Paulista"
     },
     {
       "abbr": "CNI",
@@ -19767,8 +19799,20 @@
       "name": "Canas"
     },
     {
+      "abbr": "CMT",
+      "name": "Cândido Mota"
+    },
+    {
+      "abbr": "CDU",
+      "name": "Cândido Rodrigues"
+    },
+    {
       "abbr": "CNR",
       "name": "Canitar"
+    },
+    {
+      "abbr": "CBN",
+      "name": "Capão Bonito"
     },
     {
       "abbr": "CLT",
@@ -19777,10 +19821,6 @@
     {
       "abbr": "CPI",
       "name": "Capivari"
-    },
-    {
-      "abbr": "CBN",
-      "name": "Capão Bonito"
     },
     {
       "abbr": "CGU",
@@ -19799,6 +19839,10 @@
       "name": "Casa Branca"
     },
     {
+      "abbr": "CIQ",
+      "name": "Cássia dos Coqueiros"
+    },
+    {
       "abbr": "CHO",
       "name": "Castilho"
     },
@@ -19809,10 +19853,6 @@
     {
       "abbr": "KUA",
       "name": "Catiguá"
-    },
-    {
-      "abbr": "CAP",
-      "name": "Caçapava"
     },
     {
       "abbr": "CED",
@@ -19899,12 +19939,12 @@
       "name": "Corumbataí"
     },
     {
-      "abbr": "CMM",
-      "name": "Cosmorama"
-    },
-    {
       "abbr": "CSP",
       "name": "Cosmópolis"
+    },
+    {
+      "abbr": "CMM",
+      "name": "Cosmorama"
     },
     {
       "abbr": "COA",
@@ -19919,12 +19959,12 @@
       "name": "Cristais Paulista"
     },
     {
-      "abbr": "CZI",
-      "name": "Cruzeiro"
-    },
-    {
       "abbr": "UZL",
       "name": "Cruzália"
+    },
+    {
+      "abbr": "CZI",
+      "name": "Cruzeiro"
     },
     {
       "abbr": "CUO",
@@ -19933,18 +19973,6 @@
     {
       "abbr": "CUH",
       "name": "Cunha"
-    },
-    {
-      "abbr": "CIQ",
-      "name": "Cássia dos Coqueiros"
-    },
-    {
-      "abbr": "CMT",
-      "name": "Cândido Mota"
-    },
-    {
-      "abbr": "CDU",
-      "name": "Cândido Rodrigues"
     },
     {
       "abbr": "DCO",
@@ -20055,12 +20083,12 @@
       "name": "Fartura"
     },
     {
-      "abbr": "FPE",
-      "name": "Fernando Prestes"
-    },
-    {
       "abbr": "FPO",
       "name": "Fernandópolis"
+    },
+    {
+      "abbr": "FPE",
+      "name": "Fernando Prestes"
     },
     {
       "abbr": "FEW",
@@ -20079,12 +20107,12 @@
       "name": "Floreal"
     },
     {
-      "abbr": "FLE",
-      "name": "Florínea"
-    },
-    {
       "abbr": "FPS",
       "name": "Flórida Paulista"
+    },
+    {
+      "abbr": "FLE",
+      "name": "Florínea"
     },
     {
       "abbr": "FRC",
@@ -20101,6 +20129,10 @@
     {
       "abbr": "GMI",
       "name": "Gabriel Monteiro"
+    },
+    {
+      "abbr": "GLA",
+      "name": "Gália"
     },
     {
       "abbr": "GCA",
@@ -20127,20 +20159,32 @@
       "name": "Glicério"
     },
     {
+      "abbr": "GUC",
+      "name": "Guaiçara"
+    },
+    {
       "abbr": "GAB",
       "name": "Guaimbê"
     },
     {
-      "abbr": "GUC",
-      "name": "Guaiçara"
+      "abbr": "GIR",
+      "name": "Guaíra"
+    },
+    {
+      "abbr": "GPC",
+      "name": "Guapiaçu"
     },
     {
       "abbr": "GPI",
       "name": "Guapiara"
     },
     {
-      "abbr": "GPC",
-      "name": "Guapiaçu"
+      "abbr": "GAR",
+      "name": "Guará"
+    },
+    {
+      "abbr": "GRI",
+      "name": "Guaraçaí"
     },
     {
       "abbr": "GAI",
@@ -20167,10 +20211,6 @@
       "name": "Guaratinguetá"
     },
     {
-      "abbr": "GRI",
-      "name": "Guaraçaí"
-    },
-    {
       "abbr": "GEI",
       "name": "Guareí"
     },
@@ -20191,24 +20231,12 @@
       "name": "Guarulhos Apt / São Paulo"
     },
     {
-      "abbr": "GAR",
-      "name": "Guará"
-    },
-    {
       "abbr": "GTR",
       "name": "Guatapará"
     },
     {
-      "abbr": "GIR",
-      "name": "Guaíra"
-    },
-    {
       "abbr": "GZO",
       "name": "Guzolândia"
-    },
-    {
-      "abbr": "GLA",
-      "name": "Gália"
     },
     {
       "abbr": "HLA",
@@ -20239,12 +20267,12 @@
       "name": "Ibaté"
     },
     {
-      "abbr": "IRM",
-      "name": "Ibirarema"
-    },
-    {
       "abbr": "IBR",
       "name": "Ibirá"
+    },
+    {
+      "abbr": "IRM",
+      "name": "Ibirarema"
     },
     {
       "abbr": "ING",
@@ -20263,6 +20291,10 @@
       "name": "Iepê"
     },
     {
+      "abbr": "IDT",
+      "name": "Igaraçu do Tietê"
+    },
+    {
       "abbr": "IGV",
       "name": "Igarapava"
     },
@@ -20271,12 +20303,12 @@
       "name": "Igaratá"
     },
     {
-      "abbr": "IDT",
-      "name": "Igaraçu do Tietê"
-    },
-    {
       "abbr": "IGP",
       "name": "Iguape"
+    },
+    {
+      "abbr": "IBE",
+      "name": "Ilhabela"
     },
     {
       "abbr": "ICD",
@@ -20285,10 +20317,6 @@
     {
       "abbr": "ISA",
       "name": "Ilha Solteira"
-    },
-    {
-      "abbr": "IBE",
-      "name": "Ilhabela"
     },
     {
       "abbr": "IDU",
@@ -20335,16 +20363,20 @@
       "name": "Iracemápolis"
     },
     {
-      "abbr": "YRU",
-      "name": "Irapuru"
-    },
-    {
       "abbr": "RAP",
       "name": "Irapuã"
     },
     {
+      "abbr": "YRU",
+      "name": "Irapuru"
+    },
+    {
       "abbr": "IAB",
       "name": "Itaberá"
+    },
+    {
+      "abbr": "IAI",
+      "name": "Itaí"
     },
     {
       "abbr": "IJB",
@@ -20387,16 +20419,20 @@
       "name": "Itapirapuã Paulista"
     },
     {
+      "abbr": "ILS",
+      "name": "Itápolis"
+    },
+    {
       "abbr": "IOG",
       "name": "Itaporanga"
     },
     {
-      "abbr": "YAU",
-      "name": "Itapura"
-    },
-    {
       "abbr": "IUI",
       "name": "Itapuí"
+    },
+    {
+      "abbr": "YAU",
+      "name": "Itapura"
     },
     {
       "abbr": "IQU",
@@ -20417,10 +20453,6 @@
     {
       "abbr": "IAT",
       "name": "Itatinga"
-    },
-    {
-      "abbr": "IAI",
-      "name": "Itaí"
     },
     {
       "abbr": "IAP",
@@ -20445,10 +20477,6 @@
     {
       "abbr": "IVA",
       "name": "Ituverava"
-    },
-    {
-      "abbr": "ILS",
-      "name": "Itápolis"
     },
     {
       "abbr": "JBD",
@@ -20507,12 +20535,16 @@
       "name": "Joanópolis"
     },
     {
+      "abbr": "JRH",
+      "name": "João Ramalho"
+    },
+    {
       "abbr": "JBF",
       "name": "José Bonifácio"
     },
     {
-      "abbr": "JRH",
-      "name": "João Ramalho"
+      "abbr": "JMT",
+      "name": "Júlio Mesquita"
     },
     {
       "abbr": "JMR",
@@ -20527,16 +20559,12 @@
       "name": "Junqueirópolis"
     },
     {
-      "abbr": "JQB",
-      "name": "Juquitiba"
-    },
-    {
       "abbr": "JQU",
       "name": "Juquiá"
     },
     {
-      "abbr": "JMT",
-      "name": "Júlio Mesquita"
+      "abbr": "JQB",
+      "name": "Juquitiba"
     },
     {
       "abbr": "LHA",
@@ -20547,12 +20575,12 @@
       "name": "Laranjal Paulista"
     },
     {
-      "abbr": "LVS",
-      "name": "Lavrinhas"
-    },
-    {
       "abbr": "LAV",
       "name": "Lavínia"
+    },
+    {
+      "abbr": "LVS",
+      "name": "Lavrinhas"
     },
     {
       "abbr": "LEM",
@@ -20587,12 +20615,16 @@
       "name": "Louveira"
     },
     {
+      "abbr": "LUC",
+      "name": "Lucélia"
+    },
+    {
       "abbr": "LLI",
       "name": "Lucianópolis"
     },
     {
-      "abbr": "LUC",
-      "name": "Lucélia"
+      "abbr": "LAN",
+      "name": "Luís Antônio"
     },
     {
       "abbr": "LZI",
@@ -20605,10 +20637,6 @@
     {
       "abbr": "LTC",
       "name": "Lutécia"
-    },
-    {
-      "abbr": "LAN",
-      "name": "Luís Antônio"
     },
     {
       "abbr": "MTU",
@@ -20651,20 +20679,20 @@
       "name": "Marapoama"
     },
     {
-      "abbr": "MPQ",
-      "name": "Marinópolis"
-    },
-    {
       "abbr": "MPZ",
       "name": "Mariápolis"
     },
     {
-      "abbr": "MPO",
-      "name": "Martinópolis"
-    },
-    {
       "abbr": "MII",
       "name": "Marília"
+    },
+    {
+      "abbr": "MPQ",
+      "name": "Marinópolis"
+    },
+    {
+      "abbr": "MPO",
+      "name": "Martinópolis"
     },
     {
       "abbr": "MAT",
@@ -20695,12 +20723,12 @@
       "name": "Mineiros do Tietê"
     },
     {
-      "abbr": "REL",
-      "name": "Mira Estrela"
-    },
-    {
       "abbr": "MCT",
       "name": "Miracatu"
+    },
+    {
+      "abbr": "REL",
+      "name": "Mira Estrela"
     },
     {
       "abbr": "MDO",
@@ -20723,6 +20751,10 @@
       "name": "Mococa"
     },
     {
+      "abbr": "MCS",
+      "name": "Mogi das Cruzes"
+    },
+    {
       "abbr": "MGG",
       "name": "Mogi Guaçu"
     },
@@ -20731,12 +20763,12 @@
       "name": "Mogi Mirim"
     },
     {
-      "abbr": "MCS",
-      "name": "Mogi das Cruzes"
-    },
-    {
       "abbr": "MBU",
       "name": "Mombuca"
+    },
+    {
+      "abbr": "ONC",
+      "name": "Monções"
     },
     {
       "abbr": "MNU",
@@ -20763,16 +20795,12 @@
       "name": "Monte Castelo"
     },
     {
-      "abbr": "MTM",
-      "name": "Monte Mor"
-    },
-    {
       "abbr": "MLO",
       "name": "Monteiro Lobato"
     },
     {
-      "abbr": "ONC",
-      "name": "Monções"
+      "abbr": "MTM",
+      "name": "Monte Mor"
     },
     {
       "abbr": "MOA",
@@ -20851,16 +20879,16 @@
       "name": "Nova Independência"
     },
     {
+      "abbr": "NVS",
+      "name": "Novais"
+    },
+    {
       "abbr": "NLT",
       "name": "Nova Luzitânia"
     },
     {
       "abbr": "NOD",
       "name": "Nova Odessa"
-    },
-    {
-      "abbr": "NVS",
-      "name": "Novais"
     },
     {
       "abbr": "NHE",
@@ -20873,6 +20901,10 @@
     {
       "abbr": "OCU",
       "name": "Ocauçu"
+    },
+    {
+      "abbr": "OLE",
+      "name": "Óleo"
     },
     {
       "abbr": "OLI",
@@ -20911,12 +20943,12 @@
       "name": "Ourinhos"
     },
     {
-      "abbr": "OVD",
-      "name": "Ouro Verde"
-    },
-    {
       "abbr": "ORE",
       "name": "Ouroeste"
+    },
+    {
+      "abbr": "OVD",
+      "name": "Ouro Verde"
     },
     {
       "abbr": "PCU",
@@ -20951,6 +20983,10 @@
       "name": "Paraibuna"
     },
     {
+      "abbr": "PRI",
+      "name": "Paraíso"
+    },
+    {
       "abbr": "PPM",
       "name": "Paranapanema"
     },
@@ -20961,10 +20997,6 @@
     {
       "abbr": "PPU",
       "name": "Parapuã"
-    },
-    {
-      "abbr": "PRI",
-      "name": "Paraíso"
     },
     {
       "abbr": "PRD",
@@ -20987,16 +21019,16 @@
       "name": "Paulicéia"
     },
     {
+      "abbr": "PUI",
+      "name": "Paulínia"
+    },
+    {
       "abbr": "ULT",
       "name": "Paulistânia"
     },
     {
       "abbr": "PFA",
       "name": "Paulo de Faria"
-    },
-    {
-      "abbr": "PUI",
-      "name": "Paulínia"
     },
     {
       "abbr": "PNS",
@@ -21155,6 +21187,10 @@
       "name": "Platina"
     },
     {
+      "abbr": "PQZ",
+      "name": "Poá"
+    },
+    {
       "abbr": "PWI",
       "name": "Poloni"
     },
@@ -21201,10 +21237,6 @@
     {
       "abbr": "POD",
       "name": "Potirendaba"
-    },
-    {
-      "abbr": "PQZ",
-      "name": "Poá"
     },
     {
       "abbr": "PYH",
@@ -21311,6 +21343,14 @@
       "name": "Ribeirão Corrente"
     },
     {
+      "abbr": "RBD",
+      "name": "Ribeirão dos Índios"
+    },
+    {
+      "abbr": "RSU",
+      "name": "Ribeirão do Sul"
+    },
+    {
       "abbr": "RGA",
       "name": "Ribeirão Grande"
     },
@@ -21321,14 +21361,6 @@
     {
       "abbr": "RAO",
       "name": "Ribeirão Preto"
-    },
-    {
-      "abbr": "RSU",
-      "name": "Ribeirão do Sul"
-    },
-    {
-      "abbr": "RBD",
-      "name": "Ribeirão dos Índios"
     },
     {
       "abbr": "RFI",
@@ -21347,12 +21379,12 @@
       "name": "Rio Claro"
     },
     {
-      "abbr": "RGS",
-      "name": "Rio Grande da Serra"
-    },
-    {
       "abbr": "RPE",
       "name": "Rio das Pedras"
+    },
+    {
+      "abbr": "RGS",
+      "name": "Rio Grande da Serra"
     },
     {
       "abbr": "RLA",
@@ -21371,12 +21403,12 @@
       "name": "Roseira"
     },
     {
-      "abbr": "RUE",
-      "name": "Rubinéia"
-    },
-    {
       "abbr": "RWB",
       "name": "Rubiácea"
+    },
+    {
+      "abbr": "RUE",
+      "name": "Rubinéia"
     },
     {
       "abbr": "SNW",
@@ -21411,12 +21443,12 @@
       "name": "Salto"
     },
     {
-      "abbr": "SAL",
-      "name": "Salto Grande"
-    },
-    {
       "abbr": "SPO",
       "name": "Salto de Pirapora"
+    },
+    {
+      "abbr": "SAL",
+      "name": "Salto Grande"
     },
     {
       "abbr": "DOV",
@@ -21431,12 +21463,12 @@
       "name": "Santa Albertina"
     },
     {
-      "abbr": "SBR",
-      "name": "Santa Branca"
-    },
-    {
       "abbr": "SBW",
       "name": "Santa Bárbara d'Oeste"
+    },
+    {
+      "abbr": "SBR",
+      "name": "Santa Branca"
     },
     {
       "abbr": "SCD",
@@ -21487,6 +21519,14 @@
       "name": "Santa Mercedes"
     },
     {
+      "abbr": "TPP",
+      "name": "Santana da Ponte Pensa"
+    },
+    {
+      "abbr": "SDP",
+      "name": "Santana de Parnaíba"
+    },
+    {
       "abbr": "SRO",
       "name": "Santa Rita d'Oeste"
     },
@@ -21501,14 +21541,6 @@
     {
       "abbr": "LET",
       "name": "Santa Salete"
-    },
-    {
-      "abbr": "TPP",
-      "name": "Santana da Ponte Pensa"
-    },
-    {
-      "abbr": "SDP",
-      "name": "Santana de Parnaíba"
     },
     {
       "abbr": "SAX",
@@ -21543,76 +21575,12 @@
       "name": "Santo Expedito"
     },
     {
-      "abbr": "SSZ",
-      "name": "Santos"
-    },
-    {
       "abbr": "SWY",
       "name": "Santópolis do Aguapeí"
     },
     {
-      "abbr": "SRI",
-      "name": "Sarapuí"
-    },
-    {
-      "abbr": "RWT",
-      "name": "Sarutaiá"
-    },
-    {
-      "abbr": "SZW",
-      "name": "Sebastianópolis do Sul"
-    },
-    {
-      "abbr": "SZL",
-      "name": "Serra Azul"
-    },
-    {
-      "abbr": "SNG",
-      "name": "Serra Negra"
-    },
-    {
-      "abbr": "SNA",
-      "name": "Serrana"
-    },
-    {
-      "abbr": "SZO",
-      "name": "Sertãozinho"
-    },
-    {
-      "abbr": "SRZ",
-      "name": "Sete Barras"
-    },
-    {
-      "abbr": "SVE",
-      "name": "Severínia"
-    },
-    {
-      "abbr": "SYL",
-      "name": "Silveiras"
-    },
-    {
-      "abbr": "SOC",
-      "name": "Socorro"
-    },
-    {
-      "abbr": "SOR",
-      "name": "Sorocaba"
-    },
-    {
-      "abbr": "SMU",
-      "name": "Sud Mennucci"
-    },
-    {
-      "abbr": "SME",
-      "name": "Sumaré"
-    },
-    {
-      "abbr": "SZN",
-      "name": "Suzano"
-    },
-    {
-      "abbr": "UZA",
-      "name": "Suzanápolis"
+      "abbr": "SSZ",
+      "name": "Santos"
     },
     {
       "abbr": "BSW",
@@ -21633,6 +21601,22 @@
     {
       "abbr": "SFC",
       "name": "São Francisco"
+    },
+    {
+      "abbr": "SBV",
+      "name": "São João da Boa Vista"
+    },
+    {
+      "abbr": "JWD",
+      "name": "São João das Duas Pontes"
+    },
+    {
+      "abbr": "JYR",
+      "name": "São João de Iracema"
+    },
+    {
+      "abbr": "JPD",
+      "name": "São João do Pau d'Alho"
     },
     {
       "abbr": "SJB",
@@ -21657,22 +21641,6 @@
     {
       "abbr": "SJK",
       "name": "São José dos Campos"
-    },
-    {
-      "abbr": "SBV",
-      "name": "São João da Boa Vista"
-    },
-    {
-      "abbr": "JWD",
-      "name": "São João das Duas Pontes"
-    },
-    {
-      "abbr": "JYR",
-      "name": "São João de Iracema"
-    },
-    {
-      "abbr": "JPD",
-      "name": "São João do Pau d'Alho"
     },
     {
       "abbr": "SLS",
@@ -21723,6 +21691,70 @@
       "name": "São Vicente"
     },
     {
+      "abbr": "SRI",
+      "name": "Sarapuí"
+    },
+    {
+      "abbr": "RWT",
+      "name": "Sarutaiá"
+    },
+    {
+      "abbr": "SZW",
+      "name": "Sebastianópolis do Sul"
+    },
+    {
+      "abbr": "SZL",
+      "name": "Serra Azul"
+    },
+    {
+      "abbr": "SNA",
+      "name": "Serrana"
+    },
+    {
+      "abbr": "SNG",
+      "name": "Serra Negra"
+    },
+    {
+      "abbr": "SZO",
+      "name": "Sertãozinho"
+    },
+    {
+      "abbr": "SRZ",
+      "name": "Sete Barras"
+    },
+    {
+      "abbr": "SVE",
+      "name": "Severínia"
+    },
+    {
+      "abbr": "SYL",
+      "name": "Silveiras"
+    },
+    {
+      "abbr": "SOC",
+      "name": "Socorro"
+    },
+    {
+      "abbr": "SOR",
+      "name": "Sorocaba"
+    },
+    {
+      "abbr": "SMU",
+      "name": "Sud Mennucci"
+    },
+    {
+      "abbr": "SME",
+      "name": "Sumaré"
+    },
+    {
+      "abbr": "UZA",
+      "name": "Suzanápolis"
+    },
+    {
+      "abbr": "SZN",
+      "name": "Suzano"
+    },
+    {
       "abbr": "TPU",
       "name": "Tabapuã"
     },
@@ -21759,12 +21791,12 @@
       "name": "Tanabi"
     },
     {
-      "abbr": "TTA",
-      "name": "Tapiratiba"
-    },
-    {
       "abbr": "TPA",
       "name": "Tapiraí"
+    },
+    {
+      "abbr": "TTA",
+      "name": "Tapiratiba"
     },
     {
       "abbr": "TUL",
@@ -21843,12 +21875,12 @@
       "name": "Tuiuti"
     },
     {
-      "abbr": "TIP",
-      "name": "Tupi Paulista"
-    },
-    {
       "abbr": "TUP",
       "name": "Tupã"
+    },
+    {
+      "abbr": "TIP",
+      "name": "Tupi Paulista"
     },
     {
       "abbr": "TWR",
@@ -21879,16 +21911,16 @@
       "name": "União Paulista"
     },
     {
+      "abbr": "WRA",
+      "name": "Urânia"
+    },
+    {
       "abbr": "URW",
       "name": "Uru"
     },
     {
       "abbr": "UPE",
       "name": "Urupês"
-    },
-    {
-      "abbr": "WRA",
-      "name": "Urânia"
     },
     {
       "abbr": "VGI",
@@ -21907,12 +21939,16 @@
       "name": "Vargem"
     },
     {
+      "abbr": "VGS",
+      "name": "Vargem Grande do Sul"
+    },
+    {
       "abbr": "VGP",
       "name": "Vargem Grande Paulista"
     },
     {
-      "abbr": "VGS",
-      "name": "Vargem Grande do Sul"
+      "abbr": "VPU",
+      "name": "Várzea Paulista"
     },
     {
       "abbr": "VRC",
@@ -21947,44 +21983,8 @@
       "name": "Votuporanga"
     },
     {
-      "abbr": "VPU",
-      "name": "Várzea Paulista"
-    },
-    {
       "abbr": "ZAS",
       "name": "Zacarias"
-    },
-    {
-      "abbr": "ASP",
-      "name": "Águas da Prata"
-    },
-    {
-      "abbr": "AGL",
-      "name": "Águas de Lindóia"
-    },
-    {
-      "abbr": "ASB",
-      "name": "Águas de Santa Bárbara"
-    },
-    {
-      "abbr": "ASO",
-      "name": "Águas de São Pedro"
-    },
-    {
-      "abbr": "AVF",
-      "name": "Álvares Florence"
-    },
-    {
-      "abbr": "AMH",
-      "name": "Álvares Machado"
-    },
-    {
-      "abbr": "ACV",
-      "name": "Álvaro de Carvalho"
-    },
-    {
-      "abbr": "OLE",
-      "name": "Óleo"
     }
   ],
   "TO": [
@@ -22029,20 +22029,20 @@
       "name": "Araguacema"
     },
     {
-      "abbr": "AWN",
-      "name": "Araguanã"
-    },
-    {
-      "abbr": "ANS",
-      "name": "Araguatins"
-    },
-    {
       "abbr": "ACW",
       "name": "Araguaçu"
     },
     {
       "abbr": "AIN",
       "name": "Araguaína"
+    },
+    {
+      "abbr": "AWN",
+      "name": "Araguanã"
+    },
+    {
+      "abbr": "ANS",
+      "name": "Araguatins"
     },
     {
       "abbr": "APQ",
@@ -22189,6 +22189,10 @@
       "name": "Esperantina"
     },
     {
+      "abbr": "FMA",
+      "name": "Fátima"
+    },
+    {
       "abbr": "FUS",
       "name": "Figueirópolis"
     },
@@ -22199,10 +22203,6 @@
     {
       "abbr": "FAG",
       "name": "Formoso do Araguaia"
-    },
-    {
-      "abbr": "FMA",
-      "name": "Fátima"
     },
     {
       "abbr": "GNE",
@@ -22293,12 +22293,12 @@
       "name": "Miranorte"
     },
     {
-      "abbr": "MSK",
-      "name": "Monte Santo do Tocantins"
-    },
-    {
       "abbr": "MEM",
       "name": "Monte do Carmo"
+    },
+    {
+      "abbr": "MSK",
+      "name": "Monte Santo do Tocantins"
     },
     {
       "abbr": "MWL",
@@ -22353,12 +22353,12 @@
       "name": "Palmeirópolis"
     },
     {
-      "abbr": "PRX",
-      "name": "Paranã"
-    },
-    {
       "abbr": "PTI",
       "name": "Paraíso do Tocantins"
+    },
+    {
+      "abbr": "PRX",
+      "name": "Paranã"
     },
     {
       "abbr": "WCO",
@@ -22425,16 +22425,16 @@
       "name": "Riachinho"
     },
     {
-      "abbr": "RON",
-      "name": "Rio Sono"
-    },
-    {
       "abbr": "RDK",
       "name": "Rio da Conceição"
     },
     {
       "abbr": "RSB",
       "name": "Rio dos Bois"
+    },
+    {
+      "abbr": "RON",
+      "name": "Rio Sono"
     },
     {
       "abbr": "SWX",
@@ -22469,14 +22469,6 @@
       "name": "Santa Terezinha do Tocantins"
     },
     {
-      "abbr": "ILV",
-      "name": "Silvanópolis"
-    },
-    {
-      "abbr": "UCP",
-      "name": "Sucupira"
-    },
-    {
       "abbr": "BTK",
       "name": "São Bento do Tocantins"
     },
@@ -22501,8 +22493,16 @@
       "name": "São Valério"
     },
     {
+      "abbr": "ILV",
+      "name": "Silvanópolis"
+    },
+    {
       "abbr": "SVC",
       "name": "Sítio Novo do Tocantins"
+    },
+    {
+      "abbr": "UCP",
+      "name": "Sucupira"
     },
     {
       "abbr": "TBC",
@@ -22521,12 +22521,12 @@
       "name": "Talismã"
     },
     {
-      "abbr": "TAS",
-      "name": "Tocantinópolis"
-    },
-    {
       "abbr": "TOI",
       "name": "Tocantínia"
+    },
+    {
+      "abbr": "TAS",
+      "name": "Tocantinópolis"
     },
     {
       "abbr": "TWP",
