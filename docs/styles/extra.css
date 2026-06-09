@@ -325,6 +325,14 @@ img {
 }
 
 
+/* Use link color for nav section border instead of too-dark primary color */
+[dir=ltr] .md-nav--integrated>.md-nav__list>.md-nav__item--active .md-nav--secondary {
+	border-left-color: var(--md-typeset-a-color);
+}
+[dir=rtl] .md-nav--integrated>.md-nav__list>.md-nav__item--active .md-nav--secondary {
+	border-right-color: var(--md-typeset-a-color);
+}
+
 .center-table {
   text-align: center;
 }
