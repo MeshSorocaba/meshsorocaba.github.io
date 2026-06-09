@@ -11,6 +11,7 @@ theme:
     logo: fontawesome/solid/industry
   favicon: img/favicon.png
   features:
+      - navigation.indexes
       - navigation.tabs
       - navigation.path
       - navigation.tabs.sticky
@@ -34,7 +35,8 @@ nav:
       - Temporização e Deduplicação: configuracao/temporizacao-e-deduplicacao.md
     - Modo Observador: configuracao/observers.md
   - Ferramentas:
-    - Nomes de Repetidoras: ferramentas/nomes-repetidoras.md
+    - ferramentas/index.md
+    - Gerador de Nomes para Repetidoras: ferramentas/nomes-repetidoras.md
   - Perguntas Frequentes: perguntas-frequentes.md
   - Blog:
     - blog/index.md

@@ -1,4 +1,6 @@
-# Gerador de Nomes de Repetidoras v3
+---
+title: Gerador de Nomes para Repetidoras
+---
 
 Este formulário ajuda a gerar nomes padronizados para repetidoras MeshCore no Brasil. As abreviações são únicas para cada município em todo território nacional.
 
