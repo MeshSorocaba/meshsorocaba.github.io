@@ -118,7 +118,7 @@ Defina como **Moderate** para evitar que pacotes fiquem circulando indefinidamen
 
 ### AGC Reset
 
-Se perceber que o repetidor fica "surdo" após algum tempo de funcionamento, configure o intervalo de reset do AGC para um valor maior que 0 (o mínimo é 4). Quanto menor o valor, mais frequente será o reset.
+Se perceber que o repetidor fica "surdo" após algum tempo de funcionamento, configure o intervalo de reset do AGC para um valor maior que 0 (o mínimo é 4). Quanto menor o valor, mais frequente será o reset. Valor recomendado: 300.
 
 ## Gerenciamento remoto
 
@@ -154,3 +154,28 @@ Depois de configurada e instalada:
 3. No CoreScope, expanda um anúncio recente e verifique as visualizações **Paths** e **Graph** — elas mostram quem está recebendo seus anúncios diretamente e via mesh.
 
 Se seu repetidor aparece no mapa e no MeshExplorer, parabéns! 🎉 Ele está operando e contribuindo para a Mesh Sorocaba.
+
+## Sumário de parâmetros CLI
+
+A tabela abaixo resume todos os parâmetros que devem ser configurados em um repetidor, com os valores recomendados para a rede Mesh Sorocaba. Use-a como checklist ao configurar um novo nó.
+
+| Parâmetro CLI | Valor sugerido | O que faz |
+| :--- | :--- | :--- |
+| `set radio 923.125,62.5,8,8` | `923.125,62.5,8,8` | Define frequência (MHz), largura de banda (kHz), fator de espalhamento e taxa de codificação do rádio. |
+| `set tx` | *Varia pela placa* | Potência de transmissão em dBm. Respeite o limite legal de 30 dBm (1 W) na saída final. |
+| `set name` | *Nome de localização* | Nome do nó exibido na rede. Use um marco ou bairro para facilitar a identificação. |
+| `set lat` | *ex.: -23.50* | Latitude em graus decimais para o mapa da rede. |
+| `set lon` | *ex.: -47.46* | Longitude em graus decimais para o mapa da rede. |
+| `password` | *Senha forte* | Senha de administrador para gerenciamento remoto. |
+| `set guest.password` | *Em branco* | Senha de convidado. Se em branco, qualquer usuário vê as informações do proprietário. |
+| `set owner.info` | *Contato opcional* | Texto livre com indicativo, e-mail ou outros contatos do proprietário. `\|` vira nova linha. |
+| `set repeat` | `on` | Ativa o modo de repetição — sem ele, o nó **não** retransmite pacotes. |
+| `set advert.interval` | `360` | Intervalo (em minutos) entre anúncios diretos (0 hop). Valor arredondado para múltiplo de 2. |
+| `set flood.advert.interval` | `48` | Intervalo (em horas) entre anúncios que inundam toda a rede. |
+| `set txdelay` | `0.5` / `1.0` / `2.0` | Fator de atraso antes de retransmitir flood. Use 0.5 (baixo), 1.0 (médio) ou 2.0 (alto) conforme a elevação. |
+| `set rxdelay` | `3` | Atraso de processamento para cópias recebidas com sinal fraco, dando prioridade a caminhos fortes. |
+| `set loop.detect` | `moderate` | Detecção de loop — descarta pacotes que já circularam pelo nó, evitando tempestades. |
+| `set multi.acks` | `1` | Ativa envio de 2 confirmações em vez de 1, melhorando a confiabilidade do gerenciamento remoto. |
+| `set agc.reset.interval` | `300` | Intervalo (segundos) para reset do AGC. |
+| `set radio.rxgain` | `on` | Ativa o modo de ganho de recepção amplificado (SX12xx / LR1110, firmware ≥ 1.14.1). |
+| `set path.hash.mode` | `1` | Tamanho do hash de caminho nos anúncios. 1 = 2 bytes (65.536 IDs), necessário para redes com muitos repetidores. |
