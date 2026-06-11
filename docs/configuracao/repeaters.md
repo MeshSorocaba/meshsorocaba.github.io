@@ -110,7 +110,26 @@ Para entender em detalhes como funciona a temporização e a deduplicação de p
 
 ### Detecção de loop
 
-Defina como **Moderate** para evitar que pacotes fiquem circulando indefinidamente na rede.
+A detecção de loop faz o repetidor rejeitar pacotes flood que já circularam por ele, evitando que uma mesma mensagem seja retransmitida indefinidamente até o limite de 64 hops — o que gera uma enxurrada de pacotes e congestiona a rede.
+
+O recurso é configurado pelo comando `set loop.detect` e aceita quatro níveis:
+
+| Nível | Comportamento |
+| :--- | :--- |
+| `off` | Desativado (padrão). |
+| `minimal` | Tolerante — descarta o pacote somente se o ID do repetidor já aparece várias vezes no caminho. Pode ser usado mesmo antes da rede adotar hashes multibyte. |
+| `moderate` | Equilíbrio entre tolerância e proteção. |
+| `strict` | Agressivo — descarta o pacote com pouquíssimas repetições do ID no caminho. |
+
+Defina como **Moderate** para a maioria dos cenários. Isso protege a rede contra repetidores com firmware problemático que corrompem e retransmitem o mesmo pacote em loop.
+
+A lógica de detecção combina o nível escolhido com o tamanho do hash de caminho do pacote para determinar quantas vezes o ID do próprio repetidor pode aparecer no caminho antes de o pacote ser descartado:
+
+| Nível \ Hash | 1 byte | 2 bytes | 3 bytes |
+| :--- | :---: | :---: | :---: |
+| `minimal` | 4 | 2 | 1 |
+| `moderate` | 2 | 1 | 1 |
+| `strict` | 1 | 1 | 1 |
 
 ### Multi ACKs
 
