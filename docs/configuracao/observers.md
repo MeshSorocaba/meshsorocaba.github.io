@@ -27,9 +27,9 @@ Visto que observadores fornecem os dados necessários para depurar problemas na 
 
 5) Clique em **Flash** para gravar o firmware diretamente pelo navegador. Se for a primeira vez que você grava esse firmware no dispositivo, marque a opção **Erase device** para gravar o firmware mesclado (merged), que inclui o bootloader e a tabela de partições atualizada.
 
-!!! danger "Perigo"
+!!! warning "Atenção"
 
-    Esteja ciente de que, ao instalar o firmware _merged_, você perderá as configurações atuais do seu dispositivo.
+    Esteja ciente de que, ao instalar o firmware _merged_, **você perderá as configurações atuais do seu dispositivo**.
 
 ## Configure o MQTT
 
@@ -75,9 +75,12 @@ set mqtt2.preset meshmapper
 
 O preset `meshmapper` já configura automaticamente o servidor (`mqtt.meshmapper.cc:443`), a autenticação JWT (assinatura do dispositivo) e o transporte WSS. Não é necessário definir servidor, porta ou credenciais manualmente.
 
+Placas sem PSRAM (como o **LilyGo T-LoRa V2.1–1.6** / TTGO LoRa32 V1.0) suportam **apenas uma conexão WSS/TLS ativa por vez**, pois cada conexão TLS exige cerca de 40 KB de memória heap. Nesse caso, configure o broker de sua preferência no Slot 1 e defina os demais slots como `none`. Dispositivos com PSRAM (como **Heltec V3**, **Heltec V4** e **Station G2**) suportam todos os slots ativos simultaneamente.
+
 !!! info "Redundância"
 
     Conectar a ambos os brokers é recomendado, mas não obrigatório. O MeshMapper recebe dados de múltiplos brokers e elimina duplicatas automaticamente. Se quiser apenas o broker comunitário, configure o Slot 1 e deixe o Slot 2 como `none`.
+
 
 **Configurações opcionais:**
 
@@ -111,21 +114,6 @@ get mqtt.tx
 
 O comando `get mqtt.status` mostra o estado de conexão de cada slot. Se um slot estiver conectado, ele exibirá informações como o broker e o status da autenticação.
 
-## Dispositivos sem PSRAM
-
-Placas sem PSRAM (como o **LilyGo T-LoRa V2.1–1.6** / TTGO LoRa32 V1.0) suportam **apenas uma conexão WSS/TLS ativa por vez**, pois cada conexão TLS exige cerca de 40 KB de memória heap. Nesse caso, configure o broker de sua preferência no Slot 1 e defina os demais slots como `none`:
-
-```
-set mqtt1.preset custom
-set mqtt1.server mqtt.meshcore.com.br
-set mqtt1.port 1883
-set mqtt1.username meshcore
-set mqtt1.password meshcore
-set mqtt2.preset none
-```
-
-Dispositivos com PSRAM (como **Heltec V3**, **Heltec V4** e **Station G2**) suportam todos os slots ativos simultaneamente.
-
 ## Após a configuração
 
 Depois que seu observador conectar e começar a enviar pacotes recebidos, pode levar até **5 minutos** para ele aparecer na lista de Observers no [CoreScope](https://corescope.meshcore.com.br) e no dropdown de Regiões em toda a aplicação, e somente após um anúncio ser recebido do seu observador.
@@ -156,13 +144,6 @@ get mqtt2.diag
 ```
 
 O comando `get mqttN.diag` mostra os detalhes do último erro de cada slot (por exemplo, falhas de TLS, timeout de conexão etc.).
-
-### Problemas de fuso horário
-
-```
-get timezone
-set timezone America/Sao_Paulo
-```
 
 ## Precisa de ajuda?
 
