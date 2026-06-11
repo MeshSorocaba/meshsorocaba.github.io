@@ -1,11 +1,41 @@
+---
+title: Equipamento Recomendado para Operar no MeshCore
+---
+
 # Equipamento Recomendado
 
-Existem vários modelos de dispositivos compatíveis com o MeshCore, o firmware oficial da Mesh Sorocaba. Alguns podem vir anunciados como "feito para o MeshCore" ou "feito para o Meshtastic". Via de regra, se um dispositivo funciona com o Meshtastic, que é um firmware mais antigo, provavelmente funciona também com o MeshCore. Na dúvida, consulte a [lista de dispositivos suportados pelo MeshCore](https://flasher.meshcore.io/).
+Existem vários modelos de dispositivos compatíveis com a rede MeshCore. Alguns podem vir anunciados como "feito para o MeshCore" ou "feito para o Meshtastic". Via de regra, se um dispositivo funciona com o Meshtastic, provavelmente funciona também com o MeshCore. Na dúvida, consulte a [lista de dispositivos suportados pelo MeshCore](https://flasher.meshcore.io/).
 
-## Dispositivos Pessoais e Móveis
+## Dispositivos pessoais vs. repetidores
+
+A rede MeshCore funciona separando os dispositivos participantes entre dois grupos distintos: os **dispositivos pessoais** e **repetidores**.
+
+<div class="grid cards" markdown>
+
+-   :fontawesome-solid-walkie-talkie:{ .lg .middle } __Dispositivos Pessoais (_Companions_)__
+
+    ---
+
+    <img src="/img/companion.jpg">
+
+    São os dispositivos portáteis que você carrega consigo: no bolso, na mochila ou no carro. Normalmente vêm com tela para consulta de mensagens, mas são operados pelo celular via bluetooth. Não precisam ter alta potência nem antenas grandes, já que o trabalho pesado da rede é feita pelos dispositivos repetidores. Alguns modelos vêm com GPS integrado.
+
+-   :fontawesome-solid-tower-broadcast:{ .lg .middle } __Dispositivos Repetidores (_Repeaters_)__
+
+    ---
+
+    <img src="/img/repeater.jpg">
+
+    São a espinha dorsal da rede MeshCore, distribuindo as mensagens geradas pelos dispositivos pessoais. Normalmente são instalados do lado de fora das casas, prédios, torres e até mesmo no alto de serras e montanhas. Operam com bateria e normalmente são alimentados pela rede elétrica ou, preferencialmente, por placas solares.
+
+</div>
+
+O mínimo necessário para operar na rede é possuir um **dispositivo pessoal**. Porém, para que você tenha uma experiência sólida e sem complicações, é sugerido também ter um repetidor pessoal, instalado na varanda ou no telhado, para poder captar melhor o tráfego de mensagens da região. Isto porque a frequência utilizada pela rede (923,125 MHz) e a baixa potência dos dispositivos faz com que paredes de concreto ajam como um escudo. Portanto, mesmo se houver um repetidor regional nas suas proximidades, o sinal pode não ter força para chegar dentro da sua casa.
+
+### Dispositivos Pessoais e Móveis
 Os aparelhos abaixo são apropriados tanto para iniciantes quanto usuários experientes. São aparelhos que já vêm prontos para usar e são ideais para uso móvel ou pessoal.
 
-Uma exceção a essas condições é o Heltec V3 que, apesar de já vir com a tela e outros componentes soldados na placa, alguns não vem com bateria nem case. Ele está incluído na lista por ter o menor preço de todos e por ser normalmente a porta de entrada ao mundo das redes mesh.
+Uma exceção a essas condições é o Heltec V3. Apesar dele já vir com tela e outros componentes soldados na placa, alguns não vem com bateria nem case. Ele está incluído na lista por ter o menor preço de todos e por ser normalmente a porta de entrada ao mundo das redes mesh.
 
 <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin: 1.5rem 0;">
   <div style="flex: 1 1 150px; max-width: 200px; text-align: center;">
@@ -40,7 +70,7 @@ Uma exceção a essas condições é o Heltec V3 que, apesar de já vir com a te
 !!! warning "Atenção"
     Na hora da compra, independente da marca do dispositivo, certifique-se que ele é capaz de transmitir na faixa de **915 MHz**.
 
-## Repetidores
+### Repetidores
 
 Os dispositivos pessoais não tem um grande alcance, seja pela antena que costuma ser mais compacta pela praticidade, ou pelo fato desses dispositivos estarem dentro de casa ou de veículos. Portanto, é sempre recomendado colocar um repetidor no exterior para garantir que você usufrue a Mesh Sorocaba sem dores de cabeça.
 
@@ -48,7 +78,7 @@ Repetidores usam o mesmo hardware que os dispositivos pessoais, mas com firmware
 
 Você pode comprar repetidores de marcas conhecidas ou adquirir diretamente de outros usuários, que confeccionam repetidores sob encomenda. 
 
-### Repetidores já montados
+#### Repetidores já montados
 
 <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin: 1.5rem 0;">
   <div style="flex: 1 1 150px; max-width: 200px; text-align: center;">
@@ -73,7 +103,7 @@ Você pode comprar repetidores de marcas conhecidas ou adquirir diretamente de o
 
 
 
-### Hardware para montagem própria
+#### Hardware para montagem própria
 
 <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin: 1.5rem 0;">
   <div style="flex: 1 1 150px; max-width: 200px; text-align: center;">
