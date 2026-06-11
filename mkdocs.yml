@@ -25,10 +25,10 @@ theme:
 
 nav:
   - Início: index.md
-  - O que é uma rede mesh?: redes-mesh.md
-  - Equipamento: equipamento.md
+  - O que são Redes Mesh: redes-mesh.md
+  - Equipamento Recomendado: equipamento.md
   - Configuração: 
-    - Escolhendo o Modo do Dispositivo: configuracao/escolhendo-o-modo-do-dispositivo.md
+    - Guia de Configuração: configuracao/index.md
     - Modo Companion: configuracao/companions.md
     - Modo Repetidor: 
       - Configurando um Repetidor: configuracao/repeaters.md
@@ -37,7 +37,7 @@ nav:
   - Ferramentas:
     - ferramentas/index.md
     - Gerador de Nomes para Repetidores: ferramentas/nomes-repetidores.md
-  - Perguntas Frequentes: perguntas-frequentes.md
+  - FAQ: perguntas-frequentes.md
   - Blog:
     - blog/index.md
 
