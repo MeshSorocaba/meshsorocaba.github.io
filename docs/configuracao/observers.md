@@ -167,16 +167,3 @@ set timezone America/Sao_Paulo
 ## Precisa de ajuda?
 
 Se você tiver problemas ou dúvidas, entre em contato com a comunidade no Telegram [MeshCore Brasil](https://t.me/meshcorebrasil).
-## Código IATA
-
-Para `mqtt.iata`, use o código do aeroporto mais próximo da sua região. Alguns exemplos:
-
-| Cidade | Código IATA |
-|--------|-------------|
-| Sorocaba | SOD |
-| Campinas | VCP |
-| São Paulo | GRU |
-| Jundiaí | QDV |
-
-**Deve ser um código IATA válido.** Para consultar a lista completa, acesse a [Lista de aeroportos do Brasil por código aeroportuário](https://pt.wikipedia.org/wiki/Lista_de_aeroportos_do_Brasil_por_c%C3%B3digo_aeroportu%C3%A1rio_IATA).
-
