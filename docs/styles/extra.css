@@ -227,7 +227,6 @@ img {
 	margin: 1rem 0;
 }
 
-
 .generated-name-container {
 	display: flex;
 	align-items: center;
@@ -237,11 +236,11 @@ img {
 
 .generated-name {
 	font-family: "JetBrains Mono", "Fira Code", monospace;
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	font-weight: 600;
 	color: var(--md-default-fg-color--light);
 	background-color: #2a2a2a;
-	padding: 0.75rem 1rem;
+	/* padding: 0.75rem 1rem; */
 	border-radius: 0.25rem;
 	word-break: break-all;
 }

@@ -74,7 +74,7 @@ Este formulário ajuda a gerar nomes padronizados para repetidores MeshCore no B
 <div id="error-message" class="error-box" style="display: none;"></div>
 
 <div id="result" class="result-box" style="display: none;">
-    <h3>Nome Gerado</h3>
+    Nome Gerado
     <div class="generated-name-container">
         <span id="generated-name" class="generated-name"></span>
         <button type="button" id="copy-btn" class="copy-button" title="Copiar para área de transferência">
