@@ -43,7 +43,7 @@ set wifi.pwd sua_senha_wifi
 set mqtt.iata <código IATA do principal aeroporto da sua região>
 set mqtt.owner chave_publica_opcional_do_seu_nó_pessoal
 set mqtt.email seu_email_opcional
-set mqtt.server mqtt.meshsorocaba.org
+set mqtt.server mqtt.meshcore.com.br
 set mqtt.port 1883
 set mqtt.username meshcore
 set mqtt.password meshcore
@@ -61,7 +61,7 @@ Para `mqtt.iata`, use o código do aeroporto mais próximo da sua região (por e
 
 ## Após a configuração
 
-Depois que seu observador conectar e começar a enviar pacotes recebidos, pode levar até **5 minutos** para ele aparecer na lista de Observers no site [Let's Mesh](https://analyzer.letsmesh.net/packets?region=SOD) e no dropdown de Regiões em toda a aplicação, e somente após um anúncio ser recebido do seu observador.
+Depois que seu observador conectar e começar a enviar pacotes recebidos, pode levar até **5 minutos** para ele aparecer na lista de Observers no [CoreScope](https://corescope.meshcore.com.br) e no dropdown de Regiões em toda a aplicação, e somente após um anúncio ser recebido do seu observador.
 
 Se um anúncio não for recebido do seu observador, ele não aparecerá no dropdown de Observadores ou na página, mas ainda assim poderá enviar pacotes para a região selecionada.
 
