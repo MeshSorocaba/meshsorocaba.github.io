@@ -8,7 +8,7 @@ Se você tem um repetidor com chip baseado no ESP32 e acesso a um ponto de Wifi,
 
 ## Como funciona o modo observador
 
-Um dispositivo observador exerce normalmente sua função de repetidor. A diferença é que, além disso, ele se conecta diretamente à rede WiFi local e envia os dados que trafegam por ele para um servidor MQTT graças um firmware customizado. Isso permite que a comunidade tenha visibilidade sobre a cobertura e atividade da rede em diferentes localidades. 
+Um dispositivo observador exerce normalmente sua função de repetidor. A diferença é que, além disso, ele se conecta diretamente à rede WiFi local e envia os dados que trafegam por ele para um servidor MQTT graças um firmware customizado. Isso permite que a comunidade tenha visibilidade sobre a cobertura e atividade da rede em diferentes localidades através da ferramenta [CoreScope](https://corescope.meshcore.com.br). 
 
 ![](../img/corescope.jpg)
 
