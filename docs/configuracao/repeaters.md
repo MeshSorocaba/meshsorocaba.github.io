@@ -181,11 +181,6 @@ A tabela abaixo resume todos os parâmetros que devem ser configurados em um rep
 | Parâmetro CLI | Valor sugerido | O que faz |
 | :--- | :--- | :--- |
 | `set radio 923.125,62.5,8,8` | `923.125,62.5,8,8` | Define frequência (MHz), largura de banda (kHz), fator de espalhamento e taxa de codificação do rádio. |
-| `set tx` | *Varia pela placa* | Potência de transmissão em dBm. Respeite o limite legal de 30 dBm (1 W) na saída final. |
-| `set name` | *Nome de localização* | Nome do nó exibido na rede. Use um marco ou bairro para facilitar a identificação. |
-| `set lat` | *ex.: -23.50* | Latitude em graus decimais para o mapa da rede. |
-| `set lon` | *ex.: -47.46* | Longitude em graus decimais para o mapa da rede. |
-| `set repeat` | `on` | Ativa o modo de repetição — sem ele, o nó **não** retransmite pacotes. |
 | `set advert.interval` | `360` | Intervalo (em minutos) entre anúncios diretos (0 hop). Valor arredondado para múltiplo de 2. |
 | `set flood.advert.interval` | `47` | Intervalo (em horas) entre anúncios que inundam toda a rede. |
 | `set txdelay` | `0.5` / `1.0` / `2.0` | Fator de atraso antes de retransmitir flood. Use 0.5 (baixo), 1.0 (médio) ou 2.0 (alto) conforme a elevação. |
