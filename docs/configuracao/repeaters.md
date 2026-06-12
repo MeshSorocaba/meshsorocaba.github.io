@@ -174,7 +174,7 @@ Depois de configurada e instalada:
 
 Se seu repetidor aparece no mapa e no MeshExplorer, parabéns! 🎉 Ele está operando e contribuindo para a Mesh Sorocaba.
 
-## Sumário de parâmetros CLI
+## Sumário de parâmetros
 
 A tabela abaixo resume todos os parâmetros que devem ser configurados em um repetidor, com os valores recomendados para a rede Mesh Sorocaba. Use-a como checklist ao configurar um novo nó.
 
@@ -185,12 +185,9 @@ A tabela abaixo resume todos os parâmetros que devem ser configurados em um rep
 | `set name` | *Nome de localização* | Nome do nó exibido na rede. Use um marco ou bairro para facilitar a identificação. |
 | `set lat` | *ex.: -23.50* | Latitude em graus decimais para o mapa da rede. |
 | `set lon` | *ex.: -47.46* | Longitude em graus decimais para o mapa da rede. |
-| `password` | *Senha forte* | Senha de administrador para gerenciamento remoto. |
-| `set guest.password` | *Em branco* | Senha de convidado. Se em branco, qualquer usuário vê as informações do proprietário. |
-| `set owner.info` | *Contato opcional* | Texto livre com indicativo, e-mail ou outros contatos do proprietário. `\|` vira nova linha. |
 | `set repeat` | `on` | Ativa o modo de repetição — sem ele, o nó **não** retransmite pacotes. |
 | `set advert.interval` | `360` | Intervalo (em minutos) entre anúncios diretos (0 hop). Valor arredondado para múltiplo de 2. |
-| `set flood.advert.interval` | `48` | Intervalo (em horas) entre anúncios que inundam toda a rede. |
+| `set flood.advert.interval` | `47` | Intervalo (em horas) entre anúncios que inundam toda a rede. |
 | `set txdelay` | `0.5` / `1.0` / `2.0` | Fator de atraso antes de retransmitir flood. Use 0.5 (baixo), 1.0 (médio) ou 2.0 (alto) conforme a elevação. |
 | `set rxdelay` | `3` | Atraso de processamento para cópias recebidas com sinal fraco, dando prioridade a caminhos fortes. |
 | `set loop.detect` | `moderate` | Detecção de loop — descarta pacotes que já circularam pelo nó, evitando tempestades. |
