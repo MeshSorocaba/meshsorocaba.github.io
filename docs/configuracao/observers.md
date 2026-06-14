@@ -25,11 +25,13 @@ Visto que observadores fornecem os dados necessários para depurar problemas na 
 
 4) Selecione a versão do firmware disponível.
 
-5) Clique em **Flash** para gravar o firmware diretamente pelo navegador. Se for a primeira vez que você grava esse firmware no dispositivo, marque a opção **Erase device** para gravar o firmware mesclado (merged), que inclui o bootloader e a tabela de partições atualizada.
+5) Clique em **Flash** para gravar o firmware diretamente pelo navegador. Se for a primeira vez que você grava esse firmware de observação no dispositivo, marque a opção **Erase device** para gravar o firmware mesclado (merged), que inclui o bootloader e a tabela de partições atualizada.
 
-!!! warning "Atenção"
+!!! danger "Atenção"
 
-    Esteja ciente de que, ao instalar o firmware _merged_, **você perderá as configurações atuais do seu dispositivo**.
+    Se você usa outro firmware atualmente, você precisará habilitar a opção **Erase Device** (apagar dispositivo), ou o repetidor apresentará comportamentos erráticos (falha de conexão com a Internet, falha em transmitir pacotes LoRa, etc). Esteja ciente também de que ao instalar o firmware _merged_ **você perderá as configurações atuais do seu dispositivo**. Não é necessário habilitar o Erase Device se você está apenas atualizando a versão.
+
+    Caso você queira manter a mesma chave de identificação para esse dispositivo, lembre-se de obter a chave privada através do comando `get prv.key` no console do repetidor (comando somente acessível via USB).
 
 ## Configure o MQTT
 
