@@ -8,14 +8,18 @@ Se você tem um repetidor com chip baseado no ESP32 e acesso a um ponto de Wifi,
 
 ## Como funciona o modo observador
 
-Um dispositivo observador exerce normalmente sua função de repetidor. A diferença é que, além disso, ele se conecta diretamente à rede WiFi local e envia os dados que trafegam por ele para um servidor MQTT graças um firmware customizado. Isso permite que a comunidade tenha visibilidade sobre a cobertura e atividade da rede em diferentes localidades através da ferramenta [CoreScope](https://corescope.meshcore.com.br). 
+Um dispositivo observador exerce normalmente sua função original. A diferença é que, além disso, ele se conecta diretamente à rede WiFi local e envia os dados que trafegam por ele para um servidor MQTT graças um firmware customizado. Isso permite que a comunidade tenha visibilidade sobre a cobertura e atividade da rede em diferentes localidades através da ferramenta [CoreScope](https://corescope.meshcore.com.br). 
 
 ![](../img/corescope.jpg)
 
 Visto que observadores fornecem os dados necessários para depurar problemas na rede, configurar um observer é uma excelente forma de contribuir para a comunidade.
 
+Existem duas maneiras de fazer um dispositivo atuar como um observador:
 
-## Como gravar o firmware de observador no dispositivo
+- No caso de um **dispositivo repetidor**, ele deverá ter o firmware trocado por um firmware customizado e configurado para acessar o ponto WiFi.
+- No caso de um **dispositivo pessoal** (companion), ele **não precisa ter o firmware customizado**, mas deverá permanecer conectado a um computador com conexão à Internet.
+
+## Como transformar um repetidor em observador
 
 1) Acesse o endereço [observer.gessaman.com](https://observer.gessaman.com). Atualmente, os navegadores que suportam a conexão com dispositivos via USB são o Chrome e o Firefox (nightly).
 
@@ -146,6 +150,183 @@ get mqtt2.diag
 ```
 
 O comando `get mqttN.diag` mostra os detalhes do último erro de cada slot (por exemplo, falhas de TLS, timeout de conexão etc.).
+
+## Como transformar um companion em observador
+
+Diferentemente de um repetidor, o companion **não precisa de firmware customizado**. Em vez disso, ele permanece conectado a um computador com acesso à Internet, e um script Python chamado [meshcore-packet-capture](https://github.com/agessaman/meshcore-packet-capture) captura os pacotes recebidos e os encaminha para os brokers MQTT.
+
+O script se conecta ao companion via bluetooth (BLE), USB ou TCP, e oferece suporte a até 6 brokers MQTT simultâneos.
+
+### Requisitos
+
+- Python 3.7 ou superior
+- Pacote `meshcore` (versão 2.2.2 ou superior)
+- Pacote `paho-mqtt`
+- Computador com conexão à Internet e acesso ao companion via BLE, USB ou TCP
+
+### Instalação
+
+No Linux, a forma mais simples é usar o instalador oficial:
+
+```bash
+bash <(curl -fsSL https://raw.githubusercontent.com/agessaman/meshcore-packet-capture/main/install.sh)
+```
+
+### Configuração
+
+Toda a configuração é feita por variáveis de ambiente no arquivo `.env.local`
+
+#### Conexão com o companion
+
+Escolha o tipo de conexão e configure as variáveis correspondentes:
+
+| Variável | Descrição |
+|----------|-----------|
+| `PACKETCAPTURE_CONNECTION_TYPE` | Tipo de conexão: `ble`, `serial` ou `tcp` |
+| `PACKETCAPTURE_BLE_ADDRESS` | Endereço BLE do dispositivo (para conexão BLE) |
+| `PACKETCAPTURE_BLE_DEVICE_NAME` | Nome BLE para escanear (alternativa ao endereço) |
+| `PACKETCAPTURE_SERIAL_PORTS` | Porta serial, ex.: `/dev/ttyUSB0` (para conexão serial) |
+| `PACKETCAPTURE_TCP_HOST` | Endereço do host TCP (padrão: `localhost`) |
+| `PACKETCAPTURE_TCP_PORT` | Porta TCP (padrão: `5000`) |
+
+#### Configuração dos brokers MQTT
+
+Recomendamos a mesma configuração de brokers usada nos repetidores observadores:
+
+**Slot 1 — Broker comunitário (mqtt.meshcore.com.br):**
+
+```bash
+PACKETCAPTURE_MQTT1_ENABLED=true
+PACKETCAPTURE_MQTT1_SERVER=mqtt.meshcore.com.br
+PACKETCAPTURE_MQTT1_PORT=1883
+PACKETCAPTURE_MQTT1_USERNAME=meshcore
+PACKETCAPTURE_MQTT1_PASSWORD=meshcore
+```
+
+**Slot 2 — MeshMapper:**
+
+```bash
+PACKETCAPTURE_MQTT2_ENABLED=true
+PACKETCAPTURE_MQTT2_SERVER=mqtt.meshmapper.cc
+PACKETCAPTURE_MQTT2_PORT=443
+PACKETCAPTURE_MQTT2_TRANSPORT=websockets
+PACKETCAPTURE_MQTT2_USE_TLS=true
+PACKETCAPTURE_MQTT2_USE_AUTH_TOKEN=true
+PACKETCAPTURE_MQTT2_TOKEN_AUDIENCE=mqtt.meshmapper.cc
+```
+
+O Slot 2 usa autenticação por token JWT, que exige a chave privada do dispositivo. Forneça a chave de uma das seguintes formas:
+
+```bash
+PACKETCAPTURE_PRIVATE_KEY=sua_chave_privada_em_hex
+# ou
+PACKETCAPTURE_PRIVATE_KEY_FILE=/caminho/para/arquivo_da_chave
+```
+
+Os Slots 3 a 6 seguem o mesmo padrão (`MQTT3_`, `MQTT4_`, etc.) e podem ser deixados desativados.
+
+#### Outras configurações úteis
+
+| Variável | Descrição | Padrão |
+|----------|-----------|--------|
+| `PACKETCAPTURE_IATA` | Código IATA do aeroporto da sua região | — |
+| `PACKETCAPTURE_TIMEZONE` | Fuso horário | `America_Sao_Paulo` |
+| `PACKETCAPTURE_LOG_LEVEL` | Nível de log (`DEBUG`, `INFO`, `WARNING`, `ERROR`) | `INFO` |
+| `PACKETCAPTURE_ADVERT_INTERVAL_HOURS` | Intervalo de envio de adverts (0 = desativado) | `11` |
+| `PACKETCAPTURE_STATS_IN_STATUS_ENABLED` | Incluir estatísticas (bateria, uptime, rádio) nas mensagens de status | `true` |
+
+#### Exemplo completo de `.env.local`
+
+```bash
+PACKETCAPTURE_CONNECTION_TYPE=ble
+PACKETCAPTURE_BLE_DEVICE_NAME=MeshCore
+
+PACKETCAPTURE_IATA=SOD
+PACKETCAPTURE_TIMEZONE=America/Sao_Paulo
+
+PACKETCAPTURE_MQTT1_ENABLED=true
+PACKETCAPTURE_MQTT1_SERVER=mqtt.meshcore.com.br
+PACKETCAPTURE_MQTT1_PORT=1883
+PACKETCAPTURE_MQTT1_USERNAME=meshcore
+PACKETCAPTURE_MQTT1_PASSWORD=meshcore
+
+PACKETCAPTURE_MQTT2_ENABLED=true
+PACKETCAPTURE_MQTT2_SERVER=mqtt.meshmapper.cc
+PACKETCAPTURE_MQTT2_PORT=443
+PACKETCAPTURE_MQTT2_TRANSPORT=websockets
+PACKETCAPTURE_MQTT2_USE_TLS=true
+PACKETCAPTURE_MQTT2_USE_AUTH_TOKEN=true
+PACKETCAPTURE_MQTT2_TOKEN_AUDIENCE=mqtt.meshmapper.cc
+
+PACKETCAPTURE_PRIVATE_KEY=sua_chave_privada_aqui
+```
+
+### Executando
+
+Após configurar o `.env.local`, execute o script:
+
+```bash
+python packet_capture.py
+```
+
+Opções úteis na linha de comando:
+
+| Opção | Descrição |
+|-------|-----------|
+| `--output arquivo.json` | Salva os pacotes em arquivo JSON |
+| `--no-mqtt` | Desativa o envio para MQTT (útil para testes) |
+| `--verbose` | Mostra os dados JSON dos pacotes no console |
+| `--debug` | Saída detalhada de depuração |
+
+### Usando Docker
+
+Se preferir rodar em container, o projeto inclui suporte ao Docker Compose:
+
+```bash
+git clone https://github.com/agessaman/meshcore-packet-capture.git
+cd meshcore-packet-capture
+# Configure seu .env.local
+docker-compose up -d
+```
+
+Para conexão serial via Docker:
+
+```bash
+docker run --privileged --device=/dev/ttyUSB0 \
+  -v $(pwd)/data:/app/data \
+  -e PACKETCAPTURE_CONNECTION_TYPE=serial \
+  -e PACKETCAPTURE_SERIAL_PORTS=/dev/ttyUSB0 \
+  meshcore-capture
+```
+
+!!! info "Plataformas e BLE"
+
+    O suporte a BLE em containers Docker funciona melhor em **Linux**. No macOS o BLE é limitado dentro de containers, e no Windows ainda não é testado. Para conexões seriais ou TCP, não existe essa limitação.
+
+### Solução de problemas
+
+**BLE caindo com frequência:**
+
+- Verifique se o dispositivo está próximo ao computador
+- Aumente `PACKETCAPTURE_CONNECTION_RETRY_DELAY` para dar mais tempo de recuperação
+- Configure `PACKETCAPTURE_MAX_CONNECTION_RETRIES=0` para tentativas infinitas
+
+**MQTT não conecta:**
+
+- Verifique as credenciais e o endereço do broker
+- Use `--debug` para ver detalhes da conexão:
+
+```bash
+python packet_capture.py --debug
+```
+
+**Permissão negada na porta serial:**
+
+```bash
+sudo chmod 666 /dev/ttyUSB0
+# ou adicione seu usuário ao grupo dialout
+sudo usermod -a -G dialout $USER
+```
 
 ## Precisa de ajuda?
 
