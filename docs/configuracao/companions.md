@@ -1,8 +1,8 @@
 ---
-title: Configuração passo-a-passo de dispositivos pessoais no MeshCore
+title: Configurando dispositivos pessoais (companions) no MeshCore
 ---
 
-# Configuração passo-a-passo de dispositivos pessoais
+# Configurando um dispositivo pessoal (companion)
 
 - Primeiramente, abra o aplicativo MeshCore (se estiver usando celular) ou o cliente web (se estiver usando o computador) e então clique no ícone :material-cog:️ na barra superior.
 - Confira os valoes na seção **Informação Pública**:

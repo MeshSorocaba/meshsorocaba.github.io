@@ -2,6 +2,8 @@
 title: Como Configurar um Repetidor no MeshCore
 ---
 
+# Configurando um repetidor
+
 Os repetidores são a **espinha dorsal da rede**. Isso acontece porque os dispositivos pessoais (_companions_) **não retransmitem** mensagens; somente os repetidores fazem isso. Sem eles, o alcance da sua comunicação se limita ao raio direto entre dois companions.
 
 A boa notícia é que repetidores MeshCore não exigem hardware diferente dos companions. O mesmo aparelho que você usa no bolso pode ser configurado como repetidor — basta mudar o firmware e instalar em um local fixo.

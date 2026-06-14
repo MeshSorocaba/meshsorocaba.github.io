@@ -1,6 +1,8 @@
 ---
-title: "Como Configurar um Observer no MeshCore"
+title: Configurando observadores no MeshCore
 ---
+
+# Configurando um observador
 
 Observadores tem um papel especial na rede MeshCore. Eles servem para escutar o tráfego da rede mesh e encaminhar os pacotes recebidos para um servidor central. Ou seja, ele tem como foco o monitoramento passivo que captura e registra a atividade da rede em sua região.
 

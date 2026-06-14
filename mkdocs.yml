@@ -15,6 +15,7 @@ theme:
       - navigation.tabs
       - navigation.path
       - navigation.tabs.sticky
+      - navigation.footer
       - toc.integrate
       - content.action.view
       - content.action.edit
