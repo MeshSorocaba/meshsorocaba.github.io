@@ -40,14 +40,14 @@ Ajuste os parâmetros de rádio para a predefinição correta do Brasil:
 
 | Parâmetro | Valor |
 | :--- | :--- |
-| Predefinição | **Australia: SA, WA, Brazil** |
+| Predefinição | **Brazil** |
 | Frequência | 923.125 MHz |
 | Largura de Banda | 62.5 kHz |
 | Fator de Espalhamento | 8 |
 | Taxa de Codificação | 8 |
 
 !!! info "Por que esse preset?"
-    O preset `Australia: SA, WA, Brazil` opera na faixa de 915 a 928 MHz, liberada pela Anatel para dispositivos de radiação restrita com até 1 W de potência. A frequência de 923.125 MHz foi a que apresentou menor interferência em nossos testes na região de Sorocaba.
+    A predefinição `Australia: SA, WA, Brazil` opera na faixa de 915 a 928 MHz, liberada pela Anatel para dispositivos de radiação restrita com até 1 W de potência. A frequência de 923.125 MHz foi a que apresentou menor interferência em nossos testes na região de Sorocaba.
 
 !!! warning "Potência de transmissão (TX Power)"
     Alguns dispositivos possuem amplificador externo de potência (ex.: Station G2, Ikoka 1W/2W, RAK 1W, Heltec V4). O valor configurado no firmware **não** considera esse amplificador. Verifique a documentação do seu nó para garantir que a potência final não ultrapasse o limite legal de **30 dBm (1 W)**.
@@ -79,7 +79,7 @@ Os anúncios informam à rede que o repetidor está ativo e onde está. O MeshCo
 | Parâmetro | Valor recomendado | Descrição |
 | :--- | :--- | :--- |
 | Advert Interval (min) | **360** | Intervalo entre anúncios diretos (0 hop). |
-| Flood Advert Interval (h) | **48** | Intervalo entre anúncios que inundam toda a rede. |
+| Flood Advert Interval (h) | **47** | Intervalo entre anúncios que inundam toda a rede. |
 
 !!! tip "Rede em crescimento"
     Com poucos repetidores na região, intervalos mais curtos ajudam a rede a descobrir novos nós. Conforme a rede cresce, você pode aumentar esses valores para reduzir o tráfego de anúncios.

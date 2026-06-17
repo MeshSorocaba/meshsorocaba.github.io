@@ -10,7 +10,7 @@ Se você tem um repetidor com chip baseado no ESP32 e acesso a um ponto de Wifi,
 
 ## Como funciona o modo observador
 
-Um dispositivo observador exerce normalmente sua função original. A diferença é que, além disso, ele se conecta diretamente à rede WiFi local e envia os dados que trafegam por ele para um servidor MQTT graças um firmware customizado. Isso permite que a comunidade tenha visibilidade sobre a cobertura e atividade da rede em diferentes localidades através da ferramenta [CoreScope](https://corescope.meshcore.com.br). 
+Um dispositivo observador exerce normalmente sua função original. A diferença é que, além disso, ele se conecta diretamente à rede WiFi local e envia os dados que trafegam por ele para um servidor MQTT graças um firmware customizado. Isso permite que a comunidade tenha visibilidade sobre a cobertura e atividade da rede em diferentes localidades através da ferramenta [CoreScope](https://corescope.meshsorocaba.org). 
 
 ![](../img/corescope.jpg)
 
@@ -47,7 +47,7 @@ Recomendamos a seguinte configuração para observadores na nossa região:
 
 | Slot | Broker | Preset | Descrição |
 |------|--------|--------|-----------|
-| 1 | `mqtt.meshcore.com.br` | `custom` | Broker comunitário MeshCore Brasil |
+| 1 | `mqtt.meshsorocaba.org` | `custom` | Broker comunitário MeshCore Brasil |
 | 2 | MeshMapper | `meshmapper` | Broker do MeshMapper (WSS + JWT) |
 
 Os slots 3 a 6 podem ser deixados como `none` (desativados) ou configurados com outros presets, se desejar.
@@ -65,11 +65,11 @@ set mqtt.iata <código IATA do principal aeroporto da sua região>
 set timezone America/Sao_Paulo
 ```
 
-**Configurar o Slot 1 — Broker comunitário (mqtt.meshcore.com.br):**
+**Configurar o Slot 1 — Broker comunitário (mqtt.meshsorocaba.org):**
 
 ```
 set mqtt1.preset custom
-set mqtt1.server mqtt.meshcore.com.br
+set mqtt1.server mqtt.meshsorocaba.org
 set mqtt1.port 1883
 set mqtt1.username meshcore
 set mqtt1.password meshcore
@@ -124,7 +124,7 @@ O comando `get mqtt.status` mostra o estado de conexão de cada slot. Se um slot
 
 ## Após a configuração
 
-Depois que seu observador conectar e começar a enviar pacotes recebidos, pode levar até **5 minutos** para ele aparecer na lista de Observers no [CoreScope](https://corescope.meshcore.com.br) e no dropdown de Regiões em toda a aplicação, e somente após um anúncio ser recebido do seu observador.
+Depois que seu observador conectar e começar a enviar pacotes recebidos, pode levar até **5 minutos** para ele aparecer na lista de Observers no [CoreScope](https://corescope.meshsorocaba.org) e no dropdown de Regiões em toda a aplicação, e somente após um anúncio ser recebido do seu observador.
 
 Se um anúncio não for recebido do seu observador, ele não aparecerá no dropdown de Observadores ou na página, mas ainda assim poderá enviar pacotes para a região selecionada.
 
@@ -195,11 +195,11 @@ Escolha o tipo de conexão e configure as variáveis correspondentes:
 
 Recomendamos a mesma configuração de brokers usada nos repetidores observadores:
 
-**Slot 1 — Broker comunitário (mqtt.meshcore.com.br):**
+**Slot 1 — Broker comunitário (mqtt.meshsorocaba.org):**
 
 ```bash
 PACKETCAPTURE_MQTT1_ENABLED=true
-PACKETCAPTURE_MQTT1_SERVER=mqtt.meshcore.com.br
+PACKETCAPTURE_MQTT1_SERVER=mqtt.meshsorocaba.org
 PACKETCAPTURE_MQTT1_PORT=1883
 PACKETCAPTURE_MQTT1_USERNAME=meshcore
 PACKETCAPTURE_MQTT1_PASSWORD=meshcore
@@ -247,7 +247,7 @@ PACKETCAPTURE_IATA=SOD
 PACKETCAPTURE_TIMEZONE=America/Sao_Paulo
 
 PACKETCAPTURE_MQTT1_ENABLED=true
-PACKETCAPTURE_MQTT1_SERVER=mqtt.meshcore.com.br
+PACKETCAPTURE_MQTT1_SERVER=mqtt.meshsorocaba.org
 PACKETCAPTURE_MQTT1_PORT=1883
 PACKETCAPTURE_MQTT1_USERNAME=meshcore
 PACKETCAPTURE_MQTT1_PASSWORD=meshcore
