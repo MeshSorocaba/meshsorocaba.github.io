@@ -314,6 +314,117 @@ img {
 }
 
 /*
+	Solar Calculator — Dark Days Mode Toggle
+*/
+
+.dark-days-mode-toggle {
+	display: flex;
+	gap: 1.25rem;
+	margin-bottom: 0.75rem;
+}
+
+.radio-option {
+	display: flex;
+	align-items: center;
+	gap: 0.35rem;
+	cursor: pointer;
+	color: var(--md-default-fg-color--light);
+	font-size: 0.9rem;
+}
+
+.radio-option input[type="radio"] {
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	width: 1rem;
+	height: 1rem;
+	border: 2px solid #4a4a4a;
+	border-radius: 50%;
+	background-color: #2a2a2a;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	position: relative;
+	flex-shrink: 0;
+}
+
+.radio-option input[type="radio"]:checked {
+	border-color: #8ecae6;
+	background-color: #2a2a2a;
+}
+
+.radio-option input[type="radio"]:checked::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 0.5rem;
+	height: 0.5rem;
+	border-radius: 50%;
+	background-color: #8ecae6;
+}
+
+.radio-option input[type="radio"]:hover {
+	border-color: #6ab5d6;
+}
+
+/*
+	Solar Calculator — Leaflet Map
+*/
+
+#map-container {
+	margin-top: 0.75rem;
+}
+
+#dark-days-map {
+	height: 350px;
+	border-radius: 0.25rem;
+	border: 1px solid #4a4a4a;
+	overflow: hidden;
+}
+
+/* Fix Leaflet controls visibility on dark theme */
+.leaflet-control-zoom a {
+	background-color: #2a2a2a !important;
+	color: #ccc !important;
+	border-color: #4a4a4a !important;
+}
+
+.leaflet-control-zoom a:hover {
+	background-color: #3a3a3a !important;
+}
+
+.leaflet-control-attribution {
+	background-color: rgba(26, 26, 26, 0.8) !important;
+	color: #888 !important;
+	font-size: 0.65rem !important;
+}
+
+.leaflet-control-attribution a {
+	color: #8ecae6 !important;
+}
+
+/* Map status states */
+.map-status-loading {
+	color: #8ecae6;
+}
+
+.map-status-success {
+	color: #5cb85c;
+}
+
+.map-status-error {
+	color: #ff6b6b;
+}
+
+/* Disabled input style */
+.repeater-form input:disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+	background-color: #222;
+}
+
+/*
 	Repeater Name Generator — Character Counter
 */
 

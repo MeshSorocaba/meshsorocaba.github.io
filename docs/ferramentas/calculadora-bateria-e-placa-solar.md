@@ -42,11 +42,25 @@ Este formulário ajuda a estimar o tamanho do banco de baterias e a potência ne
     </div>
 
     <div class="form-group">
-        <label for="dark-days">
+        <label>
             <strong>Dias Seguidos Sem Sol</strong>
         </label>
+        <div class="dark-days-mode-toggle">
+            <label class="radio-option">
+                <input type="radio" name="dark-days-mode" value="manual" checked>
+                <span>Inserir manualmente</span>
+            </label>
+            <label class="radio-option">
+                <input type="radio" name="dark-days-mode" value="estimate">
+                <span>Estimar pelo mapa</span>
+            </label>
+        </div>
         <input type="number" id="dark-days" value="7" min="1" max="30" step="1">
-        <span class="form-hint">Número máximo de dias consecutivos sem irradiação solar significativa. 
+        <span class="form-hint">Número máximo de dias consecutivos sem irradiação solar significativa.</span>
+        <div id="map-container" style="display: none;">
+            <div id="dark-days-map"></div>
+            <span id="map-status" class="form-hint">Clique no mapa para marcar a localização do repetidor. O valor será estimado automaticamente com dados históricos da NASA.</span>
+        </div>
     </div>
 
     <div class="form-group">
@@ -111,7 +125,9 @@ Este formulário ajuda a estimar o tamanho do banco de baterias e a potência ne
 
 A região de Sorocaba, assim como grande parte do sudeste brasileiro, experimenta períodos de baixa irradiação solar — especialmente entre novembro e fevereiro, quando frentes frias e sistemas meteorológicos podem bloquear a luz solar direta por vários dias consecutivos.
 
-Com base nos dados das estações meteorológicas automáticas do INPE, a região registrou sequências de até **7 dias consecutivos** com irradiação abaixo do 25º percentil (ou seja, dias efetivamente "sem sol" para fins de geração solar). Entre essas sequências de dias nublados, há em média **3 dias de sol** antes da próxima frente chegar.
+Você pode informar o número de dias sem sol manualmente ou usar a **estimativa automática** com base em dados históricos da NASA POWER. Ao selecionar "Estimar pelo mapa", basta clicar no mapa na localização do seu repetidor para obter o valor mais crítico de dias consecutivos sem sol equivalente, calculado a partir de 20 anos de dados climatológicos (janeiro de 2001 a dezembro de 2020).
+
+Para a região de Sorocaba, os dados da NASA indicam um valor de até **9 dias consecutivos** sem sol (mês mais crítico: julho). Com base nos dados das estações meteorológicas automáticas do INPE, a região registrou sequências de até **7 dias consecutivos** com irradiação abaixo do 25º percentil. Entre essas sequências de dias nublados, há em média **3 dias de sol** antes da próxima frente chegar.
 
 O dimensionamento segue então uma lógica simples:
 
@@ -152,6 +168,12 @@ Dividindo pelas horas de pico solar disponíveis:
 $$I_{\text{solar}} = \frac{E_{\text{recarga}}}{H_{\text{pico}} \times N_{\text{dias de sol}}}$$
 
 A potência da placa solar é estimada multiplicando a corrente pela tensão nominal do painel (tipicamente 5 V ou 6 V para painéis USB/portáteis).
+
+### Sobre os dados de dias sem sol
+
+O parâmetro **MAX_EQUIV_NO_SUN_DAYS** (Máximo de Dias Equivalentes Sem Sol) utilizado na estimativa automática é obtido da API [NASA POWER](https://power.larc.nasa.gov/){:target="_blank"} (Prediction Of Worldwide Energy Resources). Esse valor representa o número máximo de dias consecutivos equivalente sem sol, calculado a partir de dados climatológicos de 20 anos (janeiro de 2001 a dezembro de 2020). O script seleciona o mês com o maior valor e o arredonda para cima, garantindo um dimensionamento conservador.
+
+Ao informar o valor manualmente, considere usar como referência os dados da NASA POWER para a sua localização ou dados de estações meteorológicas locais.
 
 ### Sobre as horas de pico solar
 
