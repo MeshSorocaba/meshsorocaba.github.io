@@ -23,4 +23,12 @@ hide:
 
     [:octicons-arrow-right-24: Acessar](https://corescope.meshsorocaba.org)
 
+-   :fontawesome-solid-sun:{ .lg .middle } __Calculadora de Bateria e Placa Solar__
+
+    ---
+
+    Estime o tamanho do banco de baterias e a potência da placa solar para que seu repetidor MeshCore funcione de forma ininterrupta, mesmo em dias nublados na região de Sorocaba.
+
+    [:octicons-arrow-right-24: Acessar](calculadora-bateria-e-placa-solar.md)
+
 </div>

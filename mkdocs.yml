@@ -38,6 +38,9 @@ nav:
   - Ferramentas:
     - ferramentas/index.md
     - Gerador de Nomes para Repetidores: ferramentas/nomes-repetidores.md
+    - Calculadora de Bateria e Placa Solar: ferramentas/calculadora-bateria-e-placa-solar.md
+  - Referência:
+    - Temporização e Deduplicação: referencia/temporizacao-e-deduplicacao.md
   - FAQ: perguntas-frequentes.md
   - Mapa: https://map.meshcore.io/?zoom=7&lat=-22.1976&lon=-47.1863
   - Blog:
@@ -65,6 +68,7 @@ extra_css:
 
 extra_javascript:
   - js/repeater-name-generator.js
+  - js/solar-calculator.js
   - javascripts/mathjax.js
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
