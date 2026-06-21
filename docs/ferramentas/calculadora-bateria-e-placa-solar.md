@@ -38,7 +38,7 @@ Este formulário ajuda a estimar o tamanho do banco de baterias e a potência ne
             <strong>Tensão Mínima da Bateria</strong> (V)
         </label>
         <input type="number" id="voltage-min" value="3.6" min="2.5" max="4.5" step="0.01">
-        <span class="form-hint">Tensão mínima da bateria. Um valor seguro é 3,6 V para evitar reinicializações do dispositivo durante picos de transmissão.</span>
+        <span class="form-hint">Tensão mínima da bateria. Um valor seguro é 3,6 V para evitar reinicializações do dispositivo durante picos de transmissão (considere 3,8 V para Heltec V4).</span>
     </div>
 
     <div class="form-group">
