@@ -14,14 +14,14 @@ Este formulário ajuda a estimar o tamanho do banco de baterias e a potência ne
             <option value="esp32" selected>ESP32</option>
             <option value="nrf52840">nRF52840</option>
         </select>
-        <span class="form-hint">Selecione o microcontrolador do seu repetidor. O consumo médio difere bastante entre as plataformas.</span>
+        <span class="form-hint">Para ESP32 e firmware MeshCore <1.16, utilize 86 mA. Com módulo GPS, adicione 30-60 mA.</span>
     </div>
 
     <div class="form-group">
         <label for="current-draw">
             <strong>Consumo Médio do Dispositivo</strong> (mA)
         </label>
-        <input type="number" id="current-draw" value="80" min="1" step="1">
+        <input type="number" id="current-draw" value="45" min="1" step="1">
         <span class="form-hint">Corrente média de operação do repetidor em milliampères. O valor muda automaticamente ao selecionar o tipo de dispositivo acima, mas pode ser editado manualmente.</span>
     </div>
 
