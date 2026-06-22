@@ -16,7 +16,7 @@
         'current-draw': 80,
         'voltage-max': 4.2,
         'voltage-min': 3.6,
-        'dark-days': 7,
+        'dark-days': 9,
         'sunny-days': 3,
         'peak-hours': 3.4,
         'dark-days-mode': 'manual'

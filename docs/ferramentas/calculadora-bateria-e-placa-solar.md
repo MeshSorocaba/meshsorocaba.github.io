@@ -55,7 +55,7 @@ Este formulário ajuda a estimar o tamanho do banco de baterias e a potência ne
                 <span>Estimar pelo mapa</span>
             </label>
         </div>
-        <input type="number" id="dark-days" value="7" min="1" max="30" step="1">
+        <input type="number" id="dark-days" value="9" min="1" max="30" step="1">
         <span class="form-hint">Número máximo de dias consecutivos sem irradiação solar significativa.</span>
         <div id="map-container" style="display: none;">
             <div id="dark-days-map"></div>
