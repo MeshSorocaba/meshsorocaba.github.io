@@ -14,7 +14,7 @@ Este formulário ajuda a estimar o tamanho do banco de baterias e a potência ne
             <option value="esp32" selected>ESP32</option>
             <option value="nrf52840">nRF52840</option>
         </select>
-        <span class="form-hint">Para ESP32 e firmware MeshCore <1.16, utilize 86 mA. Com módulo GPS, adicione 30-60 mA.</span>
+        <span class="form-hint">Microcontrolador da sua repetidora. Heltec V3 e V4 e XIAO S3 usam ESP32. RAK4631, Heltec T114, XIAO nRF52 e Faketec (ProMicro) usam nRF52840.
     </div>
 
     <div class="form-group">
@@ -22,7 +22,7 @@ Este formulário ajuda a estimar o tamanho do banco de baterias e a potência ne
             <strong>Consumo Médio do Dispositivo</strong> (mA)
         </label>
         <input type="number" id="current-draw" value="45" min="1" step="1">
-        <span class="form-hint">Corrente média de operação do repetidor em milliampères. O valor muda automaticamente ao selecionar o tipo de dispositivo acima, mas pode ser editado manualmente.</span>
+        <span class="form-hint">Corrente média de operação do repetidor em milliampères. O valor muda automaticamente ao selecionar o tipo de dispositivo acima, mas pode ser editado manualmente. Para ESP32 e firmware MeshCore <1.16, utilize 86 mA. Com módulo GPS, adicione 30-60 mA.</span>
     </div>
 
     <div class="form-group">
