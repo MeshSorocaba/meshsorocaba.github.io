@@ -125,10 +125,6 @@ Este formulário ajuda a estimar o tamanho do banco de baterias e a potência ne
 
 A região de Sorocaba, assim como grande parte do sudeste brasileiro, experimenta períodos de baixa irradiação solar — especialmente entre novembro e fevereiro, quando frentes frias e sistemas meteorológicos podem bloquear a luz solar direta por vários dias consecutivos.
 
-Você pode informar o número de dias sem sol manualmente ou usar a **estimativa automática** com base em dados históricos da NASA POWER. Ao selecionar "Estimar pelo mapa", basta clicar no mapa na localização do seu repetidor para obter o valor mais crítico de dias consecutivos sem sol equivalente, calculado a partir de 20 anos de dados climatológicos (janeiro de 2001 a dezembro de 2020).
-
-Para a região de Sorocaba, os dados da NASA indicam um valor de até **9 dias consecutivos** sem sol (mês mais crítico: julho). Com base nos dados das estações meteorológicas automáticas do INPE, a região registrou sequências de até **7 dias consecutivos** com irradiação abaixo do 25º percentil. Entre essas sequências de dias nublados, há em média **3 dias de sol** antes da próxima frente chegar.
-
 O dimensionamento segue então uma lógica simples:
 
 1. **O banco de baterias deve sobreviver** à pior sequência de dias sem sol.
@@ -148,12 +144,12 @@ Válida para **V entre 3,03 V e 4,18 V**. Fora desse intervalo, a porcentagem de
 
 A capacidade necessária do banco de baterias é então:
 
-$$C_{\text{bateria}} = \frac{I_{\text{dispositivo}} \times 24 \times N_{\text{dias sem sol}}}{\text{SOC}_{\text{máx}} - \text{SOC}_{\text{mín}}}$$
+$$C_{\text{bateria}} = \frac{I_{\text{dispositivo}} \times 24 \times N_{\text{dias sem sol}}}{\text{% carga}_{\text{máx}} - \text{% carga}_{\text{mín}}}$$
 
 onde:
 
-- $\text{SOC}_{\text{máx}}$ é o SOC na tensão máxima da bateria (ex: 4,2 V → ≈100%)
-- $\text{SOC}_{\text{mín}}$ é o SOC na tensão mínima de corte (ex: 3,6 V → ≈32%)
+- $\text{% carga}_{\text{máx}}$ refere-se à porcentagem de carga na tensão máxima da bateria (ex: 4,2 V → ≈100%)
+- $\text{% carga}_{\text{mín}}$ refere-se à porcentagem de carga na tensão mínima de corte (ex: 3,6 V → ≈32%)
 
 A diferença entre eles representa a fração da bateria que efetivamente pode ser utilizada.
 
@@ -161,7 +157,7 @@ A diferença entre eles representa a fração da bateria que efetivamente pode s
 
 Após a sequência de dias sem sol, a placa solar precisa repor toda a energia gasta **e ainda alimentar o repetidor** durante os dias de recarga. A energia total a ser entregue é:
 
-$$E_{\text{recarga}} = C_{\text{bateria}} \times (\text{SOC}_{\text{máx}} - \text{SOC}_{\text{mín}}) + I_{\text{dispositivo}} \times 24 \times N_{\text{dias de sol}}$$
+$$E_{\text{recarga}} = C_{\text{bateria}} \times (\text{% carga}_{\text{máx}} - \text{% carga}_{\text{mín}}) + I_{\text{dispositivo}} \times 24 \times N_{\text{dias de sol}}$$
 
 Dividindo pelas horas de pico solar disponíveis:
 
@@ -178,29 +174,6 @@ Ao informar o valor manualmente, considere usar como referência os dados da NAS
 ### Sobre as horas de pico solar
 
 A "hora de pico solar" (HSP) é uma unidade que equivale a 1 hora de irradiação a 1000 W/m². Mesmo que o sol brilhe por 10 horas, a efetiva energia captada pode corresponder a apenas 3–4 HSP, pois a irradiação varia ao longo do dia (ângulo de incidência, atmosfera, etc.). O valor de **3,4 HSP** representa o pior cenário observado em Sorocaba, garantindo que o dimensionamento seja conservador.
-
-### Exemplo prático
-
-Para um repetidor ESP32 (80 mA) com os valores padrão:
-
-| Parâmetro | Valor |
-|---|---|
-| Consumo médio | 80 mA |
-| Tensão máx. / mín. | 4,2 V / 3,6 V |
-| SOC a 4,2 V | ≈ 100% |
-| SOC a 3,6 V | ≈ 32% |
-| Faixa útil | ≈ 68% |
-| Dias sem sol | 7 |
-| Dias para recarregar | 3 |
-| HSP | 3,4 h |
-
-Isso resulta em:
-
-- **Banco de baterias:** ≈ 19 755 mAh
-- **Corrente da placa solar:** ≈ 1 882 mA
-- **Potência da placa (5 V):** ≈ 9,4 W
-
-Na prática, isso significa que um nó ESP32 precisaria de algo como 6× baterias 18650 de 3 700 mAh cada e uma placa solar de **10 W ou mais** para operar de forma confiável o ano inteiro em Sorocaba. Já um nó nRF52840 (10 mA) precisaria de apenas uma bateria 18650 e uma placa de cerca de **1,2 W**.
 
 !!! tip "Dica"
     Sempre arredonde para cima os valores calculados. Baterias e placas solares vêm em capacidades e potências padronizadas — escolha o modelo mais próximo acima do valor indicado. Considere também uma margem de segurança de 20–30% para compensar perdas por temperatura, envelhecimento da bateria e sujeira na placa solar.
