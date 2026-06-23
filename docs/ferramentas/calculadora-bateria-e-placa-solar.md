@@ -67,7 +67,7 @@ Este formulário ajuda a estimar o tamanho do banco de baterias e a potência ne
         <label for="sunny-days">
             <strong>Dias de Sol para Recarregar</strong>
         </label>
-        <input type="number" id="sunny-days" value="3" min="1" max="30" step="1">
+        <input type="number" id="sunny-days" value="2" min="1" max="30" step="1">
         <span class="form-hint">Número de dias com sol disponível para recarregar o banco de baterias após o período sem sol.</span>
     </div>
 
@@ -75,7 +75,7 @@ Este formulário ajuda a estimar o tamanho do banco de baterias e a potência ne
         <label for="peak-hours">
             <strong>Horas de Pico Solar por Dia</strong>
         </label>
-        <input type="number" id="peak-hours" value="3.4" min="0.5" max="8" step="0.1">
+        <input type="number" id="peak-hours" value="4.2" min="0.5" max="8" step="0.1">
         <span class="form-hint">Equivalente em horas de irradiação máxima (1000 W/m²) por dia. O valor de 3,4 h representa o valor diário médio do mês com menos irradiância solar na região de Sorocaba e uma placa solar na horizontal. Utilize a calculadora do <a href="http://www.solarelectricityhandbook.com/solar-irradiance.html">Solar Electricity Handbook</a> para valores mais precisos.</span>
     </div>
 
