@@ -76,7 +76,7 @@ Este formulário ajuda a estimar o tamanho do banco de baterias e a potência ne
             <strong>Horas de Pico Solar por Dia</strong>
         </label>
         <input type="number" id="peak-hours" value="4.2" min="0.5" max="8" step="0.1">
-        <span class="form-hint">Equivalente em horas de irradiação máxima (1000 W/m²) por dia. O valor de 3,4 h representa o valor diário médio do mês com menos irradiância solar na região de Sorocaba e uma placa solar na horizontal. Utilize a calculadora do <a href="http://www.solarelectricityhandbook.com/solar-irradiance.html">Solar Electricity Handbook</a> para valores mais precisos.</span>
+        <span class="form-hint">Equivalente em horas de irradiação máxima (1000 W/m²) por dia. O valor de 4.2 h representa o pior valor diário médio em Sorocaba (mês de maio), com uma placa a um ângulo de 66° com a vertical e voltada para o norte com uma incerteza de 23° graus. Utilize a calculadora do <a href="http://www.solarelectricityhandbook.com/solar-irradiance.html">Solar Electricity Handbook</a> para valores mais precisos.</span>
     </div>
 
     <div class="form-buttons">
