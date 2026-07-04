@@ -123,7 +123,7 @@ O recurso é configurado pelo comando `set loop.detect` e aceita quatro níveis:
 | `moderate` | Equilíbrio entre tolerância e proteção. |
 | `strict` | Agressivo — descarta o pacote com pouquíssimas repetições do ID no caminho. |
 
-Defina como **Moderate** para a maioria dos cenários. Isso protege a rede contra repetidores com firmware problemático que corrompem e retransmitem o mesmo pacote em loop.
+Defina como **minimal** para a maioria dos cenários. Isso protege a rede contra repetidores com firmware problemático que corrompem e retransmitem o mesmo pacote em loop.
 
 A lógica de detecção combina o nível escolhido com o tamanho do hash de caminho do pacote para determinar quantas vezes o ID do próprio repetidor pode aparecer no caminho antes de o pacote ser descartado:
 
@@ -187,7 +187,7 @@ A tabela abaixo resume todos os parâmetros que devem ser configurados em um rep
 | `set flood.advert.interval` | `47` | Intervalo (em horas) entre anúncios que inundam toda a rede. |
 | `set txdelay` | `0.5` / `1.0` / `2.0` | Fator de atraso antes de retransmitir flood. Use 0.5 (baixo), 1.0 (médio) ou 2.0 (alto) conforme a elevação. |
 | `set rxdelay` | `3` | Atraso de processamento para cópias recebidas com sinal fraco, dando prioridade a caminhos fortes. |
-| `set loop.detect` | `moderate` | Detecção de loop — descarta pacotes que já circularam pelo nó, evitando tempestades. |
+| `set loop.detect` | `minimal` | Detecção de loop — descarta pacotes que já circularam pelo nó, evitando tempestades. |
 | `set multi.acks` | `1` | Ativa envio de 2 confirmações em vez de 1, melhorando a confiabilidade do gerenciamento remoto. |
 | `set agc.reset.interval` | `300` | Intervalo (segundos) para reset do AGC. |
 | `set radio.rxgain` | `on` | Ativa o modo de ganho de recepção amplificado (SX12xx / LR1110, firmware ≥ 1.14.1). |
