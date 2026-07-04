@@ -33,7 +33,7 @@ nav:
     - Modo Companion: configuracao/companions.md
     - Modo Repetidor: 
       - Configurando um Repetidor: configuracao/repeaters.md
-      - Temporização e Deduplicação: configuracao/temporizacao-e-deduplicacao.md
+      - Temporização e Deduplicação: referencia/temporizacao-e-deduplicacao.md
     - Modo Observador: configuracao/observers.md
   - Ferramentas:
     - ferramentas/index.md

@@ -108,7 +108,7 @@ Para ativar o atraso de recepção (recomendado para a maioria dos cenários):
 set rxdelay 3
 ```
 
-Para entender em detalhes como funciona a temporização e a deduplicação de pacotes, consulte a página [Temporização e Deduplicação](temporizacao-e-deduplicacao.md).
+Para entender em detalhes como funciona a temporização e a deduplicação de pacotes, consulte a página [Temporização e Deduplicação](../referencia/temporizacao-e-deduplicacao.md).
 
 ### Detecção de loop
 
