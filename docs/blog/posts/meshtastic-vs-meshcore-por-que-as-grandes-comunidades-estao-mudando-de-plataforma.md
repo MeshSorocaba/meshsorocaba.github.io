@@ -7,7 +7,7 @@ lastmod: 2026-05-22T10:32:38-0300
 title: "MeshCore vs. Meshtastic: por que as grandes comunidades estão mudando de plataforma"
 ---
 
-Entre as soluções de rede mesh baseadas em LoRa, duas dominam a conversa hoje: o **Meshtastic** e o **MeshCore**. Para quem está montando uma rede local com apenas alguns dispositivos, o Meshtastic continua sendo a escolha natural. O problema surge quando a rede começa a crescer. Com apenas algumas dezenas, a experiência se deteriora e a comunicação entre dispositivos acaba se tornando um exercício de paciência.
+Entre as soluções de rede mesh baseadas em LoRa, duas dominam a conversa hoje: o **Meshtastic** e o **MeshCore**. Para quem está montando uma rede local com apenas alguns dispositivos, o Meshtastic continua sendo a escolha natural. O problema surge quando a rede começa a crescer. Com apenas algumas dezenas de dispositivos, a experiência se deteriora e a comunicação entre dispositivos acaba se tornando um exercício de paciência.
 
 <!-- more -->
 
