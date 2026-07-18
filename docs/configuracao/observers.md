@@ -27,7 +27,7 @@ Existem duas maneiras de fazer um dispositivo atuar como um observador:
 
 2) Selecione o modelo do seu dispositivo.
 
-3) Escolha o modo de operação: `Repeater` (repetidor com uplink MQTT) ou `Room Server` (servidor de salas com uplink MQTT).
+3) Escolha o modo de operação principal, `Repeater` ou `Room Server`. Se sua intenção é que seu nó observador funcione como uma repetidora normalmente, escolha `Repeater`. Caso não queira repetir pacotes, mas gostaria de dar uma utilidade extra para o seu nó observador, considere o firmware de `Room Server` e ele servirá como um mural de recados a quem se conectar a ele.
 
 4) Selecione a versão do firmware disponível.
 
@@ -41,13 +41,13 @@ Existem duas maneiras de fazer um dispositivo atuar como um observador:
 
 ## Configure o MQTT
 
-O firmware Observer usa um sistema de **slots** (até 6 conexões MQTT simultâneas) com presets embutidos. Cada slot pode ser configurado com um broker conhecido (preset) ou com um broker personalizado (custom).
+O firmware Observer usa um sistema de **slots**, podendo fazer publicações a diferentes servidores simultaneamente. Cada slot pode ser configurado com um broker conhecido (preset) ou com um broker personalizado (custom).
 
 Recomendamos a seguinte configuração para observadores na nossa região:
 
 | Slot | Broker | Preset | Descrição |
 |------|--------|--------|-----------|
-| 1 | `mqtt.meshsorocaba.org` | `custom` | Broker comunitário MeshCore Brasil |
+| 1 | `mqtt.meshsorocaba.org` | `custom` | Broker comunitário (o que alimenta o MeshCore Brasil) |
 | 2 | MeshMapper | `meshmapper` | Broker do MeshMapper (WSS + JWT) |
 
 Os slots 3 a 6 podem ser deixados como `none` (desativados) ou configurados com outros presets, se desejar.
@@ -61,8 +61,8 @@ Acesse o console serial usando o [recurso Console do web flasher](https://flashe
 ```
 set wifi.ssid nome_da_sua_rede
 set wifi.pwd sua_senha_wifi
-set mqtt.iata <código IATA do principal aeroporto da sua região>
-set timezone America/Sao_Paulo
+set mqtt.iata código_IATA_de_3_letras_do_ principal_aeroporto_da_região
+set timezone America/Sao_Paulo (ou outro)
 ```
 
 **Configurar o Slot 1 — Broker comunitário (mqtt.meshsorocaba.org):**
@@ -231,7 +231,7 @@ Os Slots 3 a 6 seguem o mesmo padrão (`MQTT3_`, `MQTT4_`, etc.) e podem ser dei
 
 | Variável | Descrição | Padrão |
 |----------|-----------|--------|
-| `PACKETCAPTURE_IATA` | Código IATA do aeroporto da sua região | — |
+| `PACKETCAPTURE_IATA` | Código IATA de 3 letras do aeroporto da sua região | — |
 | `PACKETCAPTURE_TIMEZONE` | Fuso horário | `America_Sao_Paulo` |
 | `PACKETCAPTURE_LOG_LEVEL` | Nível de log (`DEBUG`, `INFO`, `WARNING`, `ERROR`) | `INFO` |
 | `PACKETCAPTURE_ADVERT_INTERVAL_HOURS` | Intervalo de envio de adverts (0 = desativado) | `11` |
