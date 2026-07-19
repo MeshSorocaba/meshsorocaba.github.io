@@ -426,6 +426,133 @@ img {
 }
 
 /*
+	Mapa de IATAs — Busca e Mapa Leaflet
+*/
+
+#iata-map {
+	height: 450px;
+	border-radius: 0.25rem;
+	border: 1px solid #4a4a4a;
+	overflow: hidden;
+}
+
+#iata-search-box {
+	position: relative;
+}
+
+.iata-search-results {
+	position: absolute;
+	z-index: 1000;
+	left: 0;
+	right: 0;
+	max-height: 280px;
+	overflow-y: auto;
+	background-color: #2a2a2a;
+	border: 1px solid #4a4a4a;
+	border-radius: 0.25rem;
+	margin-top: 0.25rem;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.iata-search-item {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	width: 100%;
+	padding: 0.6rem 0.75rem;
+	background: none;
+	border: none;
+	border-bottom: 1px solid #3a3a3a;
+	color: var(--md-default-fg-color--light);
+	cursor: pointer;
+	text-align: left;
+	font-family: "Inter", sans-serif;
+	font-size: 0.9rem;
+	transition: background-color 0.15s ease;
+}
+
+.iata-search-item:last-child {
+	border-bottom: none;
+}
+
+.iata-search-item:hover {
+	background-color: #3a3a3a;
+}
+
+.iata-search-code {
+	font-family: "JetBrains Mono", "Fira Code", monospace;
+	font-weight: 700;
+	color: #8ecae6;
+	flex-shrink: 0;
+	min-width: 3rem;
+}
+
+.iata-search-info {
+	display: flex;
+	flex-direction: column;
+	gap: 0.1rem;
+	min-width: 0;
+}
+
+.iata-search-name {
+	color: var(--md-default-fg-color--light);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.iata-search-loc {
+	font-size: 0.8rem;
+	color: #999;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.iata-search-empty,
+.iata-search-more {
+	padding: 0.6rem 0.75rem;
+	font-size: 0.85rem;
+	color: #999;
+	font-style: italic;
+}
+
+/* Leaflet popup (dark theme) */
+.leaflet-popup-content-wrapper {
+	background-color: #2a2a2a !important;
+	color: var(--md-default-fg-color--light) !important;
+	border: 1px solid #4a4a4a !important;
+	border-radius: 0.25rem !important;
+}
+
+.leaflet-popup-tip {
+	background-color: #2a2a2a !important;
+}
+
+.leaflet-popup-content {
+	margin: 0.6rem 0.75rem !important;
+}
+
+.iata-popup-code {
+	font-family: "JetBrains Mono", "Fira Code", monospace;
+	font-size: 1.3rem;
+	font-weight: 700;
+	color: #8ecae6;
+}
+
+.iata-popup-name {
+	font-size: 0.85rem;
+	color: var(--md-default-fg-color--light);
+	margin-top: 0.15rem;
+}
+
+.iata-popup-loc {
+	font-size: 0.8rem;
+	color: #999;
+	margin-top: 0.1rem;
+}
+
+/*
 	Repeater Name Generator — Character Counter
 */
 

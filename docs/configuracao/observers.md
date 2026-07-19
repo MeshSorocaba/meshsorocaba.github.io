@@ -69,7 +69,7 @@ set timezone America/Sao_Paulo (ou outro)
 
     O IATA é um código de 3 letras usado para identificar aeroportos. Porém, no contexto do MeshCore, códigos IATA são utilizados para referenciar grandes regiões com múltiplos municípios.
     
-    Na dúvida sobre qual IATA utilizar, pergunte-se qual aeroporto você usaria normalmente para viajar. Então, encontre o código IATA de três letras [nesta página](https://en.wikipedia.org/wiki/List_of_airports_by_IATA_airport_code:_A).
+    Na dúvida sobre qual IATA utilizar, pergunte-se qual aeroporto você usaria normalmente para viajar. Então, encontre o código IATA de três letras no [mapa de aeroportos](../ferramentas/mapa-de-iatas.md).
 
 
 

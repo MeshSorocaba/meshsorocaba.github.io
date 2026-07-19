@@ -31,4 +31,12 @@ hide:
 
     [:octicons-arrow-right-24: Acessar](calculadora-bateria-e-placa-solar.md)
 
+-   :fontawesome-solid-map-location-dot:{ .lg .middle } __Mapa de Códigos IATA__
+
+    ---
+
+    Encontre o código IATA de três letras do aeroporto da sua região para usar na configuração do seu observador MeshCore (`set mqtt.iata CODIGO`).
+
+    [:octicons-arrow-right-24: Acessar](mapa-de-iatas.md)
+
 </div>

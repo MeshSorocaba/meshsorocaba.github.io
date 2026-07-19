@@ -39,6 +39,7 @@ nav:
     - ferramentas/index.md
     - Gerador de Nomes para Repetidores: ferramentas/nomes-repetidores.md
     - Calculadora de Bateria e Placa Solar: ferramentas/calculadora-bateria-e-placa-solar.md
+    - Mapa de Códigos IATA: ferramentas/mapa-de-iatas.md
   - Referência:
     - Temporização e Deduplicação: referencia/temporizacao-e-deduplicacao.md
   - FAQ: perguntas-frequentes.md
@@ -71,6 +72,7 @@ extra_javascript:
   - js/repeater-name-generator.js
   - https://unpkg.com/leaflet@1.9.4/dist/leaflet.js
   - js/solar-calculator.js
+  - js/airport-map.js
   - javascripts/mathjax.js
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
