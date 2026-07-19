@@ -61,9 +61,17 @@ Acesse o console serial usando o [recurso Console do web flasher](https://flashe
 ```
 set wifi.ssid nome_da_sua_rede
 set wifi.pwd sua_senha_wifi
-set mqtt.iata código_IATA_de_3_letras_do_ principal_aeroporto_da_região
+set mqtt.iata identificador_IATA_da_região
 set timezone America/Sao_Paulo (ou outro)
 ```
+
+!!! info
+
+    O IATA é um código de 3 letras usado para identificar aeroportos. Porém, no contexto do MeshCore, códigos IATA são utilizados para nomear grandes regiões com múltiplos municípios.
+    
+    Na dúvida sobre qual IATA utilizar, pergunte-se qual aeroporto você usaria normalmente para viajar. Então, encontre o código IATA de três letras [nesta página](https://en.wikipedia.org/wiki/List_of_airports_by_IATA_airport_code:_A).
+
+
 
 **Configurar o Slot 1 — Broker comunitário (mqtt.meshsorocaba.org):**
 

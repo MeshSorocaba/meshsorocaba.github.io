@@ -89,8 +89,7 @@ plugins:
   - git-committers:
       repository: MeshSorocaba/meshsorocaba.github.io
       branch: main
-
-
+      token: !!python/object/apply:os.getenv ["MKDOCS_GIT_COMMITTERS_APIKEY"]
 
 extra:
   social:
