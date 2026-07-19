@@ -90,9 +90,9 @@
             const isBR = a.country === 'BR';
             L.circleMarker([a.latitude, a.longitude], {
                 radius: 4,
-                color: isBR ? '#8ecae6' : '#5a5a5a',
-                fillColor: isBR ? '#8ecae6' : '#888',
-                fillOpacity: 0.7,
+                color: isBR ? '#d32f2f' : '#5a5a5a',
+                fillColor: isBR ? '#d32f2f' : '#888',
+                fillOpacity: isBR ? 1.0 : 0.7,
                 weight: 1
             })
                 .bindPopup(buildPopup(a))

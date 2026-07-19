@@ -2,7 +2,7 @@
 title: Mapa de Códigos IATA
 ---
 
-Encontre o código IATA de três letras do aeroporto da sua região para usar na configuração do seu observador MeshCore. No contexto da rede MeshCore, códigos IATA identificam grandes regiões — normalmente a do aeroporto que você usaria para viajar.
+Encontre o código IATA da sua região para usar na configuração do seu observador MeshCore.
 
 <div class="repeater-form" id="iata-tool">
 
@@ -72,12 +72,9 @@ Encontre o código IATA de três letras do aeroporto da sua região para usar na
     set mqtt.iata CODIGO
     ```
 
-Marcadores em azul representam aeroportos brasileiros; marcadores em cinza, demais países. O código IATA de Sorocaba é **SOD**.
+Marcadores em vermelho representam aeroportos brasileiros; marcadores em cinza, demais países. O código IATA de Sorocaba é **SOD**.
 
 !!! info "Sobre identificadores IATA"
     O IATA é um código de 3 letras usado originalmente para identificar aeroportos. No MeshCore, esses códigos servem para referenciar grandes regiões com múltiplos municípios. Na dúvida sobre qual IATA utilizar, pergunte-se qual aeroporto você usaria normalmente para viajar e localize-o no mapa acima.
 
     Saiba mais na página de [configuração de observadores](../configuracao/observers.md).
-
-!!! tip "Sorocaba e região"
-    A cidade de Sorocaba possui o código IATA **SOD**. Para municípios vizinhos sem aeroporto próprio — como Votorantim, Alumínio, Mairinque, Itu e Salto — utilize o código da região mais próxima.
